@@ -46,26 +46,26 @@ Below you can see the code for the client to start scraping process:
 ```Python
 import scraper
     
-  scr = scraper.Scraper()
-  my_url = scraper.URL.construct_from_url(
-      url=("https://www.moex.com/ru/index/IMOEX/archive"
-           "?from=2025-01-26&till=2025-02-26&sort=TRADEDATE&order=desc")
-  )
-  scr.load_content([my_url])  # load page with driver
-  scr.scrape_pages()  # scrape html files in the page/ folder
+scr = scraper.Scraper()
+my_url = scraper.URL.construct_from_url(
+  url=("https://www.moex.com/ru/index/IMOEX/archive"
+       "?from=2025-01-26&till=2025-02-26&sort=TRADEDATE&order=desc")
+)
+scr.load_content([my_url])  # load page with driver
+scr.scrape_pages()  # scrape html files in the page/ folder
 
-  df = scr.load_page_data('page') # load data from example page
-  print(df.head())
+df = scr.load_page_data('page') # load data from example page
+print(df.head())
 ```
 
 <a name="eda"> <h2> EDA </h2> </a>
-The <a href="">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.
+The <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/EDA/Russia_Stock_Market_Index.ipynb">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.
 
 <a name="visualization"> <h2> Visualization </h2> </a>
-Proceed to the <a href=""> website </a> to see the visualizations that are implemented so far. If you want to get the source code, you can go to the <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/tree/frontend"> frontend </a> branch.
+Proceed to the <a href="https://data-wrangling-and-visualisation.github.io/Stock-Market-Visualization/"> website </a> to see the visualizations that are implemented so far. If you want to get the source code, you can go to the <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/tree/frontend"> frontend </a> branch.
 
 <a name="roadmap"> <h2> Checkpoint Information and Roadmap </h2> </a>
-The project checkpoint information can be found <a href="">here </a>
+The project checkpoint information can be found <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/Checkpoints/DWV_Checkpoint.pdf">here </a>
 
 - [x] Select web pages and analyze data format for further extraction.
 - [x] Develop a data extraction pipeline by configuring the scraping tools.
