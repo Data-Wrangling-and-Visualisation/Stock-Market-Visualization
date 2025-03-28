@@ -1,981 +1,395 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dynamic Russian Stock Market Dashboard</title>
+    <title>Interactive Russian Stock Market Analysis</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --positive-color: #27ae60;
+            --negative-color: #c0392b;
+            --text-color: #34495e;
+            --background: #f8f9fa;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: #f0f2f5;
-            margin: 0;
-            padding: 20px;
+            font-family: 'Segoe UI', system-ui;
+            background: var(--background);
+            margin: 2rem;
         }
-        .chart-container {
-            overflow: visible !important;
+
+        .controls {
             background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f8f9fa;
+            padding: 0.8rem;
             border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        #parameterSelector {
-            padding: 10px 15px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
+
+        label {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        select, button {
+            padding: 0.6rem 1rem;
+            border: 2px solid #dfe6e9;
+            border-radius: 6px;
             background: white;
-            font-size: 16px;
-            margin-bottom: 20px;
-            width: 200px;
+            transition: all 0.2s ease;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
         }
-        .bar { transition: all 0.3s ease; }
-        .positive { fill: #4e79a7; }
-        .negative { fill: #e15759; }
-        .axis path, .axis line {
-            fill: none;
-            stroke: #ddd;
-            shape-rendering: crispEdges;
+
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1em;
+            padding-right: 2rem;
         }
+
+        button {
+            background: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+
+        button:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .bar {
+            fill: var(--secondary-color);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .negative-bar {
+            fill: var(--negative-color);
+        }
+
+        .axis-label {
+            font-size: 1.1em;
+            fill: var(--text-color);
+            font-weight: 600;
+        }
+
+        .tick text {
+            fill: #7f8c8d;
+            font-size: 0.9em;
+        }
+
         .tooltip {
             position: absolute;
-            padding: 12px;
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 1rem;
+            background: rgba(255,255,255,0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             pointer-events: none;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .play-button {
-            padding: 8px 16px;
-            background: #1f77b4;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-left: 10px;
-            transition: background 0.3s ease;
-        }
-        .value-label {
-            font-size: 10px;
-            fill: #333;
-            text-anchor: middle;
-            font-weight: 500;
-            pointer-events: none;
-        }
-        /* Add this new tooltip style */
-        .dynamic-label {
-            position: absolute;
-            background: rgba(30, 30, 30, 0.95);
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: 'Arial', sans-serif;
-            font-size: 12px;
-            pointer-events: none;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(0,0,0,0.1);
             opacity: 0;
-            transition: opacity 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            min-width: 120px;
-            transform: translate(-50%, -100%);
-            left: 0;
-            top: 0;
+            transition: opacity 0.2s;
         }
 
-        .dynamic-label::after {
-            bottom: -10px;
-            left: 50%;
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-width: 5px 5px 0;
-            border-style: solid;
-            border-color: rgba(30, 30, 30, 0.95) transparent transparent;
-        }
-
-        .label-title {
-            font-weight: bold;
-            margin-bottom: 4px;
-            color: #00ff9d;
-        }
-
-        .label-value {
-            display: flex;
-            justify-content: space-between;
-        }
-        .bar {
-            transition: filter 0.3s ease, transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .bar:hover {
-            filter: brightness(1.8) !important; /* Force brightness override */
-            transform: scaleY(1.02);
-            z-index: 100; /* Bring hovered bar to front */
-        }
-        .bar.highlight {
-            filter: brightness(1.8);
-            stroke: white;
-            stroke-width: 2px;
-            transform: scaleY(1.05);
-        }
-        .chart-container svg {
-            overflow: visible;
-            position: relative; /* For z-index context */
-        }
-
-        .bar {
-            position: relative; /* Enable z-index */
-        }
-        .nav-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-        
-        .nav-link {
-            color: #2a9d8f;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-
-        .nav-link:hover {
-            background: rgba(42, 157, 143, 0.1);
-            transform: translateY(-1px);
+        .zero-line {
+            stroke: var(--text-color);
+            stroke-width: 1;
+            stroke-dasharray: 4 2;
         }
 
         .description {
-            margin: 20px auto 40px;
-            max-width: 800px;
-            color: #495057;
-            line-height: 1.6;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
+            background: #f8f9fa;
+            padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .source {
+            text-align: right;
+            margin-top: 1rem;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .source a {
+            color: var(--secondary-color);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="nav-container">
-        <a href="/Stock-Market-Visualization/index.html" class="nav-link">← Back to Main</a>
-    </div>
-
     <div class="description">
-        <h2>Russian Stock Market Dashboard</h2>
-        <p>Interactive visualization of key metrics for major Russian companies. Use the dropdown to analyze different 
-        parameters: Price (current stock price), Day (daily percentage change), Year (annual percentage change), 
-        and MCap (market capitalization). Bars are color-coded - blue for positive values, red for negative. 
-        Hover over bars for detailed tooltips with company-specific data.</p>
+        <h2>Russian Stock Market Analysis</h2>
+        <p>This interactive visualization shows key metrics for major Russian companies:</p>
+        <ul>
+            <li>🟦 Market Capitalization (Billions USD)</li>
+            <li>📈 Stock Price (USD)</li>
+            <li>📉 Daily Price Change (%)</li>
+            <li>📊 Annual Performance (%)</li>
+        </ul>
+        <p>Use the controls to:
+            <br>• Select different metrics
+            <br>• Adjust number of displayed companies
+            <br>• Sort ascending/descending
+            <br>• Hover bars for detailed information
+        </p>
+        <div class="source">
+            Data source: 
+            <a href="https://tradingeconomics.com/russia/stock-market" target="_blank">
+                Trading Economics - Russia Stock Market
+            </a>
+        </div>
+        <div class="source">
+            Back to main page: 
+            <a href="/Stock-Market-Visualization/index.html" target="_blank">
+                Main page
+            </a>
+        </div>
     </div>
-
-
-    <div class="dynamic-label"></div>
-    <div class="chart-container">
-        <div class="sort-controls">
-            <select id="parameterSelector">
+    
+    <div class="controls">
+        <div class="control-group">
+            <label>Metric:</label>
+            <select id="metricSelector">
+                <option value="MCap_num">Market Cap</option>
                 <option value="Price">Price</option>
-                <option value="Day">Day Change (%)</option>
-                <option value="Year">Year Change (%)</option>
-                <option value="MCap">Market Cap</option>
+                <option value="Day_pct">Daily Change</option>
+                <option value="Year_pct">Yearly Change</option>
             </select>
         </div>
+        <div class="control-group">
+            <label>Top:</label>
+            <select id="topSelector">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <button id="sortAsc">↑ Asc</button>
+            <button id="sortDesc">↓ Desc</button>
+        </div>
+    </div>
+    <div class="chart-container">
         <div id="chart"></div>
     </div>
+    <div id="tooltip" class="tooltip"></div>
 
     <script>
-        const data = [
-    {
-        "Company":"Sberbank",
-        "Price":"320.95",
-        "Day":"1.06%",
-        "Year":"6.66%",
-        "MCap":"80.15B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rosneft",
-        "Price":"529.25",
-        "Day":"0.37%",
-        "Year":"-10.03%",
-        "MCap":"65.17B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Lukoil",
-        "Price":"7,209.00",
-        "Day":"0.33%",
-        "Year":"-4.35%",
-        "MCap":"54.76B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Gazprom",
-        "Price":"170.06",
-        "Day":"-0.60%",
-        "Year":"4.34%",
-        "MCap":"47.07B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Novatek",
-        "Price":"1,263.20",
-        "Day":"-1.70%",
-        "Year":"-10.90%",
-        "MCap":"45.3B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Polyus",
-        "Price":"19,025.50",
-        "Day":"0.82%",
-        "Year":"63.37%",
-        "MCap":"29.9B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Yandex",
-        "Price":"4,603.50",
-        "Day":"0.90%",
-        "Year":"31.54%",
-        "MCap":"19.41B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Tatneft",
-        "Price":"691.90",
-        "Day":"1.21%",
-        "Year":"-8.14%",
-        "MCap":"16.88B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Severstal",
-        "Price":"1,336.80",
-        "Day":"-0.24%",
-        "Year":"-22.56%",
-        "MCap":"13.17B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Surgutneftegas",
-        "Price":"26.79",
-        "Day":"-0.06%",
-        "Year":"-9.81%",
-        "MCap":"11.13B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Novolipetsk Steel",
-        "Price":"157.68",
-        "Day":"-0.87%",
-        "Year":"-23.15%",
-        "MCap":"11.08B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"PhosAgro",
-        "Price":"6,707.00",
-        "Day":"0.10%",
-        "Year":"-0.77%",
-        "MCap":"10.12B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Akron",
-        "Price":"16,886.00",
-        "Day":"0%",
-        "Year":"-8.22%",
-        "MCap":"7.09B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"VTB Bank",
-        "Price":"90.67",
-        "Day":"-0.35%",
-        "Year":"-22.50%",
-        "MCap":"5.72B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Moscow Exchange",
-        "Price":"211.35",
-        "Day":"0.71%",
-        "Year":"1.32%",
-        "MCap":"5.61B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Magnit",
-        "Price":"4,873.00",
-        "Day":"0.65%",
-        "Year":"-37.07%",
-        "MCap":"5.58B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Magnitogorskiy Metallurgicheskiy Kombinat PAO",
-        "Price":"39.74",
-        "Day":"-0.46%",
-        "Year":"-27.75%",
-        "MCap":"5.22B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Korporatsiya Vsmpo Avisma",
-        "Price":"39,260.00",
-        "Day":"0.72%",
-        "Year":"3.53%",
-        "MCap":"5.21B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Alrosa",
-        "Price":"59.46",
-        "Day":"-3.00%",
-        "Year":"-21.00%",
-        "MCap":"5.01B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"PIK",
-        "Price":"632.20",
-        "Day":"-3.05%",
-        "Year":"-31.79%",
-        "MCap":"4.88B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Mobile Telesystems",
-        "Price":"239.75",
-        "Day":"0%",
-        "Year":"-18.36%",
-        "MCap":"4.74B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Ank Bashneft",
-        "Price":"2,430.00",
-        "Day":"-1.32%",
-        "Year":"-19.75%",
-        "MCap":"4.11B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Moskovskiy Kreditnyi Bank PAO",
-        "Price":"10.08",
-        "Day":"1.26%",
-        "Year":"24.98%",
-        "MCap":"3.93B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Aeroflot",
-        "Price":"73.59",
-        "Day":"-1.50%",
-        "Year":"83.61%",
-        "MCap":"3.41B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Inter RAO",
-        "Price":"3.72",
-        "Day":"-0.04%",
-        "Year":"-9.36%",
-        "MCap":"3.19B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Fgk Rusgidro Pao",
-        "Price":"0.51",
-        "Day":"-1.06%",
-        "Year":"-32.83%",
-        "MCap":"2.64B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rostelecom",
-        "Price":"69.94",
-        "Day":"-1.76%",
-        "Year":"-23.96%",
-        "MCap":"2.63B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Novorossiysk Commercial Sea Port",
-        "Price":"10.12",
-        "Day":"-1.32%",
-        "Year":"-18.49%",
-        "MCap":"2.19B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Raspadskaya",
-        "Price":"278.50",
-        "Day":"-1.07%",
-        "Year":"-28.96%",
-        "MCap":"2.17B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Sovkomflot Pao",
-        "Price":"93.49",
-        "Day":"-0.06%",
-        "Year":"-31.83%",
-        "MCap":"2.17B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Transneft",
-        "Price":"1,152.00",
-        "Day":"-1.34%",
-        "Year":"-28.80%",
-        "MCap":"2.09B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Afk Sistema Pao",
-        "Price":"18.43",
-        "Day":"-0.43%",
-        "Year":"-3.64%",
-        "MCap":"2.08B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Federal Grid",
-        "Price":"0.08",
-        "Day":"-0.78%",
-        "Year":"-33.91%",
-        "MCap":"1.94B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"United Wagon",
-        "Price":"55.70",
-        "Day":"-0.04%",
-        "Year":"-7.63%",
-        "MCap":"1.87B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"TMK",
-        "Price":"127.00",
-        "Day":"-1.01%",
-        "Year":"-42.81%",
-        "MCap":"1.54B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Aviakompaniya Utair Pao",
-        "Price":"13.81",
-        "Day":"-1.36%",
-        "Year":"-8.72%",
-        "MCap":"1.27B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Moskovskaya Gorodskaya Telefonnaya Pao",
-        "Price":"1,340.00",
-        "Day":"1.13%",
-        "Year":"-22.54%",
-        "MCap":"1.25B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"GK Salmolet Pao",
-        "Price":"1,441.50",
-        "Day":"-0.72%",
-        "Year":"-60.52%",
-        "MCap":"1.03B",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Gruppa LSR PAO",
-        "Price":"844.00",
-        "Day":"-1.61%",
-        "Year":"-14.49%",
-        "MCap":"987.67M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Sfi Pao",
-        "Price":"1,582.80",
-        "Day":"0.48%",
-        "Year":"-2.84%",
-        "MCap":"906.58M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Renaissance Insurance",
-        "Price":"134.02",
-        "Day":"-0.13%",
-        "Year":"29.29%",
-        "MCap":"876.16M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Bank Uralsib Pao",
-        "Price":"0.18",
-        "Day":"0.39%",
-        "Year":"-12.35%",
-        "MCap":"759.17M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rosseti Sibir' Pao",
-        "Price":"0.62",
-        "Day":"0.40%",
-        "Year":"-30.11%",
-        "MCap":"689.87M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Var'yeganneftegaz Pao",
-        "Price":"3,030.00",
-        "Day":"0.66%",
-        "Year":"21.30%",
-        "MCap":"641.24M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"KubanEnrg",
-        "Price":"141.80",
-        "Day":"-5.47%",
-        "Year":"-43.28%",
-        "MCap":"554.21M",
-        "Date":"Dec\/10"
-    },
-    {
-        "Company":"Mechel",
-        "Price":"116.71",
-        "Day":"-0.23%",
-        "Year":"-61.15%",
-        "MCap":"550.02M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Mostotrest Pao",
-        "Price":"158.30",
-        "Day":"0.51%",
-        "Year":"-26.54%",
-        "MCap":"521.42M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Dal'nevostochnaya",
-        "Price":"2.53",
-        "Day":"1.00%",
-        "Year":"-25.40%",
-        "MCap":"506.61M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rosseti Severnyi Kavkaz Pao",
-        "Price":"18.92",
-        "Day":"-1.05%",
-        "Year":"-31.50%",
-        "MCap":"464.51M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rosseti Ural PAO",
-        "Price":"0.44",
-        "Day":"-0.22%",
-        "Year":"6.31%",
-        "MCap":"455.4M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Ashinskiy Metzavod PAO",
-        "Price":"67.70",
-        "Day":"-0.07%",
-        "Year":"-2.95%",
-        "MCap":"395.56M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Gk Tns Energo Pao",
-        "Price":"2,625.00",
-        "Day":"0%",
-        "Year":"-25.21%",
-        "MCap":"370.53M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Chelyabinskiy",
-        "Price":"6,740.00",
-        "Day":"-0.81%",
-        "Year":"-25.77%",
-        "MCap":"250.56M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Norilsk Nickel",
-        "Price":"135.46",
-        "Day":"-1.23%",
-        "Year":"-9.86%",
-        "MCap":"242.26M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"M Video",
-        "Price":"111.90",
-        "Day":"-2.01%",
-        "Year":"-46.43%",
-        "MCap":"238.4M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Ob'yedinennye",
-        "Price":"800.00",
-        "Day":"0%",
-        "Year":"-9.09%",
-        "MCap":"221.61M",
-        "Date":"Oct\/17"
-    },
-    {
-        "Company":"Slavneft' Y",
-        "Price":"19.90",
-        "Day":"-0.25%",
-        "Year":"-31.73%",
-        "MCap":"215.12M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Tattelekom Pao",
-        "Price":"0.80",
-        "Day":"-0.93%",
-        "Year":"-25.93%",
-        "MCap":"186.61M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Amo Zil  Pao",
-        "Price":"4,190.00",
-        "Day":"0.36%",
-        "Year":"33.87%",
-        "MCap":"132.03M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Korshunovkiy Gok Pao",
-        "Price":"40,400.00",
-        "Day":"-0.49%",
-        "Year":"-30.82%",
-        "MCap":"118.6M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Akb Primor'ye Pao",
-        "Price":"34,800.00",
-        "Day":"1.16%",
-        "Year":"-3.33%",
-        "MCap":"100.44M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Obyedinennaya",
-        "Price":"0.65",
-        "Day":"-0.15%",
-        "Year":"-54.08%",
-        "MCap":"32.9M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rusolovo Pao",
-        "Price":"0.81",
-        "Day":"1.61%",
-        "Year":"-34.66%",
-        "MCap":"27.96M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Kazan Sintez",
-        "Price":"89.50",
-        "Day":"-1.32%",
-        "Year":"-17.36%",
-        "MCap":"17.62M",
-        "Date":"Mar\/11"
-    },
-    {
-        "Company":"Rkk Energiya IM. S.P. Koroleva Pao",
-        "Price":"21,550.00",
-        "Day":"-0.23%",
-        "Year":"-10.10%",
-        "MCap":"1.5M",
-        "Date":"Mar\/11"
-    }
-]
+        // --- PLACEHOLDER FOR DATA ---
+        const rawData = {"Company":{"0":"Sberbank","1":"Rosneft","2":"Lukoil","3":"Novatek","4":"Gazprom","5":"Yandex","6":"Tatneft","7":"Severstal","8":"Surgutneftegas","9":"Novolipetsk Steel","10":"PhosAgro","11":"Akron","12":"Moscow Exchange","13":"VTB Bank","14":"Magnit","15":"Korporatsiya Vsmpo Avisma","16":"Magnitogorskiy Metallurgicheskiy Kombinat PAO","17":"Alrosa","18":"Mobile Telesystems","19":"Ank Bashneft","20":"PIK","21":"Moskovskiy Kreditnyi Bank PAO","22":"Aeroflot","23":"Inter RAO","24":"Polyus","25":"Fgk Rusgidro Pao","26":"Rostelecom","27":"Transneft","28":"Sovkomflot Pao","29":"Raspadskaya","30":"Novorossiysk Commercial Sea Port","31":"Federal Grid","32":"Afk Sistema Pao","33":"United Wagon","34":"TMK","35":"Aviakompaniya Utair Pao","36":"Moskovskaya Gorodskaya Telefonnaya Pao","37":"Gruppa LSR PAO","38":"GK Salmolet Pao","39":"Sfi Pao","40":"Renaissance Insurance","41":"Bank Uralsib Pao","42":"Rosseti Sibir' Pao","43":"Var'yeganneftegaz Pao","44":"KubanEnrg","45":"Mechel","46":"Mostotrest Pao","47":"Dal'nevostochnaya","48":"Rosseti Severnyi Kavkaz Pao","49":"Rosseti Ural PAO","50":"Ashinskiy Metzavod PAO","51":"Gk Tns Energo Pao","52":"M Video","53":"Chelyabinskiy","54":"Ob'yedinennye","55":"Norilsk Nickel","56":"Slavneft' Y","57":"Tattelekom Pao","58":"Amo Zil  Pao","59":"Korshunovkiy Gok Pao","60":"Akb Primor'ye Pao","61":"Obyedinennaya","62":"Rusolovo Pao","63":"Kazan Sintez","64":"Rkk Energiya IM. S.P. Koroleva Pao"},"Price":{"0":307.86,"1":498.0,"2":7069.0,"3":1239.0,"4":147.14,"5":4361.5,"6":683.9,"7":1150.8,"8":25.54,"9":142.04,"10":6509.0,"11":16282.0,"12":198.82,"13":82.91,"14":4437.0,"15":35280.0,"16":35.59,"17":54.8,"18":224.4,"19":2428.0,"20":514.9,"21":9.36,"22":67.55,"23":3.64,"24":1876.6,"25":0.5,"26":66.1,"27":1203.0,"28":92.9,"29":271.1,"30":9.53,"31":0.07,"32":16.2,"33":49.48,"34":120.16,"35":13.29,"36":1260.0,"37":866.8,"38":1243.5,"39":1451.0,"40":125.22,"41":0.18,"42":0.59,"43":2770.0,"44":141.8,"45":114.11,"46":151.8,"47":2.35,"48":19.12,"49":0.4,"50":68.05,"51":2420.0,"52":117.55,"53":6180.0,"54":800.0,"55":122.0,"56":18.6,"57":0.78,"58":3925.0,"59":41200.0,"60":34000.0,"61":0.62,"62":0.73,"63":83.7,"64":25610.0},"Day":{"0":"-1.31%","1":"-0.88%","2":"-0.56%","3":"-3.02%","4":"-5.22%","5":"-1.90%","6":"1.18%","7":"-4.04%","8":"-2.33%","9":"-0.74%","10":"-1.83%","11":"-2.12%","12":"-1.77%","13":"-4.78%","14":"-1.84%","15":"-3.97%","16":"-3.45%","17":"-0.94%","18":"-2.86%","19":"-1.94%","20":"-2.05%","21":"0.39%","22":"-4.86%","23":"-1.14%","24":"0.48%","25":"0.76%","26":"-3.19%","27":"2.30%","28":"-2.26%","29":"-0.70%","30":"-1.85%","31":"-4.21%","32":"-4.03%","33":"-2.98%","34":"-2.32%","35":"-1.70%","36":"-1.95%","37":"0.30%","38":"-6.08%","39":"-3.50%","40":"-2.03%","41":"-1.77%","42":"0.42%","43":"-4.48%","44":"-5.47%","45":"-2.91%","46":"0.53%","47":"-4.73%","48":"0.21%","49":"-2.78%","50":"0.52%","51":"-3.20%","52":"-2.85%","53":"-6.22%","54":"0%","55":"-0.80%","56":"-3.13%","57":"-3.52%","58":"-1.88%","59":"-0.96%","60":"0%","61":"-1.43%","62":"-0.55%","63":"-1.06%","64":"-2.51%"},"Year":{"0":"3.06%","1":"-11.98%","2":"-6.38%","3":"-5.61%","4":"-6.41%","5":"9.20%","6":"-1.50%","7":"-38.72%","8":"-14.52%","9":"-35.84%","10":"-1.75%","11":"-6.22%","12":"-10.73%","13":"-27.59%","14":"-43.81%","15":"-3.24%","16":"-36.76%","17":"-30.39%","18":"-24.65%","19":"-23.24%","20":"-42.07%","21":"21.90%","22":"48.53%","23":"-10.76%","24":"-84.34%","25":"-29.53%","26":"-35.20%","27":"-26.89%","28":"-27.30%","29":"-31.62%","30":"-21.77%","31":"-36.39%","32":"-28.18%","33":"-9.38%","34":"-44.47%","35":"-15.46%","36":"-25.66%","37":"-10.64%","38":"-65.23%","39":"-22.41%","40":"24.92%","41":"-6.53%","42":"-26.19%","43":"-2.74%","44":"-43.28%","45":"-58.81%","46":"-27.23%","47":"-29.46%","48":"-30.57%","49":"-2.78%","50":"-2.31%","51":"-32.02%","52":"-40.48%","53":"-29.89%","54":"-9.09%","55":"-19.26%","56":"-32.36%","57":"-26.45%","58":"22.46%","59":"-22.56%","60":"-17.48%","61":"-53.87%","62":"-38.29%","63":"-19.75%","64":"0.04%"},"MCap":{"0":"78.57B","1":"62.94B","2":"54.8B","3":"44.82B","4":"41.65B","5":"18.92B","6":"17.07B","7":"11.56B","8":"10.9B","9":"10.17B","10":"10.14B","11":"7.07B","12":"5.37B","13":"5.36B","14":"5.18B","15":"4.95B","16":"4.75B","17":"4.72B","18":"4.49B","19":"4.18B","20":"4.09B","21":"3.72B","22":"3.19B","23":"3.18B","24":"3.01B","25":"2.64B","26":"2.55B","27":"2.23B","28":"2.18B","29":"2.13B","30":"2.08B","31":"1.93B","32":"1.9B","33":"1.71B","34":"1.48B","35":"1.25B","36":"1.19B","37":"1.02B","38":"927.08M","39":"840.69M","40":"825.76M","41":"765.91M","42":"675.92M","43":"601.78M","44":"564.76M","45":"551.34M","46":"509.01M","47":"481.64M","48":"469.87M","49":"419.33M","50":"403.69M","51":"351.12M","52":"250.96M","53":"241.03M","54":"225.83M","55":"223.77M","56":"207.56M","57":"185.76M","58":"125.36M","59":"122.05M","60":"99.37M","61":"32.9M","62":"25.25M","63":"17.62M","64":"1.5M"},"Date":{"0":"Mar\/28","1":"Mar\/28","2":"Mar\/28","3":"Mar\/28","4":"Mar\/28","5":"Mar\/28","6":"Mar\/28","7":"Mar\/28","8":"Mar\/28","9":"Mar\/28","10":"Mar\/28","11":"Mar\/28","12":"Mar\/28","13":"Mar\/28","14":"Mar\/28","15":"Mar\/28","16":"Mar\/28","17":"Mar\/28","18":"Mar\/28","19":"Mar\/28","20":"Mar\/28","21":"Mar\/28","22":"Mar\/28","23":"Mar\/28","24":"Mar\/28","25":"Mar\/28","26":"Mar\/28","27":"Mar\/28","28":"Mar\/28","29":"Mar\/28","30":"Mar\/28","31":"Mar\/28","32":"Mar\/28","33":"Mar\/28","34":"Mar\/28","35":"Mar\/28","36":"Mar\/28","37":"Mar\/28","38":"Mar\/28","39":"Mar\/28","40":"Mar\/28","41":"Mar\/28","42":"Mar\/28","43":"Mar\/28","44":"Dec\/10","45":"Mar\/28","46":"Mar\/28","47":"Mar\/28","48":"Mar\/28","49":"Mar\/28","50":"Mar\/12","51":"Mar\/28","52":"Mar\/28","53":"Mar\/28","54":"Oct\/17","55":"Mar\/28","56":"Mar\/28","57":"Mar\/28","58":"Mar\/28","59":"Mar\/28","60":"Mar\/28","61":"Mar\/28","62":"Mar\/28","63":"Mar\/28","64":"Mar\/28"},"Day_pct":{"0":-0.0131,"1":-0.0088,"2":-0.0056,"3":-0.0302,"4":-0.0522,"5":-0.019,"6":0.0118,"7":-0.0404,"8":-0.0233,"9":-0.0074,"10":-0.0183,"11":-0.0212,"12":-0.0177,"13":-0.0478,"14":-0.0184,"15":-0.0397,"16":-0.0345,"17":-0.0094,"18":-0.0286,"19":-0.0194,"20":-0.0205,"21":0.0039,"22":-0.0486,"23":-0.0114,"24":0.0048,"25":0.0076,"26":-0.0319,"27":0.023,"28":-0.0226,"29":-0.007,"30":-0.0185,"31":-0.0421,"32":-0.0403,"33":-0.0298,"34":-0.0232,"35":-0.017,"36":-0.0195,"37":0.003,"38":-0.0608,"39":-0.035,"40":-0.0203,"41":-0.0177,"42":0.0042,"43":-0.0448,"44":-0.0547,"45":-0.0291,"46":0.0053,"47":-0.0473,"48":0.0021,"49":-0.0278,"50":0.0052,"51":-0.032,"52":-0.0285,"53":-0.0622,"54":0.0,"55":-0.008,"56":-0.0313,"57":-0.0352,"58":-0.0188,"59":-0.0096,"60":0.0,"61":-0.0143,"62":-0.0055,"63":-0.0106,"64":-0.0251},"Year_pct":{"0":0.0306,"1":-0.1198,"2":-0.0638,"3":-0.0561,"4":-0.0641,"5":0.092,"6":-0.015,"7":-0.3872,"8":-0.1452,"9":-0.3584,"10":-0.0175,"11":-0.0622,"12":-0.1073,"13":-0.2759,"14":-0.4381,"15":-0.0324,"16":-0.3676,"17":-0.3039,"18":-0.2465,"19":-0.2324,"20":-0.4207,"21":0.219,"22":0.4853,"23":-0.1076,"24":-0.8434,"25":-0.2953,"26":-0.352,"27":-0.2689,"28":-0.273,"29":-0.3162,"30":-0.2177,"31":-0.3639,"32":-0.2818,"33":-0.0938,"34":-0.4447,"35":-0.1546,"36":-0.2566,"37":-0.1064,"38":-0.6523,"39":-0.2241,"40":0.2492,"41":-0.0653,"42":-0.2619,"43":-0.0274,"44":-0.4328,"45":-0.5881,"46":-0.2723,"47":-0.2946,"48":-0.3057,"49":-0.0278,"50":-0.0231,"51":-0.3202,"52":-0.4048,"53":-0.2989,"54":-0.0909,"55":-0.1926,"56":-0.3236,"57":-0.2645,"58":0.2246,"59":-0.2256,"60":-0.1748,"61":-0.5387,"62":-0.3829,"63":-0.1975,"64":0.0004},"MCap_num":{"0":78570000000.0,"1":62940000000.0,"2":54800000000.0,"3":44820000000.0,"4":41650000000.0,"5":18920000000.0,"6":17070000000.0,"7":11560000000.0,"8":10900000000.0,"9":10170000000.0,"10":10140000000.0,"11":7070000000.0,"12":5370000000.0,"13":5360000000.0,"14":5180000000.0,"15":4950000000.0,"16":4750000000.0,"17":4720000000.0,"18":4490000000.0,"19":4179999999.9999995232,"20":4090000000.0,"21":3720000000.0,"22":3190000000.0,"23":3180000000.0,"24":3010000000.0,"25":2640000000.0,"26":2550000000.0,"27":2230000000.0,"28":2180000000.0,"29":2130000000.0,"30":2080000000.0,"31":1930000000.0,"32":1900000000.0,"33":1710000000.0,"34":1480000000.0,"35":1250000000.0,"36":1190000000.0,"37":1020000000.0,"38":927080000.0,"39":840690000.0,"40":825760000.0,"41":765910000.0,"42":675920000.0,"43":601780000.0,"44":564760000.0,"45":551340000.0,"46":509010000.0,"47":481640000.0,"48":469870000.0,"49":419330000.0,"50":403690000.0,"51":351120000.0,"52":250960000.0,"53":241030000.0,"54":225830000.0,"55":223770000.0,"56":207560000.0,"57":185760000.0,"58":125360000.0,"59":122050000.0,"60":99370000.0,"61":32900000.0,"62":25250000.0,"63":17620000.0,"64":1500000.0}}
+        // Transform data into array format
+        const data = Object.keys(rawData.Company).map(key => ({
+            Company: rawData.Company[key],
+            Price: rawData.Price[key],
+            Day_pct: rawData.Day_pct[key],
+            Year_pct: rawData.Year_pct[key],
+            MCap_num: rawData.MCap_num[key]
+        }));
 
-        const width = 1200;
-        const height = 600;
-        const margin = { top: 50, right: 30, bottom: 150, left: 60 };
-        const svg = d3.select("#chart").append("svg")
-            .attr("width", width)
-            .attr("height", height);
+        // Chart setup
+        const margin = {top: 40, right: 30, bottom: 100, left: 80};
+        const width = 1000 - margin.left - margin.right;
+        const height = 500 - margin.top - margin.bottom;
 
-        // Data preprocessing
-        data.forEach(d => {
-            d.Price = +d.Price.replace(/[^0-9.-]/g, '');
-            d.Day = +d.Day.replace('%', '');
-            d.Year = +d.Year.replace('%', '');
-            d.MCap = +d.MCap.replace(/[^0-9.-]/g, '');
-        });
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
 
-        let isPlaying = false;
-        let playInterval;
-        const parameters = ["Price", "Day", "Year", "MCap"];
-        let currentParamIndex = 0;
+        const x = d3.scaleBand().padding(0.2);
+        const y = d3.scaleLinear().range([height, 0]);
 
-        // Create scales
-        const xScale = d3.scaleBand()
-            .range([margin.left, width - margin.right])
-            .padding(0.1);
-        const yScale = d3.scaleLinear()
-            .range([height - margin.bottom, margin.top]);
+        function updateChart(metric, topN, sortOrder) {
+            const sortedData = data.sort((a,b) => 
+                sortOrder === 'asc' ? a[metric] - b[metric] : b[metric] - a[metric]
+            ).slice(0, topN);
 
-        // Create axes
-        const xAxis = d3.axisBottom(xScale);
-        const yAxis = d3.axisLeft(yScale);
-
-        // Tooltip functions
-        const tooltip = d3.select("body").append("div")
-            .attr("class", "tooltip")
-            .style("opacity", 0);
-
-        function showTooltip(event, d) {
-            tooltip.transition().duration(200).style("opacity", .9);
-            tooltip.html(`
-                <strong>${d.Company}</strong><br>
-                Price: ${d.Price}<br>
-                Day: ${d.Day}%<br>
-                Year: ${d.Year}%<br>
-                Market Cap: ${d.MCap}
-            `).style("left", (event.pageX + 10) + "px")
-              .style("top", (event.pageY - 28) + "px");
-        }
-
-        function hideTooltip() {
-            tooltip.transition().duration(500).style("opacity", 0);
-        }
-
-        // Add axes containers
-        const xAxisGroup = svg.append("g").attr("class", "x-axis");
-        const yAxisGroup = svg.append("g").attr("class", "y-axis");
-        const zeroLine = svg.append("line").attr("class", "zero-line");
-
-        const dynamicLabel = d3.select(".dynamic-label");
-
-        function updateChart(parameter) {
-            // 1. COMPLETELY CLEAR PREVIOUS ELEMENTS
-            svg.selectAll("*").remove();  // Remove all existing SVG elements
+            const isPercentage = ['Day_pct', 'Year_pct'].includes(metric);
             
-            // 2. REDRAW EVERYTHING FROM SCRATCH
-            // Recreate scales
-            xScale.domain(data.map(d => d.Company))
-                .range([margin.left, width - margin.right])
-                .padding(0.1);
-            
-            yScale.domain([d3.min(data, d => d[parameter]), 
-                        d3.max(data, d => d[parameter])])
-                .range([height - margin.bottom, margin.top]);
+            // Ensure 0 is always in the domain for percentage metrics
+            const values = sortedData.map(d => d[metric]);
+            let domain;
+            if(isPercentage) {
+                const min = d3.min(values);
+                const max = d3.max(values);
+                domain = [Math.min(min, 0), Math.max(max, 0)];
+            } else {
+                domain = [0, d3.max(values)];
+            }
 
-                const sortedData = [...data].sort((a, b) => b[parameter] - a[parameter]);
+            y.domain(domain).nice();
+            x.domain(sortedData.map(d => d.Company)).range([0, width]);
 
-            // Update scales
-            xScale.domain(sortedData.map(d => d.Company))
-                .range([margin.left, width - margin.right]);
+            // Clear existing elements
+            svg.selectAll("*").remove();
 
-            yScale.domain([d3.min(sortedData, d => d[parameter]), 
-                        d3.max(sortedData, d => d[parameter])])
-                .range([height - margin.bottom, margin.top]);
-
-            // Animate axes
-            xAxisGroup.transition()
-                .duration(800)
-                .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom(xScale))
+            // Draw axes
+            svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x))
                 .selectAll("text")
                 .style("text-anchor", "end")
                 .attr("dx", "-.8em")
                 .attr("dy", ".15em")
                 .attr("transform", "rotate(-45)");
 
-            yAxisGroup.transition()
-                .duration(800)
-                .attr("transform", `translate(${margin.left},0)`)
-                .call(d3.axisLeft(yScale));
+            const yAxis = svg.append("g")
+                .call(d3.axisLeft(y).tickFormat(d => {
+                    if(isPercentage) return d3.format("+.0%")(d);
+                    if(metric === 'MCap_num') return d3.format("$.2s")(d);
+                    return d3.format("$,.0f")(d);
+                }));
 
-            // Animate zero line
-            zeroLine.transition()
-                .duration(800)
-                .attr("x1", margin.left)
-                .attr("x2", width - margin.right)
-                .attr("y1", yScale(0))
-                .attr("y2", yScale(0));
+            // Draw zero line for percentages
+            if(isPercentage) {
+                svg.append("line")
+                    .attr("class", "zero-line")
+                    .attr("x1", 0)
+                    .attr("x2", width)
+                    .attr("y1", y(0))
+                    .attr("y2", y(0));
+            }
 
-            // Bars animation
-            const bars = svg.selectAll(".bar")
-                .data(sortedData, d => d.Company);
-
-            // Exit old bars
-            bars.exit()
-                .transition()
-                .duration(800)
-                .attr("x", width)
-                .remove();
-
-            // Update existing bars
-            bars.transition()
-                .duration(800)
-                .attr("x", d => xScale(d.Company))
-                .attr("y", d => yScale(Math.max(0, d[parameter])))
-                .attr("width", xScale.bandwidth())
-                .attr("height", d => Math.abs(yScale(0) - yScale(d[parameter])))
-                .attr("class", d => d[parameter] >= 0 ? "positive" : "negative");
-
-            // Enter new bars
-            const cursorLabel = svg.append("text")
-                .attr("class", "cursor-label")
-                .style("opacity", 0);
-            bars.enter()
-                .append("rect")
-                .attr("class", d => d[parameter] >= 0 ? "positive" : "negative")
-                .attr("x", width)
-                .attr("y", d => yScale(Math.max(0, d[parameter])))
-                .attr("width", xScale.bandwidth())
-                .attr("height", 0)
-                .on("mouseover", (event, d) => {
-                    d3.select(this)
-                        .transition()
-                        .duration(200)
-                        .style("filter", "brightness(1.5) drop-shadow(0 0 8px rgba(255,255,255,0.5))")
-                        .style("transform", "scaleY(1.05) translateY(-2px)")
-                        .style("stroke", "white")
-                        .style("stroke-width", "2px");
-                    dynamicLabel
-                        .style("opacity", 1)
-                        .html(`
-                            <div class="label-title">${d.Company}</div>
-                            <div class="label-value">
-                                <span>${parameter}:</span>
-                                <span>${d[parameter]}${['Day','Year'].includes(parameter) ? '%' : ''}</span>
-                            </div>
-                        `);
-                })
-                .on("mousemove", (event) => {
-                    const labelWidth = dynamicLabel.node().offsetWidth;
-                    const labelHeight = dynamicLabel.node().offsetHeight;
-                    const windowWidth = window.innerWidth;
-                    const windowHeight = window.innerHeight;
-                    
-                    // Calculate position with edge detection
-                    let xPos = event.pageX - (labelWidth / 2);
-                    let yPos = event.pageY - labelHeight - 20;
-                    
-                    // Right edge detection
-                    if (xPos + labelWidth > windowWidth - 20) {
-                        xPos = windowWidth - labelWidth - 20;
-                    }
-                    
-                    // Left edge detection
-                    if (xPos < 20) {
-                        xPos = 20;
-                    }
-                    
-                    // Bottom edge detection
-                    if (yPos + labelHeight > windowHeight - 20) {
-                        yPos = event.pageY + 20;
-                    }
-
-                    dynamicLabel
-                        .style("transform", `translate(${xPos}px, ${yPos}px)`)
-                        .style("opacity", 1);
-                })
-                .on("mouseout", () => {
-                    d3.select(this)
-                        .transition()
-                        .duration(200)
-                        .style("filter", "none")
-                        .style("transform", "none")
-                        .style("stroke", "none");
-                    dynamicLabel.style("opacity", 0);
-                })
-                .transition()
-                .duration(800)
-                .attr("x", d => xScale(d.Company))
-                .attr("height", d => Math.abs(yScale(0) - yScale(d[parameter])));
-
-            // Labels animation
-            const labels = svg.selectAll(".value-label")
-                .data(sortedData, d => d.Company);
-
-            labels.exit()
-                .transition()
-                .duration(800)
-                .attr("x", width)
-                .remove();
-
-            labels.transition()
-                .duration(800)
-                .attr("x", d => xScale(d.Company) + xScale.bandwidth()/2)
-                .attr("y", d => yScale(d[parameter]) + (d[parameter] >= 0 ? -5 : 15))
-                .text(d => formatLabel(d[parameter], parameter));
-
-            labels.enter()
-                .append("text")
-                .attr("class", "value-label")
-                .attr("x", width)
-                .attr("y", d => yScale(d[parameter]) + (d[parameter] >= 0 ? -5 : 15))
-                .text(d => formatLabel(d[parameter], parameter))
-                .attr("fill", d => d[parameter] >= 0 ? "#1f77b4" : "#d62728")
-                .transition()
-                .duration(800)
-                .attr("x", d => xScale(d.Company) + xScale.bandwidth()/2);
+            // Draw bars with correct heights
+            svg.selectAll(".bar")
+                .data(sortedData)
+                .join("rect")
+                .attr("class", d => isPercentage && d[metric] < 0 ? "bar negative-bar" : "bar")
+                .attr("x", d => x(d.Company))
+                .attr("width", x.bandwidth())
+                .attr("y", d => isPercentage ? 
+                    (d[metric] < 0 ? y(0) : y(d[metric])) : 
+                    y(d[metric]))
+                .attr("height", d => isPercentage ? 
+                    Math.abs(y(d[metric]) - y(0)) : 
+                    height - y(d[metric]))
+                .on("mouseover", showTooltip)
+                .on("mousemove", moveTooltip)
+                .on("mouseout", hideTooltip);
         }
 
-        function formatLabel(value, param) {
-            if (['Day', 'Year'].includes(param)) return `${value}%`;
-            if (param === 'MCap') return `${value}B`;
-            return value;
+        function showTooltip(event, d) {
+            const metric = d3.select("#metricSelector").property("value");
+            const formatter = {
+                'MCap_num': v => `$${d3.format(",.2f")(v)}`,
+                'Price': v => `$${d3.format(",.2f")(v)}`,
+                'Day_pct': v => `${d3.format("+.2%")(v)}`,
+                'Year_pct': v => `${d3.format("+.2%")(v)}`
+            }[metric];
+
+            d3.select("#tooltip")
+                .html(`
+                    <div style="color: var(--primary-color); font-weight: 600;">
+                        ${d.Company}
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        ${formatter(d[metric])}
+                    </div>
+                    <div style="color: ${d.Day_pct < 0 ? 'var(--negative-color)' : 'var(--positive-color)'}; margin-top: 0.25rem;">
+                        Daily: ${d3.format("+.2%")(d.Day_pct)}
+                    </div>
+                    <div style="color: ${d.Year_pct < 0 ? 'var(--negative-color)' : 'var(--positive-color)'}">
+                        Yearly: ${d3.format("+.2%")(d.Year_pct)}
+                    </div>
+                `)
+                .style("opacity", 1)
+                .style("left", `${event.pageX + 15}px`)
+                .style("top", `${event.pageY - 15}px`);
         }
 
-        // Initialize chart
-        function initChart() {
-            svg.append("g")
-                .attr("class", "x-axis")
-                .attr("transform", `translate(0,${height - margin.bottom})`);
-            
-            svg.append("g")
-                .attr("class", "y-axis")
-                .attr("transform", `translate(${margin.left},0)`);
-            
-            svg.append("line")
-                .attr("class", "zero-line")
-                .attr("x1", margin.left)
-                .attr("x2", width - margin.right)
-                .attr("y1", yScale(0))
-                .attr("y2", yScale(0))
-                .attr("stroke", "#666")
-                .attr("stroke-dasharray", "4,2");
+        function moveTooltip(event) {
+            d3.select("#tooltip")
+                .style("left", `${event.pageX + 15}px`)
+                .style("top", `${event.pageY - 15}px`);
+        }
 
-            updateChart("Price", 0);
+        function hideTooltip() {
+            d3.select("#tooltip").style("opacity", 0);
         }
 
         // Event listeners
-        document.getElementById("parameterSelector").addEventListener("change", function() {
-            if(isPlaying) togglePlay();
-            updateChart(this.value);
+        d3.select("#metricSelector").on("change", function() {
+            updateChart(this.value, 
+                parseInt(d3.select("#topSelector").property("value")),
+                d3.select("#sortDesc").classed("active") ? 'desc' : 'asc'
+            );
         });
 
-        // Start visualization
-        initChart();
+        d3.select("#topSelector").on("change", function() {
+            updateChart(
+                d3.select("#metricSelector").property("value"),
+                parseInt(this.value),
+                d3.select("#sortDesc").classed("active") ? 'desc' : 'asc'
+            );
+        });
+
+        d3.select("#sortAsc").on("click", () => {
+            d3.select("#sortAsc").classed("active", true);
+            d3.select("#sortDesc").classed("active", false);
+            updateChart(
+                d3.select("#metricSelector").property("value"),
+                parseInt(d3.select("#topSelector").property("value")),
+                'asc'
+            );
+        });
+
+        d3.select("#sortDesc").on("click", () => {
+            d3.select("#sortDesc").classed("active", true);
+            d3.select("#sortAsc").classed("active", false);
+            updateChart(
+                d3.select("#metricSelector").property("value"),
+                parseInt(d3.select("#topSelector").property("value")),
+                'desc'
+            );
+        });
+
+        // Responsive handling
+        window.addEventListener("resize", () => {
+            const containerWidth = document.querySelector(".chart-container").offsetWidth;
+            const newWidth = Math.min(1000, containerWidth - margin.left - margin.right);
+            svg.attr("width", newWidth + margin.left + margin.right);
+            x.range([0, newWidth]);
+            updateChart(
+                d3.select("#metricSelector").property("value"),
+                parseInt(d3.select("#topSelector").property("value")),
+                d3.select("#sortDesc").classed("active") ? 'desc' : 'asc'
+            );
+        });
+        function init() {
+            updateChart('MCap_num', 10, 'desc');
+        }
+        init()
     </script>
 </body>
 </html>
