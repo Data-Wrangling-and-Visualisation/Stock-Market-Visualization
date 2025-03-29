@@ -3,6 +3,7 @@ from typing import Any
 import pandas as pd
 from pymongo import MongoClient
 from bson import json_util
+import sqlite3
 import os
 
 
@@ -98,3 +99,42 @@ class StorageMongo(Storage):
         data = pd.DataFrame(list(collection.find()))
         data = data.drop('_id', axis=1)
         return data
+    
+class StorageSQLite(Storage):
+    """
+    SQLite storage class
+    """
+    def connect(self, credentials: Any) -> sqlite3.Connection:
+        return sqlite3.connect('moex.db')
+    
+    def close(self, conn: Any):
+        conn.close()
+    
+    def write(self, conn: sqlite3.Connection, data: pd.DataFrame, location: str) -> None:
+        data['date'] = data['date'].dt.strftime('%Y-%m-%d')
+        
+        # If table exists, drop it
+        cursor = conn.cursor()
+        cursor.execute(f"DROP TABLE IF EXISTS {location}")
+        conn.commit()
+        
+        # Write new data
+        data.to_sql(location, conn, index=False, if_exists='replace')
+        conn.commit()
+
+    def read(self, conn: sqlite3.Connection, location: str) -> pd.DataFrame:
+        cursor = conn.cursor()
+        
+        # Check if table exists
+        cursor.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?", 
+            (location,)
+        )
+        if not cursor.fetchone():
+            raise ValueError(f'No table with name {location} was found!')
+        
+        # Read data and convert date column back to datetime
+        df = pd.read_sql(f"SELECT * FROM {location}", conn)
+        df['date'] = pd.to_datetime(df['date'])
+        return df
+    
