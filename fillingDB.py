@@ -1,7 +1,7 @@
 from storage import StorageSQLite
 from scraper import Scraper, URL
 
-store = StorageSQLite().connect()
+store = StorageSQLite()
 scrap = Scraper(storage=store)
 
 tickers = [
@@ -15,4 +15,4 @@ scrap.load_content(urls)
 scrap.scrape_pages()
 
 x = scrap.load_page_data('IMOEX')
-x
+print(x)

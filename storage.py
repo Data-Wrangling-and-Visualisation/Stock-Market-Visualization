@@ -115,7 +115,8 @@ class StorageSQLite(Storage):
         
         # If table exists, drop it
         cursor = conn.cursor()
-        cursor.execute(f"DROP TABLE IF EXISTS {location}")
+        print(location, type(location))
+        cursor.execute(f"DROP TABLE IF EXISTS '{location}';")
         conn.commit()
         
         # Write new data
@@ -124,17 +125,16 @@ class StorageSQLite(Storage):
 
     def read(self, conn: sqlite3.Connection, location: str) -> pd.DataFrame:
         cursor = conn.cursor()
-        
+
         # Check if table exists
         cursor.execute(
-            "SELECT name FROM sqlite_master WHERE type='table' AND name=?", 
-            (location,)
+            "SELECT name, type FROM sqlite_master WHERE name LIKE '" + location + "%';",
         )
         if not cursor.fetchone():
             raise ValueError(f'No table with name {location} was found!')
         
         # Read data and convert date column back to datetime
-        df = pd.read_sql(f"SELECT * FROM {location}", conn)
+        df = pd.read_sql(f"SELECT * FROM 'IMOEX#from=2004-12-01&till=2025-03-27&sort=TRADEDATE&order=desc'", conn)
         df['date'] = pd.to_datetime(df['date'])
         return df
     
