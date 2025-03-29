@@ -4,11 +4,13 @@
     <title>Russia Stock Market Analysis - Daily vs Yearly Returns</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        .container { 
-            margin: 20px auto;
-            max-width: 1600px;
-            font-family: Arial, sans-serif;
-        }
+        .container {
+        max-width: 100%;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
         .axis-label {
             font-size: 16px;
             fill: #333;
@@ -50,15 +52,6 @@
         background-color: #f5f5f5;
     }
 
-    /* Main container */
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
 
     /* Description section */
     .description {
@@ -168,6 +161,16 @@
             left: 20px;
             z-index: 1000;
         }
+        #chart {
+        width: 100%;
+        overflow: visible;
+    }
+    svg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
     </style>
 </head>
 <body>
