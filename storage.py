@@ -89,7 +89,7 @@ class StorageMongo(Storage):
             collection.drop()
         collection = db[location]
         collection.insert_many(json_util.loads(data.to_json(orient='records')))
-    
+
     def read(self, conn: Any, location: str) -> pd.DataFrame:
         db = conn['moex']
         if location not in db.list_collection_names():

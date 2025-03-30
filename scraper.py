@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright, Playwright
+from playwright.sync_api import sync_playwright, Playwright, Page, Locator
 from bs4 import BeautifulSoup, Tag
 from typing import List, TypedDict, Optional, Any
 from storage import Storage, StorageJSON
@@ -6,6 +6,31 @@ import time
 import pandas as pd
 import os
 import datetime
+
+
+class Date:
+    """
+    Class for specifying the type for a date.
+
+    Attributes:
+        day (str): day number (1..31)
+        month (str): month number (1..12)
+        year (str): year number (positive integer)
+    """
+
+    day: str
+    month: str
+    year: str
+
+    def __init__(self, date: str):
+        try:
+            datetime.date.fromisoformat(date)
+        except ValueError:
+            raise ValueError('Incorrect data format, should be YYYY-MM-DD')
+        self.year, self.month, self.day = date.split('-')
+
+    def __str__(self) -> str:
+        return self.year + '-' + self.month + '-' + self.day
 
 
 class URL:
@@ -16,8 +41,8 @@ class URL:
         BASE_URL (str): domain name of the server and path to the catalogue
         url (str): the url itself
         index_name (str): name of the index
-        date_from (str): start date of the records
-        date_till (str): end date of the records
+        date_from (Date): start date of the records
+        date_till (Date): end date of the records
         sort (str): sorting label
         order (str): sorting order ('asc' or 'desc')
     """
@@ -25,8 +50,8 @@ class URL:
     BASE_URL: str = 'https://www.moex.com/ru/index/'
     url: str
     index_name: str
-    date_from: str
-    date_till: str
+    date_from: Date
+    date_till: Date
     sort: str
     order: str
 
@@ -37,13 +62,8 @@ class URL:
                  sort: str = 'TRADEDATE',
                  order: str = 'desc'):
         self.index_name = index_name
-        try:
-            datetime.date.fromisoformat(date_from)
-            datetime.date.fromisoformat(date_till)
-        except ValueError:
-            raise ValueError('Incorrect data format, should be YYYY-MM-DD')
-        self.date_from = date_from
-        self.date_till = date_till
+        self.date_from = Date(date_from)
+        self.date_till = Date(date_till)
         self.sort = sort
         self.order = order
         self.url = self.BASE_URL + index_name + '/archive?' + 'from=' + date_from + \
@@ -118,58 +138,95 @@ class Scraper:
         self.storage = storage
         self.credentials = credentials
 
+    def _select_date(self, page: Page, btn: Locator, date: Date):
+        """
+        Selects the date in the window created by clicking the `btn` button.
+
+        Arguments:
+            page (Page): Playwright page
+            btn (Locator): button locator that needs
+                to be clicked to obtain the calendar
+            date (Date): date to be selected
+        """
+
+        btn.click()
+        calendar = page.locator('[id="ui-datepicker-div"]')
+        calendar.locator('[class="ui-datepicker-year"]').select_option(date.year)
+        calendar.locator('[class="ui-datepicker-month"]').select_option(str(int(date.month)-1))
+        calendar.locator('//table/tbody').get_by_text(date.day).click()
+
     def _lookup(self, playwright: Playwright, url: URL) -> str:
         """
-        Loads a webpage, signs in, extracts content, and saves to disk.
+        Loads a dataset webpage, signs in, navigates and extracts raw content.
 
-        Attributes:
+        Arguments:
             playwright (Playwright): object to load a webpage
-            url (URL): URL object of a webpage
+            url (URL): URL object of a datset webpage
 
         Returns:
-            str: html content of a webpage
+            List[str]: list of html content of webpages
         """
 
+        # Setup client
         webkit = playwright.webkit
         browser = webkit.launch()
         context = browser.new_context()
         page = context.new_page()
         page.set_extra_http_headers({'User-Agent': 'Mozilla/5.0'})
-        page.goto(url)
+        page.goto(url.url)
 
+        # Pass the welcome page
         btn_keyword = 'Согласен'
         page.get_by_text(btn_keyword, exact=True).click()
+
+        # Select intervals
+        from_btn, till_btn = page.locator('[type="text"]').all()
+        self._select_date(page, from_btn, url.date_from)
+        self._select_date(page, till_btn, url.date_till)
+
+        page.locator('button[aria-label="Показать"]').click()
+        page.locator('button[title="Первая страница"]').click()
         time.sleep(1)
-        html = page.content()
+
+        # Navigate through pages
+        htmls = []
+
+        while True:
+            htmls.append(page.content())
+            page.wait_for_selector('button[title="Первая страница"]')
+            next_btn = page.locator('button[title="Следующая страница"]')
+            if not next_btn.is_visible():
+                break
+            next_btn.click()
 
         browser.close()
 
-        return html
+        return htmls
 
-    def _convert_to_df(self, soup_table: Tag) -> pd.DataFrame:
+    def _convert_to_df(self, soup_tables: List[Tag]) -> pd.DataFrame:
         """
-        Converts a table into a pandas dataframe with string values
+        Converts tables into a pandas dataframe with string values
 
         Arguments:
-            soup_table (Tag): table in the html format
+            soup_tables (List[Tag]): list of tables in the html format
 
         Returns:
             pd.Dataframe: dataframe with retrieved information
         """
         # columns = [header.text.strip() for header in soup_table.find('thead').find_all('th')]
-        columns = self.columns
-        assert len(columns) == 7
-
         data: List[IndexRecord] = []
+        for soup_table in soup_tables:
+            columns = self.columns
+            assert len(columns) == 7
 
-        assert soup_table.find('tbody') is not None
-        tbody = soup_table.find('tbody')
-        assert tbody.find('tr') is not None
+            assert soup_table.find('tbody') is not None
+            tbody = soup_table.find('tbody')
+            assert tbody.find('tr') is not None
 
-        for row in tbody.find_all('tr'):
-            elements = row.find_all('td')
-            assert len(elements) == 7
-            data.append([element.text.strip() for element in elements])
+            for row in tbody.find_all('tr'):
+                elements = row.find_all('td')
+                assert len(elements) == 7
+                data.append([element.text.strip() for element in elements])
 
         return pd.DataFrame(data, columns=columns)
 
@@ -177,7 +234,7 @@ class Scraper:
         """
         Data type conversion of the dataframe.
 
-        Attributes:
+        Arguments:
             df (pd.DataFrame): dataframe object with the specific columns
 
         Returns:
@@ -194,69 +251,70 @@ class Scraper:
 
     def _scrape_page(self, filename: str) -> Tag:
         """
-        Loads a page content and scrapes table information from it.
+        Loads raw dataset content and scrapes tabular information from it.
 
-        Attributes:
-            filename (str): name of the saved page.
-        
+        Arguments:
+            filename (str): name of the saved dataset raw content.
+
         Returns:
-            Tag: table tag on the page.
+            List[Tag]: list of table tags in the content.
         """
 
         with open(filename, 'r', encoding='UTF-8') as f:
             html = f.read()
         soup = BeautifulSoup(html, 'html.parser')
-        table = soup.find('div', {'class': 'ui-table__container'}).find('table')
-        assert table is not None
-        return table
+        tables = [elem.find('table') for elem in soup.find_all('div', {'class': 'ui-table__container'})]
+        assert len(tables) != 0
+        return tables
 
     def load_content(self, urls: List[URL]) -> None:
         """
-        Loads contents from the specified webpages into files on disk.
+        Loads content from the specified dataset urls into files on disk.
 
-        Attributes:
-            urls (List[URL]): list of URL objects representing webpages
+        Arguments:
+            urls (List[URL]): list of URL objects representing dataset website
         """
 
         with sync_playwright() as playwright:
             for url in urls:
-                html = self._lookup(playwright, url.url)
-                filename = (f'{url.index_name}#from={url.date_from}&till={url.date_till}'
+                htmls = self._lookup(playwright, url)
+                filename = (f'{url.index_name}#from={url.date_from.__str__()}&till={url.date_till.__str__()}'
                             f'&sort={url.sort}&order={url.order}')
-                with open(self.pages_path + filename, 'w', encoding='UTF-8') as f:
-                    f.write(html)
+                for html in htmls:
+                    with open(self.pages_path + filename, 'a', encoding='UTF-8') as f:
+                        f.write(html)
 
-    def scrape_pages(self, selected_pages: List[str] = None) -> None:
+    def scrape_pages(self, selected_raw_datasets: List[str] = None) -> None:
         """
-        Loads selected pages content from disk, scrapes information to form dataframes,
+        Loads selected dataset raw content files from disk, scrapes information to form dataframes,
         and saves dataframes in the storage.
 
-        Attributes:
-            selected_pages (List[str]): list of names of saved pages to parse
+        Arguments:
+            selected_raw_datasets (List[str]): list of names of saved contents to parse
         """
 
         for filename in os.listdir(self.pages_path):
-            page_name = filename.split('.')[0]
-            if selected_pages is None or page_name in selected_pages:
-                page_table = self._scrape_page(self.pages_path + filename)
-                page_df = self._convert_to_df(page_table)
+            content_name = filename.split('.')[0]
+            if selected_raw_datasets is None or content_name in selected_raw_datasets:
+                content_tables = self._scrape_page(self.pages_path + filename)
+                page_df = self._convert_to_df(content_tables)
                 formated_df = self._parse_df(page_df)
 
                 conn = self.storage.connect(self.credentials)
-                self.storage.write(conn, formated_df, page_name)
+                self.storage.write(conn, formated_df, content_name)
                 self.storage.close(conn)
 
-    def load_page_data(self, page_name: str) -> pd.DataFrame:
+    def load_page_data(self, dataset_name: str) -> pd.DataFrame:
         """
-        Loads scraped page data from the storage.
+        Loads scraped dataset formatted content from the storage.
 
-        Attributes:
-            page_name (str): name of the page.
-        
+        Arguments:
+            dataset_name (str): name of the dataset.
+
         Returns:
-            pd.DataFrame: dataframe with the information scraped from the page.
+            pd.DataFrame: dataframe with the formatted dataset contents.
         """
         conn = self.storage.connect(self.credentials)
-        df = self.storage.read(conn, page_name)
+        df = self.storage.read(conn, dataset_name)
         self.storage.close(conn)
         return df

@@ -41,6 +41,18 @@ Clone the repository:
 git clone https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization
 ```
 
+Create and setup a local python environment (example on Windows):
+```bash
+python -m venv venv
+./venv/Scripts/activate
+```
+
+Install the necessary requirements
+```bash
+pip install -r req.txt
+playwright install
+```
+
 <a name="scraper"> <h2> Scraper client example </h2> </a>
 Below you can see the code for the client to start scraping process:
 ```Python

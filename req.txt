@@ -2,3 +2,5 @@ bs4
 pandas
 playwright
 pymongo
+motor
+aiofiles
