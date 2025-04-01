@@ -54,9 +54,7 @@ class StorageJSON(Storage):
         return None
 
     def write(self, conn: Any, data: pd.DataFrame, location: str) -> None:
-        data['date'] = data['date'].dt.strftime('%Y-%m-%d')
-        with open(conn + location + '.json', 'w', encoding='UTF-8') as f:
-            f.write(data.to_json(orient='records'))
+        data.to_json(conn + location + '.json', orient='records', force_ascii=False, indent=4)
 
     def read(self, conn: Any, location: str) -> pd.DataFrame:
         with open(conn + location + '.json', 'r', encoding='UTF-8') as f:
@@ -82,13 +80,12 @@ class StorageMongo(Storage):
         conn.close()
 
     def write(self, conn: Any, data: pd.DataFrame, location: str) -> None:
-        data['date'] = data['date'].dt.strftime('%Y-%m-%d')
         db = conn["moex"]
         if location in db.list_collection_names():
             collection = db[location]
             collection.drop()
         collection = db[location]
-        collection.insert_many(json_util.loads(data.to_json(orient='records')))
+        collection.insert_many(json_util.loads(data.to_json(orient='records', force_ascii=False)))
 
     def read(self, conn: Any, location: str) -> pd.DataFrame:
         db = conn['moex']

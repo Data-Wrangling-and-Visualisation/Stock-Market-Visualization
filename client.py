@@ -1,17 +1,15 @@
-from scraper import Scraper, URL
+from trade_scraper import TradeScraper, TradeURL
 
 
 def main():
-    scraper = Scraper()
+    scraper = TradeScraper()
     scraper.load_content([
-        URL.construct_from_url(
-            ('https://www.moex.com/ru/index/IMOEX/'
-             'archive?from=2020-01-15&till=2021-05-29&sort=TRADEDATE&order=desc')
-        )
+        TradeURL('IRDIVTR', '2024-01-01', '2024-01-31'),
+        TradeURL('EQMX', '2024-01-01', '2025-04-01')
     ])
-    scraper.scrape_pages(
-        selected_raw_datasets='IMOEX#from=2020-01-15&till=2021-05-29&sort=TRADEDATE&order=desc'
-    )
+    scraper.scrape_pages()
+    df = scraper.load_dataset('TRADE_INDEX=IRDIVTR&from=2024-01-01&till=2024-01-31')
+    print(df.info())
 
 
 if __name__ == "__main__":
