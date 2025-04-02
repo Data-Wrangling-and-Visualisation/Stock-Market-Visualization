@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.venv
+venv
+
+pages
+error.png
+output.json
