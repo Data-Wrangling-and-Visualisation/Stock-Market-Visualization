@@ -36,26 +36,27 @@ class IndexURL(URL):
         self.date_till = Date(date_till)
         self.sort = sort
         self.order = order
+        self.BASE_URL = 'https://www.moex.com/ru/index/'
         self.url = self.BASE_URL + index_name + '/archive?' + 'from=' + date_from + \
-            '&till=' + date_till + '&sort=' + sort + '&order=' + order
+                   '&till=' + date_till + '&sort=' + sort + '&order=' + order
 
     def construct_from_url(url: str):
-        self_index_name = url[url.find("index/")+6:url.find("/archive")]
-        from_info = url[url.find('from=')+5:]
+        self_index_name = url[url.find("index/") + 6:url.find("/archive")]
+        from_info = url[url.find('from=') + 5:]
         self_date_from = from_info[: from_info.find('&')]
-        till_info = url[url.find('till=')+5:]
+        till_info = url[url.find('till=') + 5:]
         self_date_till = till_info if till_info.find('&') == -1 else till_info[: till_info.find('&')]
         if url.find('sort=') != -1:
-            sort_info = url[url.find('sort=')+5:]
+            sort_info = url[url.find('sort=') + 5:]
             self_sort = sort_info if sort_info.find('&') == -1 else sort_info[: sort_info.find('&')]
         else:
             self_sort = 'TRADEDATE'
         if url.find('order=') != -1:
-            order_info = url[url.find('order=')+6:]
+            order_info = url[url.find('order=') + 6:]
             self_order = order_info
         else:
             self_order = 'desc'
-        return URL(self_index_name, self_date_from, self_date_till, self_sort, self_order)
+        return IndexURL(self_index_name, self_date_from, self_date_till, self_sort, self_order)
 
 
 class IndexRecord(TypedDict):
@@ -111,7 +112,7 @@ class IndexScraper(TradeScraper):
         btn.click()
         calendar = page.locator('[id="ui-datepicker-div"]')
         calendar.locator('[class="ui-datepicker-year"]').select_option(date.year)
-        calendar.locator('[class="ui-datepicker-month"]').select_option(str(int(date.month)-1))
+        calendar.locator('[class="ui-datepicker-month"]').select_option(str(int(date.month) - 1))
         calendar.locator('//table/tbody').get_by_text(date.day).click()
 
     def _lookup(self, playwright: Playwright, url: URL) -> str:
@@ -172,10 +173,17 @@ class IndexScraper(TradeScraper):
         Returns:
             pd.Dataframe: dataframe with retrieved information
         """
-        # columns = [header.text.strip() for header in soup_table.find('thead').find_all('th')]
+        columns = [
+            'date',
+            'price_at_opening',
+            'max_price',
+            'min_price',
+            'price_at_closure',
+            'volume_of_trade',
+            'capitalization'
+        ]
         data: List[IndexRecord] = []
         for soup_table in soup_tables:
-            columns = self.columns
             assert len(columns) == 7
 
             assert soup_table.find('tbody') is not None

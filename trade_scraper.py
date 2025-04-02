@@ -89,17 +89,17 @@ class TradeURL(URL):
         self.date_till = Date(date_till)
         self.mode_type = mode_type
         self.url = self.BASE_URL + '&secid=' + index_name + '&mode_type=' + mode_type + '&date_from=' + date_from + \
-            '&date_till=' + date_till
+                   '&date_till=' + date_till
 
     @staticmethod
     def construct_from_url(url: str):
-        self_index_name = url[url.find("&secid=")+7:url.find("&boardgroupid")]
-        self_mode_type = url[url.find("&mode_type=")+11:url.find("&date_from")]
-        from_info = url[url.find('&date_from=')+11:]
+        self_index_name = url[url.find("&secid=") + 7:url.find("&boardgroupid")]
+        self_mode_type = url[url.find("&mode_type=") + 11:url.find("&date_from")]
+        from_info = url[url.find('&date_from=') + 11:]
         self_date_from = from_info[: from_info.find('&')]
-        till_info = url[url.find('&date_till=')+11:]
+        till_info = url[url.find('&date_till=') + 11:]
         self_date_till = till_info if till_info.find('&') == -1 else till_info[: till_info.find('&')]
-        return URL(self_index_name, self_date_from, self_date_till, self_mode_type)
+        return TradeURL(self_index_name, self_date_from, self_date_till, self_mode_type)
 
 
 class TradeScraper:
@@ -174,7 +174,7 @@ class TradeScraper:
         # Save the first date
         page.wait_for_selector('//div[@class="ui-table__container"]/table/tbody')
         date_element = page.locator(('//div[@class="ui-table__container"]/table/tbody'
-                                    '/tr[position()=1]/td[position()=1]'))
+                                     '/tr[position()=1]/td[position()=1]'))
         date1 = Date(date_element.inner_html())
         order_btn_text = 'Дата торгов'
         order_btn = page.get_by_title(order_btn_text)
@@ -183,7 +183,7 @@ class TradeScraper:
         # Save the second date
         page.wait_for_selector('//div[@class="ui-table__container"]/table/tbody')
         date_element = page.locator(('//div[@class="ui-table__container"]/table/tbody'
-                                    '/tr[position()=1]/td[position()=1]'))
+                                     '/tr[position()=1]/td[position()=1]'))
         date2 = Date(date_element.inner_html())
 
         # Set descending order of dates
@@ -228,7 +228,7 @@ class TradeScraper:
         Returns:
             pd.Dataframe: dataframe with retrieved information
         """
-        columns = [header.text.strip() for header in soup_tables[0].find('thead').find_all('th')]
+        columns = ['date', '2', '3', '4', '5', '6', '7', '8', '9']
         data: List[Dict] = []
         for soup_table in soup_tables:
 
