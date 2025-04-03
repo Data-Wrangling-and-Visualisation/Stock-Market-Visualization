@@ -34,7 +34,7 @@ class Storage(ABC):
         pass
 
     @abstractmethod
-    def read(self, conn: Any, location: str) -> pd.DataFrame:
+    def read(self, conn: Any, name: str) -> pd.DataFrame:
         """
         Imports data from the storage located in the specified place.
         """
@@ -56,11 +56,12 @@ class StorageJSON(Storage):
 
     def write(self, conn: Any, data: pd.DataFrame, location: str) -> None:
         data['date'] = data['date'].dt.strftime('%Y-%m-%d')
-        with open(conn + location + '.json', 'w', encoding='UTF-8') as f:
+        name = location[location.find('=')+1:location.find('&')]
+        with open(conn + name + '.json', 'w', encoding='UTF-8') as f:
             f.write(data.to_json(orient='records'))
 
-    def read(self, conn: Any, location: str) -> pd.DataFrame:
-        with open(conn + location + '.json', 'r', encoding='UTF-8') as f:
+    def read(self, conn: Any, name: str) -> pd.DataFrame:
+        with open(conn + name + '.json', 'r', encoding='UTF-8') as f:
             json_str = f.read()
         data = pd.DataFrame(json_util.loads(json_str))
         return data
@@ -85,17 +86,18 @@ class StorageMongo(Storage):
     def write(self, conn: Any, data: pd.DataFrame, location: str) -> None:
         data['date'] = data['date'].dt.strftime('%Y-%m-%d')
         db = conn["moex"]
-        if location in db.list_collection_names():
-            collection = db[location]
+        name = location[location.find('=')+1:location.find('&')]
+        if name in db.list_collection_names():
+            collection = db[name]
             collection.drop()
-        collection = db[location]
+        collection = db[name]
         collection.insert_many(json_util.loads(data.to_json(orient='records')))
     
-    def read(self, conn: Any, location: str) -> pd.DataFrame:
+    def read(self, conn: Any, name: str) -> pd.DataFrame:
         db = conn['moex']
-        if location not in db.list_collection_names():
-            raise ValueError(f'No collection with name {location} was found!')
-        collection = db[location]
+        if name not in db.list_collection_names():
+            raise ValueError(f'No collection with name {name} was found!')
+        collection = db[name]
         data = pd.DataFrame(list(collection.find()))
         data = data.drop('_id', axis=1)
         return data
@@ -111,31 +113,33 @@ class StorageSQLite(Storage):
         conn.close()
     
     def write(self, conn: sqlite3.Connection, data: pd.DataFrame, location: str) -> None:
-        print(data.columns)
-        data['date'] = data['date'].dt.strftime('%Y-%m-%d')
-        
+        try:
+            data['date'] = data['date'].dt.strftime('%Y-%m-%d')
+        except AttributeError:
+            pass
         # If table exists, drop it
         cursor = conn.cursor()
-        print(location, type(location))
-        cursor.execute(f"DROP TABLE IF EXISTS '{location}';")
+        name = location[location.find('=')+1:location.find('&')]
+        cursor.execute(f"DROP TABLE IF EXISTS '{name}';")
         conn.commit()
         
         # Write new data
-        data.to_sql(location, conn, index=False, if_exists='replace')
+        data.to_sql(name, conn, index=False, if_exists='replace')
         conn.commit()
 
-    def read(self, conn: sqlite3.Connection, location: str) -> pd.DataFrame:
+    def read(self, conn: sqlite3.Connection, name: str) -> pd.DataFrame:
         cursor = conn.cursor()
 
         # Check if table exists
         cursor.execute(
-            "SELECT name, type FROM sqlite_master WHERE name LIKE '" + location + "%';",
+            "SELECT name, type FROM sqlite_master WHERE name LIKE '" + name + "%';",
         )
         if not cursor.fetchone():
-            raise ValueError(f'No table with name {location} was found!')
+            raise ValueError(f'No table with name {name} was found!')
         
         # Read data and convert date column back to datetime
-        df = pd.read_sql(f"SELECT * FROM {location}", conn)
+        
+        df = pd.read_sql(f"SELECT * FROM {name}", conn)
         df['date'] = pd.to_datetime(df['date'])
         return df
     

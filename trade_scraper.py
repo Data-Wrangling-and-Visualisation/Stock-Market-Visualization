@@ -228,7 +228,15 @@ class TradeScraper:
         Returns:
             pd.Dataframe: dataframe with retrieved information
         """
-        columns = ['date', '2', '3', '4', '5', '6', '7', '8', '9']
+        columns = ['date', 
+                   'ticker', 
+                   'quantity', 
+                   'volume_of_trade', 
+                   'WA_price', 
+                   'price_at_opening', 
+                   'min_price', 
+                   'max_price', 
+                   'price_at_closure']
         data: List[Dict] = []
         for soup_table in soup_tables:
 
@@ -238,9 +246,13 @@ class TradeScraper:
 
             for row in tbody.find_all('tr'):
                 elements = row.find_all('td')
-                data.append([element.text.strip() for element in elements])
+                data.append([element.text.strip().replace(',', '.') for element in elements])
 
-        return pd.DataFrame(data, columns=columns)
+
+        df = pd.DataFrame(data, columns=columns)
+        df.drop(columns=['ticker', 'quantity', 'WA_price'], inplace=True)
+        print(df.columns)
+        return df
 
     def _parse_df(self, df: pd.DataFrame) -> pd.DataFrame:
         """

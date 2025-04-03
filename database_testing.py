@@ -2,21 +2,12 @@ import sqlite3
 
 conn = sqlite3.connect('moex.db')
 cursor = conn.cursor()
-cursor.execute('drop table moex')
 cursor.execute('''
-               create table if not exists moex(
-               ticker varchar(10),
-               date varchar(10),
-               opening int,
-               closing int,
-               primary key(ticker, date)
-               )
+                select price_at_opening from TMOS
+                where date='2024-11-01';
                ''')
-conn.commit()
-
-cursor.execute('''insert into moex values('TMOS', '24/02/2022', 10, 5)''')
-cursor.execute('''insert into moex values('TMOS', '23/02/2022', 9, 10)''')
-conn.commit()
+response = cursor.fetchall()
+print(response)
 # opening = 'opening'
 # ticker = 'TMOS'
 # date = '24/02/2022'
