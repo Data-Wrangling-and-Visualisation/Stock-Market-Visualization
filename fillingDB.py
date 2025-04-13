@@ -1,10 +1,9 @@
 from storage import StorageSQLite
 from trade_scraper import TradeScraper, TradeURL
-from index_scraper import IndexURL
-from scraper import Scraper
+from index_scraper import IndexScraper, IndexURL
 
 store = StorageSQLite()
-indexScrap = Scraper(storage=store)
+indexScrap = IndexScraper(storage=store)
 tradeScrap = TradeScraper(storage=store)
 
 tickersIndexes = [

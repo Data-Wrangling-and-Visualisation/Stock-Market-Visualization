@@ -1,0 +1,5482 @@
+[
+    {
+        "date": "2025-03-28",
+        "volume_of_trade": "219179845",
+        "WA_price": "146.8",
+        "price_at_opening": "144.55",
+        "min_price": "148.3",
+        "max_price": "146"
+    },
+    {
+        "date": "2025-03-27",
+        "volume_of_trade": "208526687",
+        "WA_price": "150.4",
+        "price_at_opening": "147.55",
+        "min_price": "150.4",
+        "max_price": "148.4"
+    },
+    {
+        "date": "2025-03-26",
+        "volume_of_trade": "88108241.55",
+        "WA_price": "153.75",
+        "price_at_opening": "150.6",
+        "min_price": "153.8",
+        "max_price": "151.4"
+    },
+    {
+        "date": "2025-03-25",
+        "volume_of_trade": "129246055.9",
+        "WA_price": "152.8",
+        "price_at_opening": "150.25",
+        "min_price": "153.65",
+        "max_price": "152.1"
+    },
+    {
+        "date": "2025-03-24",
+        "volume_of_trade": "110158743.7",
+        "WA_price": "154",
+        "price_at_opening": "151.65",
+        "min_price": "154.3",
+        "max_price": "152.85"
+    },
+    {
+        "date": "2025-03-21",
+        "volume_of_trade": "94793518.25",
+        "WA_price": "155.15",
+        "price_at_opening": "153.7",
+        "min_price": "155.85",
+        "max_price": "154"
+    },
+    {
+        "date": "2025-03-20",
+        "volume_of_trade": "101716525.6",
+        "WA_price": "155.6",
+        "price_at_opening": "153.45",
+        "min_price": "156.3",
+        "max_price": "155.25"
+    },
+    {
+        "date": "2025-03-19",
+        "volume_of_trade": "96301192.65",
+        "WA_price": "154.45",
+        "price_at_opening": "153.6",
+        "min_price": "156.15",
+        "max_price": "155.75"
+    },
+    {
+        "date": "2025-03-18",
+        "volume_of_trade": "178272327.6",
+        "WA_price": "156.7",
+        "price_at_opening": "154.1",
+        "min_price": "158.2",
+        "max_price": "157"
+    },
+    {
+        "date": "2025-03-17",
+        "volume_of_trade": "153957385.95",
+        "WA_price": "156",
+        "price_at_opening": "154.55",
+        "min_price": "156.7",
+        "max_price": "156.2"
+    },
+    {
+        "date": "2025-03-14",
+        "volume_of_trade": "124459915.85",
+        "WA_price": "152.25",
+        "price_at_opening": "150.7",
+        "min_price": "154.1",
+        "max_price": "153.5"
+    },
+    {
+        "date": "2025-03-13",
+        "volume_of_trade": "386589029.75",
+        "WA_price": "151.85",
+        "price_at_opening": "148.95",
+        "min_price": "154.5",
+        "max_price": "149.85"
+    },
+    {
+        "date": "2025-03-12",
+        "volume_of_trade": "146914854.1",
+        "WA_price": "153.7",
+        "price_at_opening": "151.8",
+        "min_price": "153.7",
+        "max_price": "153.2"
+    },
+    {
+        "date": "2025-03-11",
+        "volume_of_trade": "111782063.2",
+        "WA_price": "154",
+        "price_at_opening": "153.1",
+        "min_price": "155",
+        "max_price": "153.95"
+    },
+    {
+        "date": "2025-03-10",
+        "volume_of_trade": "104460838.5",
+        "WA_price": "154.8",
+        "price_at_opening": "153.65",
+        "min_price": "155.7",
+        "max_price": "154.6"
+    },
+    {
+        "date": "2025-03-07",
+        "volume_of_trade": "216112071.9",
+        "WA_price": "156.2",
+        "price_at_opening": "152.15",
+        "min_price": "156.65",
+        "max_price": "152.75"
+    },
+    {
+        "date": "2025-03-06",
+        "volume_of_trade": "91115388.65",
+        "WA_price": "155",
+        "price_at_opening": "153.6",
+        "min_price": "156",
+        "max_price": "154.4"
+    },
+    {
+        "date": "2025-03-05",
+        "volume_of_trade": "162946210.95",
+        "WA_price": "157.55",
+        "price_at_opening": "154.55",
+        "min_price": "158",
+        "max_price": "157.3"
+    },
+    {
+        "date": "2025-03-04",
+        "volume_of_trade": "167176214.65",
+        "WA_price": "154.2",
+        "price_at_opening": "153.85",
+        "min_price": "158.2",
+        "max_price": "155.95"
+    },
+    {
+        "date": "2025-03-03",
+        "volume_of_trade": "189011104.05",
+        "WA_price": "151.9",
+        "price_at_opening": "150.45",
+        "min_price": "155.45",
+        "max_price": "152"
+    },
+    {
+        "date": "2025-03-28",
+        "volume_of_trade": "219179845",
+        "WA_price": "146.8",
+        "price_at_opening": "144.55",
+        "min_price": "148.3",
+        "max_price": "146"
+    },
+    {
+        "date": "2025-03-27",
+        "volume_of_trade": "208526687",
+        "WA_price": "150.4",
+        "price_at_opening": "147.55",
+        "min_price": "150.4",
+        "max_price": "148.4"
+    },
+    {
+        "date": "2025-03-26",
+        "volume_of_trade": "88108241.55",
+        "WA_price": "153.75",
+        "price_at_opening": "150.6",
+        "min_price": "153.8",
+        "max_price": "151.4"
+    },
+    {
+        "date": "2025-03-25",
+        "volume_of_trade": "129246055.9",
+        "WA_price": "152.8",
+        "price_at_opening": "150.25",
+        "min_price": "153.65",
+        "max_price": "152.1"
+    },
+    {
+        "date": "2025-03-24",
+        "volume_of_trade": "110158743.7",
+        "WA_price": "154",
+        "price_at_opening": "151.65",
+        "min_price": "154.3",
+        "max_price": "152.85"
+    },
+    {
+        "date": "2025-03-21",
+        "volume_of_trade": "94793518.25",
+        "WA_price": "155.15",
+        "price_at_opening": "153.7",
+        "min_price": "155.85",
+        "max_price": "154"
+    },
+    {
+        "date": "2025-03-20",
+        "volume_of_trade": "101716525.6",
+        "WA_price": "155.6",
+        "price_at_opening": "153.45",
+        "min_price": "156.3",
+        "max_price": "155.25"
+    },
+    {
+        "date": "2025-03-19",
+        "volume_of_trade": "96301192.65",
+        "WA_price": "154.45",
+        "price_at_opening": "153.6",
+        "min_price": "156.15",
+        "max_price": "155.75"
+    },
+    {
+        "date": "2025-03-18",
+        "volume_of_trade": "178272327.6",
+        "WA_price": "156.7",
+        "price_at_opening": "154.1",
+        "min_price": "158.2",
+        "max_price": "157"
+    },
+    {
+        "date": "2025-03-17",
+        "volume_of_trade": "153957385.95",
+        "WA_price": "156",
+        "price_at_opening": "154.55",
+        "min_price": "156.7",
+        "max_price": "156.2"
+    },
+    {
+        "date": "2025-03-14",
+        "volume_of_trade": "124459915.85",
+        "WA_price": "152.25",
+        "price_at_opening": "150.7",
+        "min_price": "154.1",
+        "max_price": "153.5"
+    },
+    {
+        "date": "2025-03-13",
+        "volume_of_trade": "386589029.75",
+        "WA_price": "151.85",
+        "price_at_opening": "148.95",
+        "min_price": "154.5",
+        "max_price": "149.85"
+    },
+    {
+        "date": "2025-03-12",
+        "volume_of_trade": "146914854.1",
+        "WA_price": "153.7",
+        "price_at_opening": "151.8",
+        "min_price": "153.7",
+        "max_price": "153.2"
+    },
+    {
+        "date": "2025-03-11",
+        "volume_of_trade": "111782063.2",
+        "WA_price": "154",
+        "price_at_opening": "153.1",
+        "min_price": "155",
+        "max_price": "153.95"
+    },
+    {
+        "date": "2025-03-10",
+        "volume_of_trade": "104460838.5",
+        "WA_price": "154.8",
+        "price_at_opening": "153.65",
+        "min_price": "155.7",
+        "max_price": "154.6"
+    },
+    {
+        "date": "2025-03-07",
+        "volume_of_trade": "216112071.9",
+        "WA_price": "156.2",
+        "price_at_opening": "152.15",
+        "min_price": "156.65",
+        "max_price": "152.75"
+    },
+    {
+        "date": "2025-03-06",
+        "volume_of_trade": "91115388.65",
+        "WA_price": "155",
+        "price_at_opening": "153.6",
+        "min_price": "156",
+        "max_price": "154.4"
+    },
+    {
+        "date": "2025-03-05",
+        "volume_of_trade": "162946210.95",
+        "WA_price": "157.55",
+        "price_at_opening": "154.55",
+        "min_price": "158",
+        "max_price": "157.3"
+    },
+    {
+        "date": "2025-03-04",
+        "volume_of_trade": "167176214.65",
+        "WA_price": "154.2",
+        "price_at_opening": "153.85",
+        "min_price": "158.2",
+        "max_price": "155.95"
+    },
+    {
+        "date": "2025-03-03",
+        "volume_of_trade": "189011104.05",
+        "WA_price": "151.9",
+        "price_at_opening": "150.45",
+        "min_price": "155.45",
+        "max_price": "152"
+    },
+    {
+        "date": "2025-02-28",
+        "volume_of_trade": "291730014.15",
+        "WA_price": "153.15",
+        "price_at_opening": "151.55",
+        "min_price": "156.65",
+        "max_price": "154"
+    },
+    {
+        "date": "2025-02-27",
+        "volume_of_trade": "134851159.9",
+        "WA_price": "156.45",
+        "price_at_opening": "152.65",
+        "min_price": "156.85",
+        "max_price": "155.45"
+    },
+    {
+        "date": "2025-02-26",
+        "volume_of_trade": "302359086.3",
+        "WA_price": "160.25",
+        "price_at_opening": "155.4",
+        "min_price": "161",
+        "max_price": "156.95"
+    },
+    {
+        "date": "2025-02-25",
+        "volume_of_trade": "254949266.85",
+        "WA_price": "162.8",
+        "price_at_opening": "159.8",
+        "min_price": "162.8",
+        "max_price": "160"
+    },
+    {
+        "date": "2025-02-24",
+        "volume_of_trade": "119777177.15",
+        "WA_price": "159",
+        "price_at_opening": "157.65",
+        "min_price": "161.4",
+        "max_price": "158.75"
+    },
+    {
+        "date": "2025-02-21",
+        "volume_of_trade": "136085113.3",
+        "WA_price": "159.2",
+        "price_at_opening": "156.95",
+        "min_price": "160",
+        "max_price": "158.2"
+    },
+    {
+        "date": "2025-02-20",
+        "volume_of_trade": "94066652",
+        "WA_price": "159",
+        "price_at_opening": "158",
+        "min_price": "160",
+        "max_price": "158.35"
+    },
+    {
+        "date": "2025-02-19",
+        "volume_of_trade": "122248558.2",
+        "WA_price": "157.6",
+        "price_at_opening": "155.2",
+        "min_price": "159.25",
+        "max_price": "157.5"
+    },
+    {
+        "date": "2025-02-18",
+        "volume_of_trade": "286067417.45",
+        "WA_price": "160.7",
+        "price_at_opening": "155.25",
+        "min_price": "160.75",
+        "max_price": "156.7"
+    },
+    {
+        "date": "2025-02-17",
+        "volume_of_trade": "395224905.6",
+        "WA_price": "157",
+        "price_at_opening": "156.25",
+        "min_price": "161.35",
+        "max_price": "159.55"
+    },
+    {
+        "date": "2025-02-14",
+        "volume_of_trade": "607741375",
+        "WA_price": "156.3",
+        "price_at_opening": "151.5",
+        "min_price": "158.45",
+        "max_price": "153.4"
+    },
+    {
+        "date": "2025-02-13",
+        "volume_of_trade": "260265044.75",
+        "WA_price": "157.4",
+        "price_at_opening": "151.35",
+        "min_price": "157.6",
+        "max_price": "154.15"
+    },
+    {
+        "date": "2025-02-12",
+        "volume_of_trade": "528005485.45",
+        "WA_price": "146.45",
+        "price_at_opening": "145",
+        "min_price": "156.8",
+        "max_price": "145.75"
+    },
+    {
+        "date": "2025-02-11",
+        "volume_of_trade": "71155633.05",
+        "WA_price": "145.45",
+        "price_at_opening": "143.6",
+        "min_price": "145.75",
+        "max_price": "145.25"
+    },
+    {
+        "date": "2025-02-10",
+        "volume_of_trade": "109567118.65",
+        "WA_price": "143.55",
+        "price_at_opening": "143.35",
+        "min_price": "145.55",
+        "max_price": "145.25"
+    },
+    {
+        "date": "2025-02-07",
+        "volume_of_trade": "61308056.7",
+        "WA_price": "144.1",
+        "price_at_opening": "142.55",
+        "min_price": "144.1",
+        "max_price": "142.8"
+    },
+    {
+        "date": "2025-02-06",
+        "volume_of_trade": "91444887.55",
+        "WA_price": "142.25",
+        "price_at_opening": "142",
+        "min_price": "143.5",
+        "max_price": "142.9"
+    },
+    {
+        "date": "2025-02-05",
+        "volume_of_trade": "87244491.2",
+        "WA_price": "139.45",
+        "price_at_opening": "139.2",
+        "min_price": "142.35",
+        "max_price": "140.85"
+    },
+    {
+        "date": "2025-02-04",
+        "volume_of_trade": "34210324.9",
+        "WA_price": "141.3",
+        "price_at_opening": "139.6",
+        "min_price": "141.9",
+        "max_price": "140.5"
+    },
+    {
+        "date": "2025-02-03",
+        "volume_of_trade": "62565519.35",
+        "WA_price": "141.95",
+        "price_at_opening": "140.05",
+        "min_price": "141.95",
+        "max_price": "140.75"
+    },
+    {
+        "date": "2025-01-31",
+        "volume_of_trade": "102967466.65",
+        "WA_price": "142.75",
+        "price_at_opening": "141.6",
+        "min_price": "144.2",
+        "max_price": "142"
+    },
+    {
+        "date": "2025-01-30",
+        "volume_of_trade": "74941493.4",
+        "WA_price": "141.6",
+        "price_at_opening": "141.55",
+        "min_price": "142.75",
+        "max_price": "142.45"
+    },
+    {
+        "date": "2025-01-29",
+        "volume_of_trade": "66553680.7",
+        "WA_price": "140.5",
+        "price_at_opening": "140.5",
+        "min_price": "142.5",
+        "max_price": "142.05"
+    },
+    {
+        "date": "2025-01-28",
+        "volume_of_trade": "74545972.65",
+        "WA_price": "138.7",
+        "price_at_opening": "138.05",
+        "min_price": "141.7",
+        "max_price": "140.9"
+    },
+    {
+        "date": "2025-01-27",
+        "volume_of_trade": "64363568.2",
+        "WA_price": "142.05",
+        "price_at_opening": "138.5",
+        "min_price": "142.15",
+        "max_price": "139.1"
+    },
+    {
+        "date": "2025-01-24",
+        "volume_of_trade": "160018466.45",
+        "WA_price": "142.1",
+        "price_at_opening": "141.35",
+        "min_price": "142.95",
+        "max_price": "142.25"
+    },
+    {
+        "date": "2025-01-23",
+        "volume_of_trade": "129373057.3",
+        "WA_price": "141.15",
+        "price_at_opening": "139.95",
+        "min_price": "142.05",
+        "max_price": "140.45"
+    },
+    {
+        "date": "2025-01-22",
+        "volume_of_trade": "220895872.55",
+        "WA_price": "141.9",
+        "price_at_opening": "140.75",
+        "min_price": "143.15",
+        "max_price": "142.85"
+    },
+    {
+        "date": "2025-01-21",
+        "volume_of_trade": "232107405.45",
+        "WA_price": "140.2",
+        "price_at_opening": "138.8",
+        "min_price": "141.75",
+        "max_price": "141.05"
+    },
+    {
+        "date": "2025-01-20",
+        "volume_of_trade": "210687931.45",
+        "WA_price": "143",
+        "price_at_opening": "139.85",
+        "min_price": "143.95",
+        "max_price": "141.15"
+    },
+    {
+        "date": "2025-01-17",
+        "volume_of_trade": "104444442.85",
+        "WA_price": "140.2",
+        "price_at_opening": "139.1",
+        "min_price": "142.45",
+        "max_price": "142"
+    },
+    {
+        "date": "2025-01-16",
+        "volume_of_trade": "104926870.1",
+        "WA_price": "140",
+        "price_at_opening": "139.25",
+        "min_price": "141",
+        "max_price": "140.25"
+    },
+    {
+        "date": "2025-01-15",
+        "volume_of_trade": "120353278",
+        "WA_price": "138.1",
+        "price_at_opening": "136.6",
+        "min_price": "139.85",
+        "max_price": "137"
+    },
+    {
+        "date": "2025-01-14",
+        "volume_of_trade": "93680881.1",
+        "WA_price": "137.1",
+        "price_at_opening": "136.25",
+        "min_price": "138.6",
+        "max_price": "137.9"
+    },
+    {
+        "date": "2025-01-13",
+        "volume_of_trade": "188330989.55",
+        "WA_price": "136.65",
+        "price_at_opening": "136.2",
+        "min_price": "138.8",
+        "max_price": "137.8"
+    },
+    {
+        "date": "2025-01-10",
+        "volume_of_trade": "169568277.65",
+        "WA_price": "132.7",
+        "price_at_opening": "132.15",
+        "min_price": "136.8",
+        "max_price": "136"
+    },
+    {
+        "date": "2025-01-09",
+        "volume_of_trade": "162824004.3",
+        "WA_price": "136.35",
+        "price_at_opening": "132.4",
+        "min_price": "137",
+        "max_price": "133.1"
+    },
+    {
+        "date": "2025-01-08",
+        "volume_of_trade": "47651459.45",
+        "WA_price": "135.7",
+        "price_at_opening": "134.9",
+        "min_price": "136.95",
+        "max_price": "136.4"
+    },
+    {
+        "date": "2025-01-06",
+        "volume_of_trade": "45457428.05",
+        "WA_price": "135.5",
+        "price_at_opening": "133.95",
+        "min_price": "135.6",
+        "max_price": "135.3"
+    },
+    {
+        "date": "2025-01-03",
+        "volume_of_trade": "68927436.6",
+        "WA_price": "138.85",
+        "price_at_opening": "135.25",
+        "min_price": "139",
+        "max_price": "135.85"
+    },
+    {
+        "date": "2024-12-03",
+        "volume_of_trade": "162218537.85",
+        "WA_price": "122.95",
+        "price_at_opening": "119.6",
+        "min_price": "123.2",
+        "max_price": "120.3"
+    },
+    {
+        "date": "2024-12-02",
+        "volume_of_trade": "117198644.9",
+        "WA_price": "122.2",
+        "price_at_opening": "122.2",
+        "min_price": "123.5",
+        "max_price": "122.75"
+    },
+    {
+        "date": "2024-11-29",
+        "volume_of_trade": "432219521.35",
+        "WA_price": "120.8",
+        "price_at_opening": "119.75",
+        "min_price": "122.5",
+        "max_price": "122.25"
+    },
+    {
+        "date": "2024-11-28",
+        "volume_of_trade": "130992381.25",
+        "WA_price": "119.7",
+        "price_at_opening": "118.6",
+        "min_price": "121.3",
+        "max_price": "120.75"
+    },
+    {
+        "date": "2024-11-27",
+        "volume_of_trade": "260005577.95",
+        "WA_price": "117.4",
+        "price_at_opening": "115.1",
+        "min_price": "119.85",
+        "max_price": "117.95"
+    },
+    {
+        "date": "2024-11-26",
+        "volume_of_trade": "469972692.3",
+        "WA_price": "118.8",
+        "price_at_opening": "116.1",
+        "min_price": "120.4",
+        "max_price": "116.7"
+    },
+    {
+        "date": "2024-11-25",
+        "volume_of_trade": "339561750.55",
+        "WA_price": "122.95",
+        "price_at_opening": "118.4",
+        "min_price": "124",
+        "max_price": "119.65"
+    },
+    {
+        "date": "2024-11-22",
+        "volume_of_trade": "96735308.85",
+        "WA_price": "123.95",
+        "price_at_opening": "122.1",
+        "min_price": "124.35",
+        "max_price": "122.35"
+    },
+    {
+        "date": "2024-11-21",
+        "volume_of_trade": "132433502.65",
+        "WA_price": "123.85",
+        "price_at_opening": "121.05",
+        "min_price": "124.55",
+        "max_price": "121.85"
+    },
+    {
+        "date": "2024-11-20",
+        "volume_of_trade": "88739844.95",
+        "WA_price": "125.3",
+        "price_at_opening": "122",
+        "min_price": "126",
+        "max_price": "123.5"
+    },
+    {
+        "date": "2024-11-19",
+        "volume_of_trade": "430184647.7",
+        "WA_price": "128.2",
+        "price_at_opening": "124.15",
+        "min_price": "128.65",
+        "max_price": "124.7"
+    },
+    {
+        "date": "2024-11-18",
+        "volume_of_trade": "91862472.25",
+        "WA_price": "129",
+        "price_at_opening": "127.5",
+        "min_price": "129.9",
+        "max_price": "128.9"
+    },
+    {
+        "date": "2024-11-15",
+        "volume_of_trade": "48056911.55",
+        "WA_price": "128.05",
+        "price_at_opening": "127.8",
+        "min_price": "130.15",
+        "max_price": "129.7"
+    },
+    {
+        "date": "2024-11-14",
+        "volume_of_trade": "66395246.4",
+        "WA_price": "129.15",
+        "price_at_opening": "127.65",
+        "min_price": "129.7",
+        "max_price": "127.7"
+    },
+    {
+        "date": "2024-11-13",
+        "volume_of_trade": "341297443.5",
+        "WA_price": "129.7",
+        "price_at_opening": "128.95",
+        "min_price": "132",
+        "max_price": "131.2"
+    },
+    {
+        "date": "2024-11-12",
+        "volume_of_trade": "96246521.25",
+        "WA_price": "131.4",
+        "price_at_opening": "129.55",
+        "min_price": "131.4",
+        "max_price": "130.3"
+    },
+    {
+        "date": "2024-11-11",
+        "volume_of_trade": "180045969.15",
+        "WA_price": "131.4",
+        "price_at_opening": "130.65",
+        "min_price": "132.15",
+        "max_price": "131.6"
+    },
+    {
+        "date": "2024-11-08",
+        "volume_of_trade": "263910273.3",
+        "WA_price": "129.55",
+        "price_at_opening": "128.2",
+        "min_price": "131.3",
+        "max_price": "129.6"
+    },
+    {
+        "date": "2024-11-07",
+        "volume_of_trade": "118022313.9",
+        "WA_price": "126.1",
+        "price_at_opening": "124.9",
+        "min_price": "129.3",
+        "max_price": "127.8"
+    },
+    {
+        "date": "2024-11-06",
+        "volume_of_trade": "402540795.15",
+        "WA_price": "124.55",
+        "price_at_opening": "124.4",
+        "min_price": "129.5",
+        "max_price": "126.6"
+    },
+    {
+        "date": "2024-11-05",
+        "volume_of_trade": "342186370.5",
+        "WA_price": "123.95",
+        "price_at_opening": "123.6",
+        "min_price": "124.7",
+        "max_price": "124.25"
+    },
+    {
+        "date": "2024-11-02",
+        "volume_of_trade": "36387337.95",
+        "WA_price": "122.25",
+        "price_at_opening": "122.25",
+        "min_price": "123.85",
+        "max_price": "123.25"
+    },
+    {
+        "date": "2024-11-01",
+        "volume_of_trade": "140852356.1",
+        "WA_price": "121.25",
+        "price_at_opening": "120.45",
+        "min_price": "122.45",
+        "max_price": "122.05"
+    },
+    {
+        "date": "2024-10-31",
+        "volume_of_trade": "126909525.05",
+        "WA_price": "122.15",
+        "price_at_opening": "120.7",
+        "min_price": "122.8",
+        "max_price": "121.55"
+    },
+    {
+        "date": "2024-10-30",
+        "volume_of_trade": "215395896.65",
+        "WA_price": "124.2",
+        "price_at_opening": "122.2",
+        "min_price": "125.1",
+        "max_price": "124.1"
+    },
+    {
+        "date": "2024-10-29",
+        "volume_of_trade": "181100930",
+        "WA_price": "122.7",
+        "price_at_opening": "121.4",
+        "min_price": "124.45",
+        "max_price": "123.35"
+    },
+    {
+        "date": "2024-10-28",
+        "volume_of_trade": "105485377.7",
+        "WA_price": "125.95",
+        "price_at_opening": "121.6",
+        "min_price": "125.95",
+        "max_price": "122.25"
+    },
+    {
+        "date": "2024-10-25",
+        "volume_of_trade": "134371219.45",
+        "WA_price": "128.7",
+        "price_at_opening": "125.75",
+        "min_price": "130.15",
+        "max_price": "126.2"
+    },
+    {
+        "date": "2024-10-24",
+        "volume_of_trade": "68055905.25",
+        "WA_price": "128.3",
+        "price_at_opening": "127.5",
+        "min_price": "129.3",
+        "max_price": "128.65"
+    },
+    {
+        "date": "2024-10-23",
+        "volume_of_trade": "72928781.2",
+        "WA_price": "130.2",
+        "price_at_opening": "128.4",
+        "min_price": "130.35",
+        "max_price": "129.65"
+    },
+    {
+        "date": "2024-10-22",
+        "volume_of_trade": "44652988.45",
+        "WA_price": "131.3",
+        "price_at_opening": "130",
+        "min_price": "131.8",
+        "max_price": "130.4"
+    },
+    {
+        "date": "2024-10-21",
+        "volume_of_trade": "84794150.1",
+        "WA_price": "130.4",
+        "price_at_opening": "130.4",
+        "min_price": "131.45",
+        "max_price": "131"
+    },
+    {
+        "date": "2024-10-18",
+        "volume_of_trade": "66452495.05",
+        "WA_price": "130.35",
+        "price_at_opening": "130",
+        "min_price": "131.05",
+        "max_price": "130.15"
+    },
+    {
+        "date": "2024-10-17",
+        "volume_of_trade": "216456338",
+        "WA_price": "131.9",
+        "price_at_opening": "130.2",
+        "min_price": "132.45",
+        "max_price": "130.7"
+    },
+    {
+        "date": "2024-10-16",
+        "volume_of_trade": "99110424.5",
+        "WA_price": "132.7",
+        "price_at_opening": "131.65",
+        "min_price": "133.55",
+        "max_price": "131.7"
+    },
+    {
+        "date": "2024-10-15",
+        "volume_of_trade": "174240901.9",
+        "WA_price": "131.75",
+        "price_at_opening": "130.9",
+        "min_price": "132.9",
+        "max_price": "132.5"
+    },
+    {
+        "date": "2024-10-14",
+        "volume_of_trade": "150184710.85",
+        "WA_price": "129.85",
+        "price_at_opening": "128.55",
+        "min_price": "131.9",
+        "max_price": "131.45"
+    },
+    {
+        "date": "2024-10-11",
+        "volume_of_trade": "110403234.45",
+        "WA_price": "130.5",
+        "price_at_opening": "129.4",
+        "min_price": "130.5",
+        "max_price": "130.05"
+    },
+    {
+        "date": "2024-10-10",
+        "volume_of_trade": "53322207.95",
+        "WA_price": "130.6",
+        "price_at_opening": "129.75",
+        "min_price": "131.15",
+        "max_price": "130.35"
+    },
+    {
+        "date": "2024-10-09",
+        "volume_of_trade": "142805807",
+        "WA_price": "131.8",
+        "price_at_opening": "129.95",
+        "min_price": "132",
+        "max_price": "130.25"
+    },
+    {
+        "date": "2024-10-08",
+        "volume_of_trade": "60646298.6",
+        "WA_price": "132.6",
+        "price_at_opening": "131.4",
+        "min_price": "132.6",
+        "max_price": "131.9"
+    },
+    {
+        "date": "2024-10-07",
+        "volume_of_trade": "48061775.3",
+        "WA_price": "132.75",
+        "price_at_opening": "131.1",
+        "min_price": "132.85",
+        "max_price": "131.8"
+    },
+    {
+        "date": "2024-10-04",
+        "volume_of_trade": "40099521.65",
+        "WA_price": "132.25",
+        "price_at_opening": "131.65",
+        "min_price": "133.05",
+        "max_price": "132.3"
+    },
+    {
+        "date": "2024-10-03",
+        "volume_of_trade": "159141728.5",
+        "WA_price": "130.25",
+        "price_at_opening": "129.15",
+        "min_price": "132.3",
+        "max_price": "131.4"
+    },
+    {
+        "date": "2024-10-02",
+        "volume_of_trade": "75873564.6",
+        "WA_price": "133.45",
+        "price_at_opening": "130",
+        "min_price": "134.05",
+        "max_price": "130.8"
+    },
+    {
+        "date": "2024-10-01",
+        "volume_of_trade": "103184698.7",
+        "WA_price": "134.7",
+        "price_at_opening": "131.75",
+        "min_price": "135.25",
+        "max_price": "132.8"
+    },
+    {
+        "date": "2024-09-30",
+        "volume_of_trade": "99031618.45",
+        "WA_price": "136",
+        "price_at_opening": "134.5",
+        "min_price": "137.5",
+        "max_price": "135.85"
+    },
+    {
+        "date": "2024-09-27",
+        "volume_of_trade": "119912628.9",
+        "WA_price": "135.15",
+        "price_at_opening": "134.8",
+        "min_price": "136.15",
+        "max_price": "135.95"
+    },
+    {
+        "date": "2024-09-26",
+        "volume_of_trade": "107212489.55",
+        "WA_price": "134.9",
+        "price_at_opening": "133.7",
+        "min_price": "135.65",
+        "max_price": "135"
+    },
+    {
+        "date": "2024-09-25",
+        "volume_of_trade": "124563674.6",
+        "WA_price": "136.5",
+        "price_at_opening": "134.4",
+        "min_price": "137.6",
+        "max_price": "134.95"
+    },
+    {
+        "date": "2024-09-24",
+        "volume_of_trade": "155965058.2",
+        "WA_price": "135.95",
+        "price_at_opening": "134.85",
+        "min_price": "137.25",
+        "max_price": "136.7"
+    },
+    {
+        "date": "2024-09-23",
+        "volume_of_trade": "121565986.85",
+        "WA_price": "133.65",
+        "price_at_opening": "133.6",
+        "min_price": "135.95",
+        "max_price": "134.8"
+    },
+    {
+        "date": "2024-09-20",
+        "volume_of_trade": "258056364.2",
+        "WA_price": "132",
+        "price_at_opening": "130.8",
+        "min_price": "133.65",
+        "max_price": "133.2"
+    },
+    {
+        "date": "2024-09-19",
+        "volume_of_trade": "119873866.45",
+        "WA_price": "130.9",
+        "price_at_opening": "130.55",
+        "min_price": "132.8",
+        "max_price": "132.1"
+    },
+    {
+        "date": "2024-09-18",
+        "volume_of_trade": "118138713.9",
+        "WA_price": "132.55",
+        "price_at_opening": "131",
+        "min_price": "133",
+        "max_price": "131.55"
+    },
+    {
+        "date": "2024-09-17",
+        "volume_of_trade": "166584779.9",
+        "WA_price": "131.45",
+        "price_at_opening": "130.1",
+        "min_price": "132.85",
+        "max_price": "132.55"
+    },
+    {
+        "date": "2024-09-16",
+        "volume_of_trade": "196060291.8",
+        "WA_price": "128.45",
+        "price_at_opening": "126.55",
+        "min_price": "131.35",
+        "max_price": "131.1"
+    },
+    {
+        "date": "2024-09-13",
+        "volume_of_trade": "180099737.55",
+        "WA_price": "125.75",
+        "price_at_opening": "123.1",
+        "min_price": "128.25",
+        "max_price": "127.85"
+    },
+    {
+        "date": "2024-09-12",
+        "volume_of_trade": "77442192.55",
+        "WA_price": "127",
+        "price_at_opening": "124",
+        "min_price": "127",
+        "max_price": "125"
+    },
+    {
+        "date": "2024-09-11",
+        "volume_of_trade": "87955644.6",
+        "WA_price": "127.9",
+        "price_at_opening": "125.5",
+        "min_price": "128.1",
+        "max_price": "127.05"
+    },
+    {
+        "date": "2024-09-10",
+        "volume_of_trade": "135121528.55",
+        "WA_price": "129.35",
+        "price_at_opening": "126.65",
+        "min_price": "130.15",
+        "max_price": "127.4"
+    },
+    {
+        "date": "2024-09-09",
+        "volume_of_trade": "87642655",
+        "WA_price": "125.45",
+        "price_at_opening": "125.4",
+        "min_price": "129.35",
+        "max_price": "128.7"
+    },
+    {
+        "date": "2024-09-06",
+        "volume_of_trade": "119127575.65",
+        "WA_price": "124.5",
+        "price_at_opening": "124.1",
+        "min_price": "126",
+        "max_price": "125.15"
+    },
+    {
+        "date": "2024-09-05",
+        "volume_of_trade": "140011011.6",
+        "WA_price": "125.3",
+        "price_at_opening": "124.05",
+        "min_price": "126.75",
+        "max_price": "125.3"
+    },
+    {
+        "date": "2024-09-04",
+        "volume_of_trade": "151258366.7",
+        "WA_price": "121.9",
+        "price_at_opening": "121",
+        "min_price": "125.1",
+        "max_price": "124.2"
+    },
+    {
+        "date": "2024-09-03",
+        "volume_of_trade": "219562390.05",
+        "WA_price": "121.85",
+        "price_at_opening": "120.05",
+        "min_price": "124",
+        "max_price": "120.7"
+    },
+    {
+        "date": "2024-09-02",
+        "volume_of_trade": "155672904.05",
+        "WA_price": "125.55",
+        "price_at_opening": "120.5",
+        "min_price": "125.7",
+        "max_price": "121.8"
+    },
+    {
+        "date": "2024-08-30",
+        "volume_of_trade": "154810183.95",
+        "WA_price": "128",
+        "price_at_opening": "125.05",
+        "min_price": "129.7",
+        "max_price": "126.45"
+    },
+    {
+        "date": "2024-08-29",
+        "volume_of_trade": "63273335.6",
+        "WA_price": "128.05",
+        "price_at_opening": "126.25",
+        "min_price": "128.4",
+        "max_price": "127.5"
+    },
+    {
+        "date": "2024-08-28",
+        "volume_of_trade": "263851951.05",
+        "WA_price": "128.7",
+        "price_at_opening": "125.5",
+        "min_price": "128.7",
+        "max_price": "127.4"
+    },
+    {
+        "date": "2024-08-27",
+        "volume_of_trade": "220014013.55",
+        "WA_price": "130.9",
+        "price_at_opening": "128.2",
+        "min_price": "131.55",
+        "max_price": "128.95"
+    },
+    {
+        "date": "2024-08-26",
+        "volume_of_trade": "189186174.55",
+        "WA_price": "126.8",
+        "price_at_opening": "126.6",
+        "min_price": "131.4",
+        "max_price": "130.2"
+    },
+    {
+        "date": "2024-08-23",
+        "volume_of_trade": "203760231.7",
+        "WA_price": "128.1",
+        "price_at_opening": "124.45",
+        "min_price": "128.55",
+        "max_price": "125.2"
+    },
+    {
+        "date": "2024-08-22",
+        "volume_of_trade": "75017387.55",
+        "WA_price": "130.6",
+        "price_at_opening": "127.5",
+        "min_price": "131.2",
+        "max_price": "128.5"
+    },
+    {
+        "date": "2024-08-21",
+        "volume_of_trade": "95226386.3",
+        "WA_price": "130.25",
+        "price_at_opening": "129.15",
+        "min_price": "131",
+        "max_price": "130.35"
+    },
+    {
+        "date": "2024-08-20",
+        "volume_of_trade": "127204820.8",
+        "WA_price": "130.65",
+        "price_at_opening": "129.4",
+        "min_price": "131.8",
+        "max_price": "130.55"
+    },
+    {
+        "date": "2024-08-19",
+        "volume_of_trade": "91851771.8",
+        "WA_price": "132.05",
+        "price_at_opening": "130.1",
+        "min_price": "132.65",
+        "max_price": "130.85"
+    },
+    {
+        "date": "2024-08-16",
+        "volume_of_trade": "74954275.35",
+        "WA_price": "133.3",
+        "price_at_opening": "131.8",
+        "min_price": "133.8",
+        "max_price": "132.85"
+    },
+    {
+        "date": "2024-08-15",
+        "volume_of_trade": "88278079.75",
+        "WA_price": "135",
+        "price_at_opening": "133.1",
+        "min_price": "135",
+        "max_price": "133.3"
+    },
+    {
+        "date": "2024-08-14",
+        "volume_of_trade": "88817533.65",
+        "WA_price": "136.3",
+        "price_at_opening": "134.1",
+        "min_price": "137",
+        "max_price": "135.1"
+    },
+    {
+        "date": "2024-08-13",
+        "volume_of_trade": "81899079.15",
+        "WA_price": "134.7",
+        "price_at_opening": "134.7",
+        "min_price": "136.3",
+        "max_price": "135.75"
+    },
+    {
+        "date": "2024-08-12",
+        "volume_of_trade": "130491265.15",
+        "WA_price": "133.6",
+        "price_at_opening": "132.25",
+        "min_price": "134.75",
+        "max_price": "134.2"
+    },
+    {
+        "date": "2024-08-09",
+        "volume_of_trade": "39886471.65",
+        "WA_price": "134",
+        "price_at_opening": "133.4",
+        "min_price": "135",
+        "max_price": "134.35"
+    },
+    {
+        "date": "2024-08-08",
+        "volume_of_trade": "154827535.8",
+        "WA_price": "135.3",
+        "price_at_opening": "133.45",
+        "min_price": "136.25",
+        "max_price": "134.35"
+    },
+    {
+        "date": "2024-08-07",
+        "volume_of_trade": "115108200.7",
+        "WA_price": "133.45",
+        "price_at_opening": "131.65",
+        "min_price": "135.35",
+        "max_price": "135.05"
+    },
+    {
+        "date": "2024-08-06",
+        "volume_of_trade": "165028284.9",
+        "WA_price": "133.35",
+        "price_at_opening": "132.4",
+        "min_price": "135.1",
+        "max_price": "133"
+    },
+    {
+        "date": "2024-08-05",
+        "volume_of_trade": "138738956.25",
+        "WA_price": "136.75",
+        "price_at_opening": "132.45",
+        "min_price": "136.75",
+        "max_price": "133"
+    },
+    {
+        "date": "2024-08-02",
+        "volume_of_trade": "179984143.05",
+        "WA_price": "137.35",
+        "price_at_opening": "136.3",
+        "min_price": "138.05",
+        "max_price": "136.9"
+    },
+    {
+        "date": "2024-08-01",
+        "volume_of_trade": "69594422.85",
+        "WA_price": "139.1",
+        "price_at_opening": "137.25",
+        "min_price": "139.5",
+        "max_price": "138.4"
+    },
+    {
+        "date": "2024-07-31",
+        "volume_of_trade": "209772141.3",
+        "WA_price": "138.8",
+        "price_at_opening": "137.45",
+        "min_price": "139.5",
+        "max_price": "138.6"
+    },
+    {
+        "date": "2024-07-30",
+        "volume_of_trade": "135443975.6",
+        "WA_price": "136.5",
+        "price_at_opening": "136.1",
+        "min_price": "138.9",
+        "max_price": "138.25"
+    },
+    {
+        "date": "2024-07-29",
+        "volume_of_trade": "285933556.5",
+        "WA_price": "140.05",
+        "price_at_opening": "136.3",
+        "min_price": "140.25",
+        "max_price": "136.75"
+    },
+    {
+        "date": "2024-07-26",
+        "volume_of_trade": "305552536.2",
+        "WA_price": "141.9",
+        "price_at_opening": "139.65",
+        "min_price": "143.8",
+        "max_price": "140.45"
+    },
+    {
+        "date": "2024-07-25",
+        "volume_of_trade": "216583589.55",
+        "WA_price": "143.15",
+        "price_at_opening": "141.95",
+        "min_price": "143.15",
+        "max_price": "142.3"
+    },
+    {
+        "date": "2024-07-24",
+        "volume_of_trade": "38168259.45",
+        "WA_price": "142.5",
+        "price_at_opening": "141.6",
+        "min_price": "143.35",
+        "max_price": "143.3"
+    },
+    {
+        "date": "2024-07-23",
+        "volume_of_trade": "45326999.35",
+        "WA_price": "142.8",
+        "price_at_opening": "141.1",
+        "min_price": "142.8",
+        "max_price": "142.1"
+    },
+    {
+        "date": "2024-07-22",
+        "volume_of_trade": "89711098.55",
+        "WA_price": "141.5",
+        "price_at_opening": "141.5",
+        "min_price": "143.3",
+        "max_price": "142.35"
+    },
+    {
+        "date": "2024-07-19",
+        "volume_of_trade": "95730699.8",
+        "WA_price": "140.5",
+        "price_at_opening": "140",
+        "min_price": "142.25",
+        "max_price": "141.55"
+    },
+    {
+        "date": "2024-07-18",
+        "volume_of_trade": "69453169.55",
+        "WA_price": "137.8",
+        "price_at_opening": "137.15",
+        "min_price": "140.8",
+        "max_price": "140.2"
+    },
+    {
+        "date": "2024-07-17",
+        "volume_of_trade": "66741302.4",
+        "WA_price": "138.8",
+        "price_at_opening": "137.65",
+        "min_price": "139.7",
+        "max_price": "138.25"
+    },
+    {
+        "date": "2024-07-16",
+        "volume_of_trade": "166977225.15",
+        "WA_price": "136.6",
+        "price_at_opening": "134.7",
+        "min_price": "138.65",
+        "max_price": "138"
+    },
+    {
+        "date": "2024-07-15",
+        "volume_of_trade": "75589155.95",
+        "WA_price": "138.9",
+        "price_at_opening": "135.65",
+        "min_price": "139.55",
+        "max_price": "135.95"
+    },
+    {
+        "date": "2024-07-12",
+        "volume_of_trade": "74833614.75",
+        "WA_price": "140.4",
+        "price_at_opening": "137.75",
+        "min_price": "140.9",
+        "max_price": "138.8"
+    },
+    {
+        "date": "2024-07-11",
+        "volume_of_trade": "382286609.15",
+        "WA_price": "134.9",
+        "price_at_opening": "134.15",
+        "min_price": "140.7",
+        "max_price": "139.9"
+    },
+    {
+        "date": "2024-07-10",
+        "volume_of_trade": "99781087.55",
+        "WA_price": "139.55",
+        "price_at_opening": "134.3",
+        "min_price": "139.6",
+        "max_price": "136.1"
+    },
+    {
+        "date": "2024-07-09",
+        "volume_of_trade": "175586151.8",
+        "WA_price": "142.25",
+        "price_at_opening": "139",
+        "min_price": "142.5",
+        "max_price": "139.65"
+    },
+    {
+        "date": "2024-07-08",
+        "volume_of_trade": "62846468.1",
+        "WA_price": "143.25",
+        "price_at_opening": "141.85",
+        "min_price": "144.45",
+        "max_price": "142.45"
+    },
+    {
+        "date": "2024-07-05",
+        "volume_of_trade": "224463757.6",
+        "WA_price": "142.7",
+        "price_at_opening": "140.8",
+        "min_price": "143.8",
+        "max_price": "143.1"
+    },
+    {
+        "date": "2024-07-04",
+        "volume_of_trade": "276533117.1",
+        "WA_price": "144.65",
+        "price_at_opening": "141.85",
+        "min_price": "145.4",
+        "max_price": "142.4"
+    },
+    {
+        "date": "2024-07-03",
+        "volume_of_trade": "89172535.4",
+        "WA_price": "146.4",
+        "price_at_opening": "144.85",
+        "min_price": "147.1",
+        "max_price": "145.8"
+    },
+    {
+        "date": "2024-07-02",
+        "volume_of_trade": "75295313.45",
+        "WA_price": "145.3",
+        "price_at_opening": "145.25",
+        "min_price": "146.8",
+        "max_price": "146.55"
+    },
+    {
+        "date": "2024-07-01",
+        "volume_of_trade": "61179603.25",
+        "WA_price": "143.5",
+        "price_at_opening": "143.25",
+        "min_price": "145.45",
+        "max_price": "144.8"
+    },
+    {
+        "date": "2024-06-28",
+        "volume_of_trade": "63123623.9",
+        "WA_price": "142.7",
+        "price_at_opening": "142.7",
+        "min_price": "144.05",
+        "max_price": "143.1"
+    },
+    {
+        "date": "2024-06-27",
+        "volume_of_trade": "199060145.3",
+        "WA_price": "143.35",
+        "price_at_opening": "141.9",
+        "min_price": "143.9",
+        "max_price": "143.6"
+    },
+    {
+        "date": "2024-06-26",
+        "volume_of_trade": "231020017.3",
+        "WA_price": "142",
+        "price_at_opening": "141.9",
+        "min_price": "143.9",
+        "max_price": "143.15"
+    },
+    {
+        "date": "2024-06-25",
+        "volume_of_trade": "196348465.7",
+        "WA_price": "140.55",
+        "price_at_opening": "139.65",
+        "min_price": "142.15",
+        "max_price": "141.4"
+    },
+    {
+        "date": "2024-06-24",
+        "volume_of_trade": "97707321.5",
+        "WA_price": "141.35",
+        "price_at_opening": "140.35",
+        "min_price": "142.8",
+        "max_price": "140.95"
+    },
+    {
+        "date": "2024-06-21",
+        "volume_of_trade": "333842160.25",
+        "WA_price": "142.1",
+        "price_at_opening": "141.1",
+        "min_price": "143.25",
+        "max_price": "142.05"
+    },
+    {
+        "date": "2024-06-20",
+        "volume_of_trade": "341658924.8",
+        "WA_price": "138.65",
+        "price_at_opening": "136.45",
+        "min_price": "142.6",
+        "max_price": "142.25"
+    },
+    {
+        "date": "2024-06-19",
+        "volume_of_trade": "297288339.85",
+        "WA_price": "141",
+        "price_at_opening": "136.75",
+        "min_price": "141.25",
+        "max_price": "137.55"
+    },
+    {
+        "date": "2024-06-18",
+        "volume_of_trade": "212745860.85",
+        "WA_price": "144.3",
+        "price_at_opening": "140.5",
+        "min_price": "144.55",
+        "max_price": "141.55"
+    },
+    {
+        "date": "2024-06-17",
+        "volume_of_trade": "166321055.6",
+        "WA_price": "145.85",
+        "price_at_opening": "144.1",
+        "min_price": "146.2",
+        "max_price": "144.7"
+    },
+    {
+        "date": "2024-06-14",
+        "volume_of_trade": "40948855",
+        "WA_price": "143.55",
+        "price_at_opening": "143.35",
+        "min_price": "146.25",
+        "max_price": "146"
+    },
+    {
+        "date": "2024-06-13",
+        "volume_of_trade": "191150930.7",
+        "WA_price": "138.6",
+        "price_at_opening": "136.4",
+        "min_price": "144.1",
+        "max_price": "143.6"
+    },
+    {
+        "date": "2024-06-11",
+        "volume_of_trade": "335146869.5",
+        "WA_price": "144.45",
+        "price_at_opening": "142.45",
+        "min_price": "145.1",
+        "max_price": "143.45"
+    },
+    {
+        "date": "2024-06-10",
+        "volume_of_trade": "94196064.1",
+        "WA_price": "147",
+        "price_at_opening": "143.4",
+        "min_price": "148.15",
+        "max_price": "144.5"
+    },
+    {
+        "date": "2024-06-07",
+        "volume_of_trade": "196137305.6",
+        "WA_price": "145.2",
+        "price_at_opening": "145",
+        "min_price": "148.5",
+        "max_price": "146.95"
+    },
+    {
+        "date": "2024-06-06",
+        "volume_of_trade": "113654201.4",
+        "WA_price": "145.55",
+        "price_at_opening": "144.35",
+        "min_price": "146.15",
+        "max_price": "145.05"
+    },
+    {
+        "date": "2024-06-05",
+        "volume_of_trade": "182721154.4",
+        "WA_price": "146.2",
+        "price_at_opening": "144.85",
+        "min_price": "147.25",
+        "max_price": "146.3"
+    },
+    {
+        "date": "2024-06-04",
+        "volume_of_trade": "160912432.65",
+        "WA_price": "144.1",
+        "price_at_opening": "142.65",
+        "min_price": "146.35",
+        "max_price": "145.15"
+    },
+    {
+        "date": "2024-06-03",
+        "volume_of_trade": "228619871.55",
+        "WA_price": "143.85",
+        "price_at_opening": "140.45",
+        "min_price": "146.05",
+        "max_price": "143.2"
+    },
+    {
+        "date": "2024-05-31",
+        "volume_of_trade": "221659031.05",
+        "WA_price": "147",
+        "price_at_opening": "143.75",
+        "min_price": "147.85",
+        "max_price": "145.6"
+    },
+    {
+        "date": "2024-05-30",
+        "volume_of_trade": "99945738.9",
+        "WA_price": "150.45",
+        "price_at_opening": "147.1",
+        "min_price": "151.25",
+        "max_price": "148.45"
+    },
+    {
+        "date": "2024-05-29",
+        "volume_of_trade": "109050481.9",
+        "WA_price": "149.1",
+        "price_at_opening": "148.3",
+        "min_price": "150.45",
+        "max_price": "149.75"
+    },
+    {
+        "date": "2024-05-28",
+        "volume_of_trade": "128358248.35",
+        "WA_price": "149.9",
+        "price_at_opening": "148.35",
+        "min_price": "151.3",
+        "max_price": "149.75"
+    },
+    {
+        "date": "2024-05-27",
+        "volume_of_trade": "367879641.15",
+        "WA_price": "153.2",
+        "price_at_opening": "148.5",
+        "min_price": "153.35",
+        "max_price": "148.55"
+    },
+    {
+        "date": "2024-05-24",
+        "volume_of_trade": "56749080.55",
+        "WA_price": "155.55",
+        "price_at_opening": "152.65",
+        "min_price": "155.65",
+        "max_price": "153.6"
+    },
+    {
+        "date": "2024-05-23",
+        "volume_of_trade": "64110610.15",
+        "WA_price": "154.95",
+        "price_at_opening": "154",
+        "min_price": "155.65",
+        "max_price": "155.3"
+    },
+    {
+        "date": "2024-05-22",
+        "volume_of_trade": "47679062.65",
+        "WA_price": "155.3",
+        "price_at_opening": "155.2",
+        "min_price": "156.2",
+        "max_price": "155.8"
+    },
+    {
+        "date": "2024-05-21",
+        "volume_of_trade": "70217489",
+        "WA_price": "156.4",
+        "price_at_opening": "154.2",
+        "min_price": "156.4",
+        "max_price": "155.1"
+    },
+    {
+        "date": "2024-05-20",
+        "volume_of_trade": "58958873.35",
+        "WA_price": "158.55",
+        "price_at_opening": "155.55",
+        "min_price": "159.15",
+        "max_price": "157.1"
+    },
+    {
+        "date": "2024-05-17",
+        "volume_of_trade": "29733723.95",
+        "WA_price": "157.8",
+        "price_at_opening": "157.6",
+        "min_price": "158.5",
+        "max_price": "158.15"
+    },
+    {
+        "date": "2024-05-16",
+        "volume_of_trade": "23086689.9",
+        "WA_price": "157.3",
+        "price_at_opening": "157.05",
+        "min_price": "157.8",
+        "max_price": "157.45"
+    },
+    {
+        "date": "2024-05-15",
+        "volume_of_trade": "40913573.45",
+        "WA_price": "156.7",
+        "price_at_opening": "156.5",
+        "min_price": "157.2",
+        "max_price": "157"
+    },
+    {
+        "date": "2024-05-14",
+        "volume_of_trade": "35595532.25",
+        "WA_price": "156.7",
+        "price_at_opening": "156.15",
+        "min_price": "156.8",
+        "max_price": "156.6"
+    },
+    {
+        "date": "2024-05-13",
+        "volume_of_trade": "46698935.7",
+        "WA_price": "155.95",
+        "price_at_opening": "155.4",
+        "min_price": "156.75",
+        "max_price": "156.3"
+    },
+    {
+        "date": "2024-05-10",
+        "volume_of_trade": "18142348.7",
+        "WA_price": "155.4",
+        "price_at_opening": "154.95",
+        "min_price": "155.9",
+        "max_price": "155.75"
+    },
+    {
+        "date": "2024-05-08",
+        "volume_of_trade": "35947766.95",
+        "WA_price": "154.55",
+        "price_at_opening": "154.55",
+        "min_price": "155.2",
+        "max_price": "155.1"
+    },
+    {
+        "date": "2024-05-07",
+        "volume_of_trade": "43445874.35",
+        "WA_price": "153.3",
+        "price_at_opening": "153.2",
+        "min_price": "154.85",
+        "max_price": "154.55"
+    },
+    {
+        "date": "2024-05-06",
+        "volume_of_trade": "37782015.05",
+        "WA_price": "154.05",
+        "price_at_opening": "152.7",
+        "min_price": "154.05",
+        "max_price": "153.5"
+    },
+    {
+        "date": "2024-05-03",
+        "volume_of_trade": "44759885.75",
+        "WA_price": "154.35",
+        "price_at_opening": "153.2",
+        "min_price": "154.45",
+        "max_price": "154.1"
+    },
+    {
+        "date": "2024-05-02",
+        "volume_of_trade": "50604450.4",
+        "WA_price": "155.05",
+        "price_at_opening": "153.85",
+        "min_price": "155.6",
+        "max_price": "154.1"
+    },
+    {
+        "date": "2024-04-30",
+        "volume_of_trade": "17266128.3",
+        "WA_price": "155.45",
+        "price_at_opening": "154.8",
+        "min_price": "155.7",
+        "max_price": "155.15"
+    },
+    {
+        "date": "2024-04-29",
+        "volume_of_trade": "34486817.7",
+        "WA_price": "154.65",
+        "price_at_opening": "154.65",
+        "min_price": "155.45",
+        "max_price": "155.3"
+    },
+    {
+        "date": "2024-04-27",
+        "volume_of_trade": "27284808.3",
+        "WA_price": "154.4",
+        "price_at_opening": "154",
+        "min_price": "154.9",
+        "max_price": "154.75"
+    },
+    {
+        "date": "2024-04-26",
+        "volume_of_trade": "32170413.55",
+        "WA_price": "153.95",
+        "price_at_opening": "153.75",
+        "min_price": "154.55",
+        "max_price": "154.45"
+    },
+    {
+        "date": "2024-04-25",
+        "volume_of_trade": "32027012.4",
+        "WA_price": "153.55",
+        "price_at_opening": "153.2",
+        "min_price": "153.9",
+        "max_price": "153.75"
+    },
+    {
+        "date": "2024-04-24",
+        "volume_of_trade": "95342139.9",
+        "WA_price": "153.6",
+        "price_at_opening": "153.2",
+        "min_price": "154.15",
+        "max_price": "153.5"
+    },
+    {
+        "date": "2024-04-23",
+        "volume_of_trade": "143576526.9",
+        "WA_price": "155.3",
+        "price_at_opening": "153.3",
+        "min_price": "155.8",
+        "max_price": "153.7"
+    },
+    {
+        "date": "2024-04-22",
+        "volume_of_trade": "110232105.35",
+        "WA_price": "155",
+        "price_at_opening": "154.5",
+        "min_price": "155.5",
+        "max_price": "155.35"
+    },
+    {
+        "date": "2024-04-19",
+        "volume_of_trade": "81029152.25",
+        "WA_price": "154.25",
+        "price_at_opening": "154.25",
+        "min_price": "155",
+        "max_price": "154.8"
+    },
+    {
+        "date": "2024-04-18",
+        "volume_of_trade": "93407810.4",
+        "WA_price": "154.65",
+        "price_at_opening": "153.65",
+        "min_price": "154.7",
+        "max_price": "154.3"
+    },
+    {
+        "date": "2024-04-17",
+        "volume_of_trade": "113427476.35",
+        "WA_price": "155",
+        "price_at_opening": "154.3",
+        "min_price": "155.45",
+        "max_price": "154.75"
+    },
+    {
+        "date": "2024-04-16",
+        "volume_of_trade": "78026288.55",
+        "WA_price": "155.2",
+        "price_at_opening": "154.65",
+        "min_price": "155.45",
+        "max_price": "155.05"
+    },
+    {
+        "date": "2024-04-15",
+        "volume_of_trade": "158948595.1",
+        "WA_price": "154.2",
+        "price_at_opening": "154.05",
+        "min_price": "155.35",
+        "max_price": "155.2"
+    },
+    {
+        "date": "2024-04-12",
+        "volume_of_trade": "111903876.05",
+        "WA_price": "153.9",
+        "price_at_opening": "153.85",
+        "min_price": "154.6",
+        "max_price": "154.4"
+    },
+    {
+        "date": "2024-04-11",
+        "volume_of_trade": "98290438.05",
+        "WA_price": "154",
+        "price_at_opening": "153.5",
+        "min_price": "154.6",
+        "max_price": "153.8"
+    },
+    {
+        "date": "2024-04-10",
+        "volume_of_trade": "75048002.2",
+        "WA_price": "153.2",
+        "price_at_opening": "152.65",
+        "min_price": "154.2",
+        "max_price": "153.7"
+    },
+    {
+        "date": "2024-04-09",
+        "volume_of_trade": "110132907.85",
+        "WA_price": "153.2",
+        "price_at_opening": "152.7",
+        "min_price": "154.05",
+        "max_price": "152.95"
+    },
+    {
+        "date": "2024-04-08",
+        "volume_of_trade": "106248482.8",
+        "WA_price": "152.1",
+        "price_at_opening": "152.1",
+        "min_price": "153.35",
+        "max_price": "153.2"
+    },
+    {
+        "date": "2024-04-05",
+        "volume_of_trade": "55041981.7",
+        "WA_price": "151.9",
+        "price_at_opening": "151.6",
+        "min_price": "152.6",
+        "max_price": "152.15"
+    },
+    {
+        "date": "2024-04-04",
+        "volume_of_trade": "70568382.7",
+        "WA_price": "152",
+        "price_at_opening": "151.8",
+        "min_price": "152.6",
+        "max_price": "152.45"
+    },
+    {
+        "date": "2024-04-03",
+        "volume_of_trade": "70432978.2",
+        "WA_price": "151",
+        "price_at_opening": "151",
+        "min_price": "152.15",
+        "max_price": "151.85"
+    },
+    {
+        "date": "2024-04-02",
+        "volume_of_trade": "104422596.2",
+        "WA_price": "151.1",
+        "price_at_opening": "150.1",
+        "min_price": "151.1",
+        "max_price": "150.8"
+    },
+    {
+        "date": "2024-04-01",
+        "volume_of_trade": "152704262.65",
+        "WA_price": "149.15",
+        "price_at_opening": "149.1",
+        "min_price": "151.2",
+        "max_price": "150.8"
+    },
+    {
+        "date": "2024-03-29",
+        "volume_of_trade": "50664404.3",
+        "WA_price": "148.25",
+        "price_at_opening": "147.7",
+        "min_price": "149.2",
+        "max_price": "148.9"
+    },
+    {
+        "date": "2024-03-28",
+        "volume_of_trade": "68107961.8",
+        "WA_price": "147.65",
+        "price_at_opening": "147.5",
+        "min_price": "148.35",
+        "max_price": "148.15"
+    },
+    {
+        "date": "2024-03-27",
+        "volume_of_trade": "37815309.8",
+        "WA_price": "147.05",
+        "price_at_opening": "146.95",
+        "min_price": "147.65",
+        "max_price": "147.35"
+    },
+    {
+        "date": "2024-03-26",
+        "volume_of_trade": "35471008.2",
+        "WA_price": "147.3",
+        "price_at_opening": "146.7",
+        "min_price": "147.4",
+        "max_price": "146.95"
+    },
+    {
+        "date": "2024-03-25",
+        "volume_of_trade": "183578229.15",
+        "WA_price": "145.2",
+        "price_at_opening": "144.65",
+        "min_price": "147.2",
+        "max_price": "146.85"
+    },
+    {
+        "date": "2024-03-22",
+        "volume_of_trade": "242388112.95",
+        "WA_price": "147.05",
+        "price_at_opening": "144.2",
+        "min_price": "147.55",
+        "max_price": "146.65"
+    },
+    {
+        "date": "2024-03-21",
+        "volume_of_trade": "78555241.6",
+        "WA_price": "146.95",
+        "price_at_opening": "145.85",
+        "min_price": "147.75",
+        "max_price": "146.7"
+    },
+    {
+        "date": "2024-03-20",
+        "volume_of_trade": "107397772.75",
+        "WA_price": "145.95",
+        "price_at_opening": "145.9",
+        "min_price": "146.9",
+        "max_price": "146.35"
+    },
+    {
+        "date": "2024-03-19",
+        "volume_of_trade": "104383600.25",
+        "WA_price": "146.9",
+        "price_at_opening": "145.15",
+        "min_price": "147.3",
+        "max_price": "145.85"
+    },
+    {
+        "date": "2024-03-18",
+        "volume_of_trade": "39640225.55",
+        "WA_price": "147.1",
+        "price_at_opening": "146.65",
+        "min_price": "147.5",
+        "max_price": "147.15"
+    },
+    {
+        "date": "2024-03-15",
+        "volume_of_trade": "178519806.4",
+        "WA_price": "147.3",
+        "price_at_opening": "146.75",
+        "min_price": "147.8",
+        "max_price": "147.2"
+    },
+    {
+        "date": "2024-03-14",
+        "volume_of_trade": "202398449.05",
+        "WA_price": "148.25",
+        "price_at_opening": "146.7",
+        "min_price": "148.35",
+        "max_price": "147.1"
+    },
+    {
+        "date": "2024-03-13",
+        "volume_of_trade": "40218729.15",
+        "WA_price": "148.65",
+        "price_at_opening": "148.05",
+        "min_price": "149.25",
+        "max_price": "148.45"
+    },
+    {
+        "date": "2024-03-12",
+        "volume_of_trade": "50857414.95",
+        "WA_price": "148.35",
+        "price_at_opening": "147.6",
+        "min_price": "148.9",
+        "max_price": "148.75"
+    },
+    {
+        "date": "2024-03-11",
+        "volume_of_trade": "64087828.45",
+        "WA_price": "148.7",
+        "price_at_opening": "148.2",
+        "min_price": "149.45",
+        "max_price": "148.35"
+    },
+    {
+        "date": "2024-03-07",
+        "volume_of_trade": "56492338",
+        "WA_price": "148",
+        "price_at_opening": "147.6",
+        "min_price": "148.7",
+        "max_price": "148.2"
+    },
+    {
+        "date": "2024-03-06",
+        "volume_of_trade": "115725342.55",
+        "WA_price": "147.5",
+        "price_at_opening": "147.05",
+        "min_price": "148.35",
+        "max_price": "147.85"
+    },
+    {
+        "date": "2024-03-05",
+        "volume_of_trade": "121121301.2",
+        "WA_price": "147.95",
+        "price_at_opening": "146.8",
+        "min_price": "148",
+        "max_price": "147.7"
+    },
+    {
+        "date": "2024-03-04",
+        "volume_of_trade": "94648075.6",
+        "WA_price": "146.25",
+        "price_at_opening": "146.1",
+        "min_price": "147.9",
+        "max_price": "147.4"
+    },
+    {
+        "date": "2024-03-01",
+        "volume_of_trade": "119352545.25",
+        "WA_price": "145.15",
+        "price_at_opening": "145.1",
+        "min_price": "146.35",
+        "max_price": "146.2"
+    },
+    {
+        "date": "2024-02-29",
+        "volume_of_trade": "145183496.3",
+        "WA_price": "144.2",
+        "price_at_opening": "143.5",
+        "min_price": "145.35",
+        "max_price": "145.25"
+    },
+    {
+        "date": "2024-02-28",
+        "volume_of_trade": "56353396.65",
+        "WA_price": "143.3",
+        "price_at_opening": "143.3",
+        "min_price": "144.65",
+        "max_price": "144"
+    },
+    {
+        "date": "2024-02-27",
+        "volume_of_trade": "34432258.1",
+        "WA_price": "143.7",
+        "price_at_opening": "143.15",
+        "min_price": "144",
+        "max_price": "143.4"
+    },
+    {
+        "date": "2024-02-26",
+        "volume_of_trade": "374544601.15",
+        "WA_price": "141.45",
+        "price_at_opening": "141.45",
+        "min_price": "143.9",
+        "max_price": "143.35"
+    },
+    {
+        "date": "2024-02-22",
+        "volume_of_trade": "80319688.05",
+        "WA_price": "141.15",
+        "price_at_opening": "140.5",
+        "min_price": "141.85",
+        "max_price": "140.85"
+    },
+    {
+        "date": "2024-02-21",
+        "volume_of_trade": "87094198.9",
+        "WA_price": "141.65",
+        "price_at_opening": "140.25",
+        "min_price": "142.8",
+        "max_price": "140.7"
+    },
+    {
+        "date": "2024-02-20",
+        "volume_of_trade": "66899753.75",
+        "WA_price": "144.85",
+        "price_at_opening": "141.5",
+        "min_price": "144.9",
+        "max_price": "143.45"
+    },
+    {
+        "date": "2024-02-19",
+        "volume_of_trade": "91992072.2",
+        "WA_price": "145.3",
+        "price_at_opening": "144.35",
+        "min_price": "145.6",
+        "max_price": "145.15"
+    },
+    {
+        "date": "2024-02-16",
+        "volume_of_trade": "117715924.6",
+        "WA_price": "146",
+        "price_at_opening": "144.85",
+        "min_price": "146.6",
+        "max_price": "145.1"
+    },
+    {
+        "date": "2024-02-15",
+        "volume_of_trade": "39114875",
+        "WA_price": "145.5",
+        "price_at_opening": "144.9",
+        "min_price": "146.25",
+        "max_price": "146.05"
+    },
+    {
+        "date": "2024-02-14",
+        "volume_of_trade": "45307957.05",
+        "WA_price": "145.75",
+        "price_at_opening": "145.25",
+        "min_price": "146.05",
+        "max_price": "145.65"
+    },
+    {
+        "date": "2024-02-13",
+        "volume_of_trade": "136005500.65",
+        "WA_price": "144.75",
+        "price_at_opening": "144.75",
+        "min_price": "145.95",
+        "max_price": "145.7"
+    },
+    {
+        "date": "2024-02-12",
+        "volume_of_trade": "34541239.4",
+        "WA_price": "144.75",
+        "price_at_opening": "144.45",
+        "min_price": "145.3",
+        "max_price": "145"
+    },
+    {
+        "date": "2024-02-09",
+        "volume_of_trade": "50281805.55",
+        "WA_price": "144.5",
+        "price_at_opening": "143.9",
+        "min_price": "144.95",
+        "max_price": "144.65"
+    },
+    {
+        "date": "2024-02-08",
+        "volume_of_trade": "101218013.65",
+        "WA_price": "145.75",
+        "price_at_opening": "144.25",
+        "min_price": "146",
+        "max_price": "144.95"
+    },
+    {
+        "date": "2024-02-07",
+        "volume_of_trade": "51118101.55",
+        "WA_price": "145",
+        "price_at_opening": "144.8",
+        "min_price": "145.9",
+        "max_price": "145.65"
+    },
+    {
+        "date": "2024-02-06",
+        "volume_of_trade": "36475170.45",
+        "WA_price": "144.5",
+        "price_at_opening": "144.2",
+        "min_price": "145",
+        "max_price": "144.8"
+    },
+    {
+        "date": "2024-02-05",
+        "volume_of_trade": "108090393.85",
+        "WA_price": "144.1",
+        "price_at_opening": "143.85",
+        "min_price": "144.75",
+        "max_price": "144.35"
+    },
+    {
+        "date": "2024-02-02",
+        "volume_of_trade": "99906676.35",
+        "WA_price": "144.35",
+        "price_at_opening": "143.85",
+        "min_price": "144.5",
+        "max_price": "144.35"
+    },
+    {
+        "date": "2024-02-01",
+        "volume_of_trade": "171104062.45",
+        "WA_price": "143.6",
+        "price_at_opening": "143.6",
+        "min_price": "145",
+        "max_price": "144.3"
+    },
+    {
+        "date": "2024-01-31",
+        "volume_of_trade": "82630535.85",
+        "WA_price": "142.85",
+        "price_at_opening": "142.85",
+        "min_price": "143.8",
+        "max_price": "143.8"
+    },
+    {
+        "date": "2024-01-30",
+        "volume_of_trade": "38724458.9",
+        "WA_price": "142.2",
+        "price_at_opening": "142.2",
+        "min_price": "142.9",
+        "max_price": "142.75"
+    },
+    {
+        "date": "2024-01-29",
+        "volume_of_trade": "46277126.45",
+        "WA_price": "141.35",
+        "price_at_opening": "141.35",
+        "min_price": "142.6",
+        "max_price": "142.4"
+    },
+    {
+        "date": "2024-01-26",
+        "volume_of_trade": "45428974.95",
+        "WA_price": "141.45",
+        "price_at_opening": "141.3",
+        "min_price": "142.15",
+        "max_price": "141.5"
+    },
+    {
+        "date": "2024-01-25",
+        "volume_of_trade": "43660501.6",
+        "WA_price": "142.2",
+        "price_at_opening": "140.7",
+        "min_price": "142.2",
+        "max_price": "141.4"
+    },
+    {
+        "date": "2024-01-24",
+        "volume_of_trade": "45734904",
+        "WA_price": "142.4",
+        "price_at_opening": "141.55",
+        "min_price": "142.8",
+        "max_price": "142.05"
+    },
+    {
+        "date": "2024-01-23",
+        "volume_of_trade": "38069145.75",
+        "WA_price": "142.5",
+        "price_at_opening": "142",
+        "min_price": "142.65",
+        "max_price": "142.55"
+    },
+    {
+        "date": "2024-01-22",
+        "volume_of_trade": "41923047.95",
+        "WA_price": "141.8",
+        "price_at_opening": "141.5",
+        "min_price": "142.5",
+        "max_price": "142.45"
+    },
+    {
+        "date": "2024-01-19",
+        "volume_of_trade": "39638488.35",
+        "WA_price": "142.4",
+        "price_at_opening": "141.3",
+        "min_price": "142.4",
+        "max_price": "141.9"
+    },
+    {
+        "date": "2024-01-18",
+        "volume_of_trade": "42786752.25",
+        "WA_price": "142.8",
+        "price_at_opening": "142.35",
+        "min_price": "143.15",
+        "max_price": "142.6"
+    },
+    {
+        "date": "2024-01-17",
+        "volume_of_trade": "33037840.7",
+        "WA_price": "142.55",
+        "price_at_opening": "142.3",
+        "min_price": "143.05",
+        "max_price": "142.65"
+    },
+    {
+        "date": "2024-01-16",
+        "volume_of_trade": "61815140.1",
+        "WA_price": "142.2",
+        "price_at_opening": "141.75",
+        "min_price": "142.8",
+        "max_price": "142.6"
+    },
+    {
+        "date": "2024-01-15",
+        "volume_of_trade": "50427521.8",
+        "WA_price": "142.45",
+        "price_at_opening": "141.75",
+        "min_price": "143",
+        "max_price": "141.8"
+    },
+    {
+        "date": "2024-01-12",
+        "volume_of_trade": "57127449.7",
+        "WA_price": "142.35",
+        "price_at_opening": "141.8",
+        "min_price": "142.9",
+        "max_price": "142.8"
+    },
+    {
+        "date": "2024-01-11",
+        "volume_of_trade": "44658148.55",
+        "WA_price": "141.9",
+        "price_at_opening": "141.25",
+        "min_price": "142.5",
+        "max_price": "142.25"
+    },
+    {
+        "date": "2024-01-10",
+        "volume_of_trade": "50965018.6",
+        "WA_price": "141.25",
+        "price_at_opening": "141.1",
+        "min_price": "142.25",
+        "max_price": "141.9"
+    },
+    {
+        "date": "2024-01-09",
+        "volume_of_trade": "33798313.7",
+        "WA_price": "141",
+        "price_at_opening": "140.6",
+        "min_price": "141.4",
+        "max_price": "141.1"
+    },
+    {
+        "date": "2024-01-08",
+        "volume_of_trade": "29033408.55",
+        "WA_price": "140.15",
+        "price_at_opening": "140.15",
+        "min_price": "141.15",
+        "max_price": "140.95"
+    },
+    {
+        "date": "2024-01-05",
+        "volume_of_trade": "27422764.8",
+        "WA_price": "140.15",
+        "price_at_opening": "139.65",
+        "min_price": "140.45",
+        "max_price": "140.2"
+    },
+    {
+        "date": "2024-01-04",
+        "volume_of_trade": "33764381.4",
+        "WA_price": "139.8",
+        "price_at_opening": "139.75",
+        "min_price": "140.5",
+        "max_price": "140.1"
+    },
+    {
+        "date": "2024-01-03",
+        "volume_of_trade": "48319525.35",
+        "WA_price": "137.75",
+        "price_at_opening": "137.6",
+        "min_price": "139.85",
+        "max_price": "139.65"
+    },
+    {
+        "date": "2023-12-29",
+        "volume_of_trade": "33680261.2",
+        "WA_price": "137.95",
+        "price_at_opening": "137.7",
+        "min_price": "138.65",
+        "max_price": "138.45"
+    },
+    {
+        "date": "2023-12-28",
+        "volume_of_trade": "37375951.9",
+        "WA_price": "138.3",
+        "price_at_opening": "137.1",
+        "min_price": "138.55",
+        "max_price": "138.45"
+    },
+    {
+        "date": "2023-12-27",
+        "volume_of_trade": "33578107.4",
+        "WA_price": "137.8",
+        "price_at_opening": "137.8",
+        "min_price": "138.9",
+        "max_price": "138.3"
+    },
+    {
+        "date": "2023-12-26",
+        "volume_of_trade": "36250901.05",
+        "WA_price": "137.65",
+        "price_at_opening": "137.5",
+        "min_price": "138.15",
+        "max_price": "137.7"
+    },
+    {
+        "date": "2023-12-25",
+        "volume_of_trade": "60828974.95",
+        "WA_price": "137.55",
+        "price_at_opening": "137",
+        "min_price": "138.65",
+        "max_price": "137.3"
+    },
+    {
+        "date": "2023-12-22",
+        "volume_of_trade": "56664302.85",
+        "WA_price": "136.65",
+        "price_at_opening": "136.2",
+        "min_price": "137.95",
+        "max_price": "137.65"
+    },
+    {
+        "date": "2023-12-21",
+        "volume_of_trade": "40526403.1",
+        "WA_price": "137.75",
+        "price_at_opening": "135.7",
+        "min_price": "137.75",
+        "max_price": "136.8"
+    },
+    {
+        "date": "2023-12-20",
+        "volume_of_trade": "51407184.85",
+        "WA_price": "137.45",
+        "price_at_opening": "137.1",
+        "min_price": "138.3",
+        "max_price": "138.05"
+    },
+    {
+        "date": "2023-12-19",
+        "volume_of_trade": "66349154.4",
+        "WA_price": "137.35",
+        "price_at_opening": "136",
+        "min_price": "137.5",
+        "max_price": "136.75"
+    },
+    {
+        "date": "2023-12-18",
+        "volume_of_trade": "59220318.75",
+        "WA_price": "135",
+        "price_at_opening": "135",
+        "min_price": "137.1",
+        "max_price": "136.9"
+    },
+    {
+        "date": "2023-12-15",
+        "volume_of_trade": "59162270.25",
+        "WA_price": "132.4",
+        "price_at_opening": "131.4",
+        "min_price": "135.2",
+        "max_price": "134.6"
+    },
+    {
+        "date": "2023-12-14",
+        "volume_of_trade": "37408592.55",
+        "WA_price": "133.3",
+        "price_at_opening": "132.4",
+        "min_price": "135.65",
+        "max_price": "133.55"
+    },
+    {
+        "date": "2023-12-13",
+        "volume_of_trade": "44326758.1",
+        "WA_price": "132.35",
+        "price_at_opening": "131.95",
+        "min_price": "133.65",
+        "max_price": "133.05"
+    },
+    {
+        "date": "2023-12-12",
+        "volume_of_trade": "87694961.65",
+        "WA_price": "133.1",
+        "price_at_opening": "131.15",
+        "min_price": "134.05",
+        "max_price": "133.3"
+    },
+    {
+        "date": "2023-12-11",
+        "volume_of_trade": "44756243.55",
+        "WA_price": "134.9",
+        "price_at_opening": "132.4",
+        "min_price": "135.6",
+        "max_price": "132.85"
+    },
+    {
+        "date": "2023-12-08",
+        "volume_of_trade": "133987971.4",
+        "WA_price": "135.5",
+        "price_at_opening": "134.95",
+        "min_price": "136.55",
+        "max_price": "135.4"
+    },
+    {
+        "date": "2023-12-07",
+        "volume_of_trade": "53523363",
+        "WA_price": "134.95",
+        "price_at_opening": "133.8",
+        "min_price": "135.55",
+        "max_price": "135.45"
+    },
+    {
+        "date": "2023-12-06",
+        "volume_of_trade": "213166120.6",
+        "WA_price": "138.05",
+        "price_at_opening": "134.4",
+        "min_price": "139.3",
+        "max_price": "135.35"
+    },
+    {
+        "date": "2023-12-05",
+        "volume_of_trade": "98564917.3",
+        "WA_price": "135.95",
+        "price_at_opening": "135.8",
+        "min_price": "137.95",
+        "max_price": "137.65"
+    },
+    {
+        "date": "2023-12-04",
+        "volume_of_trade": "71102152.7",
+        "WA_price": "137",
+        "price_at_opening": "135.7",
+        "min_price": "137.55",
+        "max_price": "136.7"
+    },
+    {
+        "date": "2023-12-01",
+        "volume_of_trade": "66260146.3",
+        "WA_price": "138.4",
+        "price_at_opening": "137.5",
+        "min_price": "139",
+        "max_price": "138.15"
+    },
+    {
+        "date": "2023-11-30",
+        "volume_of_trade": "52222660.75",
+        "WA_price": "139.5",
+        "price_at_opening": "138.3",
+        "min_price": "139.55",
+        "max_price": "138.95"
+    },
+    {
+        "date": "2023-11-29",
+        "volume_of_trade": "22924722.05",
+        "WA_price": "140.2",
+        "price_at_opening": "139.05",
+        "min_price": "140.35",
+        "max_price": "139.25"
+    },
+    {
+        "date": "2023-11-28",
+        "volume_of_trade": "18388512.5",
+        "WA_price": "140.05",
+        "price_at_opening": "138.8",
+        "min_price": "140.4",
+        "max_price": "140.25"
+    },
+    {
+        "date": "2023-11-27",
+        "volume_of_trade": "69086072",
+        "WA_price": "140.85",
+        "price_at_opening": "139.55",
+        "min_price": "141.25",
+        "max_price": "140.05"
+    },
+    {
+        "date": "2023-11-24",
+        "volume_of_trade": "29678696.95",
+        "WA_price": "140.35",
+        "price_at_opening": "140.35",
+        "min_price": "141.5",
+        "max_price": "140.95"
+    },
+    {
+        "date": "2023-11-23",
+        "volume_of_trade": "27390484.55",
+        "WA_price": "141.65",
+        "price_at_opening": "140.25",
+        "min_price": "141.65",
+        "max_price": "140.6"
+    },
+    {
+        "date": "2023-11-22",
+        "volume_of_trade": "25398774.7",
+        "WA_price": "140.9",
+        "price_at_opening": "140.9",
+        "min_price": "141.8",
+        "max_price": "141.5"
+    },
+    {
+        "date": "2023-11-21",
+        "volume_of_trade": "38577431.05",
+        "WA_price": "140.35",
+        "price_at_opening": "139.65",
+        "min_price": "141.4",
+        "max_price": "140.9"
+    },
+    {
+        "date": "2023-11-20",
+        "volume_of_trade": "32676419.9",
+        "WA_price": "139.95",
+        "price_at_opening": "139.9",
+        "min_price": "140.95",
+        "max_price": "140.35"
+    },
+    {
+        "date": "2023-11-17",
+        "volume_of_trade": "96736768.2",
+        "WA_price": "139.85",
+        "price_at_opening": "138",
+        "min_price": "140.55",
+        "max_price": "140.4"
+    },
+    {
+        "date": "2023-11-16",
+        "volume_of_trade": "50632611.45",
+        "WA_price": "140.95",
+        "price_at_opening": "139.6",
+        "min_price": "141.25",
+        "max_price": "140.1"
+    },
+    {
+        "date": "2023-11-15",
+        "volume_of_trade": "27205551.75",
+        "WA_price": "140.9",
+        "price_at_opening": "139.95",
+        "min_price": "141.3",
+        "max_price": "141.2"
+    },
+    {
+        "date": "2023-11-14",
+        "volume_of_trade": "84766552.85",
+        "WA_price": "142.5",
+        "price_at_opening": "140.1",
+        "min_price": "142.5",
+        "max_price": "141.15"
+    },
+    {
+        "date": "2023-11-13",
+        "volume_of_trade": "38176541.8",
+        "WA_price": "141.55",
+        "price_at_opening": "141.5",
+        "min_price": "142.95",
+        "max_price": "142.9"
+    },
+    {
+        "date": "2023-11-10",
+        "volume_of_trade": "27296522.25",
+        "WA_price": "141.65",
+        "price_at_opening": "141.4",
+        "min_price": "142",
+        "max_price": "141.8"
+    },
+    {
+        "date": "2023-11-09",
+        "volume_of_trade": "23207842.25",
+        "WA_price": "141.75",
+        "price_at_opening": "141.15",
+        "min_price": "142.2",
+        "max_price": "141.8"
+    },
+    {
+        "date": "2023-11-08",
+        "volume_of_trade": "38641952.2",
+        "WA_price": "142.05",
+        "price_at_opening": "141.4",
+        "min_price": "142.75",
+        "max_price": "142.3"
+    },
+    {
+        "date": "2023-11-07",
+        "volume_of_trade": "40933795.05",
+        "WA_price": "142.25",
+        "price_at_opening": "141.85",
+        "min_price": "143",
+        "max_price": "142.45"
+    },
+    {
+        "date": "2023-11-06",
+        "volume_of_trade": "23821593",
+        "WA_price": "141.05",
+        "price_at_opening": "140.15",
+        "min_price": "142.3",
+        "max_price": "142.05"
+    },
+    {
+        "date": "2023-11-03",
+        "volume_of_trade": "38112228.5",
+        "WA_price": "139.85",
+        "price_at_opening": "139.5",
+        "min_price": "141",
+        "max_price": "140.2"
+    },
+    {
+        "date": "2023-11-02",
+        "volume_of_trade": "38527033.65",
+        "WA_price": "140.25",
+        "price_at_opening": "139.75",
+        "min_price": "141.2",
+        "max_price": "139.95"
+    },
+    {
+        "date": "2023-11-01",
+        "volume_of_trade": "42406219.8",
+        "WA_price": "139.25",
+        "price_at_opening": "139.2",
+        "min_price": "140.45",
+        "max_price": "140"
+    },
+    {
+        "date": "2023-10-31",
+        "volume_of_trade": "125118784.85",
+        "WA_price": "141",
+        "price_at_opening": "139.1",
+        "min_price": "141.2",
+        "max_price": "139.65"
+    },
+    {
+        "date": "2023-10-30",
+        "volume_of_trade": "27832207.75",
+        "WA_price": "141.35",
+        "price_at_opening": "140.9",
+        "min_price": "142.25",
+        "max_price": "141"
+    },
+    {
+        "date": "2023-10-27",
+        "volume_of_trade": "37002812.4",
+        "WA_price": "141.15",
+        "price_at_opening": "139.7",
+        "min_price": "142",
+        "max_price": "141.3"
+    },
+    {
+        "date": "2023-10-26",
+        "volume_of_trade": "54327233.85",
+        "WA_price": "143.15",
+        "price_at_opening": "141.05",
+        "min_price": "143.85",
+        "max_price": "141.4"
+    },
+    {
+        "date": "2023-10-25",
+        "volume_of_trade": "24377340",
+        "WA_price": "143",
+        "price_at_opening": "142.25",
+        "min_price": "143.4",
+        "max_price": "143"
+    },
+    {
+        "date": "2023-10-24",
+        "volume_of_trade": "41826771",
+        "WA_price": "142.8",
+        "price_at_opening": "141.6",
+        "min_price": "143.25",
+        "max_price": "142.95"
+    },
+    {
+        "date": "2023-10-23",
+        "volume_of_trade": "57297570.6",
+        "WA_price": "143",
+        "price_at_opening": "142.15",
+        "min_price": "143.8",
+        "max_price": "142.95"
+    },
+    {
+        "date": "2023-10-20",
+        "volume_of_trade": "30158718.4",
+        "WA_price": "142.55",
+        "price_at_opening": "142",
+        "min_price": "143.35",
+        "max_price": "143"
+    },
+    {
+        "date": "2023-10-19",
+        "volume_of_trade": "33693204.55",
+        "WA_price": "142.55",
+        "price_at_opening": "141.65",
+        "min_price": "142.7",
+        "max_price": "142.45"
+    },
+    {
+        "date": "2023-10-18",
+        "volume_of_trade": "40168736.15",
+        "WA_price": "142.65",
+        "price_at_opening": "141.4",
+        "min_price": "142.95",
+        "max_price": "142.4"
+    },
+    {
+        "date": "2023-10-17",
+        "volume_of_trade": "31395469.3",
+        "WA_price": "141.75",
+        "price_at_opening": "141.35",
+        "min_price": "142.65",
+        "max_price": "142.6"
+    },
+    {
+        "date": "2023-10-16",
+        "volume_of_trade": "44573472.35",
+        "WA_price": "140",
+        "price_at_opening": "139.9",
+        "min_price": "141.85",
+        "max_price": "141.7"
+    },
+    {
+        "date": "2023-10-13",
+        "volume_of_trade": "32761852.35",
+        "WA_price": "139.5",
+        "price_at_opening": "139",
+        "min_price": "139.9",
+        "max_price": "139.55"
+    },
+    {
+        "date": "2023-10-12",
+        "volume_of_trade": "30204679.55",
+        "WA_price": "137.05",
+        "price_at_opening": "136.9",
+        "min_price": "139.8",
+        "max_price": "139.3"
+    },
+    {
+        "date": "2023-10-11",
+        "volume_of_trade": "43734755.25",
+        "WA_price": "139.8",
+        "price_at_opening": "136.85",
+        "min_price": "139.9",
+        "max_price": "139.4"
+    },
+    {
+        "date": "2023-10-10",
+        "volume_of_trade": "19637545.35",
+        "WA_price": "138.25",
+        "price_at_opening": "138.25",
+        "min_price": "139.6",
+        "max_price": "139.35"
+    },
+    {
+        "date": "2023-10-09",
+        "volume_of_trade": "33423096.65",
+        "WA_price": "138",
+        "price_at_opening": "137.95",
+        "min_price": "139",
+        "max_price": "138.1"
+    },
+    {
+        "date": "2023-10-06",
+        "volume_of_trade": "31929240.5",
+        "WA_price": "137.15",
+        "price_at_opening": "136.6",
+        "min_price": "138",
+        "max_price": "137.5"
+    },
+    {
+        "date": "2023-10-05",
+        "volume_of_trade": "29682200.9",
+        "WA_price": "136.15",
+        "price_at_opening": "136.15",
+        "min_price": "137.2",
+        "max_price": "137"
+    },
+    {
+        "date": "2023-10-04",
+        "volume_of_trade": "31522832.95",
+        "WA_price": "136.85",
+        "price_at_opening": "136.15",
+        "min_price": "137.7",
+        "max_price": "136.95"
+    },
+    {
+        "date": "2023-10-03",
+        "volume_of_trade": "39025232.55",
+        "WA_price": "136.7",
+        "price_at_opening": "135.2",
+        "min_price": "137.35",
+        "max_price": "137.15"
+    },
+    {
+        "date": "2023-10-02",
+        "volume_of_trade": "45996836.4",
+        "WA_price": "136.8",
+        "price_at_opening": "136.2",
+        "min_price": "137.8",
+        "max_price": "136.35"
+    },
+    {
+        "date": "2023-09-29",
+        "volume_of_trade": "29115025.5",
+        "WA_price": "136.05",
+        "price_at_opening": "135.4",
+        "min_price": "136.9",
+        "max_price": "136.35"
+    },
+    {
+        "date": "2023-09-28",
+        "volume_of_trade": "39249463.35",
+        "WA_price": "134.3",
+        "price_at_opening": "134.15",
+        "min_price": "135.9",
+        "max_price": "135.35"
+    },
+    {
+        "date": "2023-09-27",
+        "volume_of_trade": "24471039.55",
+        "WA_price": "133.5",
+        "price_at_opening": "132.65",
+        "min_price": "134.5",
+        "max_price": "134.1"
+    },
+    {
+        "date": "2023-09-26",
+        "volume_of_trade": "23398576.85",
+        "WA_price": "133.35",
+        "price_at_opening": "131.1",
+        "min_price": "133.35",
+        "max_price": "132.95"
+    },
+    {
+        "date": "2023-09-25",
+        "volume_of_trade": "24095306.1",
+        "WA_price": "134.5",
+        "price_at_opening": "132",
+        "min_price": "134.5",
+        "max_price": "132.9"
+    },
+    {
+        "date": "2023-09-22",
+        "volume_of_trade": "27061346",
+        "WA_price": "131.05",
+        "price_at_opening": "131",
+        "min_price": "134",
+        "max_price": "133.65"
+    },
+    {
+        "date": "2023-09-21",
+        "volume_of_trade": "40819665.55",
+        "WA_price": "133.75",
+        "price_at_opening": "131.1",
+        "min_price": "133.8",
+        "max_price": "131.65"
+    },
+    {
+        "date": "2023-09-20",
+        "volume_of_trade": "49586843",
+        "WA_price": "134",
+        "price_at_opening": "131.5",
+        "min_price": "135",
+        "max_price": "134.15"
+    },
+    {
+        "date": "2023-09-19",
+        "volume_of_trade": "41664584.65",
+        "WA_price": "136.55",
+        "price_at_opening": "133.35",
+        "min_price": "137.1",
+        "max_price": "134.65"
+    },
+    {
+        "date": "2023-09-18",
+        "volume_of_trade": "26726583.25",
+        "WA_price": "137.85",
+        "price_at_opening": "136.55",
+        "min_price": "138.8",
+        "max_price": "136.7"
+    },
+    {
+        "date": "2023-09-15",
+        "volume_of_trade": "48196322.55",
+        "WA_price": "136.35",
+        "price_at_opening": "136.1",
+        "min_price": "138.05",
+        "max_price": "137.95"
+    },
+    {
+        "date": "2023-09-14",
+        "volume_of_trade": "40680937.45",
+        "WA_price": "137.6",
+        "price_at_opening": "134.2",
+        "min_price": "137.6",
+        "max_price": "136.75"
+    },
+    {
+        "date": "2023-09-13",
+        "volume_of_trade": "27353911.1",
+        "WA_price": "138.7",
+        "price_at_opening": "136.65",
+        "min_price": "139.15",
+        "max_price": "136.95"
+    },
+    {
+        "date": "2023-09-12",
+        "volume_of_trade": "28636322.85",
+        "WA_price": "135.85",
+        "price_at_opening": "135.85",
+        "min_price": "138.85",
+        "max_price": "137.8"
+    },
+    {
+        "date": "2023-09-11",
+        "volume_of_trade": "34569599.1",
+        "WA_price": "136.3",
+        "price_at_opening": "135.2",
+        "min_price": "137.8",
+        "max_price": "135.95"
+    },
+    {
+        "date": "2023-09-08",
+        "volume_of_trade": "37579129.45",
+        "WA_price": "138.55",
+        "price_at_opening": "136.15",
+        "min_price": "139.2",
+        "max_price": "137.5"
+    },
+    {
+        "date": "2023-09-07",
+        "volume_of_trade": "66859556",
+        "WA_price": "142",
+        "price_at_opening": "137.25",
+        "min_price": "142.35",
+        "max_price": "138.55"
+    },
+    {
+        "date": "2023-09-06",
+        "volume_of_trade": "48448330.25",
+        "WA_price": "142.9",
+        "price_at_opening": "141.45",
+        "min_price": "143",
+        "max_price": "141.9"
+    },
+    {
+        "date": "2023-09-05",
+        "volume_of_trade": "60525453.6",
+        "WA_price": "143",
+        "price_at_opening": "141.75",
+        "min_price": "143.45",
+        "max_price": "142.6"
+    },
+    {
+        "date": "2023-09-04",
+        "volume_of_trade": "53205033.05",
+        "WA_price": "140.7",
+        "price_at_opening": "140.5",
+        "min_price": "143",
+        "max_price": "142.8"
+    },
+    {
+        "date": "2023-09-01",
+        "volume_of_trade": "23948175.65",
+        "WA_price": "140.85",
+        "price_at_opening": "140.6",
+        "min_price": "141.35",
+        "max_price": "141"
+    },
+    {
+        "date": "2023-08-31",
+        "volume_of_trade": "46747275.2",
+        "WA_price": "140.35",
+        "price_at_opening": "140",
+        "min_price": "141.15",
+        "max_price": "140.6"
+    },
+    {
+        "date": "2023-08-30",
+        "volume_of_trade": "45874695.6",
+        "WA_price": "140.1",
+        "price_at_opening": "139.6",
+        "min_price": "140.75",
+        "max_price": "140.3"
+    },
+    {
+        "date": "2023-08-29",
+        "volume_of_trade": "44542997.2",
+        "WA_price": "139.55",
+        "price_at_opening": "139.4",
+        "min_price": "140.45",
+        "max_price": "140"
+    },
+    {
+        "date": "2023-08-28",
+        "volume_of_trade": "39245100.25",
+        "WA_price": "137.65",
+        "price_at_opening": "137.65",
+        "min_price": "139.65",
+        "max_price": "139.4"
+    },
+    {
+        "date": "2023-08-25",
+        "volume_of_trade": "30157055.7",
+        "WA_price": "137.7",
+        "price_at_opening": "136.55",
+        "min_price": "137.7",
+        "max_price": "137.45"
+    },
+    {
+        "date": "2023-08-24",
+        "volume_of_trade": "20502193.9",
+        "WA_price": "135.8",
+        "price_at_opening": "135.5",
+        "min_price": "137.5",
+        "max_price": "136.7"
+    },
+    {
+        "date": "2023-08-23",
+        "volume_of_trade": "43648895.55",
+        "WA_price": "138.5",
+        "price_at_opening": "135",
+        "min_price": "138.9",
+        "max_price": "136.95"
+    },
+    {
+        "date": "2023-08-22",
+        "volume_of_trade": "55872542",
+        "WA_price": "136.8",
+        "price_at_opening": "136.35",
+        "min_price": "138.5",
+        "max_price": "137.8"
+    },
+    {
+        "date": "2023-08-21",
+        "volume_of_trade": "52674588.65",
+        "WA_price": "137.65",
+        "price_at_opening": "136.2",
+        "min_price": "137.75",
+        "max_price": "137.1"
+    },
+    {
+        "date": "2023-08-18",
+        "volume_of_trade": "50634823.8",
+        "WA_price": "134.65",
+        "price_at_opening": "133.35",
+        "min_price": "136.65",
+        "max_price": "135.25"
+    },
+    {
+        "date": "2023-08-17",
+        "volume_of_trade": "24788741.05",
+        "WA_price": "133.8",
+        "price_at_opening": "132.7",
+        "min_price": "134.7",
+        "max_price": "134"
+    },
+    {
+        "date": "2023-08-16",
+        "volume_of_trade": "164980319.1",
+        "WA_price": "135.9",
+        "price_at_opening": "126",
+        "min_price": "137.2",
+        "max_price": "132.85"
+    },
+    {
+        "date": "2023-08-15",
+        "volume_of_trade": "120667401.9",
+        "WA_price": "135.55",
+        "price_at_opening": "133.1",
+        "min_price": "138.3",
+        "max_price": "136.3"
+    },
+    {
+        "date": "2023-08-14",
+        "volume_of_trade": "124629970.7",
+        "WA_price": "138.95",
+        "price_at_opening": "135.1",
+        "min_price": "141",
+        "max_price": "136.9"
+    },
+    {
+        "date": "2023-08-11",
+        "volume_of_trade": "80940687.45",
+        "WA_price": "137.8",
+        "price_at_opening": "136.9",
+        "min_price": "139",
+        "max_price": "138.1"
+    },
+    {
+        "date": "2023-08-10",
+        "volume_of_trade": "51522921.45",
+        "WA_price": "136.5",
+        "price_at_opening": "136.1",
+        "min_price": "138.1",
+        "max_price": "137.4"
+    },
+    {
+        "date": "2023-08-09",
+        "volume_of_trade": "27663364.7",
+        "WA_price": "135.8",
+        "price_at_opening": "134.75",
+        "min_price": "136.4",
+        "max_price": "135.6"
+    },
+    {
+        "date": "2023-08-08",
+        "volume_of_trade": "63828008.3",
+        "WA_price": "134.75",
+        "price_at_opening": "132.2",
+        "min_price": "135.5",
+        "max_price": "134.75"
+    },
+    {
+        "date": "2023-08-07",
+        "volume_of_trade": "183013077.95",
+        "WA_price": "136.5",
+        "price_at_opening": "133.5",
+        "min_price": "137.9",
+        "max_price": "135.05"
+    },
+    {
+        "date": "2023-08-04",
+        "volume_of_trade": "130047377.05",
+        "WA_price": "138.35",
+        "price_at_opening": "133.5",
+        "min_price": "139.65",
+        "max_price": "135.2"
+    },
+    {
+        "date": "2023-08-03",
+        "volume_of_trade": "85207296.05",
+        "WA_price": "135.8",
+        "price_at_opening": "135",
+        "min_price": "137.9",
+        "max_price": "137.7"
+    },
+    {
+        "date": "2023-08-02",
+        "volume_of_trade": "62997707.6",
+        "WA_price": "134.85",
+        "price_at_opening": "134.15",
+        "min_price": "136.4",
+        "max_price": "135.7"
+    },
+    {
+        "date": "2023-08-01",
+        "volume_of_trade": "94333725.3",
+        "WA_price": "134.55",
+        "price_at_opening": "133.4",
+        "min_price": "136.15",
+        "max_price": "135.55"
+    },
+    {
+        "date": "2023-07-31",
+        "volume_of_trade": "57608846.8",
+        "WA_price": "132",
+        "price_at_opening": "131.6",
+        "min_price": "134.55",
+        "max_price": "134.05"
+    },
+    {
+        "date": "2023-07-28",
+        "volume_of_trade": "33457268.95",
+        "WA_price": "130",
+        "price_at_opening": "130",
+        "min_price": "131.7",
+        "max_price": "131.5"
+    },
+    {
+        "date": "2023-07-27",
+        "volume_of_trade": "40642587.5",
+        "WA_price": "130.35",
+        "price_at_opening": "130.35",
+        "min_price": "131.2",
+        "max_price": "131.05"
+    },
+    {
+        "date": "2023-07-26",
+        "volume_of_trade": "42531930.4",
+        "WA_price": "130.45",
+        "price_at_opening": "129.4",
+        "min_price": "130.9",
+        "max_price": "130.45"
+    },
+    {
+        "date": "2023-07-25",
+        "volume_of_trade": "32400358.7",
+        "WA_price": "129.1",
+        "price_at_opening": "128.95",
+        "min_price": "130.5",
+        "max_price": "130.2"
+    },
+    {
+        "date": "2023-07-24",
+        "volume_of_trade": "37052852.25",
+        "WA_price": "128.1",
+        "price_at_opening": "128",
+        "min_price": "129.3",
+        "max_price": "128.85"
+    },
+    {
+        "date": "2023-07-21",
+        "volume_of_trade": "35862295.7",
+        "WA_price": "127.3",
+        "price_at_opening": "126.55",
+        "min_price": "128.3",
+        "max_price": "128"
+    },
+    {
+        "date": "2023-07-20",
+        "volume_of_trade": "40200331.3",
+        "WA_price": "128.85",
+        "price_at_opening": "126.55",
+        "min_price": "129.35",
+        "max_price": "127.95"
+    },
+    {
+        "date": "2023-07-19",
+        "volume_of_trade": "51757986.15",
+        "WA_price": "129.6",
+        "price_at_opening": "128.75",
+        "min_price": "130.15",
+        "max_price": "129.1"
+    },
+    {
+        "date": "2023-07-18",
+        "volume_of_trade": "32852898.4",
+        "WA_price": "127.85",
+        "price_at_opening": "127.65",
+        "min_price": "129.6",
+        "max_price": "129.2"
+    },
+    {
+        "date": "2023-07-17",
+        "volume_of_trade": "28750000.1",
+        "WA_price": "127",
+        "price_at_opening": "126.15",
+        "min_price": "127.8",
+        "max_price": "127.65"
+    },
+    {
+        "date": "2023-07-14",
+        "volume_of_trade": "33065872.5",
+        "WA_price": "126.65",
+        "price_at_opening": "125.65",
+        "min_price": "127.3",
+        "max_price": "126.85"
+    },
+    {
+        "date": "2023-07-13",
+        "volume_of_trade": "42311110.65",
+        "WA_price": "126.75",
+        "price_at_opening": "125.65",
+        "min_price": "127.45",
+        "max_price": "126.5"
+    },
+    {
+        "date": "2023-07-12",
+        "volume_of_trade": "42751118.2",
+        "WA_price": "125.45",
+        "price_at_opening": "125.1",
+        "min_price": "127.1",
+        "max_price": "126.75"
+    },
+    {
+        "date": "2023-07-11",
+        "volume_of_trade": "27576518.35",
+        "WA_price": "125.6",
+        "price_at_opening": "124.85",
+        "min_price": "125.6",
+        "max_price": "125.2"
+    },
+    {
+        "date": "2023-07-10",
+        "volume_of_trade": "34890093.35",
+        "WA_price": "123.5",
+        "price_at_opening": "122.7",
+        "min_price": "125.3",
+        "max_price": "125.05"
+    },
+    {
+        "date": "2023-07-07",
+        "volume_of_trade": "22093601.45",
+        "WA_price": "123.45",
+        "price_at_opening": "122.45",
+        "min_price": "123.45",
+        "max_price": "123.15"
+    },
+    {
+        "date": "2023-07-06",
+        "volume_of_trade": "31348109.55",
+        "WA_price": "122.75",
+        "price_at_opening": "122.6",
+        "min_price": "123.45",
+        "max_price": "122.8"
+    },
+    {
+        "date": "2023-07-05",
+        "volume_of_trade": "27949285.2",
+        "WA_price": "121.6",
+        "price_at_opening": "121.55",
+        "min_price": "122.6",
+        "max_price": "122.15"
+    },
+    {
+        "date": "2023-07-04",
+        "volume_of_trade": "20947163.5",
+        "WA_price": "121.6",
+        "price_at_opening": "121",
+        "min_price": "122.3",
+        "max_price": "122.15"
+    },
+    {
+        "date": "2023-07-03",
+        "volume_of_trade": "41004829.45",
+        "WA_price": "121.7",
+        "price_at_opening": "121.15",
+        "min_price": "122.2",
+        "max_price": "121.65"
+    },
+    {
+        "date": "2023-06-30",
+        "volume_of_trade": "18708746.05",
+        "WA_price": "122",
+        "price_at_opening": "121",
+        "min_price": "122.05",
+        "max_price": "121.65"
+    },
+    {
+        "date": "2023-06-29",
+        "volume_of_trade": "18256053.3",
+        "WA_price": "121.15",
+        "price_at_opening": "121",
+        "min_price": "121.95",
+        "max_price": "121.8"
+    },
+    {
+        "date": "2023-06-28",
+        "volume_of_trade": "26864451.8",
+        "WA_price": "121.25",
+        "price_at_opening": "120.3",
+        "min_price": "121.5",
+        "max_price": "121.1"
+    },
+    {
+        "date": "2023-06-27",
+        "volume_of_trade": "20780154.55",
+        "WA_price": "120.05",
+        "price_at_opening": "119.4",
+        "min_price": "121.1",
+        "max_price": "120.9"
+    },
+    {
+        "date": "2023-06-26",
+        "volume_of_trade": "62387829.85",
+        "WA_price": "119.85",
+        "price_at_opening": "117.65",
+        "min_price": "121.25",
+        "max_price": "120.15"
+    },
+    {
+        "date": "2023-06-23",
+        "volume_of_trade": "67296834.05",
+        "WA_price": "121",
+        "price_at_opening": "118.7",
+        "min_price": "121.75",
+        "max_price": "121.55"
+    },
+    {
+        "date": "2023-06-22",
+        "volume_of_trade": "28567307.3",
+        "WA_price": "122.35",
+        "price_at_opening": "121.2",
+        "min_price": "122.7",
+        "max_price": "122.4"
+    },
+    {
+        "date": "2023-06-21",
+        "volume_of_trade": "20224337.45",
+        "WA_price": "122.15",
+        "price_at_opening": "121.6",
+        "min_price": "122.8",
+        "max_price": "122.35"
+    },
+    {
+        "date": "2023-06-20",
+        "volume_of_trade": "38140870.95",
+        "WA_price": "122.4",
+        "price_at_opening": "121",
+        "min_price": "122.55",
+        "max_price": "122.15"
+    },
+    {
+        "date": "2023-06-19",
+        "volume_of_trade": "42026326.05",
+        "WA_price": "122.55",
+        "price_at_opening": "121.45",
+        "min_price": "123",
+        "max_price": "122.45"
+    },
+    {
+        "date": "2023-06-16",
+        "volume_of_trade": "45988678.05",
+        "WA_price": "123",
+        "price_at_opening": "121.55",
+        "min_price": "123.05",
+        "max_price": "122.35"
+    },
+    {
+        "date": "2023-06-15",
+        "volume_of_trade": "44539502.55",
+        "WA_price": "121.3",
+        "price_at_opening": "121",
+        "min_price": "122.95",
+        "max_price": "122.45"
+    },
+    {
+        "date": "2023-06-14",
+        "volume_of_trade": "33462660.9",
+        "WA_price": "121.3",
+        "price_at_opening": "120.7",
+        "min_price": "121.85",
+        "max_price": "121.2"
+    },
+    {
+        "date": "2023-06-13",
+        "volume_of_trade": "30661913.95",
+        "WA_price": "119",
+        "price_at_opening": "118",
+        "min_price": "120.95",
+        "max_price": "120.4"
+    },
+    {
+        "date": "2023-06-09",
+        "volume_of_trade": "69957035.55",
+        "WA_price": "118.9",
+        "price_at_opening": "118.15",
+        "min_price": "122",
+        "max_price": "118.5"
+    },
+    {
+        "date": "2023-06-08",
+        "volume_of_trade": "37513502.05",
+        "WA_price": "118",
+        "price_at_opening": "117.45",
+        "min_price": "118.35",
+        "max_price": "118.05"
+    },
+    {
+        "date": "2023-06-07",
+        "volume_of_trade": "24435547.75",
+        "WA_price": "116.95",
+        "price_at_opening": "116.7",
+        "min_price": "118.3",
+        "max_price": "117.7"
+    },
+    {
+        "date": "2023-06-06",
+        "volume_of_trade": "84539351.95",
+        "WA_price": "117.15",
+        "price_at_opening": "114.9",
+        "min_price": "117.45",
+        "max_price": "117.2"
+    },
+    {
+        "date": "2023-06-05",
+        "volume_of_trade": "38863543",
+        "WA_price": "118.7",
+        "price_at_opening": "116.5",
+        "min_price": "119.55",
+        "max_price": "117.65"
+    },
+    {
+        "date": "2023-06-02",
+        "volume_of_trade": "49385042.35",
+        "WA_price": "117.15",
+        "price_at_opening": "116.35",
+        "min_price": "118.75",
+        "max_price": "118.55"
+    },
+    {
+        "date": "2023-06-01",
+        "volume_of_trade": "31636756.15",
+        "WA_price": "117.5",
+        "price_at_opening": "116.65",
+        "min_price": "117.75",
+        "max_price": "117.2"
+    },
+    {
+        "date": "2023-05-31",
+        "volume_of_trade": "72427559.15",
+        "WA_price": "116.75",
+        "price_at_opening": "115.3",
+        "min_price": "117.1",
+        "max_price": "116.9"
+    },
+    {
+        "date": "2023-05-30",
+        "volume_of_trade": "52033820.9",
+        "WA_price": "117.55",
+        "price_at_opening": "115.95",
+        "min_price": "118.45",
+        "max_price": "116.65"
+    },
+    {
+        "date": "2023-05-29",
+        "volume_of_trade": "32432618.2",
+        "WA_price": "115.8",
+        "price_at_opening": "115.75",
+        "min_price": "117.9",
+        "max_price": "117.45"
+    },
+    {
+        "date": "2023-05-26",
+        "volume_of_trade": "27915813.9",
+        "WA_price": "114.25",
+        "price_at_opening": "114.2",
+        "min_price": "115.65",
+        "max_price": "115.4"
+    },
+    {
+        "date": "2023-05-25",
+        "volume_of_trade": "29088577.75",
+        "WA_price": "114.7",
+        "price_at_opening": "113.55",
+        "min_price": "114.8",
+        "max_price": "114"
+    },
+    {
+        "date": "2023-05-24",
+        "volume_of_trade": "13547003.1",
+        "WA_price": "113.8",
+        "price_at_opening": "113.3",
+        "min_price": "114.65",
+        "max_price": "114.3"
+    },
+    {
+        "date": "2023-05-23",
+        "volume_of_trade": "25948374.85",
+        "WA_price": "113.55",
+        "price_at_opening": "112.25",
+        "min_price": "113.9",
+        "max_price": "113.8"
+    },
+    {
+        "date": "2023-05-22",
+        "volume_of_trade": "24828161.65",
+        "WA_price": "113.6",
+        "price_at_opening": "112.85",
+        "min_price": "114.4",
+        "max_price": "113.5"
+    },
+    {
+        "date": "2023-05-19",
+        "volume_of_trade": "33820007.55",
+        "WA_price": "113.85",
+        "price_at_opening": "112.4",
+        "min_price": "113.85",
+        "max_price": "113.1"
+    },
+    {
+        "date": "2023-05-18",
+        "volume_of_trade": "24014146.4",
+        "WA_price": "114.35",
+        "price_at_opening": "113.1",
+        "min_price": "114.5",
+        "max_price": "113.45"
+    },
+    {
+        "date": "2023-05-17",
+        "volume_of_trade": "21240312.25",
+        "WA_price": "113.75",
+        "price_at_opening": "112.95",
+        "min_price": "114.05",
+        "max_price": "113.65"
+    },
+    {
+        "date": "2023-05-16",
+        "volume_of_trade": "28651017",
+        "WA_price": "113.4",
+        "price_at_opening": "113.05",
+        "min_price": "114.9",
+        "max_price": "113.8"
+    },
+    {
+        "date": "2023-05-15",
+        "volume_of_trade": "26737772.45",
+        "WA_price": "111.85",
+        "price_at_opening": "110.9",
+        "min_price": "113.65",
+        "max_price": "112.3"
+    },
+    {
+        "date": "2023-05-12",
+        "volume_of_trade": "128864470.4",
+        "WA_price": "110.9",
+        "price_at_opening": "110.05",
+        "min_price": "111.65",
+        "max_price": "110.7"
+    },
+    {
+        "date": "2023-05-11",
+        "volume_of_trade": "109515974.6",
+        "WA_price": "110.7",
+        "price_at_opening": "109",
+        "min_price": "112.65",
+        "max_price": "112.1"
+    },
+    {
+        "date": "2023-05-10",
+        "volume_of_trade": "26447585.1",
+        "WA_price": "106.6",
+        "price_at_opening": "106.55",
+        "min_price": "110.8",
+        "max_price": "109.95"
+    },
+    {
+        "date": "2023-05-08",
+        "volume_of_trade": "14017737.85",
+        "WA_price": "107.15",
+        "price_at_opening": "106.4",
+        "min_price": "107.5",
+        "max_price": "107"
+    },
+    {
+        "date": "2023-05-05",
+        "volume_of_trade": "26201231.2",
+        "WA_price": "107",
+        "price_at_opening": "106.8",
+        "min_price": "108.35",
+        "max_price": "107.35"
+    },
+    {
+        "date": "2023-05-04",
+        "volume_of_trade": "20979168.6",
+        "WA_price": "106.3",
+        "price_at_opening": "106.3",
+        "min_price": "108",
+        "max_price": "107.2"
+    },
+    {
+        "date": "2023-05-03",
+        "volume_of_trade": "46915865.95",
+        "WA_price": "109.7",
+        "price_at_opening": "106.7",
+        "min_price": "109.85",
+        "max_price": "107.7"
+    },
+    {
+        "date": "2023-05-02",
+        "volume_of_trade": "33134524.6",
+        "WA_price": "110.9",
+        "price_at_opening": "108.45",
+        "min_price": "111.7",
+        "max_price": "109.45"
+    },
+    {
+        "date": "2023-04-28",
+        "volume_of_trade": "41801393.8",
+        "WA_price": "111.8",
+        "price_at_opening": "110.15",
+        "min_price": "112.65",
+        "max_price": "111.15"
+    },
+    {
+        "date": "2023-04-27",
+        "volume_of_trade": "28617905.4",
+        "WA_price": "110.65",
+        "price_at_opening": "110.1",
+        "min_price": "111.9",
+        "max_price": "111.45"
+    },
+    {
+        "date": "2023-04-26",
+        "volume_of_trade": "21165425.5",
+        "WA_price": "110.95",
+        "price_at_opening": "110.5",
+        "min_price": "111.3",
+        "max_price": "110.65"
+    },
+    {
+        "date": "2023-04-25",
+        "volume_of_trade": "24372443.1",
+        "WA_price": "111.8",
+        "price_at_opening": "110.5",
+        "min_price": "111.8",
+        "max_price": "110.9"
+    },
+    {
+        "date": "2023-04-24",
+        "volume_of_trade": "18798767",
+        "WA_price": "111.6",
+        "price_at_opening": "111",
+        "min_price": "112.1",
+        "max_price": "111.3"
+    },
+    {
+        "date": "2023-04-21",
+        "volume_of_trade": "31600187.45",
+        "WA_price": "111.65",
+        "price_at_opening": "110.95",
+        "min_price": "111.9",
+        "max_price": "111.6"
+    },
+    {
+        "date": "2023-04-20",
+        "volume_of_trade": "37047410.55",
+        "WA_price": "110.1",
+        "price_at_opening": "108.35",
+        "min_price": "111.65",
+        "max_price": "111.45"
+    },
+    {
+        "date": "2023-04-19",
+        "volume_of_trade": "37244059.95",
+        "WA_price": "110.85",
+        "price_at_opening": "109.2",
+        "min_price": "111.1",
+        "max_price": "109.95"
+    },
+    {
+        "date": "2023-04-18",
+        "volume_of_trade": "21183823.95",
+        "WA_price": "109.45",
+        "price_at_opening": "109.2",
+        "min_price": "110.65",
+        "max_price": "110.5"
+    },
+    {
+        "date": "2023-04-17",
+        "volume_of_trade": "25229269.75",
+        "WA_price": "109.1",
+        "price_at_opening": "108.2",
+        "min_price": "109.9",
+        "max_price": "109.65"
+    },
+    {
+        "date": "2023-04-14",
+        "volume_of_trade": "14960982.4",
+        "WA_price": "107.5",
+        "price_at_opening": "106.85",
+        "min_price": "108.15",
+        "max_price": "107.7"
+    },
+    {
+        "date": "2023-04-13",
+        "volume_of_trade": "20852728.2",
+        "WA_price": "107.45",
+        "price_at_opening": "106.85",
+        "min_price": "108",
+        "max_price": "107.2"
+    },
+    {
+        "date": "2023-04-12",
+        "volume_of_trade": "14102627.45",
+        "WA_price": "107.2",
+        "price_at_opening": "106.3",
+        "min_price": "107.85",
+        "max_price": "107.4"
+    },
+    {
+        "date": "2023-04-11",
+        "volume_of_trade": "37036451.1",
+        "WA_price": "107.95",
+        "price_at_opening": "106.2",
+        "min_price": "108.85",
+        "max_price": "106.7"
+    },
+    {
+        "date": "2023-04-10",
+        "volume_of_trade": "25350054.65",
+        "WA_price": "106.05",
+        "price_at_opening": "105.8",
+        "min_price": "107.85",
+        "max_price": "107.4"
+    },
+    {
+        "date": "2023-04-07",
+        "volume_of_trade": "20194622.75",
+        "WA_price": "105.7",
+        "price_at_opening": "105.15",
+        "min_price": "106.1",
+        "max_price": "105.75"
+    },
+    {
+        "date": "2023-04-06",
+        "volume_of_trade": "25071660.4",
+        "WA_price": "105.5",
+        "price_at_opening": "105.35",
+        "min_price": "106.3",
+        "max_price": "105.55"
+    },
+    {
+        "date": "2023-04-05",
+        "volume_of_trade": "63544541.35",
+        "WA_price": "105.3",
+        "price_at_opening": "104.2",
+        "min_price": "105.55",
+        "max_price": "105.25"
+    },
+    {
+        "date": "2023-04-04",
+        "volume_of_trade": "117669493.3",
+        "WA_price": "105.25",
+        "price_at_opening": "104.5",
+        "min_price": "106.05",
+        "max_price": "104.95"
+    },
+    {
+        "date": "2023-04-03",
+        "volume_of_trade": "30454941.65",
+        "WA_price": "104",
+        "price_at_opening": "103.85",
+        "min_price": "105",
+        "max_price": "104.85"
+    },
+    {
+        "date": "2023-03-31",
+        "volume_of_trade": "27056921.85",
+        "WA_price": "104.2",
+        "price_at_opening": "102.3",
+        "min_price": "104.35",
+        "max_price": "103.3"
+    },
+    {
+        "date": "2023-03-30",
+        "volume_of_trade": "45253724.65",
+        "WA_price": "104.05",
+        "price_at_opening": "103.5",
+        "min_price": "104.45",
+        "max_price": "104.1"
+    },
+    {
+        "date": "2023-03-29",
+        "volume_of_trade": "21656749.9",
+        "WA_price": "103.55",
+        "price_at_opening": "103.05",
+        "min_price": "104.3",
+        "max_price": "104"
+    },
+    {
+        "date": "2023-03-28",
+        "volume_of_trade": "25311980.7",
+        "WA_price": "103.4",
+        "price_at_opening": "102.45",
+        "min_price": "103.85",
+        "max_price": "103.3"
+    },
+    {
+        "date": "2023-03-27",
+        "volume_of_trade": "34949746.25",
+        "WA_price": "101.4",
+        "price_at_opening": "100.65",
+        "min_price": "103.45",
+        "max_price": "102.75"
+    },
+    {
+        "date": "2023-03-24",
+        "volume_of_trade": "15261311.95",
+        "WA_price": "101.1",
+        "price_at_opening": "100.75",
+        "min_price": "101.4",
+        "max_price": "101.15"
+    },
+    {
+        "date": "2023-03-23",
+        "volume_of_trade": "18653148.75",
+        "WA_price": "101.1",
+        "price_at_opening": "100.7",
+        "min_price": "101.45",
+        "max_price": "101"
+    },
+    {
+        "date": "2023-03-22",
+        "volume_of_trade": "15088391.25",
+        "WA_price": "101.25",
+        "price_at_opening": "100.5",
+        "min_price": "101.6",
+        "max_price": "101.2"
+    },
+    {
+        "date": "2023-03-21",
+        "volume_of_trade": "32041642.25",
+        "WA_price": "102",
+        "price_at_opening": "100.45",
+        "min_price": "102.9",
+        "max_price": "101.8"
+    },
+    {
+        "date": "2023-03-20",
+        "volume_of_trade": "47782922.8",
+        "WA_price": "98.8",
+        "price_at_opening": "98.1",
+        "min_price": "102.25",
+        "max_price": "101.15"
+    },
+    {
+        "date": "2023-03-17",
+        "volume_of_trade": "47611936.55",
+        "WA_price": "95.95",
+        "price_at_opening": "95.9",
+        "min_price": "98.3",
+        "max_price": "97.95"
+    },
+    {
+        "date": "2023-03-16",
+        "volume_of_trade": "21881881.65",
+        "WA_price": "95.8",
+        "price_at_opening": "94.6",
+        "min_price": "96.05",
+        "max_price": "95.6"
+    },
+    {
+        "date": "2023-03-15",
+        "volume_of_trade": "21131345.6",
+        "WA_price": "96.6",
+        "price_at_opening": "95.45",
+        "min_price": "97.05",
+        "max_price": "95.75"
+    },
+    {
+        "date": "2023-03-14",
+        "volume_of_trade": "16917713.6",
+        "WA_price": "95.75",
+        "price_at_opening": "95.5",
+        "min_price": "97",
+        "max_price": "96.85"
+    },
+    {
+        "date": "2023-03-13",
+        "volume_of_trade": "23404132.55",
+        "WA_price": "96.25",
+        "price_at_opening": "95.2",
+        "min_price": "96.8",
+        "max_price": "96"
+    },
+    {
+        "date": "2023-03-10",
+        "volume_of_trade": "18146143",
+        "WA_price": "96.3",
+        "price_at_opening": "95.95",
+        "min_price": "96.7",
+        "max_price": "96.3"
+    },
+    {
+        "date": "2023-03-09",
+        "volume_of_trade": "17394772.2",
+        "WA_price": "97.2",
+        "price_at_opening": "96.3",
+        "min_price": "97.25",
+        "max_price": "96.55"
+    },
+    {
+        "date": "2023-03-07",
+        "volume_of_trade": "15694320.65",
+        "WA_price": "96.5",
+        "price_at_opening": "96.5",
+        "min_price": "97.2",
+        "max_price": "97.15"
+    },
+    {
+        "date": "2023-03-06",
+        "volume_of_trade": "23915127.7",
+        "WA_price": "96.35",
+        "price_at_opening": "96.15",
+        "min_price": "97.2",
+        "max_price": "96.85"
+    },
+    {
+        "date": "2023-03-03",
+        "volume_of_trade": "19296816.75",
+        "WA_price": "95.2",
+        "price_at_opening": "95",
+        "min_price": "96.35",
+        "max_price": "95.95"
+    },
+    {
+        "date": "2023-03-02",
+        "volume_of_trade": "30839504.7",
+        "WA_price": "96.6",
+        "price_at_opening": "94.5",
+        "min_price": "96.6",
+        "max_price": "95.1"
+    },
+    {
+        "date": "2023-03-01",
+        "volume_of_trade": "25035357.2",
+        "WA_price": "95.45",
+        "price_at_opening": "95.45",
+        "min_price": "96.65",
+        "max_price": "96.4"
+    },
+    {
+        "date": "2023-02-28",
+        "volume_of_trade": "21768561.65",
+        "WA_price": "95",
+        "price_at_opening": "94.4",
+        "min_price": "95.6",
+        "max_price": "95.35"
+    },
+    {
+        "date": "2023-02-27",
+        "volume_of_trade": "25492557.8",
+        "WA_price": "93.3",
+        "price_at_opening": "92.55",
+        "min_price": "94.9",
+        "max_price": "94.5"
+    },
+    {
+        "date": "2023-02-24",
+        "volume_of_trade": "7669995.35",
+        "WA_price": "93.3",
+        "price_at_opening": "93.1",
+        "min_price": "94.1",
+        "max_price": "93.55"
+    },
+    {
+        "date": "2023-02-22",
+        "volume_of_trade": "23221314.7",
+        "WA_price": "93.35",
+        "price_at_opening": "92.95",
+        "min_price": "93.8",
+        "max_price": "93.7"
+    },
+    {
+        "date": "2023-02-21",
+        "volume_of_trade": "48471819.45",
+        "WA_price": "92.45",
+        "price_at_opening": "92.15",
+        "min_price": "94.45",
+        "max_price": "93.65"
+    },
+    {
+        "date": "2023-02-20",
+        "volume_of_trade": "27206912.5",
+        "WA_price": "91.85",
+        "price_at_opening": "90.55",
+        "min_price": "92.55",
+        "max_price": "92.3"
+    },
+    {
+        "date": "2023-02-17",
+        "volume_of_trade": "12724100.8",
+        "WA_price": "91.7",
+        "price_at_opening": "90.9",
+        "min_price": "92.2",
+        "max_price": "91.95"
+    },
+    {
+        "date": "2023-02-16",
+        "volume_of_trade": "22113128.8",
+        "WA_price": "91.75",
+        "price_at_opening": "91",
+        "min_price": "92.5",
+        "max_price": "91.45"
+    },
+    {
+        "date": "2023-02-15",
+        "volume_of_trade": "39568246.5",
+        "WA_price": "94.05",
+        "price_at_opening": "89.85",
+        "min_price": "94.1",
+        "max_price": "91.85"
+    },
+    {
+        "date": "2023-02-14",
+        "volume_of_trade": "17587081.35",
+        "WA_price": "95.55",
+        "price_at_opening": "94.15",
+        "min_price": "95.6",
+        "max_price": "94.55"
+    },
+    {
+        "date": "2023-02-13",
+        "volume_of_trade": "12975634.25",
+        "WA_price": "95.65",
+        "price_at_opening": "95.5",
+        "min_price": "96.15",
+        "max_price": "95.85"
+    },
+    {
+        "date": "2023-02-10",
+        "volume_of_trade": "18107448.9",
+        "WA_price": "95.65",
+        "price_at_opening": "95.1",
+        "min_price": "95.85",
+        "max_price": "95.8"
+    },
+    {
+        "date": "2023-02-09",
+        "volume_of_trade": "20011636.15",
+        "WA_price": "95.6",
+        "price_at_opening": "94.8",
+        "min_price": "96",
+        "max_price": "95.75"
+    },
+    {
+        "date": "2023-02-08",
+        "volume_of_trade": "19294912.25",
+        "WA_price": "96.25",
+        "price_at_opening": "95",
+        "min_price": "96.65",
+        "max_price": "95.4"
+    },
+    {
+        "date": "2023-02-07",
+        "volume_of_trade": "19118357.05",
+        "WA_price": "96.25",
+        "price_at_opening": "95.8",
+        "min_price": "96.85",
+        "max_price": "96.15"
+    },
+    {
+        "date": "2023-02-06",
+        "volume_of_trade": "39518361.45",
+        "WA_price": "94.95",
+        "price_at_opening": "93.95",
+        "min_price": "96.55",
+        "max_price": "96.1"
+    },
+    {
+        "date": "2023-02-03",
+        "volume_of_trade": "19059593.1",
+        "WA_price": "94.95",
+        "price_at_opening": "93.8",
+        "min_price": "95.35",
+        "max_price": "95"
+    },
+    {
+        "date": "2023-02-02",
+        "volume_of_trade": "38887802.15",
+        "WA_price": "94.6",
+        "price_at_opening": "94.3",
+        "min_price": "95.15",
+        "max_price": "94.85"
+    },
+    {
+        "date": "2023-02-01",
+        "volume_of_trade": "18691581.15",
+        "WA_price": "94.5",
+        "price_at_opening": "94",
+        "min_price": "95.1",
+        "max_price": "94.1"
+    },
+    {
+        "date": "2023-01-31",
+        "volume_of_trade": "30167792.65",
+        "WA_price": "93.35",
+        "price_at_opening": "93.25",
+        "min_price": "94.45",
+        "max_price": "94.2"
+    },
+    {
+        "date": "2023-01-30",
+        "volume_of_trade": "59682806.6",
+        "WA_price": "92.65",
+        "price_at_opening": "92.5",
+        "min_price": "93.65",
+        "max_price": "93.2"
+    },
+    {
+        "date": "2023-01-27",
+        "volume_of_trade": "12619964.7",
+        "WA_price": "92.05",
+        "price_at_opening": "91.7",
+        "min_price": "92.6",
+        "max_price": "92.5"
+    },
+    {
+        "date": "2023-01-26",
+        "volume_of_trade": "11697279.8",
+        "WA_price": "92.45",
+        "price_at_opening": "91.75",
+        "min_price": "92.45",
+        "max_price": "91.95"
+    },
+    {
+        "date": "2023-01-25",
+        "volume_of_trade": "17443592.45",
+        "WA_price": "92.7",
+        "price_at_opening": "91.3",
+        "min_price": "92.7",
+        "max_price": "91.85"
+    },
+    {
+        "date": "2023-01-24",
+        "volume_of_trade": "43140199.2",
+        "WA_price": "92.65",
+        "price_at_opening": "91.8",
+        "min_price": "93.15",
+        "max_price": "91.95"
+    },
+    {
+        "date": "2023-01-23",
+        "volume_of_trade": "18657372.8",
+        "WA_price": "91.95",
+        "price_at_opening": "91.6",
+        "min_price": "92.65",
+        "max_price": "92.45"
+    },
+    {
+        "date": "2023-01-20",
+        "volume_of_trade": "14387654.7",
+        "WA_price": "91.7",
+        "price_at_opening": "91.2",
+        "min_price": "92",
+        "max_price": "91.8"
+    },
+    {
+        "date": "2023-01-19",
+        "volume_of_trade": "17808147.05",
+        "WA_price": "92.95",
+        "price_at_opening": "91.6",
+        "min_price": "92.95",
+        "max_price": "91.8"
+    },
+    {
+        "date": "2023-01-18",
+        "volume_of_trade": "26006631.8",
+        "WA_price": "93.4",
+        "price_at_opening": "92.1",
+        "min_price": "93.45",
+        "max_price": "93.25"
+    },
+    {
+        "date": "2023-01-17",
+        "volume_of_trade": "36076750.55",
+        "WA_price": "94.35",
+        "price_at_opening": "92.55",
+        "min_price": "94.35",
+        "max_price": "93.3"
+    },
+    {
+        "date": "2023-01-16",
+        "volume_of_trade": "38520298.1",
+        "WA_price": "93.1",
+        "price_at_opening": "93.05",
+        "min_price": "94.2",
+        "max_price": "94"
+    },
+    {
+        "date": "2023-01-13",
+        "volume_of_trade": "30798851.2",
+        "WA_price": "92.5",
+        "price_at_opening": "92.15",
+        "min_price": "93.25",
+        "max_price": "92.95"
+    },
+    {
+        "date": "2023-01-12",
+        "volume_of_trade": "16187427.5",
+        "WA_price": "92.6",
+        "price_at_opening": "92",
+        "min_price": "92.9",
+        "max_price": "92.7"
+    },
+    {
+        "date": "2023-01-11",
+        "volume_of_trade": "21033863.4",
+        "WA_price": "90.75",
+        "price_at_opening": "90.75",
+        "min_price": "92.6",
+        "max_price": "92.2"
+    },
+    {
+        "date": "2023-01-10",
+        "volume_of_trade": "58646752.2",
+        "WA_price": "91.3",
+        "price_at_opening": "90.5",
+        "min_price": "91.35",
+        "max_price": "91.2"
+    },
+    {
+        "date": "2023-01-09",
+        "volume_of_trade": "23681481",
+        "WA_price": "91.4",
+        "price_at_opening": "91.1",
+        "min_price": "91.9",
+        "max_price": "91.45"
+    },
+    {
+        "date": "2023-01-06",
+        "volume_of_trade": "6627365.4",
+        "WA_price": "91.2",
+        "price_at_opening": "90.85",
+        "min_price": "91.35",
+        "max_price": "91.2"
+    },
+    {
+        "date": "2023-01-05",
+        "volume_of_trade": "6203907.95",
+        "WA_price": "91.7",
+        "price_at_opening": "91",
+        "min_price": "91.75",
+        "max_price": "91.35"
+    },
+    {
+        "date": "2023-01-04",
+        "volume_of_trade": "10020842.75",
+        "WA_price": "91.65",
+        "price_at_opening": "91.2",
+        "min_price": "92.1",
+        "max_price": "91.65"
+    },
+    {
+        "date": "2023-01-03",
+        "volume_of_trade": "11930982.25",
+        "WA_price": "91",
+        "price_at_opening": "91",
+        "min_price": "91.95",
+        "max_price": "91.75"
+    },
+    {
+        "date": "2022-12-30",
+        "volume_of_trade": "16698667.15",
+        "WA_price": "90.75",
+        "price_at_opening": "90.35",
+        "min_price": "90.95",
+        "max_price": "90.6"
+    },
+    {
+        "date": "2022-12-29",
+        "volume_of_trade": "18086052",
+        "WA_price": "90.25",
+        "price_at_opening": "90.1",
+        "min_price": "90.9",
+        "max_price": "90.8"
+    },
+    {
+        "date": "2022-12-28",
+        "volume_of_trade": "24021794.2",
+        "WA_price": "90.55",
+        "price_at_opening": "90.2",
+        "min_price": "90.8",
+        "max_price": "90.4"
+    },
+    {
+        "date": "2022-12-27",
+        "volume_of_trade": "18944733.6",
+        "WA_price": "90.1",
+        "price_at_opening": "90.05",
+        "min_price": "91",
+        "max_price": "90.45"
+    },
+    {
+        "date": "2022-12-26",
+        "volume_of_trade": "30128616.05",
+        "WA_price": "88.9",
+        "price_at_opening": "88.75",
+        "min_price": "90.4",
+        "max_price": "89.95"
+    },
+    {
+        "date": "2022-12-23",
+        "volume_of_trade": "26044282.3",
+        "WA_price": "89.8",
+        "price_at_opening": "88.95",
+        "min_price": "89.9",
+        "max_price": "89.45"
+    },
+    {
+        "date": "2022-12-22",
+        "volume_of_trade": "26494403.55",
+        "WA_price": "89.75",
+        "price_at_opening": "89.1",
+        "min_price": "89.85",
+        "max_price": "89.4"
+    },
+    {
+        "date": "2022-12-21",
+        "volume_of_trade": "28116054.35",
+        "WA_price": "89.8",
+        "price_at_opening": "88.6",
+        "min_price": "90.3",
+        "max_price": "89"
+    },
+    {
+        "date": "2022-12-20",
+        "volume_of_trade": "27329105.45",
+        "WA_price": "87.15",
+        "price_at_opening": "86.35",
+        "min_price": "89.75",
+        "max_price": "89.05"
+    },
+    {
+        "date": "2022-12-19",
+        "volume_of_trade": "20617159.25",
+        "WA_price": "87.35",
+        "price_at_opening": "86.8",
+        "min_price": "88",
+        "max_price": "87.6"
+    },
+    {
+        "date": "2022-12-16",
+        "volume_of_trade": "20215348.25",
+        "WA_price": "87.4",
+        "price_at_opening": "87",
+        "min_price": "88",
+        "max_price": "87.8"
+    },
+    {
+        "date": "2022-12-15",
+        "volume_of_trade": "25885060.25",
+        "WA_price": "88.95",
+        "price_at_opening": "87",
+        "min_price": "88.95",
+        "max_price": "87.35"
+    },
+    {
+        "date": "2022-12-14",
+        "volume_of_trade": "12464619.6",
+        "WA_price": "89.3",
+        "price_at_opening": "88.65",
+        "min_price": "89.3",
+        "max_price": "88.95"
+    },
+    {
+        "date": "2022-12-13",
+        "volume_of_trade": "16917209.15",
+        "WA_price": "89.9",
+        "price_at_opening": "88.75",
+        "min_price": "89.9",
+        "max_price": "89.2"
+    },
+    {
+        "date": "2022-12-12",
+        "volume_of_trade": "17066810.65",
+        "WA_price": "89.6",
+        "price_at_opening": "88.8",
+        "min_price": "89.9",
+        "max_price": "89.25"
+    },
+    {
+        "date": "2022-12-09",
+        "volume_of_trade": "12132512.55",
+        "WA_price": "89.25",
+        "price_at_opening": "89.25",
+        "min_price": "89.85",
+        "max_price": "89.6"
+    },
+    {
+        "date": "2022-12-08",
+        "volume_of_trade": "8339273.85",
+        "WA_price": "90.1",
+        "price_at_opening": "89.45",
+        "min_price": "90.15",
+        "max_price": "89.8"
+    },
+    {
+        "date": "2022-12-07",
+        "volume_of_trade": "18398906.65",
+        "WA_price": "89.45",
+        "price_at_opening": "88.9",
+        "min_price": "90.1",
+        "max_price": "90"
+    },
+    {
+        "date": "2022-12-06",
+        "volume_of_trade": "20561310.75",
+        "WA_price": "90.5",
+        "price_at_opening": "89.6",
+        "min_price": "90.8",
+        "max_price": "90.3"
+    },
+    {
+        "date": "2022-12-05",
+        "volume_of_trade": "17926863",
+        "WA_price": "89.45",
+        "price_at_opening": "89.25",
+        "min_price": "90.75",
+        "max_price": "90.55"
+    },
+    {
+        "date": "2022-12-02",
+        "volume_of_trade": "20684480.05",
+        "WA_price": "90.2",
+        "price_at_opening": "89.35",
+        "min_price": "90.2",
+        "max_price": "89.7"
+    },
+    {
+        "date": "2022-12-01",
+        "volume_of_trade": "11484005.4",
+        "WA_price": "89.8",
+        "price_at_opening": "89.5",
+        "min_price": "90.2",
+        "max_price": "90.05"
+    },
+    {
+        "date": "2022-11-30",
+        "volume_of_trade": "14865319.75",
+        "WA_price": "89.5",
+        "price_at_opening": "89.3",
+        "min_price": "89.9",
+        "max_price": "89.5"
+    },
+    {
+        "date": "2022-11-29",
+        "volume_of_trade": "6843542",
+        "WA_price": "89.65",
+        "price_at_opening": "89.55",
+        "min_price": "90.1",
+        "max_price": "89.8"
+    },
+    {
+        "date": "2022-11-28",
+        "volume_of_trade": "13364917.6",
+        "WA_price": "90.2",
+        "price_at_opening": "89.05",
+        "min_price": "90.3",
+        "max_price": "89.4"
+    },
+    {
+        "date": "2022-11-25",
+        "volume_of_trade": "22051285.25",
+        "WA_price": "91.15",
+        "price_at_opening": "89.9",
+        "min_price": "91.15",
+        "max_price": "90.3"
+    },
+    {
+        "date": "2022-11-24",
+        "volume_of_trade": "12026802.35",
+        "WA_price": "90.8",
+        "price_at_opening": "90.4",
+        "min_price": "91.2",
+        "max_price": "90.65"
+    },
+    {
+        "date": "2022-11-23",
+        "volume_of_trade": "11643830",
+        "WA_price": "90.9",
+        "price_at_opening": "89.4",
+        "min_price": "90.95",
+        "max_price": "90.65"
+    },
+    {
+        "date": "2022-11-22",
+        "volume_of_trade": "17091354.85",
+        "WA_price": "89.9",
+        "price_at_opening": "89",
+        "min_price": "90.3",
+        "max_price": "90.15"
+    },
+    {
+        "date": "2022-11-21",
+        "volume_of_trade": "15597724.5",
+        "WA_price": "90.2",
+        "price_at_opening": "88.55",
+        "min_price": "90.5",
+        "max_price": "88.95"
+    },
+    {
+        "date": "2022-11-18",
+        "volume_of_trade": "17901387.05",
+        "WA_price": "90.95",
+        "price_at_opening": "89.9",
+        "min_price": "91.15",
+        "max_price": "90.45"
+    },
+    {
+        "date": "2022-11-17",
+        "volume_of_trade": "14267325.25",
+        "WA_price": "91.45",
+        "price_at_opening": "90.3",
+        "min_price": "91.7",
+        "max_price": "90.9"
+    },
+    {
+        "date": "2022-11-16",
+        "volume_of_trade": "18587831.85",
+        "WA_price": "90.05",
+        "price_at_opening": "89.7",
+        "min_price": "91.7",
+        "max_price": "91.15"
+    },
+    {
+        "date": "2022-11-15",
+        "volume_of_trade": "58100132.55",
+        "WA_price": "92.2",
+        "price_at_opening": "87.2",
+        "min_price": "92.7",
+        "max_price": "91.6"
+    },
+    {
+        "date": "2022-11-14",
+        "volume_of_trade": "15416014.15",
+        "WA_price": "91.3",
+        "price_at_opening": "91.05",
+        "min_price": "92.55",
+        "max_price": "92.4"
+    },
+    {
+        "date": "2022-11-11",
+        "volume_of_trade": "36809866.85",
+        "WA_price": "91.8",
+        "price_at_opening": "90.65",
+        "min_price": "91.8",
+        "max_price": "91.2"
+    },
+    {
+        "date": "2022-11-10",
+        "volume_of_trade": "22230726.1",
+        "WA_price": "88.95",
+        "price_at_opening": "88.7",
+        "min_price": "91",
+        "max_price": "90.8"
+    },
+    {
+        "date": "2022-11-09",
+        "volume_of_trade": "20821058",
+        "WA_price": "90.5",
+        "price_at_opening": "88.45",
+        "min_price": "91",
+        "max_price": "89.2"
+    },
+    {
+        "date": "2022-11-08",
+        "volume_of_trade": "25812612",
+        "WA_price": "90.95",
+        "price_at_opening": "90.05",
+        "min_price": "91.4",
+        "max_price": "90.85"
+    },
+    {
+        "date": "2022-11-07",
+        "volume_of_trade": "18974846.8",
+        "WA_price": "88.75",
+        "price_at_opening": "88.75",
+        "min_price": "90.95",
+        "max_price": "90.85"
+    },
+    {
+        "date": "2022-11-03",
+        "volume_of_trade": "13534706.55",
+        "WA_price": "88.3",
+        "price_at_opening": "87.25",
+        "min_price": "88.95",
+        "max_price": "88.75"
+    },
+    {
+        "date": "2022-11-02",
+        "volume_of_trade": "12201172",
+        "WA_price": "89.3",
+        "price_at_opening": "87.95",
+        "min_price": "89.85",
+        "max_price": "89.4"
+    },
+    {
+        "date": "2022-11-01",
+        "volume_of_trade": "18324005.6",
+        "WA_price": "89.4",
+        "price_at_opening": "88.95",
+        "min_price": "89.9",
+        "max_price": "89.55"
+    },
+    {
+        "date": "2022-10-31",
+        "volume_of_trade": "21712942.1",
+        "WA_price": "89.1",
+        "price_at_opening": "88.8",
+        "min_price": "90.1",
+        "max_price": "89.35"
+    },
+    {
+        "date": "2022-10-28",
+        "volume_of_trade": "51514965.1",
+        "WA_price": "88.8",
+        "price_at_opening": "87.7",
+        "min_price": "89.35",
+        "max_price": "89.2"
+    },
+    {
+        "date": "2022-10-27",
+        "volume_of_trade": "23816708.25",
+        "WA_price": "87",
+        "price_at_opening": "87",
+        "min_price": "89.25",
+        "max_price": "88.85"
+    },
+    {
+        "date": "2022-10-26",
+        "volume_of_trade": "32555028.85",
+        "WA_price": "87.9",
+        "price_at_opening": "86.2",
+        "min_price": "88.35",
+        "max_price": "87.35"
+    },
+    {
+        "date": "2022-10-25",
+        "volume_of_trade": "30098919.25",
+        "WA_price": "85.4",
+        "price_at_opening": "84.95",
+        "min_price": "87.8",
+        "max_price": "87.55"
+    },
+    {
+        "date": "2022-10-24",
+        "volume_of_trade": "52261184.05",
+        "WA_price": "85",
+        "price_at_opening": "84.5",
+        "min_price": "86.1",
+        "max_price": "85.05"
+    },
+    {
+        "date": "2022-10-21",
+        "volume_of_trade": "16001758.85",
+        "WA_price": "83.3",
+        "price_at_opening": "82.5",
+        "min_price": "84.85",
+        "max_price": "83.9"
+    },
+    {
+        "date": "2022-10-20",
+        "volume_of_trade": "23956170.1",
+        "WA_price": "82.3",
+        "price_at_opening": "82.2",
+        "min_price": "83.7",
+        "max_price": "83.3"
+    },
+    {
+        "date": "2022-10-19",
+        "volume_of_trade": "24048624.05",
+        "WA_price": "82.8",
+        "price_at_opening": "81",
+        "min_price": "83.1",
+        "max_price": "81.35"
+    },
+    {
+        "date": "2022-10-18",
+        "volume_of_trade": "21211767",
+        "WA_price": "84",
+        "price_at_opening": "82",
+        "min_price": "84.5",
+        "max_price": "83.9"
+    },
+    {
+        "date": "2022-10-17",
+        "volume_of_trade": "17070908.5",
+        "WA_price": "82",
+        "price_at_opening": "79.95",
+        "min_price": "83.55",
+        "max_price": "82.85"
+    },
+    {
+        "date": "2022-10-14",
+        "volume_of_trade": "11928302.4",
+        "WA_price": "81.05",
+        "price_at_opening": "79.9",
+        "min_price": "82.05",
+        "max_price": "80.5"
+    },
+    {
+        "date": "2022-10-13",
+        "volume_of_trade": "9482781.6",
+        "WA_price": "80.6",
+        "price_at_opening": "80.35",
+        "min_price": "81.7",
+        "max_price": "80.9"
+    },
+    {
+        "date": "2022-10-12",
+        "volume_of_trade": "26183571",
+        "WA_price": "80.85",
+        "price_at_opening": "80.1",
+        "min_price": "81.6",
+        "max_price": "80.85"
+    },
+    {
+        "date": "2022-10-11",
+        "volume_of_trade": "17686851.55",
+        "WA_price": "79.8",
+        "price_at_opening": "79.25",
+        "min_price": "81.5",
+        "max_price": "81.05"
+    },
+    {
+        "date": "2022-10-10",
+        "volume_of_trade": "40212590.65",
+        "WA_price": "74.25",
+        "price_at_opening": "73.5",
+        "min_price": "79.85",
+        "max_price": "79.6"
+    },
+    {
+        "date": "2022-10-07",
+        "volume_of_trade": "19609730.2",
+        "WA_price": "80.2",
+        "price_at_opening": "76.05",
+        "min_price": "80.2",
+        "max_price": "76.95"
+    },
+    {
+        "date": "2022-10-06",
+        "volume_of_trade": "16076961.45",
+        "WA_price": "80.5",
+        "price_at_opening": "79.9",
+        "min_price": "81.7",
+        "max_price": "80.2"
+    },
+    {
+        "date": "2022-10-05",
+        "volume_of_trade": "39798890.95",
+        "WA_price": "80.1",
+        "price_at_opening": "78.2",
+        "min_price": "81.5",
+        "max_price": "80.5"
+    },
+    {
+        "date": "2022-10-04",
+        "volume_of_trade": "33139927.75",
+        "WA_price": "82.7",
+        "price_at_opening": "80",
+        "min_price": "82.7",
+        "max_price": "81.3"
+    },
+    {
+        "date": "2022-10-03",
+        "volume_of_trade": "32591321.9",
+        "WA_price": "79",
+        "price_at_opening": "78.1",
+        "min_price": "82.05",
+        "max_price": "81.25"
+    },
+    {
+        "date": "2022-09-30",
+        "volume_of_trade": "34834975.8",
+        "WA_price": "77.15",
+        "price_at_opening": "75.5",
+        "min_price": "79.7",
+        "max_price": "77.55"
+    },
+    {
+        "date": "2022-09-29",
+        "volume_of_trade": "27387902.8",
+        "WA_price": "79",
+        "price_at_opening": "75.7",
+        "min_price": "79.05",
+        "max_price": "76.65"
+    },
+    {
+        "date": "2022-09-28",
+        "volume_of_trade": "38502169.85",
+        "WA_price": "77.55",
+        "price_at_opening": "76.6",
+        "min_price": "79.7",
+        "max_price": "77.5"
+    },
+    {
+        "date": "2022-09-27",
+        "volume_of_trade": "24750459.7",
+        "WA_price": "74.7",
+        "price_at_opening": "74.6",
+        "min_price": "78.55",
+        "max_price": "77.1"
+    },
+    {
+        "date": "2022-09-26",
+        "volume_of_trade": "162085349.15",
+        "WA_price": "81.75",
+        "price_at_opening": "72.1",
+        "min_price": "82.75",
+        "max_price": "76.35"
+    },
+    {
+        "date": "2022-09-23",
+        "volume_of_trade": "37218950.2",
+        "WA_price": "86.95",
+        "price_at_opening": "81.9",
+        "min_price": "87.25",
+        "max_price": "83.05"
+    },
+    {
+        "date": "2022-09-22",
+        "volume_of_trade": "33486294.45",
+        "WA_price": "84.9",
+        "price_at_opening": "84.8",
+        "min_price": "87.75",
+        "max_price": "86.25"
+    },
+    {
+        "date": "2022-09-21",
+        "volume_of_trade": "63041616.45",
+        "WA_price": "83",
+        "price_at_opening": "79.7",
+        "min_price": "88.1",
+        "max_price": "84.85"
+    },
+    {
+        "date": "2022-09-20",
+        "volume_of_trade": "75342277.45",
+        "WA_price": "96.5",
+        "price_at_opening": "85.5",
+        "min_price": "97.2",
+        "max_price": "88.25"
+    },
+    {
+        "date": "2022-09-19",
+        "volume_of_trade": "21913051.45",
+        "WA_price": "96.4",
+        "price_at_opening": "95.95",
+        "min_price": "97.2",
+        "max_price": "96.1"
+    },
+    {
+        "date": "2022-09-16",
+        "volume_of_trade": "44267463.5",
+        "WA_price": "97.25",
+        "price_at_opening": "96.15",
+        "min_price": "97.85",
+        "max_price": "96.4"
+    },
+    {
+        "date": "2022-09-15",
+        "volume_of_trade": "26935680.2",
+        "WA_price": "96.55",
+        "price_at_opening": "95.8",
+        "min_price": "97.3",
+        "max_price": "96.8"
+    },
+    {
+        "date": "2022-09-14",
+        "volume_of_trade": "25864560.3",
+        "WA_price": "96.85",
+        "price_at_opening": "95.1",
+        "min_price": "96.85",
+        "max_price": "96.3"
+    },
+    {
+        "date": "2022-09-13",
+        "volume_of_trade": "23264934.3",
+        "WA_price": "96.9",
+        "price_at_opening": "96.45",
+        "min_price": "97.6",
+        "max_price": "96.95"
+    },
+    {
+        "date": "2022-09-12",
+        "volume_of_trade": "54766434.55",
+        "WA_price": "95.95",
+        "price_at_opening": "94.35",
+        "min_price": "97.6",
+        "max_price": "96.9"
+    },
+    {
+        "date": "2022-09-09",
+        "volume_of_trade": "22472199.8",
+        "WA_price": "94.4",
+        "price_at_opening": "94.2",
+        "min_price": "96.1",
+        "max_price": "95.9"
+    },
+    {
+        "date": "2022-09-08",
+        "volume_of_trade": "47386083.25",
+        "WA_price": "95.3",
+        "price_at_opening": "94",
+        "min_price": "95.75",
+        "max_price": "94.7"
+    },
+    {
+        "date": "2022-09-07",
+        "volume_of_trade": "29686539.3",
+        "WA_price": "96.25",
+        "price_at_opening": "94.9",
+        "min_price": "96.65",
+        "max_price": "95.3"
+    },
+    {
+        "date": "2022-09-06",
+        "volume_of_trade": "72564359.6",
+        "WA_price": "98.95",
+        "price_at_opening": "94.2",
+        "min_price": "98.95",
+        "max_price": "96.25"
+    },
+    {
+        "date": "2022-09-05",
+        "volume_of_trade": "42839826.95",
+        "WA_price": "98",
+        "price_at_opening": "96.6",
+        "min_price": "98.5",
+        "max_price": "98.35"
+    },
+    {
+        "date": "2022-09-02",
+        "volume_of_trade": "36904335.75",
+        "WA_price": "97.5",
+        "price_at_opening": "96.45",
+        "min_price": "98.1",
+        "max_price": "97.65"
+    },
+    {
+        "date": "2022-09-01",
+        "volume_of_trade": "34839141.9",
+        "WA_price": "94.5",
+        "price_at_opening": "94.2",
+        "min_price": "97",
+        "max_price": "96.65"
+    },
+    {
+        "date": "2022-08-31",
+        "volume_of_trade": "78797608.65",
+        "WA_price": "92.15",
+        "price_at_opening": "92",
+        "min_price": "96",
+        "max_price": "94.5"
+    },
+    {
+        "date": "2022-08-30",
+        "volume_of_trade": "22116425.1",
+        "WA_price": "90.8",
+        "price_at_opening": "90.8",
+        "min_price": "91.7",
+        "max_price": "91.15"
+    },
+    {
+        "date": "2022-08-29",
+        "volume_of_trade": "26434996.9",
+        "WA_price": "89.95",
+        "price_at_opening": "89.65",
+        "min_price": "90.9",
+        "max_price": "90.75"
+    },
+    {
+        "date": "2022-08-26",
+        "volume_of_trade": "11451622",
+        "WA_price": "89.3",
+        "price_at_opening": "88.6",
+        "min_price": "89.65",
+        "max_price": "89.55"
+    },
+    {
+        "date": "2022-08-25",
+        "volume_of_trade": "13661662.05",
+        "WA_price": "89.4",
+        "price_at_opening": "88.5",
+        "min_price": "89.75",
+        "max_price": "89"
+    },
+    {
+        "date": "2022-08-24",
+        "volume_of_trade": "15739327.95",
+        "WA_price": "89.8",
+        "price_at_opening": "88.85",
+        "min_price": "90",
+        "max_price": "88.95"
+    },
+    {
+        "date": "2022-08-23",
+        "volume_of_trade": "16676618.2",
+        "WA_price": "88",
+        "price_at_opening": "87.8",
+        "min_price": "89.55",
+        "max_price": "89.5"
+    },
+    {
+        "date": "2022-08-22",
+        "volume_of_trade": "31382307.1",
+        "WA_price": "86.5",
+        "price_at_opening": "86.5",
+        "min_price": "88.4",
+        "max_price": "88.05"
+    },
+    {
+        "date": "2022-08-19",
+        "volume_of_trade": "10061025.05",
+        "WA_price": "87",
+        "price_at_opening": "86.2",
+        "min_price": "87.25",
+        "max_price": "86.85"
+    },
+    {
+        "date": "2022-08-18",
+        "volume_of_trade": "13617149.75",
+        "WA_price": "86.9",
+        "price_at_opening": "86.15",
+        "min_price": "87",
+        "max_price": "86.95"
+    },
+    {
+        "date": "2022-08-17",
+        "volume_of_trade": "21421672.35",
+        "WA_price": "87.5",
+        "price_at_opening": "86.6",
+        "min_price": "88.2",
+        "max_price": "86.9"
+    },
+    {
+        "date": "2022-08-16",
+        "volume_of_trade": "18158709.9",
+        "WA_price": "85.75",
+        "price_at_opening": "85.55",
+        "min_price": "87.45",
+        "max_price": "87.35"
+    },
+    {
+        "date": "2022-08-15",
+        "volume_of_trade": "17395559.85",
+        "WA_price": "85.4",
+        "price_at_opening": "84.75",
+        "min_price": "85.9",
+        "max_price": "85.65"
+    },
+    {
+        "date": "2022-08-12",
+        "volume_of_trade": "12304721.7",
+        "WA_price": "84.85",
+        "price_at_opening": "84",
+        "min_price": "85.15",
+        "max_price": "85.05"
+    },
+    {
+        "date": "2022-08-11",
+        "volume_of_trade": "40860431.85",
+        "WA_price": "85.15",
+        "price_at_opening": "84.25",
+        "min_price": "86.1",
+        "max_price": "84.6"
+    },
+    {
+        "date": "2022-08-10",
+        "volume_of_trade": "37328928.6",
+        "WA_price": "85",
+        "price_at_opening": "84.35",
+        "min_price": "85.6",
+        "max_price": "85.1"
+    },
+    {
+        "date": "2022-08-09",
+        "volume_of_trade": "18596794.55",
+        "WA_price": "82.75",
+        "price_at_opening": "82",
+        "min_price": "84.5",
+        "max_price": "84.4"
+    },
+    {
+        "date": "2022-08-08",
+        "volume_of_trade": "14123841.1",
+        "WA_price": "81.75",
+        "price_at_opening": "81.45",
+        "min_price": "84",
+        "max_price": "82.7"
+    },
+    {
+        "date": "2022-08-05",
+        "volume_of_trade": "25300298.05",
+        "WA_price": "83.95",
+        "price_at_opening": "81.1",
+        "min_price": "84.1",
+        "max_price": "81.3"
+    },
+    {
+        "date": "2022-08-04",
+        "volume_of_trade": "12593461.4",
+        "WA_price": "84.25",
+        "price_at_opening": "83.45",
+        "min_price": "84.4",
+        "max_price": "83.8"
+    },
+    {
+        "date": "2022-08-03",
+        "volume_of_trade": "27500922.55",
+        "WA_price": "84.25",
+        "price_at_opening": "83.8",
+        "min_price": "85.2",
+        "max_price": "84.05"
+    },
+    {
+        "date": "2022-08-02",
+        "volume_of_trade": "18620289.4",
+        "WA_price": "86.35",
+        "price_at_opening": "84.3",
+        "min_price": "86.35",
+        "max_price": "84.5"
+    },
+    {
+        "date": "2022-08-01",
+        "volume_of_trade": "17093418.4",
+        "WA_price": "87.25",
+        "price_at_opening": "86",
+        "min_price": "87.8",
+        "max_price": "86.4"
+    },
+    {
+        "date": "2022-07-29",
+        "volume_of_trade": "18469679.95",
+        "WA_price": "86.6",
+        "price_at_opening": "86.1",
+        "min_price": "87.55",
+        "max_price": "87.55"
+    },
+    {
+        "date": "2022-07-28",
+        "volume_of_trade": "16031428.5",
+        "WA_price": "87.1",
+        "price_at_opening": "85.65",
+        "min_price": "87.5",
+        "max_price": "86.45"
+    },
+    {
+        "date": "2022-07-27",
+        "volume_of_trade": "26598463.8",
+        "WA_price": "86.9",
+        "price_at_opening": "86.2",
+        "min_price": "87.75",
+        "max_price": "86.85"
+    },
+    {
+        "date": "2022-07-26",
+        "volume_of_trade": "25606814.3",
+        "WA_price": "84",
+        "price_at_opening": "84",
+        "min_price": "86.5",
+        "max_price": "86.45"
+    },
+    {
+        "date": "2022-07-25",
+        "volume_of_trade": "20173301.1",
+        "WA_price": "82.45",
+        "price_at_opening": "82.35",
+        "min_price": "84.2",
+        "max_price": "83.95"
+    },
+    {
+        "date": "2022-07-22",
+        "volume_of_trade": "13811173.55",
+        "WA_price": "81.3",
+        "price_at_opening": "81.15",
+        "min_price": "82.9",
+        "max_price": "82.65"
+    }
+]
