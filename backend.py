@@ -1,7 +1,6 @@
-from flask import Flask, request, make_response, jsonify
+from flask import Flask, make_response, jsonify, render_template
 from storage import StorageSQLite, StorageJSON
 import sqlite3
-import datetime
 
 
 DATABASE = 'moex'
@@ -23,51 +22,77 @@ def server_error(error):
     return make_response(jsonify({'error': 'Internal server error, probably related to the database'}), 500)
 
 
-@app.route("data/price/<string:index>?<string:date>?<string:opening>", methods=["GET"])
-def load_price_data(index: str, ticker: str):
-    global json_storage
-    try:
-        index = request.args.get('index')
-        date = request.args.get('date')
-        datetime.date.fromisoformat(date)
-        opening = opening = 'price_at_opening' if request.args.get('opening') == 'true' else 'price_at_closing'
+def retrieve_data(cursor, index):
+    query = '''
+    SELECT
+        date,
+        volume_of_trade
+        price_at_opening,
+        min_price,
+        max_price,
+        price_at_closure
+    FROM {0};
+    '''.format(index)
+    cursor.execute(query)
+    response = cursor.fetchall()
 
-        conn = json_storage.connect('/data')
-        df = json_storage.read(conn, index)
+    headers = [
+        'index',
+        'date',
+        'volume_of_trade',
+        'price_at_opening',
+        'min_price',
+        'max_price',
+        'price_at_closure'
+    ]
 
-        return jsonify({'price': df[df['date'] == date][opening]}), 201
-    except KeyError as e:
-        return jsonify({'error': f'Key was not found: {e.__str__()}'}), 404
-    except FileNotFoundError as e:
-        return jsonify({'error': f'File was not found: {e.__str__()}'}), 404
-    except ValueError:
-        return jsonify({'error': "'Incorrect data format, should be YYYY-MM-DD'"}), 404
+    records = []
+    for row in response:
+        upd_row = tuple([index] + list(row))
+        record = dict(zip(headers, upd_row))
+        records.append(record)
+
+    return records
 
 
-@app.route("/db/price/<string:ticker>", methods=["GET"])
-def home(ticker):
-    try:
-        date = request.args.get('date')
-        opening = 'price_at_opening' if request.args.get('opening') == 'true' else 'price_at_closing'
-    except KeyError:
-        return {'error': 'Specify date in format yyyy-mm-dd'}, 404
-
-    # Currenly won't work if the specified date is a holiday (i.e. exchange didn't work)
+@app.route("/data", methods=["GET"])
+def home():
     try:
         conn = sqlite3.connect(DATABASE + '.db')
         cursor = conn.cursor()
-        query = '''
-                select {0}
-                from {1}
-                where date='{2}'
-                '''.format(opening, ticker, date)
-        cursor.execute(query)
-        response = cursor.fetchone()
-        conn.close()
-        return jsonify({'price': float(response[0])}), 200
+        records = []
+        for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX']:
+            records.extend(retrieve_data(cursor, index))
+
+        return jsonify(records), 200
     except Exception:
         return jsonify({'error': 'Couldn\'t get a record from the database'}), 500
 
 
+@app.route("/", methods=["GET"])
+def index():
+    return render_template('index.html')
+
+
+@app.route("/kde-plot", methods=["GET"])
+def kde_plot():
+    return render_template('kde_plot.html')
+
+
+@app.route("/heatmap", methods=["GET"])
+def heatmap():
+    return render_template('heatmap.html')
+
+
+@app.route("/bubbles", methods=["GET"])
+def bubbles():
+    return render_template('bubbles.html')
+
+
+@app.route("/bar-plot", methods=["GET"])
+def bar_plot():
+    return render_template('bar_plot.html')
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
