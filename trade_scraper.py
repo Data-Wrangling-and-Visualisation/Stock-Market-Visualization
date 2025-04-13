@@ -89,7 +89,7 @@ class TradeURL(URL):
         self.date_till = Date(date_till)
         self.mode_type = mode_type
         self.url = self.BASE_URL + '&secid=' + index_name + '&mode_type=' + mode_type + '&date_from=' + date_from + \
-                   '&date_till=' + date_till
+            '&date_till=' + date_till
 
     @staticmethod
     def construct_from_url(url: str):
@@ -228,14 +228,14 @@ class TradeScraper:
         Returns:
             pd.Dataframe: dataframe with retrieved information
         """
-        columns = ['date', 
-                   'ticker', 
-                   'quantity', 
-                   'volume_of_trade', 
-                   'WA_price', 
-                   'price_at_opening', 
-                   'min_price', 
-                   'max_price', 
+        columns = ['date',
+                   'ticker',
+                   'quantity',
+                   'volume_of_trade',
+                   'WA_price',
+                   'price_at_opening',
+                   'min_price',
+                   'max_price',
                    'price_at_closure']
         data: List[Dict] = []
         for soup_table in soup_tables:
@@ -247,7 +247,6 @@ class TradeScraper:
             for row in tbody.find_all('tr'):
                 elements = row.find_all('td')
                 data.append([element.text.strip().replace(',', '.') for element in elements])
-
 
         df = pd.DataFrame(data, columns=columns)
         df.drop(columns=['ticker', 'quantity', 'WA_price'], inplace=True)
