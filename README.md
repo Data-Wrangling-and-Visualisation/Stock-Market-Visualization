@@ -24,6 +24,8 @@ Web data will be scraped from the archive of the Moscow Exchange (MOEX) web site
 </p>
 <p>
 The MOEX web site provides exhaustive information about the price of MOEX indexes by days and months recorded from 1997. Particularly, the tables consist of the following columns: the date of a record (dd.mm.yyyy), the values of an index at the beginning of the period and at the end of the period (floating-point numbers), the maximum and minimum recorded values of an index during the period (floating-point numbers), the money volume of an index during the period (floating-point number), and the money capitalization of index during the period (floating-point number).
+
+Individual stocks and ETF's on the other hand contain slightly different columns. Those are: date of a record (dd.mm.yyyy), instrument name (string), number of trades on a given day (int), weighted average price (floating-point number), the values of stock at the beginning of the period and at the end of the period (floating-point numbers), the maximum and minimum recorded values of an index during the period (floating-point numbers), the money volume of an index during the period (floating-point number).
 </p>
 
 <a name="milestones"> <h2> Project Milestones </h2> </a>
@@ -56,19 +58,30 @@ playwright install
 <a name="scraper"> <h2> Scraper client example </h2> </a>
 Below you can see the code for the client to start scraping process:
 ```Python
-import scraper
-    
-scr = scraper.Scraper()
-my_url = scraper.URL.construct_from_url(
-  url=("https://www.moex.com/ru/index/IMOEX/archive"
-       "?from=2025-01-26&till=2025-02-26&sort=TRADEDATE&order=desc")
-)
-scr.load_content([my_url])  # load page with driver
-scr.scrape_pages()  # scrape html files in the page/ folder
+from storage import StorageSQLite
+from trade_scraper import TradeScraper, TradeURL
+from index_scraper import IndexScraper, IndexURL
 
-df = scr.load_page_data('page') # load data from example page
-print(df.head())
+store = StorageSQLite()
+indexScrap = IndexScraper(storage=store)
+tradeScrap = TradeScraper(storage=store)
+
+tickersIndexes = [
+    'https://www.moex.com/ru/index/IMOEX/archive?from=2023-12-01&till=2025-03-27&sort=TRADEDATE&order=desc'
+]
+tickersETFs = [
+    'https://www.moex.com/ru/marketdata/#/mode=instrument&secid=TMOS&boardgroupid=57&mode_type=history&date_from=2024-08-26&date_till=2025-03-28'
+    ]
+indexUrls = [IndexURL.construct_from_url(x) for x in tickersIndexes]
+indexScrap.load_content(indexUrls)
+indexScrap.scrape_pages()
+
+
+tradeUrls = [TradeURL.construct_from_url(x) for x in tickersETFs]
+tradeScrap.load_content(tradeUrls)
+tradeScrap.scrape_pages()
 ```
+Scraped data will be added to local moex.db data base via SQLite and will be accessible by backend.
 
 <a name="eda"> <h2> EDA </h2> </a>
 The <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/EDA/Russia_Stock_Market_Index.ipynb">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.
