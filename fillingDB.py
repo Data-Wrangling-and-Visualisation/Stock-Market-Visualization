@@ -8,7 +8,7 @@ tradeScrap = TradeScraper(storage=store)
 
 tickersIndexes = [
     # Индекс Мосбиржи
-    'https://www.moex.com/ru/index/IMOEX/archive?from=2005-01-01&till=2025-03-27&sort=TRADEDATE&order=desc'
+    'https://www.moex.com/ru/index/IMOEX/archive?from=2020-01-01&till=2025-03-27&sort=TRADEDATE&order=desc'
 ]
 tickersETFs = [
     # БПИФ ТБанк starts 2020
