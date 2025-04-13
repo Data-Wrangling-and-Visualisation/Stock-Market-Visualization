@@ -40,6 +40,7 @@ Individual stocks and ETF's on the other hand contain slightly different columns
 <a name="installation"> <h2> Installation </h2> </a>
 <h3> Manual </h3>
 Clone the repository:
+
 ```bash
 git clone https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization
 ```
@@ -89,15 +90,16 @@ Start backend server:
 python backend.py
 ```
 
-Access the <a href="127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
+Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
 
 <h3> With Docker </h3>
 Run the following command to create a container:
+
 ```bash
 docker compose up -d
 ```
 
-Access the <a href="127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
+Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
 
 Run the following command to stop and remove the container:
 ```bash
