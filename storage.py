@@ -142,4 +142,3 @@ class StorageSQLite(Storage):
         df = pd.read_sql(f"SELECT * FROM {name}", conn)
         df['date'] = pd.to_datetime(df['date'])
         return df
-    
