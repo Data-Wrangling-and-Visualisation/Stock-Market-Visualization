@@ -76,7 +76,7 @@ def index():
 
 @app.route("/kde-plot", methods=["GET"])
 def kde_plot():
-    return render_template('kde_plot.html')
+    return render_template('kde-plot.html')
 
 
 @app.route("/heatmap", methods=["GET"])
@@ -91,7 +91,7 @@ def bubbles():
 
 @app.route("/bar-plot", methods=["GET"])
 def bar_plot():
-    return render_template('bar_plot.html')
+    return render_template('bar-plot.html')
 
 
 if __name__ == "__main__":
