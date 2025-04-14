@@ -38,7 +38,7 @@ class IndexURL(URL):
         self.order = order
         self.BASE_URL = 'https://www.moex.com/ru/index/'
         self.url = self.BASE_URL + index_name + '/archive?' + 'from=' + date_from + \
-                   '&till=' + date_till + '&sort=' + sort + '&order=' + order
+            '&till=' + date_till + '&sort=' + sort + '&order=' + order
 
     def construct_from_url(url: str):
         self_index_name = url[url.find("index/") + 6:url.find("/archive")]
@@ -92,9 +92,9 @@ class IndexScraper(TradeScraper):
     ]
 
     def __init__(self,
-                 pages_path: str = 'pages/',
+                 pages_path: str = '../pages/',
                  storage: Storage = StorageJSON(),
-                 credentials: Any = 'data/'):
+                 credentials: Any = '../data/'):
         super().__init__(pages_path, storage, credentials)
         self.prefix_name = 'INDEX'
 

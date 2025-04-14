@@ -58,7 +58,7 @@ def retrieve_data(cursor, index):
 @app.route("/data", methods=["GET"])
 def home():
     try:
-        conn = sqlite3.connect(DATABASE + '.db')
+        conn = sqlite3.connect('../' + DATABASE + '.db')
         cursor = conn.cursor()
         records = []
         for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX']:

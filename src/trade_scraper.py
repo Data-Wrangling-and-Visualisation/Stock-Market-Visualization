@@ -119,9 +119,9 @@ class TradeScraper:
     prefix_name: str = 'TRADE_INDEX'
 
     def __init__(self,
-                 pages_path: str = 'pages/',
+                 pages_path: str = '../pages/',
                  storage: Storage = StorageJSON(),
-                 credentials: Any = 'data/'):
+                 credentials: Any = '../data/'):
         self.pages_path = pages_path
         self.storage = storage
         self.credentials = credentials

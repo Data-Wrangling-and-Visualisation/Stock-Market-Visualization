@@ -1,6 +1,6 @@
 services:
   server:
-    build: .
+    build: ./src
     image: server:latest
     container_name: server
     expose:

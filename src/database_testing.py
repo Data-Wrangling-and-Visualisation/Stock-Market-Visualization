@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('moex.db')
+conn = sqlite3.connect('../moex.db')
 cursor = conn.cursor()
 cursor.execute('''
                 select price_at_opening from TMOS

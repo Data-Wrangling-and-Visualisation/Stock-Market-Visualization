@@ -87,7 +87,7 @@ Scraped data will be added to local moex.db data base via SQLite and will be acc
 
 Start backend server:
 ```bash
-python backend.py
+python src/backend.py
 ```
 
 Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
