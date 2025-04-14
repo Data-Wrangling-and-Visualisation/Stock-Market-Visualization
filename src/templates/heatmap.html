@@ -112,6 +112,7 @@
     </div>
 
     <div class="controls">
+        <select id="indexSelector"></select>
         <select id="granularity" onchange="updateControls()">
             <option value="month">Month</option>
             <option value="day">Day</option>
@@ -123,6 +124,9 @@
     <div id="tooltip"></div>
 
 <script>
+    let currentIndex = ''; // Текущий выбранный индекс
+    let allData = []; // Для хранения всех загруженных данных
+
 // Parse and sort data
 
 async function loadData() {
@@ -131,11 +135,28 @@ async function loadData() {
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
 
-        processedData = data.map(d => ({
+        allData = data.records;
+        const indexes = [...new Set(allData.map(d => d.index))];
+
+        // Заполняем селектор
+        const indexSelector = document.getElementById('indexSelector');
+        indexSelector.innerHTML = indexes.map(idx =>
+            `<option value="${idx}">${idx}</option>`
+        ).join('');
+
+        console.log(data)
+        processedData = data.records.map(d => ({
             date: new Date(d.date),
-            open: d.min_price,
-            close: d.max_price
+            open: d.price_at_opening,
+            close: d.price_at_closure
         })).sort((a, b) => a.date - b.date);
+
+        // Устанавливаем первое значение по умолчанию
+        currentIndex = indexes[0];
+        indexSelector.value = currentIndex;
+
+        // Фильтруем данные
+        processedData = filterData(allData);
 
         processPeriods();
         populateRangeSelects();
@@ -145,6 +166,24 @@ async function loadData() {
         alert('Failed to load data. Please try again later.');
     }
 }
+
+// Новая функция для фильтрации данных
+function filterData(data) {
+    return data
+        .filter(d => d.index === currentIndex)
+        .map(d => ({
+            date: new Date(d.date),
+            open: d.price_at_opening,
+            close: d.price_at_closure
+        }))
+        .sort((a, b) => a.date - b.date);
+}
+
+document.getElementById('indexSelector').addEventListener('change', function() {
+    currentIndex = this.value;
+    processedData = filterData(allData);
+    updateControls();
+});
 
 // Initial setup
 let processedData;
@@ -368,6 +407,22 @@ document.getElementById('startRange').addEventListener('change', function() {
 document.getElementById('endRange').addEventListener('change', function() {
     endRange = this.value;
     updateHeatmap();
+});
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Обработчики для селекторов диапазона дат
+    document.getElementById('startRange').addEventListener('change', function() {
+        startRange = this.value;
+        updateHeatmap();
+    });
+
+    document.getElementById('endRange').addEventListener('change', function() {
+        endRange = this.value;
+        updateHeatmap();
+    });
+
+    // Инициализация данных
+    loadData();
 });
 </script>
 </body>
