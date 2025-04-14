@@ -99,7 +99,7 @@
 </head>
 <body>
     <div class="nav-container">
-      <a href="/Stock-Market-Visualization/index.html" class="nav-link">← Back to Main</a>
+      <a href="/" class="nav-link">← Back to Main</a>
     </div>
 
     <!-- Add description -->
@@ -128,6 +128,34 @@
     let allData = []; // Для хранения всех загруженных данных
 
 // Parse and sort data
+
+function populateRangeSelects() {
+    const startSelect = document.getElementById('startRange');
+    const endSelect = document.getElementById('endRange');
+
+    // Очистка предыдущих опций
+    startSelect.innerHTML = '';
+    endSelect.innerHTML = '';
+
+    if (periods.length === 0) return;
+
+    // Добавление новых опций
+    periods.forEach(period => {
+        const option = document.createElement('option');
+        option.value = period.key;
+        option.text = period.key;
+        startSelect.appendChild(option.cloneNode(true));
+        endSelect.appendChild(option);
+    });
+
+    // Установка дефолтных значений
+    startRange = periods[0].key;
+    endRange = periods[periods.length - 1].key;
+
+    // Принудительное обновление DOM
+    startSelect.value = startRange;
+    endSelect.value = endRange;
+}
 
 async function loadData() {
     try {
@@ -160,6 +188,7 @@ async function loadData() {
 
         processPeriods();
         populateRangeSelects();
+        populateRangeSelects();
         updateHeatmap();
     } catch (error) {
         console.error('Error loading data:', error);
@@ -167,10 +196,17 @@ async function loadData() {
     }
 }
 
+
+
 // Новая функция для фильтрации данных
 function filterData(data) {
     return data
         .filter(d => d.index === currentIndex)
+        .filter(d => {
+            const open = Number(d.price_at_opening);
+            const close = Number(d.price_at_closure);
+            return !isNaN(open) && !isNaN(close);
+        })
         .map(d => ({
             date: new Date(d.date),
             open: d.price_at_opening,
@@ -186,7 +222,7 @@ document.getElementById('indexSelector').addEventListener('change', function() {
 });
 
 // Initial setup
-let processedData;
+let processedData = [];
 let granularity = 'month';
 let periods = [];
 let startRange, endRange;
@@ -230,16 +266,16 @@ function processPeriods() {
         }));
 }
 
-function populateRangeSelects() {
-    const startSelect = document.getElementById('startRange');
-    const endSelect = document.getElementById('endRange');
-    
-    startSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');
-    endSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');
-    
-    startRange = periods[0].key;
-    endRange = periods[periods.length-1].key;
-}
+<!--function populateRangeSelects() {-->
+<!--    const startSelect = document.getElementById('startRange');-->
+<!--    const endSelect = document.getElementById('endRange');-->
+<!--    -->
+<!--    startSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');-->
+<!--    endSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');-->
+<!--    -->
+<!--    startRange = periods[0].key;-->
+<!--    endRange = periods[periods.length-1].key;-->
+<!--}-->
 
 function calculateReturns() {
     const returns = {};
@@ -392,11 +428,6 @@ function updateHeatmap() {
         .attr("text-anchor", "middle")
         .text("MOEX Investment Returns Matrix");
 }
-
-// Initialization
-processPeriods();
-populateRangeSelects();
-updateHeatmap();
 
 // Event listeners
 document.getElementById('startRange').addEventListener('change', function() {
