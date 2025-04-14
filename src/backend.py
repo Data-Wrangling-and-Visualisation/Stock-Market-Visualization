@@ -26,7 +26,7 @@ def retrieve_data(cursor, index):
     query = '''
     SELECT
         date,
-        volume_of_trade
+        volume_of_trade,
         price_at_opening,
         min_price,
         max_price,
@@ -64,7 +64,7 @@ def home():
         for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX']:
             records.extend(retrieve_data(cursor, index))
 
-        return jsonify(records), 200
+        return jsonify({'records': records}), 200
     except Exception:
         return jsonify({'error': 'Couldn\'t get a record from the database'}), 500
 
