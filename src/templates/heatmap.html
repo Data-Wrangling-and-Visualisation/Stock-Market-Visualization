@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modern MOEX Returns Heatmap</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      .nav-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .nav-link {
+            color: #2a9d8f;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            background: rgba(42, 157, 143, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .description {
+            margin: 20px auto 40px;
+            max-width: 800px;
+            color: #495057;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            margin: 2rem;
+        }
+
+        .controls {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-left: 10%;
+        }
+
+        select {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+            background: white;
+        }
+
+        .heatmap-cell {
+            transition: all 0.2s ease;
+        }
+
+        .heatmap-cell:hover {
+            stroke: #212529;
+            stroke-width: 2;
+            filter: brightness(1.1);
+        }
+
+        #tooltip {
+            position: absolute;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+            font-size: 0.9rem;
+            border: 1px solid #dee2e6;
+        }
+
+        .axis text {
+            font-size: 0.8rem;
+            fill: #495057;
+        }
+
+        .axis line {
+            stroke: #dee2e6;
+        }
+
+        .chart-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            fill: #212529;
+        }
+        svg {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+      <a href="/Stock-Market-Visualization/index.html" class="nav-link">← Back to Main</a>
+    </div>
+
+    <!-- Add description -->
+    <div class="description">
+        <h2>MOEX Investment Returns Matrix</h2>
+        <p>This interactive heatmap visualizes the returns of MOEX index investments across different time periods. 
+        Select a granularity (month/day) and date range to explore how returns vary between different investment horizons.
+        Hover over cells to see exact return percentages and corresponding time periods. The color scale ranges from 
+        red (negative returns) through white (neutral) to teal (positive returns).</p>
+    </div>
+
+    <div class="controls">
+        <select id="granularity" onchange="updateControls()">
+            <option value="month">Month</option>
+            <option value="day">Day</option>
+        </select>
+        <select id="startRange"></select>
+        <select id="endRange"></select>
+    </div>
+    <div id="heatmap"></div>
+    <div id="tooltip"></div>
+
+<script>
+// Parse and sort data
+
+async function loadData() {
+    try {
+        const response = await fetch('/data');
+        if (!response.ok) throw new Error('Failed to fetch data');
+        const data = await response.json();
+
+        processedData = data.map(d => ({
+            date: new Date(d.date),
+            open: d.min_price,
+            close: d.max_price
+        })).sort((a, b) => a.date - b.date);
+
+        processPeriods();
+        populateRangeSelects();
+        updateHeatmap();
+    } catch (error) {
+        console.error('Error loading data:', error);
+        alert('Failed to load data. Please try again later.');
+    }
+}
+
+// Initial setup
+let processedData;
+let granularity = 'month';
+let periods = [];
+let startRange, endRange;
+
+loadData();
+
+function updateControls() {
+    granularity = document.getElementById('granularity').value;
+    processPeriods();
+    populateRangeSelects();
+    updateHeatmap();
+}
+
+function processPeriods() {
+    const periodMap = new Map();
+    
+    processedData.forEach(d => {
+        const key = granularity === 'month' 
+            ? `${d.date.getFullYear()}-${String(d.date.getMonth() + 1).padStart(2, '0')}`
+            : d.date.toISOString().split('T')[0];
+        
+        if (!periodMap.has(key)) {
+            periodMap.set(key, {
+                open: d.open,
+                close: d.close,
+                dates: [d.date]
+            });
+        } else {
+            const period = periodMap.get(key);
+            period.dates.push(d.date);
+            period.close = d.close; // Keep last close price
+        }
+    });
+
+    periods = Array.from(periodMap.entries())
+        .sort((a,b) => new Date(a[0]) - new Date(b[0]))
+        .map(([key, val]) => ({
+            key,
+            open: val.open,
+            close: val.close
+        }));
+}
+
+function populateRangeSelects() {
+    const startSelect = document.getElementById('startRange');
+    const endSelect = document.getElementById('endRange');
+    
+    startSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');
+    endSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');
+    
+    startRange = periods[0].key;
+    endRange = periods[periods.length-1].key;
+}
+
+function calculateReturns() {
+    const returns = {};
+    const startIdx = periods.findIndex(p => p.key === startRange);
+    const endIdx = periods.findIndex(p => p.key === endRange);
+    const filteredPeriods = periods.slice(startIdx, endIdx + 1);
+
+    filteredPeriods.forEach((startPeriod, i) => {
+        filteredPeriods.slice(i).forEach(endPeriod => {
+            const returnVal = (endPeriod.close - startPeriod.open)/startPeriod.open;
+            returns[`${startPeriod.key}_${endPeriod.key}`] = returnVal;
+        });
+    });
+    
+    return { returns, filteredPeriods };
+}
+
+function updateHeatmap() {
+    const { returns, filteredPeriods } = calculateReturns();
+    const cellSize = 45;
+    const margin = { top: 100, right: 40, bottom: 100, left: 100 };
+    
+    d3.select("#heatmap").html('');
+    const svg = d3.select("#heatmap")
+        .append("svg")
+        .attr("width", margin.left + filteredPeriods.length * cellSize + margin.right)
+        .attr("height", margin.top + filteredPeriods.length * cellSize + margin.bottom);
+
+    // Modern color scale
+    const colorScale = d3.scaleLinear()
+        .domain([d3.min(Object.values(returns)), 0, d3.max(Object.values(returns))])
+        .range(["#e76f51", "#f8f9fa", "#2a9d8f"]);
+
+    // Create cells
+    filteredPeriods.forEach((startPeriod, i) => {
+        filteredPeriods.slice(i).forEach((endPeriod, j) => {
+            const returnVal = returns[`${startPeriod.key}_${endPeriod.key}`];
+            
+            svg.append("rect")
+                .attr("class", "heatmap-cell")
+                .attr("x", margin.left + i * cellSize)
+                .attr("y", margin.top + j * cellSize)
+                .attr("width", cellSize - 2)
+                .attr("height", cellSize - 2)
+                .attr("rx", 4) // Rounded corners
+                .attr("fill", colorScale(returnVal))
+                .on("mouseover", function(e) {
+                  // Показ тултипа
+                  d3.select("#tooltip")
+                      .style("left", e.pageX + 15 + "px")
+                      .style("top", e.pageY + 15 + "px")
+                      .html(`
+                          <strong>${startPeriod.key} → ${endPeriod.key}</strong><br>
+                          Return: <span style="color:${returnVal >= 0 ? '#2a9d8f' : '#e76f51'}">${(returnVal*100).toFixed(1)}%</span>
+                      `);
+
+                      const currentStartIndex = i;
+                    const relevantPeriods = filteredPeriods.slice(currentStartIndex);
+
+                    // Обновить шкалу Y
+                    const yAxisScale = d3.scaleBand()
+                        .domain(relevantPeriods.map(p => p.key))
+                        .range([margin.top, margin.top + relevantPeriods.length * cellSize]);
+
+                    // Перерисовать ось Y
+                    svg.select(".y-axis")
+                        .transition()
+                        .duration(300)
+                        .call(d3.axisLeft(yAxisScale))
+                        .selectAll("text")
+                            .style("text-anchor", "end")
+                            .attr("dx", "-1em");
+
+                    // Показать тултип
+                    d3.select("#tooltip")
+                        .style("left", e.pageX + 15 + "px")
+                        .style("top", e.pageY + 15 + "px")
+                        .html(`
+                            <strong>${startPeriod.key} → ${endPeriod.key}</strong><br>
+                            Return: <span style="color:${returnVal >= 0 ? '#2a9d8f' : '#e76f51'}">${(returnVal*100).toFixed(1)}%</span>
+                        `);
+              })
+              .on("mousemove", function(e) {
+                  // Обновление позиции тултипа при движении курсора
+                  d3.select("#tooltip")
+                      .style("left", e.pageX + 15 + "px")
+                      .style("top", e.pageY + 15 + "px");
+              })
+              .on("mouseleave", function() {
+                  // Возврат к исходному состоянию
+                  d3.select(this)
+                      .transition()
+                      .duration(100)
+                      .attr("stroke-width", 0);
+
+                  // Скрытие тултипа
+                  d3.select("#tooltip").style("opacity", 0);
+
+                  // Восстановить исходную ось Y
+                  const yAxisScale = d3.scaleBand()
+                        .domain(filteredPeriods.map(p => p.key))
+                        .range([margin.top, margin.top + filteredPeriods.length * cellSize]);
+
+                    svg.select(".y-axis")
+                        .transition()
+                        .duration(300)
+                        .call(d3.axisLeft(yAxisScale));
+              })
+              .on("mouseenter", function() {
+                  // Плавное появление тултипа
+                  d3.select("#tooltip").style("opacity", 1);
+              });
+        });
+    });
+
+    // Add axes with rotated labels
+    const axisScale = d3.scaleBand()
+        .domain(filteredPeriods.map(p => p.key))
+        .range([margin.left, margin.left + filteredPeriods.length * cellSize]);
+
+    // X-axis
+    svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${margin.top})`)
+        .call(d3.axisTop(axisScale))
+        .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-1.5em")
+            .attr("dy", "1.3em")
+            .attr("transform", "rotate(90)");
+
+    const yAxisScale = d3.scaleBand()
+        .domain(filteredPeriods.map(p => p.key))
+        .range([margin.top, margin.top + filteredPeriods.length * cellSize]);
+    // Y-axis
+    svg.append("g")
+        .attr("class", "y-axis")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(yAxisScale))
+        .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-1em")
+            .attr("dy", "0em");
+
+    // Add chart title
+    svg.append("text")
+        .attr("class", "chart-title")
+        .attr("x", margin.left + filteredPeriods.length * cellSize / 2)
+        .attr("y", 17)
+        .attr("text-anchor", "middle")
+        .text("MOEX Investment Returns Matrix");
+}
+
+// Initialization
+processPeriods();
+populateRangeSelects();
+updateHeatmap();
+
+// Event listeners
+document.getElementById('startRange').addEventListener('change', function() {
+    startRange = this.value;
+    updateHeatmap();
+});
+
+document.getElementById('endRange').addEventListener('change', function() {
+    endRange = this.value;
+    updateHeatmap();
+});
+</script>
+</body>
+</html>
