@@ -3,7 +3,7 @@ services:
     name: my-app
     env: python
     buildCommand: pip install -r req.txt
-    startCommand: gunicorn --worker-class gevent src.backend:app
+    startCommand: python src/backend.py
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.8"
