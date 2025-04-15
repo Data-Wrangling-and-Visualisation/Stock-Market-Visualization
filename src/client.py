@@ -1,6 +1,6 @@
-from trade_scraper import TradeScraper, TradeURL
-from index_scraper import IndexURL
-from scraper import Scraper
+from .trade_scraper import TradeScraper, TradeURL
+from .index_scraper import IndexURL
+from .scraper import Scraper
 
 
 def main():

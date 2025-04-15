@@ -1,5 +1,5 @@
 from flask import Flask, make_response, jsonify, render_template
-from storage import StorageSQLite, StorageJSON
+from .storage import StorageSQLite, StorageJSON
 import sqlite3
 
 

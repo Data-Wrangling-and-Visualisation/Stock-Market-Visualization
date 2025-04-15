@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright, Playwright, TimeoutError
 from bs4 import BeautifulSoup, Tag
 from typing import List, Dict, Any
 from abc import ABC, abstractmethod
-from storage import Storage, StorageJSON
+from .storage import Storage, StorageJSON
 import pandas as pd
 import os
 import datetime
