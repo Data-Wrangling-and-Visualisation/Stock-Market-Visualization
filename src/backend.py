@@ -2,6 +2,12 @@ from flask import Flask, make_response, jsonify, render_template
 from storage import StorageSQLite, StorageJSON
 import sqlite3
 
+import os
+
+# Set thread limits FIRST
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "1"
+
 
 DATABASE = 'moex'
 db_storage = StorageSQLite()
