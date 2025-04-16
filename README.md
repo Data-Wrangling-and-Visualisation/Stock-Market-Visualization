@@ -1,5 +1,9 @@
 # Stock Market Visualization
 
+## Deployed
+
+http://5.129.199.157:8080/
+
 ## Table of Contents
 <ol>
 <li> <a href="#description">Project Description</a> </li>
