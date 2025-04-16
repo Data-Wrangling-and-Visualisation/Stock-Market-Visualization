@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright, Playwright, TimeoutError
 from bs4 import BeautifulSoup, Tag
 from typing import List, Dict, Any
 from abc import ABC, abstractmethod
-from .storage import Storage, StorageJSON
+from storage import Storage, StorageJSON
 import pandas as pd
 import os
 import datetime
@@ -119,9 +119,9 @@ class TradeScraper:
     prefix_name: str = 'TRADE_INDEX'
 
     def __init__(self,
-                 pages_path: str = '../pages/',
+                 pages_path: str = 'pages/',
                  storage: Storage = StorageJSON(),
-                 credentials: Any = '../data/'):
+                 credentials: Any = 'data/'):
         self.pages_path = pages_path
         self.storage = storage
         self.credentials = credentials

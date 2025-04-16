@@ -1,10 +1,10 @@
 from playwright.sync_api import Playwright, Page, Locator
 from bs4 import Tag
 from typing import List, TypedDict, Optional, Any
-from .storage import Storage, StorageJSON
+from storage import Storage, StorageJSON
 import time
 import pandas as pd
-from .trade_scraper import Date, URL, TradeScraper
+from trade_scraper import Date, URL, TradeScraper
 
 
 class IndexURL(URL):
@@ -92,9 +92,9 @@ class IndexScraper(TradeScraper):
     ]
 
     def __init__(self,
-                 pages_path: str = '../pages/',
+                 pages_path: str = 'pages/',
                  storage: Storage = StorageJSON(),
-                 credentials: Any = '../data/'):
+                 credentials: Any = 'data/'):
         super().__init__(pages_path, storage, credentials)
         self.prefix_name = 'INDEX'
 

@@ -1,6 +1,6 @@
-from .storage import StorageSQLite
-from .trade_scraper import TradeScraper, TradeURL
-from .index_scraper import IndexScraper, IndexURL
+from storage import StorageSQLite
+from trade_scraper import TradeScraper, TradeURL
+from index_scraper import IndexScraper, IndexURL
 
 store = StorageSQLite()
 indexScrap = IndexScraper(storage=store)
