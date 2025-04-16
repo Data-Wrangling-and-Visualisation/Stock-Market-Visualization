@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright, Playwright
 from bs4 import BeautifulSoup, Tag
 from typing import List, TypedDict, Optional, Any
-from .storage import Storage, StorageJSON
+from storage import Storage, StorageJSON
 import time
 import pandas as pd
 import os

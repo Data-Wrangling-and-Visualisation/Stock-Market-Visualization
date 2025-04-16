@@ -92,7 +92,7 @@ class StorageMongo(Storage):
             collection.drop()
         collection = db[name]
         collection.insert_many(json_util.loads(data.to_json(orient='records')))
-    
+
     def read(self, conn: Any, name: str) -> pd.DataFrame:
         db = conn['moex']
         if name not in db.list_collection_names():
@@ -101,17 +101,18 @@ class StorageMongo(Storage):
         data = pd.DataFrame(list(collection.find()))
         data = data.drop('_id', axis=1)
         return data
-    
+
+
 class StorageSQLite(Storage):
     """
     SQLite storage class
     """
     def connect(self, credentials: Any) -> sqlite3.Connection:
         return sqlite3.connect('moex.db')
-    
+
     def close(self, conn: Any):
         conn.close()
-    
+
     def write(self, conn: sqlite3.Connection, data: pd.DataFrame, location: str) -> None:
         try:
             data['date'] = data['date'].dt.strftime('%Y-%m-%d')
@@ -122,7 +123,7 @@ class StorageSQLite(Storage):
         name = location[location.find('=')+1:location.find('&')]
         cursor.execute(f"DROP TABLE IF EXISTS '{name}';")
         conn.commit()
-        
+
         # Write new data
         data.to_sql(name, conn, index=False, if_exists='replace')
         conn.commit()
@@ -136,9 +137,9 @@ class StorageSQLite(Storage):
         )
         if not cursor.fetchone():
             raise ValueError(f'No table with name {name} was found!')
-        
+
         # Read data and convert date column back to datetime
-        
+
         df = pd.read_sql(f"SELECT * FROM {name}", conn)
         df['date'] = pd.to_datetime(df['date'])
         return df

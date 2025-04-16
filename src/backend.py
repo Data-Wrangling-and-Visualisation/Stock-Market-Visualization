@@ -1,5 +1,5 @@
 from flask import Flask, make_response, jsonify, render_template
-from .storage import StorageSQLite, StorageJSON
+from storage import StorageSQLite, StorageJSON
 import sqlite3
 
 
@@ -58,7 +58,7 @@ def retrieve_data(cursor, index):
 @app.route("/data", methods=["GET"])
 def home():
     try:
-        conn = sqlite3.connect('../' + DATABASE + '.db')
+        conn = sqlite3.connect(DATABASE + '.db')
         cursor = conn.cursor()
         records = []
         for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX']:
