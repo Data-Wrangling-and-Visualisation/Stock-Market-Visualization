@@ -53,7 +53,7 @@ python -m venv venv
 
 Install the necessary requirements
 ```bash
-pip install -r req.txt
+pip install -r src/req.txt
 playwright install
 ```
 
