@@ -134,7 +134,7 @@
     }
 
     .source a {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         text-decoration: none;
     }
 </style>
@@ -142,20 +142,33 @@
 
 {% block content %}
 <div class="description-section">
-    <h2>Russian Stock Market Analysis</h2>
-    <p>This interactive visualization shows key metrics for major Russian companies:</p>
+    <h2>Russian Market Dashboard</h2>
+    
+    <p><strong>1. What is this visualization?</strong><br>
+    This interactive bar chart ranks Russian companies by your selected market metric, allowing you to quickly compare performance across the Russian stock market.</p>
+    
+    <p><strong>2. Data used in this visualization</strong><br>
+    The data represents key metrics for companies listed on the Moscow Exchange (MOEX), including market capitalization, current stock prices, daily price changes, and yearly performance figures.</p>
+    
+    <p><strong>3. Insights you can gain</strong><br>
+    Using this dashboard, you can:
     <ul>
-        <li>🟦 Market Capitalization (Billions USD)</li>
-        <li>📈 Stock Price (USD)</li>
-        <li>📉 Daily Price Change (%)</li>
-        <li>📊 Annual Performance (%)</li>
+        <li>Identify market leaders by size and performance</li>
+        <li>Spot recent winners and losers in daily trading</li>
+        <li>Compare short-term movements against long-term trends</li>
+        <li>Discover which sectors are performing well or struggling</li>
     </ul>
-    <p>Use the controls to:
-        <br>• Select different metrics
-        <br>• Adjust number of displayed companies
-        <br>• Sort ascending/descending
-        <br>• Hover bars for detailed information
     </p>
+    
+    <p><strong>4. How to use the controls</strong><br>
+    <ul>
+        <li><strong>Metric selector:</strong> Choose what you want to compare (Market Cap, Price, Daily or Yearly Change)</li>
+        <li><strong>Top selector:</strong> Adjust how many companies to display</li>
+        <li><strong>Sort buttons:</strong> Choose ascending (smallest first) or descending (largest first) order</li>
+        <li><strong>Hover functionality:</strong> Mouse over any bar to see exact values and additional details</li>
+    </ul>
+    </p>
+    
     <div class="source">
         Data source: 
         <a href="https://tradingeconomics.com/russia/stock-market" target="_blank">
@@ -184,14 +197,13 @@
         </select>
     </div>
     <div class="control-group">
-        <button id="sortAsc">↑ Asc</button>
-        <button id="sortDesc">↓ Desc</button>
+        <button id="sortAsc">↑ Ascending</button>
+        <button id="sortDesc">↓ Descending</button>
     </div>
 </div>
-<div class="chart-container">
-    <div id="barChart"></div>
-</div>
-<div id="tooltip" class="tooltip"></div>
+
+<div id="barChart" class="chart-container"></div>
+<div class="tooltip" style="opacity: 0;"></div>
 
 <script>
     // --- PLACEHOLDER FOR DATA ---
@@ -299,7 +311,7 @@
             'Year_pct': v => `${d3.format("+.2%")(v)}`
         }[metric];
 
-        d3.select("#tooltip")
+        d3.select(".tooltip")
             .html(`
                 <div style="color: var(--primary-color); font-weight: 600;">
                     ${d.Company}
@@ -320,13 +332,13 @@
     }
 
     function moveTooltip(event) {
-        d3.select("#tooltip")
+        d3.select(".tooltip")
             .style("left", `${event.pageX + 15}px`)
             .style("top", `${event.pageY - 15}px`);
     }
 
     function hideTooltip() {
-        d3.select("#tooltip").style("opacity", 0);
+        d3.select(".tooltip").style("opacity", 0);
     }
 
     // Event listeners

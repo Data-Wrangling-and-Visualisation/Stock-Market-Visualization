@@ -173,6 +173,145 @@
             display: block;
             max-width: 100%;
         }
+
+        /* Standardized Controls Styling - Used across all pages */
+        .controls {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .control-group:hover {
+            background: #f1f3f5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .controls label {
+            font-weight: 600;
+            color: #343a40;
+            min-width: auto;
+            font-size: 0.9rem;
+        }
+
+        .controls select, 
+        .controls input[type="range"], 
+        .controls button {
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            background-color: white;
+            color: #343a40;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .controls select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232a9d8f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1em;
+            padding-right: 2.5rem;
+            min-width: 140px;
+            cursor: pointer;
+        }
+
+        .controls select:hover, 
+        .controls input:hover,
+        .controls button:hover {
+            border-color: #2a9d8f;
+        }
+
+        .controls select:focus, 
+        .controls input:focus,
+        .controls button:focus {
+            outline: none;
+            border-color: #2a9d8f;
+            box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+        }
+
+        .controls button {
+            background: #2a9d8f;
+            color: white;
+            border-color: #2a9d8f;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0.6rem 1.2rem;
+        }
+
+        .controls button:hover {
+            background: #218a7b;
+            transform: translateY(-1px);
+        }
+
+        /* Range input styling */
+        .controls input[type="range"] {
+            -webkit-appearance: none;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            border: none;
+            padding: 0;
+        }
+
+        .controls input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #2a9d8f;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .controls #bin-value,
+        .controls .value-display {
+            display: inline-block;
+            min-width: 40px;
+            text-align: center;
+            padding: 0.3rem 0.5rem;
+            background: #2a9d8f;
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        /* Standard tooltip styling */
+        .tooltip {
+            position: absolute;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            pointer-events: none;
+            font-size: 0.9rem;
+            color: #343a40;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(0,0,0,0.05);
+            z-index: 1000;
+            transition: opacity 0.2s;
+        }
     </style>
     {% block additional_styles %}{% endblock %}
 </head>
@@ -194,19 +333,19 @@
             <div class="viz-links">
                 <a href="/heatmap" class="viz-card">
                     <h2>MOEX Returns Matrix</h2>
-                    <p>Interactive heatmap showing investment returns over different time periods</p>
+                    <p>Interactive heatmap displaying historical returns across different time periods for Russian market indices, helping identify patterns and optimal investment timing.</p>
                 </a>
                 <a href="/bar-plot" class="viz-card">
                     <h2>Russian Market Dashboard</h2>
-                    <p>Dynamic bar chart comparing stock performance metrics across companies</p>
+                    <p>Dynamic bar chart comparing key metrics for Russian companies - market cap, price, and performance - with flexible controls to customize your analysis.</p>
                 </a>
                 <a href="/kde-plot" class="viz-card">
-                    <h2>Russian Stock Market Returns Analysis</h2>
-                    <p>This interactive dashboard presents the distribution of returns for major Russian companies listed on the MOEX index. The visualization combines:</p>
+                    <h2>Russian Stock Returns Analysis</h2>
+                    <p>Statistical visualization showing the distribution of returns across the Russian market, combining histogram and density plots to reveal trends and outliers.</p>
                 </a>
                 <a href="/bubbles" class="viz-card">
-                    <h2>Year to day relation analysis</h2>
-                    <p>This interactive visualization explores the relationship between daily and yearly returns of major Russian companies, with additional insights into market capitalization.</p>
+                    <h2>Year-Day Analysis</h2>
+                    <p>Bubble chart exploring the relationship between daily and yearly returns of Russian companies, with market capitalization represented by bubble size.</p>
                 </a>
             </div>
         </div>

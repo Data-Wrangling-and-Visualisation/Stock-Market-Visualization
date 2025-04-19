@@ -100,25 +100,74 @@
 {% block content %}
 <!-- Add description -->
 <div class="description-section">
-    <h2>MOEX Investment Returns Matrix</h2>
-    <p>This interactive heatmap visualizes the returns of MOEX index investments across different time periods. 
-    Select a granularity (month/day) and date range to explore how returns vary between different investment horizons.
-    Hover over cells to see exact return percentages and corresponding time periods. The color scale ranges from 
-    red (negative returns) through white (neutral) to teal (positive returns).</p>
+    <h2>MOEX Returns Matrix</h2>
+    
+    <p><strong>1. What is this visualization?</strong><br>
+    This heatmap displays returns on MOEX market indices across different time periods, using colors to show the performance intensity - from deep red (significant losses) through white (neutral) to teal (significant gains).</p>
+    
+    <p><strong>2. Data used in this visualization</strong><br>
+    The visualization uses historical price data from major Moscow Exchange indices (IMOEX, TMOS, EQMX, SBMX), calculating returns between any two selected periods at your chosen time granularity (day, month, or year).</p>
+    
+    <p><strong>3. What do different indexes mean?</strong><br>
+    <ul>
+        <li><strong>IMOEX</strong> - Tracks the price of up to 50 biggest companies listed on the exchange in rubles. Does not include dividends.</li>
+        <li><strong>MCFTR</strong> (to be added later) - Tracks the same companies as IMOEX, includes dividends, doesn't include fees.</li>
+        <li><strong>MCFTRR</strong> (to be added later) - Tracks the same companies as IMOEX, includes dividends, includes fees for tax residents.</li>
+    </ul>
+    <p>ETFs tracking MCFTR (these can be bought in a broker app):</p>
+    <ul>
+        <li><strong>SBMX</strong> - Managed by "Pervaya" (Sber), 1.00% management fee.</li>
+        <li><strong>TMOS</strong> - Managed by T-Bank, 0.79% management fee.</li>
+        <li><strong>EQMX</strong> - Managed by VIM investments (VTB), 0.69% management fee.</li>
+    </ul>
+    <p>These ETFs include reinvesting dividends and management fees. In an ideal world, they should have the same return as MCFTR minus their management fee.</p>
+    </p>
+    
+    <p><strong>4. Insights you can gain</strong><br>
+    With this matrix, you can:
+    <ul>
+        <li>Identify the best and worst performance periods at a glance</li>
+        <li>Discover seasonal patterns that might repeat year after year</li>
+        <li>Compare performance across different market cycles</li>
+        <li>Find optimal entry and exit points by analyzing historical patterns</li>
+        <li>Recognize how long downtrends or uptrends typically last in the Russian market</li>
+    </ul>
+    </p>
+    
+    <p><strong>5. How to use the controls</strong><br>
+    <ul>
+        <li><strong>Index selector:</strong> Choose which market index to analyze</li>
+        <li><strong>Granularity dropdown:</strong> Select whether to view data by day, month, or year</li>
+        <li><strong>Range selectors:</strong> Customize the start and end periods for your analysis</li>
+        <li><strong>Hover functionality:</strong> Mouse over any cell to see the exact return percentage for that period</li>
+    </ul>
+    </p>
 </div>
 
 <div class="controls">
-    <select id="indexSelector"></select>
-    <select id="granularity" onchange="updateControls()">
-        <option value="month">Month</option>
-        <option value="day">Day</option>
-        <option value="year">Year</option>
-    </select>
-    <select id="startRange"></select>
-    <select id="endRange"></select>
+    <div class="control-group">
+        <label>Index:</label>
+        <select id="indexSelector"></select>
+    </div>
+    <div class="control-group">
+        <label>Granularity:</label>
+        <select id="granularity" onchange="updateControls()">
+            <option value="month">Month</option>
+            <option value="day">Day</option>
+            <option value="year">Year</option>
+        </select>
+    </div>
+    <div class="control-group">
+        <label>Start Range:</label>
+        <select id="startRange"></select>
+    </div>
+    <div class="control-group">
+        <label>End Range:</label>
+        <select id="endRange"></select>
+    </div>
 </div>
 <div id="heatmap"></div>
-<div id="tooltip"></div>
+<div id="tooltip" class="tooltip"></div>
 
 <script>
     let currentIndex = ''; // Текущий выбранный индекс
