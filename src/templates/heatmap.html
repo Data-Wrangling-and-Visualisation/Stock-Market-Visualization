@@ -4,57 +4,6 @@
 
 {% block additional_styles %}
 <style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    #heatmap {
-        width: 100%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-        margin-bottom: 20px;
-    }
-
-    .controls {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .control-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    label {
-        min-width: 100px;
-    }
-
-    select {
-        padding: 8px;
-        border-radius: 4px;
-        border: 1px solid #ced4da;
-        min-width: 150px;
-    }
-
     .heatmap-cell {
         transition: opacity 0.2s;
     }
@@ -75,19 +24,10 @@
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .axis text {
-        font-size: 0.8rem;
-        fill: #495057;
-    }
-
-    .axis line {
-        stroke: #dee2e6;
-    }
-
     .chart-title {
         font-size: 1.5rem;
         font-weight: 600;
-        fill: #212529;
+        fill: var(--text-dark);
     }
     
     svg {
@@ -158,16 +98,16 @@
         </select>
     </div>
     <div class="control-group">
-        <label>Start Range:</label>
+        <label>From:</label>
         <select id="startRange"></select>
     </div>
     <div class="control-group">
-        <label>End Range:</label>
+        <label>To:</label>
         <select id="endRange"></select>
     </div>
 </div>
 <div id="heatmap"></div>
-<div id="tooltip" class="tooltip"></div>
+<div id="tooltip"></div>
 
 <script>
     let currentIndex = ''; // Текущий выбранный индекс

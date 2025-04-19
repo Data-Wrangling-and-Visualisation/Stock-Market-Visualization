@@ -5,123 +5,18 @@
 {% block additional_styles %}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
-    /* Primary Colors */
-    :root {
-        --primary-color: #2a9d8f;
-        --secondary-color: #e76f51;
-        --positive-color: #2ca02c;
-        --negative-color: #d62728;
-        --bg-color: #f8f9fa;
-        --text-color: #212529;
-    }
-
-    body {
-        background: var(--bg-color);
-        font-family: 'Segoe UI', Arial, sans-serif;
-    }
-
-    .controls {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        margin-bottom: 2rem;
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .control-group {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: #f8f9fa;
-        padding: 0.8rem;
-        border-radius: 8px;
-    }
-
-    label {
-        font-weight: 600;
-        color: var(--text-color);
-    }
-
-    select, button {
-        padding: 0.6rem 1rem;
-        border: 2px solid #dfe6e9;
-        border-radius: 6px;
-        background: white;
-        transition: all 0.2s ease;
-        font-weight: 500;
-        cursor: pointer;
-    }
-
-    select {
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-        background-repeat: no-repeat;
-        background-position: right 0.5rem center;
-        background-size: 1em;
-        padding-right: 2rem;
-    }
-
-    button {
-        background: var(--secondary-color);
-        color: white;
-        border-color: var(--secondary-color);
-    }
-
-    button:hover {
-        filter: brightness(1.1);
-        transform: translateY(-1px);
-        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-
-    .chart-container {
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-        margin-bottom: 20px;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-
+    /* Bar chart specific styles */
     .bar {
-        fill: var(--secondary-color);
+        fill: var(--secondary);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .negative-bar {
-        fill: var(--negative-color);
-    }
-
-    .axis-label {
-        font-size: 1.1em;
-        fill: var(--text-color);
-        font-weight: 600;
-    }
-
-    .tick text {
-        fill: #7f8c8d;
-        font-size: 0.9em;
-    }
-
-    .tooltip {
-        position: absolute;
-        padding: 1rem;
-        background: rgba(255,255,255,0.95);
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        pointer-events: none;
-        backdrop-filter: blur(4px);
-        border: 1px solid rgba(0,0,0,0.1);
-        opacity: 0;
-        transition: opacity 0.2s;
+        fill: var(--danger);
     }
 
     .zero-line {
-        stroke: var(--text-color);
+        stroke: var(--text-dark);
         stroke-width: 1;
         stroke-dasharray: 4 2;
     }
@@ -130,11 +25,11 @@
         text-align: right;
         margin-top: 1rem;
         font-size: 0.9em;
-        color: #7f8c8d;
+        color: var(--text-muted);
     }
 
     .source a {
-        color: var(--primary-color);
+        color: var(--secondary);
         text-decoration: none;
     }
 </style>
@@ -202,8 +97,8 @@
     </div>
 </div>
 
-<div id="barChart" class="chart-container"></div>
-<div class="tooltip" style="opacity: 0;"></div>
+<div class="chart-container" id="barChart"></div>
+<div class="tooltip"></div>
 
 <script>
     // --- PLACEHOLDER FOR DATA ---
@@ -313,16 +208,16 @@
 
         d3.select(".tooltip")
             .html(`
-                <div style="color: var(--primary-color); font-weight: 600;">
+                <div style="color: var(--primary); font-weight: 600;">
                     ${d.Company}
                 </div>
                 <div style="margin-top: 0.5rem;">
                     ${formatter(d[metric])}
                 </div>
-                <div style="color: ${d.Day_pct < 0 ? 'var(--negative-color)' : 'var(--positive-color)'}; margin-top: 0.25rem;">
+                <div style="color: ${d.Day_pct < 0 ? 'var(--negative)' : 'var(--positive)'}; margin-top: 0.25rem;">
                     Daily: ${d3.format("+.2%")(d.Day_pct)}
                 </div>
-                <div style="color: ${d.Year_pct < 0 ? 'var(--negative-color)' : 'var(--positive-color)'}">
+                <div style="color: ${d.Year_pct < 0 ? 'var(--negative)' : 'var(--positive)'}">
                     Yearly: ${d3.format("+.2%")(d.Year_pct)}
                 </div>
             `)

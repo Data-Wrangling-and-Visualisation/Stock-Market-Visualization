@@ -5,17 +5,7 @@
 {% block additional_styles %}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
-    #bubble-chart {
-        width: 100%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-        margin-bottom: 20px;
-    }
-
+    /* Bubble chart specific styles */
     .bubble {
         opacity: 0.7;
         stroke: white;
@@ -29,94 +19,51 @@
         stroke-width: 1.5;
     }
 
-    .axis-label {
-        font-size: 14px;
-        font-weight: bold;
-        fill: #555;
-    }
-
-    .container { 
-        margin: 20px auto;
-        max-width: 1600px;
-        font-family: Arial, sans-serif;
-    }
-    
-    .axis-label {
-        font-size: 16px;
-        fill: #333;
-    }
-    
     .grid line {
         stroke: #eee;
         stroke-opacity: 0.3;
-    }
-    
-    .bubble {
-        opacity: 0.7;
-        stroke: #fff;
-        stroke-width: 0.5;
-        transition: r 0.2s ease;
-    }
-    
-    .axis text {
-        font-size: 12px;
-    }
-    
-    .axis path,
-    .axis line {
-        stroke: #333;
-        stroke-width: 1;
-        shape-rendering: crispEdges;
-    }
-
-    /* Chart container */
-    .chart-container {
-        margin-top: 40px;
-        position: relative;
     }
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="description-section">
-        <h2>Year-Day Analysis: Russian Stocks</h2>
-        
-        <p><strong>1. What is this visualization?</strong><br>
-        This bubble chart visualizes the relationship between daily and yearly returns for Russian companies, with bubble size representing each company's market capitalization (total value).</p>
-        
-        <p><strong>2. Data used in this visualization</strong><br>
-        The chart displays three key metrics for companies listed on the Moscow Exchange (MOEX):
-        <ul>
-            <li>Daily returns (horizontal axis): The most recent one-day percentage change</li>
-            <li>Yearly returns (vertical axis): The percentage change over the past 12 months</li>
-            <li>Market capitalization (bubble size): The total market value of each company</li>
-        </ul>
-        </p>
-        
-        <p><strong>3. Insights you can gain</strong><br>
-        This visualization helps you:
-        <ul>
-            <li>Identify companies with consistent performance (positive in both daily and yearly timeframes)</li>
-            <li>Spot companies that are rebounding (negative yearly returns but positive daily movement)</li>
-            <li>Find potential declining trends (positive yearly returns but recent negative daily movement)</li>
-            <li>Understand how company size relates to stability of returns</li>
-            <li>See the correlation between short-term and long-term market movements</li>
-        </ul>
-        </p>
-        
-        <p><strong>4. Interactive features</strong><br>
-        <ul>
-            <li><strong>Hover details:</strong> Mouse over any bubble to see the company name and exact return values</li>
-            <li><strong>Quadrant analysis:</strong> The chart is divided into four sections, helping you quickly categorize companies by performance</li>
-            <li><strong>Responsive sizing:</strong> The visualization adjusts to your screen size for optimal viewing</li>
-        </ul>
-        </p>
-    </div>
-
-    <div id="bubble-chart" class="chart-container"></div>
-    <div class="tooltip"></div>
+<div class="description-section">
+    <h2>Year-Day Analysis: Russian Stocks</h2>
+    
+    <p><strong>1. What is this visualization?</strong><br>
+    This bubble chart visualizes the relationship between daily and yearly returns for Russian companies, with bubble size representing each company's market capitalization (total value).</p>
+    
+    <p><strong>2. Data used in this visualization</strong><br>
+    The chart displays three key metrics for companies listed on the Moscow Exchange (MOEX):
+    <ul>
+        <li>Daily returns (horizontal axis): The most recent one-day percentage change</li>
+        <li>Yearly returns (vertical axis): The percentage change over the past 12 months</li>
+        <li>Market capitalization (bubble size): The total market value of each company</li>
+    </ul>
+    </p>
+    
+    <p><strong>3. Insights you can gain</strong><br>
+    This visualization helps you:
+    <ul>
+        <li>Identify companies with consistent performance (positive in both daily and yearly timeframes)</li>
+        <li>Spot companies that are rebounding (negative yearly returns but positive daily movement)</li>
+        <li>Find potential declining trends (positive yearly returns but recent negative daily movement)</li>
+        <li>Understand how company size relates to stability of returns</li>
+        <li>See the correlation between short-term and long-term market movements</li>
+    </ul>
+    </p>
+    
+    <p><strong>4. Interactive features</strong><br>
+    <ul>
+        <li><strong>Hover details:</strong> Mouse over any bubble to see the company name and exact return values</li>
+        <li><strong>Quadrant analysis:</strong> The chart is divided into four sections, helping you quickly categorize companies by performance</li>
+        <li><strong>Responsive sizing:</strong> The visualization adjusts to your screen size for optimal viewing</li>
+    </ul>
+    </p>
 </div>
+
+<div id="bubble-chart" class="chart-container"></div>
+<div class="tooltip"></div>
 
 <!-- Keep the existing JavaScript code -->
 <script>
@@ -136,260 +83,183 @@
         MCap_num: dataObj.MCap_num[index]
     }));
 
-    // Dimensions и margins
-    const margin = {top: 80, right: 80, bottom: 80, left: 80},
-          width = document.getElementById('bubble-chart').clientWidth - margin.left - margin.right,
-          height = 600 - margin.top - margin.bottom;
+    // Настройки размеров
+    let width = document.getElementById('bubble-chart').clientWidth;
+    const height = 600;
+    const margin = { top: 60, right: 120, bottom: 80, left: 100 };
 
-    // Append SVG к div 
+    // Создание SVG контейнера
     const svg = d3.select("#bubble-chart")
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", width)
+        .attr("height", height)
         .append("g")
-        .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    // Scales
-    const x = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.Day_pct))
-        .range([0, width]);
+    // Шкалы
+    const xScale = d3.scaleLinear()
+        .domain([d3.min(data, d => d.Day_pct), d3.max(data, d => d.Day_pct)])
+        .range([0, width - margin.left - margin.right]);
 
-    const y = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.Year_pct))
-        .range([height, 0]);
+    const yScale = d3.scaleLinear()
+        .domain([d3.min(data, d => d.Year_pct), d3.max(data, d => d.Year_pct)])
+        .range([height - margin.top - margin.bottom, 0]);
 
-    // Находим максимальный и минимальный размер пузырьков
-    const maxBubbleSize = 40;
-    const minBubbleSize = 4;
-    
-    // Цвета для пузырьков (зеленый для позитивных квадрантов, красный для негативных)
-    const color = d3.scaleOrdinal()
-        .domain(['posi/posi', 'posi/nega', 'nega/posi', 'nega/nega'])
-        .range(['#29a329', '#ff9900', '#ff9900', '#ff3333'])
+    const sizeScale = d3.scaleSqrt()
+        .domain(d3.extent(data, d => d.MCap_num))
+        .range([4, 40]);
 
-    // Шкала радиуса для пузырьков
-    const size = d3.scaleSqrt()
-        .domain([d3.min(data, d => d.MCap_num), d3.max(data, d => d.MCap_num)])
-        .range([minBubbleSize, maxBubbleSize]);
+    const colorScale = d3.scaleSequential(d3.interpolateViridis)
+        .domain(d3.extent(data, d => d.MCap_num));
 
-    // Add X axis
+    // Оси
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(d3.format(".1%"))
+        .tickSizeOuter(0);
+
+    const yAxis = d3.axisLeft(yScale)
+        .tickFormat(d3.format(".0%"))
+        .tickSizeOuter(0);
+
+    const xAxisGroup = svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
+        .call(xAxis);
+
+    const yAxisGroup = svg.append("g")
+        .attr("class", "y-axis")
+        .call(yAxis);
+
+    // Сетка
     svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", `translate(0, ${height})`)
-        .call(d3.axisBottom(x).ticks(5).tickFormat(d => d3.format(".0%")(d)));
+        .attr("class", "grid")
+        .call(d3.axisLeft(yScale)
+            .tickSize(-width + margin.left + margin.right)
+            .tickFormat(""));
 
-    // Label for X axis
-    svg.append("text")
-        .attr("class", "axis-label")
-        .attr("text-anchor", "middle")
-        .attr("x", width/2)
-        .attr("y", height + margin.bottom/2)
-        .text("Daily Change (%)");
-
-    // Add Y axis
-    svg.append("g")
-        .attr("class", "axis")
-        .call(d3.axisLeft(y).ticks(8).tickFormat(d => d3.format(".0%")(d)));
-
-    // Label for Y axis
-    svg.append("text")
-        .attr("class", "axis-label")
-        .attr("text-anchor", "middle")
-        .attr("transform", "rotate(-90)")
-        .attr("x", -height/2)
-        .attr("y", -margin.left/2 - 10)
-        .text("Yearly Change (%)");
-
-    // Add horizontal line at y=0
-    svg.append("line")
-        .attr("x1", 0)
-        .attr("y1", y(0))
-        .attr("x2", width)
-        .attr("y2", y(0))
-        .attr("stroke", "#000")
-        .attr("stroke-width", 1)
-        .attr("stroke-dasharray", "3,3");
-
-    // Add vertical line at x=0
-    svg.append("line")
-        .attr("x1", x(0))
-        .attr("y1", 0)
-        .attr("x2", x(0))
-        .attr("y2", height)
-        .attr("stroke", "#000")
-        .attr("stroke-width", 1)
-        .attr("stroke-dasharray", "3,3");
-
-    // Add quadrant labels
-    svg.append("text")
-        .attr("class", "quadrant-label")
-        .attr("x", x(0) + 10)
-        .attr("y", y(0) - 10)
-        .attr("fill", "#29a329")
-        .attr("text-anchor", "start")
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .text("Growth");
-
-    svg.append("text")
-        .attr("class", "quadrant-label")
-        .attr("x", x(0) - 10)
-        .attr("y", y(0) - 10)
-        .attr("fill", "#ff9900")
-        .attr("text-anchor", "end")
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .text("Reversal - Decline");
-
-    svg.append("text")
-        .attr("class", "quadrant-label")
-        .attr("x", x(0) - 10)
-        .attr("y", y(0) + 20)
-        .attr("fill", "#ff3333")
-        .attr("text-anchor", "end")
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .text("Decline");
-
-    svg.append("text")
-        .attr("class", "quadrant-label")
-        .attr("x", x(0) + 10)
-        .attr("y", y(0) + 20)
-        .attr("fill", "#ff9900")
-        .attr("text-anchor", "start")
-        .style("font-size", "14px")
-        .style("font-weight", "bold")
-        .text("Reversal - Growth");
-
-    // Tooltip setup
-    const tooltip = d3.select(".tooltip");
-
-    // Add the bubbles
-    svg.selectAll("circle")
+    // Пузырьки
+    const bubbles = svg.selectAll(".bubble")
         .data(data)
-        .join("circle")
+        .enter().append("circle")
         .attr("class", "bubble")
-        .attr("cx", d => x(d.Day_pct))
-        .attr("cy", d => y(d.Year_pct))
-        .attr("r", d => size(d.MCap_num))
-        .style("fill", d => {
-            if (d.Day_pct >= 0 && d.Year_pct >= 0) return color('posi/posi');
-            if (d.Day_pct >= 0 && d.Year_pct < 0) return color('posi/nega');
-            if (d.Day_pct < 0 && d.Year_pct >= 0) return color('nega/posi');
-            return color('nega/nega');
-        })
-        .on("mouseover", function(event, d) {
-            d3.select(this)
-                .transition().duration(300)
-                .attr("stroke-width", 2);
-            
-            tooltip
-                .style("opacity", 1)
-                .html(`
-                    <strong>${d.Company}</strong><br>
-                    Market Cap: ${formatNumber(d.MCap_num)}<br>
-                    Daily Change: ${d3.format("+.2%")(d.Day_pct)}<br>
-                    Yearly Change: ${d3.format("+.2%")(d.Year_pct)}
-                `)
-                .style("left", (event.pageX + 15) + "px")
-                .style("top", (event.pageY - 28) + "px");
-        })
-        .on("mouseout", function() {
-            d3.select(this)
-                .transition().duration(300)
-                .attr("stroke-width", 0.5);
-            
-            tooltip.style("opacity", 0);
-        });
+        .attr("cx", d => xScale(d.Day_pct))
+        .attr("cy", d => yScale(d.Year_pct))
+        .attr("r", d => sizeScale(d.MCap_num))
+        .style("fill", d => colorScale(d.MCap_num))
+        .style("cursor", "pointer");
 
-    // Add chart title
-    svg.append("text")
-        .attr("class", "chart-title")
-        .attr("x", width / 2)
-        .attr("y", -margin.top / 2)
-        .attr("text-anchor", "middle")
-        .style("font-size", "20px")
-        .style("font-weight", "bold")
-        .text("Russian Stocks: Daily vs. Yearly Returns");
 
-    // Function to format large numbers with suffixes
-    function formatNumber(num) {
-        const suffixes = ["", "K", "M", "B", "T"];
-        const magnitude = Math.floor(Math.log10(num) / 3);
-        const suffix = suffixes[magnitude];
-        const scaled = num / Math.pow(10, magnitude * 3);
+    // Всплывающие подсказки
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    // Обработчики событий
+    bubbles.on("mouseover", (event, d) => {
+        // Bubble animation
+        d3.select(event.currentTarget)
+            .transition().duration(100)
+            .attr("r", sizeScale(d.MCap_num) * 1.2);
         
-        return magnitude === 0 ? num.toFixed(0) : scaled.toFixed(1) + suffix;
+        // Tooltip setup
+        tooltip
+            .style("opacity", 0)
+            .html(`
+                <strong>${d.Company}</strong><br>
+                <span style="color:#666">Daily: ${(d.Day_pct * 100).toFixed(2)}%</span><br>
+                <span style="color:#666">Yearly: ${(d.Year_pct * 100).toFixed(2)}%</span><br>
+                <span style="color:#444">Market Cap: $${(d.MCap_num / 1e9).toFixed(2)}B</span>
+            `)
+            .style("left", `${event.pageX + 15}px`)
+            .style("top", `${event.pageY - 35}px`)
+            .transition().duration(200)
+            .style("opacity", 0.95);
+    })
+    .on("mousemove", (event) => {
+        // Update tooltip position while moving
+        tooltip
+            .style("left", `${event.pageX + 15}px`)
+            .style("top", `${event.pageY - 35}px`);
+    })
+    .on("mouseout", (event, d) => {
+        // Bubble animation
+        d3.select(event.currentTarget)
+            .transition().duration(100)
+            .attr("r", sizeScale(d.MCap_num));
+        
+        // Tooltip fade-out
+        tooltip.transition().duration(200)
+            .style("opacity", 0);
+    });
+
+    // Подписи осей
+    svg.append("text")
+        .attr("class", "axis-label")
+        .attr("x", (width - margin.left - margin.right) / 2)
+        .attr("y", height - margin.top - margin.bottom + 40)
+        .style("text-anchor", "middle")
+        .text("Daily Return (%)");
+
+    svg.append("text")
+        .attr("class", "axis-label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -margin.left + 40)
+        .attr("x", -(height - margin.top - margin.bottom) / 2)
+        .style("text-anchor", "middle")
+        .text("Yearly Return (%)");
+
+    // Расчет корреляции
+    function calculatePearsonCorrelation(data, xKey, yKey) {
+        const n = data.length;
+        const xValues = data.map(d => d[xKey]);
+        const yValues = data.map(d => d[yKey]);
+        
+        const sumX = xValues.reduce((a, b) => a + b, 0);
+        const sumY = yValues.reduce((a, b) => a + b, 0);
+        const sumXY = xValues.reduce((a, x, i) => a + x * yValues[i], 0);
+        const sumXSquare = xValues.reduce((a, x) => a + x * x, 0);
+        const sumYSquare = yValues.reduce((a, y) => a + y * y, 0);
+        
+        const numerator = n * sumXY - sumX * sumY;
+        const denominator = Math.sqrt(
+            (n * sumXSquare - sumX ** 2) * 
+            (n * sumYSquare - sumY ** 2)
+        );
+        
+        return denominator === 0 ? 0 : numerator / denominator;
     }
 
-    // Add a legend for bubble size
-    function addSizeLegend() {
-        const legendData = [
-            {value: 1000000000, label: "1B"}, // 1 billion
-            {value: 10000000000, label: "10B"}, // 10 billion
-            {value: 50000000000, label: "50B"} // 50 billion
-        ];
+    // Добавление корреляции
+    const correlation = calculatePearsonCorrelation(data, "Day_pct", "Year_pct");
+    const correlationText = svg.append("text")
+        .attr("x", width - margin.right - 200)
+        .attr("y", 30)
+        .style("font-size", "14px")
+        .style("fill", "#333")
+        .style("font-weight", "bold")
+        .html(`Correlation: <tspan fill="${correlation > 0 ? '#2ca02c' : '#d62728'}">${correlation.toFixed(2)}</tspan>`);
+
+    // Add resize handler
+    function handleResize() {
+        width = document.getElementById('bubble-chart').clientWidth;
+        svg.attr("transform", `translate(${margin.left},${margin.top})`);
+        d3.select("#bubble-chart svg").attr("width", width);
         
-        const legendX = width - 150;
-        const legendY = height - 20;
+        // Update scales
+        xScale.range([0, width - margin.left - margin.right]);
         
-        // Legend title
-        svg.append("text")
-            .attr("x", legendX)
-            .attr("y", legendY - 40)
-            .style("font-size", "12px")
-            .style("font-weight", "bold")
-            .text("Market Cap (RUB)");
+        // Update axes
+        xAxisGroup.call(xAxis);
         
-        // Legend circles
-        svg.selectAll(".legend-circle")
-            .data(legendData)
-            .join("circle")
-            .attr("class", "legend-circle")
-            .attr("cx", legendX)
-            .attr("cy", (d, i) => legendY - i * 25)
-            .attr("r", d => size(d.value))
-            .style("fill", "none")
-            .style("stroke", "#333")
-            .style("stroke-width", 1);
-        
-        // Legend labels
-        svg.selectAll(".legend-text")
-            .data(legendData)
-            .join("text")
-            .attr("class", "legend-text")
-            .attr("x", legendX + 40)
-            .attr("y", (d, i) => legendY - i * 25 + 4)
-            .style("font-size", "12px")
-            .text(d => d.label);
+        // Update bubbles
+        bubbles
+            .attr("cx", d => xScale(d.Day_pct));
+            
+        // Update correlation text position
+        correlationText.attr("x", width - margin.right - 200);
     }
     
-    // Call the legend function
-    addSizeLegend();
-
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        // Redraw the chart
-        const newWidth = document.getElementById('bubble-chart').clientWidth - margin.left - margin.right;
-        
-        // Update SVG width
-        d3.select("#bubble-chart svg")
-            .attr("width", newWidth + margin.left + margin.right);
-        
-        // Update x scale
-        x.range([0, newWidth]);
-        
-        // Update x axis
-        svg.select(".x-axis")
-            .call(d3.axisBottom(x));
-        
-        // Update bubbles position
-        svg.selectAll("circle")
-            .attr("cx", d => x(d.Day_pct));
-        
-        // Update other elements that depend on width
-        svg.select(".x-axis-label")
-            .attr("x", newWidth/2);
-    });
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
 </script>
 {% endblock %}

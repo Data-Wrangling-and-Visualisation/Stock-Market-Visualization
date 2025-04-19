@@ -5,16 +5,66 @@
 {% block additional_styles %}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
-    /* Chart container */
-    #chart {
-        width: 100%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-        margin-bottom: 20px;
+    /* KDE plot specific styles */
+    #bin-value {
+        display: inline-block;
+        min-width: 40px;
+        text-align: center;
+        padding: 4px 8px;
+        background: var(--primary);
+        color: white;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+
+    /* Add styles for range input slider */
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 150px;
+        height: 8px;
+        background: #ddd;
+        border-radius: 5px;
+        outline: none;
+        margin: 0 10px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        background: var(--primary);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        background: var(--primary);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        width: 18px;
+        height: 18px;
+        background: var(--primary);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .source {
+        text-align: right;
+        margin-top: 1rem;
+        font-size: 0.9em;
+        color: var(--text-muted);
+    }
+
+    .source a {
+        color: var(--secondary);
+        text-decoration: none;
     }
 </style>
 {% endblock %}
@@ -68,7 +118,7 @@
         <div class="control-group">
             <label>Number of Bins:</label>
             <input type="range" id="bin-range" min="5" max="40" value="20">
-            <span id="bin-value" class="value-display">20</span>
+            <span id="bin-value">20</span>
         </div>
     </div>
     <div id="chart"></div>
@@ -78,7 +128,173 @@
         // **********************************************
         // INSERT YOUR JSON DATA HERE
         const data = {"Company":{"0":"Sberbank","1":"Rosneft","2":"Lukoil","3":"Novatek","4":"Gazprom","5":"Yandex","6":"Tatneft","7":"Severstal","8":"Surgutneftegas","9":"Novolipetsk Steel","10":"PhosAgro","11":"Akron","12":"Moscow Exchange","13":"VTB Bank","14":"Magnit","15":"Korporatsiya Vsmpo Avisma","16":"Magnitogorskiy Metallurgicheskiy Kombinat PAO","17":"Alrosa","18":"Mobile Telesystems","19":"Ank Bashneft","20":"PIK","21":"Moskovskiy Kreditnyi Bank PAO","22":"Aeroflot","23":"Inter RAO","24":"Polyus","25":"Fgk Rusgidro Pao","26":"Rostelecom","27":"Transneft","28":"Sovkomflot Pao","29":"Raspadskaya","30":"Novorossiysk Commercial Sea Port","31":"Federal Grid","32":"Afk Sistema Pao","33":"United Wagon","34":"TMK","35":"Aviakompaniya Utair Pao","36":"Moskovskaya Gorodskaya Telefonnaya Pao","37":"Gruppa LSR PAO","38":"GK Salmolet Pao","39":"Sfi Pao","40":"Renaissance Insurance","41":"Bank Uralsib Pao","42":"Rosseti Sibir' Pao","43":"Var'yeganneftegaz Pao","44":"KubanEnrg","45":"Mechel","46":"Mostotrest Pao","47":"Dal'nevostochnaya","48":"Rosseti Severnyi Kavkaz Pao","49":"Rosseti Ural PAO","50":"Ashinskiy Metzavod PAO","51":"Gk Tns Energo Pao","52":"M Video","53":"Chelyabinskiy","54":"Ob'yedinennye","55":"Norilsk Nickel","56":"Slavneft' Y","57":"Tattelekom Pao","58":"Amo Zil  Pao","59":"Korshunovkiy Gok Pao","60":"Akb Primor'ye Pao","61":"Obyedinennaya","62":"Rusolovo Pao","63":"Kazan Sintez","64":"Rkk Energiya IM. S.P. Koroleva Pao"},"Price":{"0":307.86,"1":498.0,"2":7069.0,"3":1239.0,"4":147.14,"5":4361.5,"6":683.9,"7":1150.8,"8":25.54,"9":142.04,"10":6509.0,"11":16282.0,"12":198.82,"13":82.91,"14":4437.0,"15":35280.0,"16":35.59,"17":54.8,"18":224.4,"19":2428.0,"20":514.9,"21":9.36,"22":67.55,"23":3.64,"24":1876.6,"25":0.5,"26":66.1,"27":1203.0,"28":92.9,"29":271.1,"30":9.53,"31":0.07,"32":16.2,"33":49.48,"34":120.16,"35":13.29,"36":1260.0,"37":866.8,"38":1243.5,"39":1451.0,"40":125.22,"41":0.18,"42":0.59,"43":2770.0,"44":141.8,"45":114.11,"46":151.8,"47":2.35,"48":19.12,"49":0.4,"50":68.05,"51":2420.0,"52":117.55,"53":6180.0,"54":800.0,"55":122.0,"56":18.6,"57":0.78,"58":3925.0,"59":41200.0,"60":34000.0,"61":0.62,"62":0.73,"63":83.7,"64":25610.0},"Day":{"0":"-1.31%","1":"-0.88%","2":"-0.56%","3":"-3.02%","4":"-5.22%","5":"-1.90%","6":"1.18%","7":"-4.04%","8":"-2.33%","9":"-0.74%","10":"-1.83%","11":"-2.12%","12":"-1.77%","13":"-4.78%","14":"-1.84%","15":"-3.97%","16":"-3.45%","17":"-0.94%","18":"-2.86%","19":"-1.94%","20":"-2.05%","21":"0.39%","22":"-4.86%","23":"-1.14%","24":"0.48%","25":"0.76%","26":"-3.19%","27":"2.30%","28":"-2.26%","29":"-0.70%","30":"-1.85%","31":"-4.21%","32":"-4.03%","33":"-2.98%","34":"-2.32%","35":"-1.70%","36":"-1.95%","37":"0.30%","38":"-6.08%","39":"-3.50%","40":"-2.03%","41":"-1.77%","42":"0.42%","43":"-4.48%","44":"-5.47%","45":"-2.91%","46":"0.53%","47":"-4.73%","48":"0.21%","49":"-2.78%","50":"0.52%","51":"-3.20%","52":"-2.85%","53":"-6.22%","54":"0%","55":"-0.80%","56":"-3.13%","57":"-3.52%","58":"-1.88%","59":"-0.96%","60":"0%","61":"-1.43%","62":"-0.55%","63":"-1.06%","64":"-2.51%"},"Year":{"0":"3.06%","1":"-11.98%","2":"-6.38%","3":"-5.61%","4":"-6.41%","5":"9.20%","6":"-1.50%","7":"-38.72%","8":"-14.52%","9":"-35.84%","10":"-1.75%","11":"-6.22%","12":"-10.73%","13":"-27.59%","14":"-43.81%","15":"-3.24%","16":"-36.76%","17":"-30.39%","18":"-24.65%","19":"-23.24%","20":"-42.07%","21":"21.90%","22":"48.53%","23":"-10.76%","24":"-84.34%","25":"-29.53%","26":"-35.20%","27":"-26.89%","28":"-27.30%","29":"-31.62%","30":"-21.77%","31":"-36.39%","32":"-28.18%","33":"-9.38%","34":"-44.47%","35":"-15.46%","36":"-25.66%","37":"-10.64%","38":"-65.23%","39":"-22.41%","40":"24.92%","41":"-6.53%","42":"-26.19%","43":"-2.74%","44":"-43.28%","45":"-58.81%","46":"-27.23%","47":"-29.46%","48":"-30.57%","49":"-2.78%","50":"-2.31%","51":"-32.02%","52":"-40.48%","53":"-29.89%","54":"-9.09%","55":"-19.26%","56":"-32.36%","57":"-26.45%","58":"22.46%","59":"-22.56%","60":"-17.48%","61":"-53.87%","62":"-38.29%","63":"-19.75%","64":"0.04%"},"MCap":{"0":"78.57B","1":"62.94B","2":"54.8B","3":"44.82B","4":"41.65B","5":"18.92B","6":"17.07B","7":"11.56B","8":"10.9B","9":"10.17B","10":"10.14B","11":"7.07B","12":"5.37B","13":"5.36B","14":"5.18B","15":"4.95B","16":"4.75B","17":"4.72B","18":"4.49B","19":"4.18B","20":"4.09B","21":"3.72B","22":"3.19B","23":"3.18B","24":"3.01B","25":"2.64B","26":"2.55B","27":"2.23B","28":"2.18B","29":"2.13B","30":"2.08B","31":"1.93B","32":"1.9B","33":"1.71B","34":"1.48B","35":"1.25B","36":"1.19B","37":"1.02B","38":"927.08M","39":"840.69M","40":"825.76M","41":"765.91M","42":"675.92M","43":"601.78M","44":"564.76M","45":"551.34M","46":"509.01M","47":"481.64M","48":"469.87M","49":"419.33M","50":"403.69M","51":"351.12M","52":"250.96M","53":"241.03M","54":"225.83M","55":"223.77M","56":"207.56M","57":"185.76M","58":"125.36M","59":"122.05M","60":"99.37M","61":"32.9M","62":"25.25M","63":"17.62M","64":"1.5M"},"Date":{"0":"Mar\/28","1":"Mar\/28","2":"Mar\/28","3":"Mar\/28","4":"Mar\/28","5":"Mar\/28","6":"Mar\/28","7":"Mar\/28","8":"Mar\/28","9":"Mar\/28","10":"Mar\/28","11":"Mar\/28","12":"Mar\/28","13":"Mar\/28","14":"Mar\/28","15":"Mar\/28","16":"Mar\/28","17":"Mar\/28","18":"Mar\/28","19":"Mar\/28","20":"Mar\/28","21":"Mar\/28","22":"Mar\/28","23":"Mar\/28","24":"Mar\/28","25":"Mar\/28","26":"Mar\/28","27":"Mar\/28","28":"Mar\/28","29":"Mar\/28","30":"Mar\/28","31":"Mar\/28","32":"Mar\/28","33":"Mar\/28","34":"Mar\/28","35":"Mar\/28","36":"Mar\/28","37":"Mar\/28","38":"Mar\/28","39":"Mar\/28","40":"Mar\/28","41":"Mar\/28","42":"Mar\/28","43":"Mar\/28","44":"Dec\/10","45":"Mar\/28","46":"Mar\/28","47":"Mar\/28","48":"Mar\/28","49":"Mar\/28","50":"Mar\/12","51":"Mar\/28","52":"Mar\/28","53":"Mar\/28","54":"Oct\/17","55":"Mar\/28","56":"Mar\/28","57":"Mar\/28","58":"Mar\/28","59":"Mar\/28","60":"Mar\/28","61":"Mar\/28","62":"Mar\/28","63":"Mar\/28","64":"Mar\/28"},"Day_pct":{"0":-0.0131,"1":-0.0088,"2":-0.0056,"3":-0.0302,"4":-0.0522,"5":-0.019,"6":0.0118,"7":-0.0404,"8":-0.0233,"9":-0.0074,"10":-0.0183,"11":-0.0212,"12":-0.0177,"13":-0.0478,"14":-0.0184,"15":-0.0397,"16":-0.0345,"17":-0.0094,"18":-0.0286,"19":-0.0194,"20":-0.0205,"21":0.0039,"22":-0.0486,"23":-0.0114,"24":0.0048,"25":0.0076,"26":-0.0319,"27":0.023,"28":-0.0226,"29":-0.007,"30":-0.0185,"31":-0.0421,"32":-0.0403,"33":-0.0298,"34":-0.0232,"35":-0.017,"36":-0.0195,"37":0.003,"38":-0.0608,"39":-0.035,"40":-0.0203,"41":-0.0177,"42":0.0042,"43":-0.0448,"44":-0.0547,"45":-0.0291,"46":0.0053,"47":-0.0473,"48":0.0021,"49":-0.0278,"50":0.0052,"51":-0.032,"52":-0.0285,"53":-0.0622,"54":0.0,"55":-0.008,"56":-0.0313,"57":-0.0352,"58":-0.0188,"59":-0.0096,"60":0.0,"61":-0.0143,"62":-0.0055,"63":-0.0106,"64":-0.0251},"Year_pct":{"0":0.0306,"1":-0.1198,"2":-0.0638,"3":-0.0561,"4":-0.0641,"5":0.092,"6":-0.015,"7":-0.3872,"8":-0.1452,"9":-0.3584,"10":-0.0175,"11":-0.0622,"12":-0.1073,"13":-0.2759,"14":-0.4381,"15":-0.0324,"16":-0.3676,"17":-0.3039,"18":-0.2465,"19":-0.2324,"20":-0.4207,"21":0.219,"22":0.4853,"23":-0.1076,"24":-0.8434,"25":-0.2953,"26":-0.352,"27":-0.2689,"28":-0.273,"29":-0.3162,"30":-0.2177,"31":-0.3639,"32":-0.2818,"33":-0.0938,"34":-0.4447,"35":-0.1546,"36":-0.2566,"37":-0.1064,"38":-0.6523,"39":-0.2241,"40":0.2492,"41":-0.0653,"42":-0.2619,"43":-0.0274,"44":-0.4328,"45":-0.5881,"46":-0.2723,"47":-0.2946,"48":-0.3057,"49":-0.0278,"50":-0.0231,"51":-0.3202,"52":-0.4048,"53":-0.2989,"54":-0.0909,"55":-0.1926,"56":-0.3236,"57":-0.2645,"58":0.2246,"59":-0.2256,"60":-0.1748,"61":-0.5387,"62":-0.3829,"63":-0.1975,"64":0.0004},"MCap_num":{"0":78570000000.0,"1":62940000000.0,"2":54800000000.0,"3":44820000000.0,"4":41650000000.0,"5":18920000000.0,"6":17070000000.0,"7":11560000000.0,"8":10900000000.0,"9":10170000000.0,"10":10140000000.0,"11":7070000000.0,"12":5370000000.0,"13":5360000000.0,"14":5180000000.0,"15":4950000000.0,"16":4750000000.0,"17":4720000000.0,"18":4490000000.0,"19":4179999999.9999995232,"20":4090000000.0,"21":3720000000.0,"22":3190000000.0,"23":3180000000.0,"24":3010000000.0,"25":2640000000.0,"26":2550000000.0,"27":2230000000.0,"28":2180000000.0,"29":2130000000.0,"30":2080000000.0,"31":1930000000.0,"32":1900000000.0,"33":1710000000.0,"34":1480000000.0,"35":1250000000.0,"36":1190000000.0,"37":1020000000.0,"38":927080000.0,"39":840690000.0,"40":825760000.0,"41":765910000.0,"42":675920000.0,"43":601780000.0,"44":564760000.0,"45":551340000.0,"46":509010000.0,"47":481640000.0,"48":469870000.0,"49":419330000.0,"50":403690000.0,"51":351120000.0,"52":250960000.0,"53":241030000.0,"54":225830000.0,"55":223770000.0,"56":207560000.0,"57":185760000.0,"58":125360000.0,"59":122050000.0,"60":99370000.0,"61":32900000.0,"62":25250000.0,"63":17620000.0,"64":1500000.0}}
-        
-        // Your existing JavaScript code...
+        // **********************************************
+
+        let currentBins = 20;
+        let currentMetric = 'Year_pct';
+
+        // Use container width instead of fixed width
+        const margin = {top: 40, right: 30, bottom: 60, left: 50};
+        let width = document.getElementById('chart').clientWidth;
+        const height = 600;
+
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const defs = svg.append("defs");
+        const gradient = defs.append("linearGradient")
+            .attr("id", "line-gradient")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", 0).attr("y1", 0)
+            .attr("x2", 0).attr("y2", height);
+
+        gradient.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", "steelblue");
+        gradient.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", "#4fa4f5");
+
+        const chartGroup = svg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        const x = d3.scaleLinear();
+        const y = d3.scaleLinear();
+
+        // Resize function to handle window resize
+        function handleResize() {
+            width = document.getElementById('chart').clientWidth;
+            svg.attr("width", width);
+            updateChart();
+        }
+
+        // Add resize listener
+        window.addEventListener('resize', handleResize);
+
+        d3.select("#data-select").on("change", function() {
+            currentMetric = this.value;
+            updateChart();
+        });
+
+        d3.select("#bin-range").on("input", function() {
+            currentBins = +this.value;
+            d3.select("#bin-value").text(currentBins);
+            updateChart();
+        });
+
+        function updateChart() {
+            const returns = Object.values(data[currentMetric]).map(Number);
+            const [dataMin, dataMax] = d3.extent(returns);
+            
+            // Calculate uniform bin thresholds
+            const binWidth = (dataMax - dataMin) / currentBins;
+            const thresholds = Array.from({length: currentBins + 1}, (_, i) => 
+                dataMin + i * binWidth
+            );
+
+            x.domain([dataMin, dataMax])
+               .range([0, width - margin.left - margin.right]);
+
+            const histogram = d3.histogram()
+                .domain(x.domain())
+                .thresholds(thresholds)
+                .value(d => d);
+
+            const bins = histogram(returns);
+            y.domain([0, d3.max(bins, d => d.length)])
+               .range([height - margin.top - margin.bottom, 0]);
+
+            chartGroup.selectAll(".axis, .bar, .kde-line, .x-label, .y-label").remove();
+
+            const xAxis = d3.axisBottom(x)
+                .tickFormat(d3.format(currentMetric === 'Year_pct' ? ".0%" : ".1%"))
+                .ticks(8);
+
+            const yAxis = d3.axisLeft(y).ticks(6);
+
+            chartGroup.append("g")
+                .attr("class", "x axis")
+                .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
+                .transition().duration(500)
+                .call(xAxis);
+
+            chartGroup.append("g")
+                .attr("class", "y axis")
+                .transition().duration(500)
+                .call(yAxis);
+
+            // Create bars with uniform width
+            const bars = chartGroup.selectAll(".bar")
+                .data(bins)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", d => x(d.x0) + 0.5)
+                .attr("y", height - margin.top - margin.bottom)
+                .attr("width", d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+                .attr("height", 0)
+                .attr("fill", "skyblue")
+                .attr("rx", 2)
+                .on("mouseover", showTooltip)
+                .on("mouseout", hideTooltip);
+
+            bars.transition()
+                .duration(800)
+                .attr("y", d => y(d.length))
+                .attr("height", d => y(0) - y(d.length));
+
+            const line = d3.line()
+                .curve(d3.curveBasis)
+                .x(d => x(d.x0))
+                .y(d => y(d.length));
+
+            chartGroup.append("path")
+                .attr("class", "kde-line")
+                .datum(bins)
+                .attr("d", line)
+                .attr("fill", "none")
+                .attr("stroke", "url(#line-gradient)")
+                .attr("stroke-width", 3)
+                .attr("opacity", 0)
+                .transition().duration(800)
+                .attr("opacity", 1);
+
+            chartGroup.append("text")
+                .attr("class", "axis-label x-label")
+                .attr("x", (width - margin.left - margin.right)/2)
+                .attr("y", height - margin.bottom + 40)
+                .text(currentMetric === 'Year_pct' ? "Yearly Return (%)" : "Daily Return (%)");
+
+            chartGroup.append("text")
+                .attr("class", "axis-label y-label")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -margin.left)
+                .attr("x", -(height - margin.top - margin.bottom)/2)
+                .text("Number of Companies");
+        }
+
+        function showTooltip(event, d) {
+            d3.select(event.currentTarget)
+                .transition().duration(100)
+                .attr("fill", "#4fa4f5");
+
+            d3.select(".tooltip")
+                .html(`<strong>${d3.format(".1%")(d.x0)} - ${d3.format(".1%")(d.x1)}</strong><br>
+                      Companies: ${d.length}`)
+                .style("left", (event.pageX + 15) + "px")
+                .style("top", (event.pageY - 30) + "px")
+                .style("opacity", 1);
+        }
+
+        function hideTooltip(event) {
+            d3.select(event.currentTarget)
+                .transition().duration(100)
+                .attr("fill", "skyblue");
+
+            d3.select(".tooltip").style("opacity", 0);
+        }
+
+        updateChart();
     </script>
 {% endblock %}
