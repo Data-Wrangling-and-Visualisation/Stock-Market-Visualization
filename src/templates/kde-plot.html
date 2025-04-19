@@ -1,223 +1,165 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Interactive Stock Returns Analysis</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        /* Основные стили */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 40px;
-            background: #f8f9fa;
-        }
-        
-        /* Контейнер элементов управления */
-        .controls {
-            margin-bottom: 30px;
-            padding: 25px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border: 1px solid #e9ecef;
-        }
+{% extends "layout.html" %}
 
-        /* Группа элементов управления */
-        .control-group {
-            margin: 15px 0;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+{% block title %}Interactive Stock Returns Analysis{% endblock %}
 
-        /* Стили для меток */
-        label {
-            font-weight: 500;
-            color: #495057;
-            min-width: 140px;
-            font-size: 0.95em;
-        }
-
-        /* Стилизация выпадающего списка */
-        #data-select {
-            padding: 8px 12px;
-            border: 2px solid #dee2e6;
-            border-radius: 6px;
-            background: white;
-            font-size: 0.95em;
-            color: #212529;
-            transition: all 0.2s ease;
-            appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 8px center;
-            background-size: 16px;
-            padding-right: 32px;
-        }
-
-        #data-select:hover {
-            border-color: #adb5bd;
-            cursor: pointer;
-        }
-
-        #data-select:focus {
-            outline: none;
-            border-color: #4dabf7;
-            box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
-        }
-
-        /* Стилизация слайдера */
-        input[type="range"] {
-            -webkit-appearance: none;
-            width: 100%;
-            height: 6px;
-            background: transparent;
-            margin: 15px 0;
-        }
-
-        input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 20px;
-            height: 20px;
-            background: #4dabf7;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-top: -7px;
-            position: relative;
-            transform: translateY(2px);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: background 0.2s ease;
-        }
-
-        input[type="range"]::-webkit-slider-runnable-track {
-            height: 6px;
-            background: #e9ecef;
-            border-radius: 4px;
-        }
-
-        /* Отображение количества бинов */
-        #bin-value {
-            display: inline-block;
-            min-width: 40px;
-            text-align: center;
-            padding: 4px 8px;
-            background: #4dabf7;
-            color: white;
-            border-radius: 4px;
-            font-weight: 500;
-            font-size: 0.9em;
-        }
-
-        /* Подсказка */
-        .tooltip {
-            position: absolute;
-            padding: 8px 12px;
-            background: #212529;
-            color: white;
-            border-radius: 6px;
-            pointer-events: none;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-            font-size: 0.9em;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-
-
-        .description-section {
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 25px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .description-content h2 {
-        color: #212529;
-        border-bottom: 2px solid #4dabf7;
-        padding-bottom: 10px;
-        margin-bottom: 25px;
-    }
-
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        margin: 20px 0;
-    }
-
-    .feature {
-        padding: 15px;
+{% block additional_styles %}
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+    /* Основные стили */
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
         background: #f8f9fa;
-        border-radius: 8px;
-        border-left: 4px solid #4dabf7;
+    }
+    
+    /* Контейнер элементов управления */
+    .controls {
+        margin-bottom: 30px;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border: 1px solid #e9ecef;
     }
 
-    .description-content a {
-        color: #4dabf7;
-        text-decoration: none;
+    /* Группа элементов управления */
+    .control-group {
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Стили для меток */
+    label {
         font-weight: 500;
+        color: #495057;
+        min-width: 140px;
+        font-size: 0.95em;
     }
 
-    .description-content a:hover {
-        text-decoration: underline;
+    /* Стилизация выпадающего списка */
+    #data-select {
+        padding: 8px 12px;
+        border: 2px solid #dee2e6;
+        border-radius: 6px;
+        background: white;
+        font-size: 0.95em;
+        color: #212529;
+        transition: all 0.2s ease;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 16px;
+        padding-right: 32px;
     }
 
-    .description-content ul {
-        padding-left: 20px;
-        margin: 10px 0;
+    #data-select:hover {
+        border-color: #adb5bd;
+        cursor: pointer;
     }
 
-    .description-content li {
-        margin: 8px 0;
-        line-height: 1.6;
+    #data-select:focus {
+        outline: none;
+        border-color: #4dabf7;
+        box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
     }
-    </style>
-</head>
-<body>
-    <!-- Description Section -->
+
+    /* Стилизация слайдера */
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 6px;
+        background: transparent;
+        margin: 15px 0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #4dabf7;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -7px;
+        position: relative;
+        transform: translateY(2px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: background 0.2s ease;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 6px;
+        background: #e9ecef;
+        border-radius: 4px;
+    }
+
+    /* Отображение количества бинов */
+    #bin-value {
+        display: inline-block;
+        min-width: 40px;
+        text-align: center;
+        padding: 4px 8px;
+        background: #4dabf7;
+        color: white;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+
+    /* Подсказка */
+    .tooltip {
+        position: absolute;
+        padding: 8px 12px;
+        background: #212529;
+        color: white;
+        border-radius: 6px;
+        pointer-events: none;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        font-size: 0.9em;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <!-- Header Section -->
     <div class="description-section">
         <h2>Russian Stock Market Returns Analysis</h2>
-        
-        <div class="description-content">
-            <h3>Visualization Overview</h3>
-            <p>This interactive dashboard presents the distribution of returns for major Russian companies listed on the MOEX index. The visualization combines:</p>
-            <ul>
-                <li>Histogram showing frequency distribution</li>
-                <li>Kernel Density Estimation (KDE) curve</li>
-                <li>Real-time market data updates</li>
-            </ul>
+        <p>This interactive dashboard presents the distribution of returns for major Russian companies listed on the MOEX index. The visualization combines:</p>
+        <ul>
+            <li>Histogram showing frequency distribution</li>
+            <li>Kernel Density Estimation (KDE) curve</li>
+            <li>Real-time market data updates</li>
+        </ul>
 
-            <h3>Key Features</h3>
-            <div class="features-grid">
-                <div class="feature">
-                    <h4>Interactive Controls</h4>
-                    <p>Adjustable parameters for granular analysis:</p>
-                    <ul>
-                        <li>Timeframe selection (Daily/Yearly)</li>
-                        <li>Bin count customization (5-40 intervals)</li>
-                    </ul>
-                </div>
-                
-                <div class="feature">
-                    <h4>Technical Specifications</h4>
-                    <ul>
-                        <li>Built with D3.js v7</li>
-                        <li>Responsive SVG rendering</li>
-                        <li>GPU-accelerated animations</li>
-                    </ul>
-                </div>
+        <h3>Key Features</h3>
+        <div class="features-grid">
+            <div class="feature">
+                <h4>Interactive Controls</h4>
+                <p>Adjustable parameters for granular analysis:</p>
+                <ul>
+                    <li>Timeframe selection (Daily/Yearly)</li>
+                    <li>Bin count customization (5-40 intervals)</li>
+                </ul>
             </div>
-
-
-            <a href="https://tradingeconomics.com/russia/stock-market" target="_blank" rel="noopener noreferrer">
-                <h3>Data Reference</h3>
-            </a></p>
-
             
-            <a href="/" rel="noopener noreferrer">
-                <h3>Back to main menu</h3>
-            </a></p>
+            <div class="feature">
+                <h4>Technical Specifications</h4>
+                <ul>
+                    <li>Built with D3.js v7</li>
+                    <li>Responsive SVG rendering</li>
+                    <li>GPU-accelerated animations</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="source">
+            Data source: 
+            <a href="https://tradingeconomics.com/russia/stock-market" target="_blank">
+                Trading Economics - Russia Stock Market
+            </a>
         </div>
     </div>
 
@@ -400,5 +342,4 @@
 
         updateChart();
     </script>
-</body>
-</html>
+{% endblock %}

@@ -1,127 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Modern MOEX Returns Heatmap</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-      .nav-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-        
-        .nav-link {
-            color: #2a9d8f;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
+{% extends "layout.html" %}
 
-        .nav-link:hover {
-            background: rgba(42, 157, 143, 0.1);
-            transform: translateY(-1px);
-        }
+{% block title %}MOEX Returns Matrix{% endblock %}
 
-        .description {
-            margin: 20px auto 40px;
-            max-width: 800px;
-            color: #495057;
-            line-height: 1.6;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
+{% block additional_styles %}
+<style>
+    .controls {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
 
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fa;
-            margin: 2rem;
-        }
+    select {
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid #dee2e6;
+        background: white;
+    }
 
-        .controls {
-            margin-bottom: 2rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            margin-left: 10%;
-        }
+    .heatmap-cell {
+        transition: all 0.2s ease;
+    }
 
-        select {
-            padding: 0.5rem;
-            border-radius: 4px;
-            border: 1px solid #dee2e6;
-            background: white;
-        }
+    .heatmap-cell:hover {
+        stroke: #212529;
+        stroke-width: 2;
+        filter: brightness(1.1);
+    }
 
-        .heatmap-cell {
-            transition: all 0.2s ease;
-        }
+    #tooltip {
+        position: absolute;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        pointer-events: none;
+        font-size: 0.9rem;
+        border: 1px solid #dee2e6;
+    }
 
-        .heatmap-cell:hover {
-            stroke: #212529;
-            stroke-width: 2;
-            filter: brightness(1.1);
-        }
+    .axis text {
+        font-size: 0.8rem;
+        fill: #495057;
+    }
 
-        #tooltip {
-            position: absolute;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            pointer-events: none;
-            font-size: 0.9rem;
-            border: 1px solid #dee2e6;
-        }
+    .axis line {
+        stroke: #dee2e6;
+    }
 
-        .axis text {
-            font-size: 0.8rem;
-            fill: #495057;
-        }
+    .chart-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        fill: #212529;
+    }
+    
+    svg {
+        margin-top: 10px;
+    }
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+{% endblock %}
 
-        .axis line {
-            stroke: #dee2e6;
-        }
+{% block content %}
+<!-- Add description -->
+<div class="description-section">
+    <h2>MOEX Investment Returns Matrix</h2>
+    <p>This interactive heatmap visualizes the returns of MOEX index investments across different time periods. 
+    Select a granularity (month/day) and date range to explore how returns vary between different investment horizons.
+    Hover over cells to see exact return percentages and corresponding time periods. The color scale ranges from 
+    red (negative returns) through white (neutral) to teal (positive returns).</p>
+</div>
 
-        .chart-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            fill: #212529;
-        }
-        svg {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="nav-container">
-      <a href="/" class="nav-link">← Back to Main</a>
-    </div>
-
-    <!-- Add description -->
-    <div class="description">
-        <h2>MOEX Investment Returns Matrix</h2>
-        <p>This interactive heatmap visualizes the returns of MOEX index investments across different time periods. 
-        Select a granularity (month/day) and date range to explore how returns vary between different investment horizons.
-        Hover over cells to see exact return percentages and corresponding time periods. The color scale ranges from 
-        red (negative returns) through white (neutral) to teal (positive returns).</p>
-    </div>
-
-    <div class="controls">
-        <select id="indexSelector"></select>
-        <select id="granularity" onchange="updateControls()">
-            <option value="month">Month</option>
-            <option value="day">Day</option>
-        </select>
-        <select id="startRange"></select>
-        <select id="endRange"></select>
-    </div>
-    <div id="heatmap"></div>
-    <div id="tooltip"></div>
+<div class="controls">
+    <select id="indexSelector"></select>
+    <select id="granularity" onchange="updateControls()">
+        <option value="month">Month</option>
+        <option value="day">Day</option>
+        <option value="year">Year</option>
+    </select>
+    <select id="startRange"></select>
+    <select id="endRange"></select>
+</div>
+<div id="heatmap"></div>
+<div id="tooltip"></div>
 
 <script>
     let currentIndex = ''; // Текущий выбранный индекс
@@ -196,8 +157,6 @@ async function loadData() {
     }
 }
 
-
-
 // Новая функция для фильтрации данных
 function filterData(data) {
     return data
@@ -240,9 +199,14 @@ function processPeriods() {
     const periodMap = new Map();
     
     processedData.forEach(d => {
-        const key = granularity === 'month' 
-            ? `${d.date.getFullYear()}-${String(d.date.getMonth() + 1).padStart(2, '0')}`
-            : d.date.toISOString().split('T')[0];
+        let key;
+        if (granularity === 'month') {
+            key = `${d.date.getFullYear()}-${String(d.date.getMonth() + 1).padStart(2, '0')}`;
+        } else if (granularity === 'year') {
+            key = `${d.date.getFullYear()}`;
+        } else {
+            key = d.date.toISOString().split('T')[0]; // day format
+        }
         
         if (!periodMap.has(key)) {
             periodMap.set(key, {
@@ -265,17 +229,6 @@ function processPeriods() {
             close: val.close
         }));
 }
-
-<!--function populateRangeSelects() {-->
-<!--    const startSelect = document.getElementById('startRange');-->
-<!--    const endSelect = document.getElementById('endRange');-->
-<!--    -->
-<!--    startSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');-->
-<!--    endSelect.innerHTML = periods.map(p => `<option>${p.key}</option>`).join('');-->
-<!--    -->
-<!--    startRange = periods[0].key;-->
-<!--    endRange = periods[periods.length-1].key;-->
-<!--}-->
 
 function calculateReturns() {
     const returns = {};
@@ -456,5 +409,4 @@ document.getElementById('endRange').addEventListener('change', function() {
     loadData();
 });
 </script>
-</body>
-</html>
+{% endblock %}
