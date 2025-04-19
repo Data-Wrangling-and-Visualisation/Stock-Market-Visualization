@@ -198,7 +198,7 @@ class Scraper:
 
         Attributes:
             filename (str): name of the saved page.
-        
+
         Returns:
             Tag: table tag on the page.
         """
@@ -252,7 +252,7 @@ class Scraper:
 
         Attributes:
             page_name (str): name of the page.
-        
+
         Returns:
             pd.DataFrame: dataframe with the information scraped from the page.
         """

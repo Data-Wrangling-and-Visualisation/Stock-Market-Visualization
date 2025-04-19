@@ -1,5 +1,9 @@
 # Stock Market Visualization
 
+## Deployed
+
+http://5.129.199.157:8080/
+
 ## Table of Contents
 <ol>
 <li> <a href="#description">Project Description</a> </li>
@@ -38,7 +42,9 @@ Individual stocks and ETF's on the other hand contain slightly different columns
 </ol>
 
 <a name="installation"> <h2> Installation </h2> </a>
+<h3> Manual </h3>
 Clone the repository:
+
 ```bash
 git clone https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization
 ```
@@ -51,7 +57,7 @@ python -m venv venv
 
 Install the necessary requirements
 ```bash
-pip install -r req.txt
+pip install -r src/req.txt
 playwright install
 ```
 
@@ -83,6 +89,27 @@ tradeScrap.scrape_pages()
 ```
 Scraped data will be added to local moex.db data base via SQLite and will be accessible by backend.
 
+Start backend server:
+```bash
+python src/backend.py
+```
+
+Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
+
+<h3> With Docker </h3>
+Run the following command to create a container:
+
+```bash
+docker compose up -d
+```
+
+Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
+
+Run the following command to stop and remove the container:
+```bash
+docker compose down
+```
+
 <a name="eda"> <h2> EDA </h2> </a>
 The <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/EDA/Russia_Stock_Market_Index.ipynb">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.
 
@@ -97,7 +124,7 @@ The project checkpoint information can be found <a href="https://github.com/Data
 - [x] Integrate data preparation and cleaning parts to the existing pipeline: select necessary data for the project, clean and format extracted information.
 - [x] Setup the exploration tools and determine data worth visualizing based on the analysis.
 - [x] Establish interface for transferring data from the processing pipeline to visualization application and integrate it into a Flask RESTful API.
-- [ ] Develop web application with basic display functionality of the visualizations (statically displayed plots) and data supply through API.
+- [x] Develop web application with basic display functionality of the visualizations (statically displayed plots) and data supply through API.
 - [ ] Add styles and variety for visualizations (e.g. various indexes for heatmap instead of a single one).
 - [ ] Test application, fix bugs, and prepare presentation.
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stock Market Visualizations</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #2a9d8f;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .viz-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .viz-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: #212529;
+            width: 400px;
+        }
+
+        .viz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .viz-card h2 {
+            color: #2a9d8f;
+            margin: 0 0 1rem 0;
+        }
+
+        .viz-card p {
+            color: #495057;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Visualizations</h1>
+        <div class="viz-links">
+            <a href="/heatmap" class="viz-card">
+                <h2>MOEX Returns Matrix</h2>
+                <p>Interactive heatmap showing investment returns over different time periods</p>
+            </a>
+            <a href="/bar-plot" class="viz-card">
+                <h2>Russian Market Dashboard</h2>
+                <p>Dynamic bar chart comparing stock performance metrics across companies</p>
+            </a>
+            <a href="/kde-plot" class="viz-card">
+                <h2>Russian Stock Market Returns Analysis</h2>
+                <p>This interactive dashboard presents the distribution of returns for major Russian companies listed on the MOEX index. The visualization combines:</p>
+            </a>
+            <a href="/bubbles" class="viz-card">
+                <h2>Year to day relation analysis</h2>
+                <p>This interactive visualization explores the relationship between daily and yearly returns of major Russian companies, with additional insights into market capitalization.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
