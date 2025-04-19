@@ -9,6 +9,8 @@
     body {
         font-family: 'Segoe UI', Arial, sans-serif;
         background: #f8f9fa;
+        margin: 0;
+        padding: 0;
     }
     
     /* Контейнер элементов управления */
@@ -19,6 +21,8 @@
         border-radius: 12px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         border: 1px solid #e9ecef;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* Группа элементов управления */
@@ -120,6 +124,18 @@
         opacity: 0;
         transition: opacity 0.2s ease;
     }
+
+    /* Chart container */
+    #chart {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
 </style>
 {% endblock %}
 
@@ -189,9 +205,10 @@
         let currentBins = 20;
         let currentMetric = 'Year_pct';
 
-        const width = 1000,
-              height = 600,
-              margin = {top: 40, right: 30, bottom: 60, left: 50};
+        // Use container width instead of fixed width
+        const margin = {top: 40, right: 30, bottom: 60, left: 50};
+        let width = document.getElementById('chart').clientWidth;
+        const height = 600;
 
         const svg = d3.select("#chart")
             .append("svg")
@@ -217,6 +234,16 @@
 
         const x = d3.scaleLinear();
         const y = d3.scaleLinear();
+
+        // Resize function to handle window resize
+        function handleResize() {
+            width = document.getElementById('chart').clientWidth;
+            svg.attr("width", width);
+            updateChart();
+        }
+
+        // Add resize listener
+        window.addEventListener('resize', handleResize);
 
         d3.select("#data-select").on("change", function() {
             currentMetric = this.value;

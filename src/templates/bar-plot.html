@@ -5,14 +5,19 @@
 {% block additional_styles %}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
+    /* Primary Colors */
     :root {
-        --primary-color: #2c3e50;
-        --secondary-color: #3498db;
-        --accent-color: #e74c3c;
-        --positive-color: #27ae60;
-        --negative-color: #c0392b;
-        --text-color: #34495e;
-        --background: #f8f9fa;
+        --primary-color: #2a9d8f;
+        --secondary-color: #e76f51;
+        --positive-color: #2ca02c;
+        --negative-color: #d62728;
+        --bg-color: #f8f9fa;
+        --text-color: #212529;
+    }
+
+    body {
+        background: var(--bg-color);
+        font-family: 'Segoe UI', Arial, sans-serif;
     }
 
     .controls {
@@ -72,10 +77,14 @@
     }
 
     .chart-container {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     .bar {
@@ -198,7 +207,7 @@
 
     // Chart setup
     const margin = {top: 40, right: 30, bottom: 100, left: 80};
-    const width = 1000 - margin.left - margin.right;
+    let width = document.querySelector(".chart-container").clientWidth - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
     const svg = d3.select("#barChart")
@@ -358,10 +367,11 @@
 
     // Responsive handling
     window.addEventListener("resize", () => {
-        const containerWidth = document.querySelector(".chart-container").offsetWidth;
-        const newWidth = Math.min(1000, containerWidth - margin.left - margin.right);
-        svg.attr("width", newWidth + margin.left + margin.right);
-        x.range([0, newWidth]);
+        const containerWidth = document.querySelector(".chart-container").clientWidth;
+        width = containerWidth - margin.left - margin.right;
+        svg.attr("transform", `translate(${margin.left},${margin.top})`);
+        d3.select("#barChart svg").attr("width", width + margin.left + margin.right);
+        x.range([0, width]);
         updateChart(
             d3.select("#metricSelector").property("value"),
             parseInt(d3.select("#topSelector").property("value")),

@@ -5,6 +5,54 @@
 {% block additional_styles %}
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #bubble-chart {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+
+    .bubble {
+        opacity: 0.7;
+        stroke: white;
+        stroke-width: 0.5;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+
+    .bubble:hover {
+        opacity: 1;
+        stroke-width: 1.5;
+    }
+
+    .axis-label {
+        font-size: 14px;
+        font-weight: bold;
+        fill: #555;
+    }
+
+    .tooltip {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 6px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 100;
+    }
+
     .container { 
         margin: 20px auto;
         max-width: 1600px;
@@ -146,7 +194,7 @@
     }));
 
     // Настройки размеров
-    const width = 1400;
+    let width = document.getElementById('bubble-chart').clientWidth;
     const height = 600;
     const margin = { top: 60, right: 120, bottom: 80, left: 100 };
 
@@ -183,12 +231,12 @@
         .tickFormat(d3.format(".0%"))
         .tickSizeOuter(0);
 
-    svg.append("g")
+    const xAxisGroup = svg.append("g")
         .attr("class", "x-axis")
         .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
         .call(xAxis);
 
-    svg.append("g")
+    const yAxisGroup = svg.append("g")
         .attr("class", "y-axis")
         .call(yAxis);
 
@@ -293,12 +341,35 @@
 
     // Добавление корреляции
     const correlation = calculatePearsonCorrelation(data, "Day_pct", "Year_pct");
-    svg.append("text")
+    const correlationText = svg.append("text")
         .attr("x", width - margin.right - 200)
         .attr("y", 30)
         .style("font-size", "14px")
         .style("fill", "#333")
         .style("font-weight", "bold")
         .html(`Correlation: <tspan fill="${correlation > 0 ? '#2ca02c' : '#d62728'}">${correlation.toFixed(2)}</tspan>`);
+
+    // Add resize handler
+    function handleResize() {
+        width = document.getElementById('bubble-chart').clientWidth;
+        svg.attr("transform", `translate(${margin.left},${margin.top})`);
+        d3.select("#bubble-chart svg").attr("width", width);
+        
+        // Update scales
+        xScale.range([0, width - margin.left - margin.right]);
+        
+        // Update axes
+        xAxisGroup.call(xAxis);
+        
+        // Update bubbles
+        bubbles
+            .attr("cx", d => xScale(d.Day_pct));
+            
+        // Update correlation text position
+        correlationText.attr("x", width - margin.right - 200);
+    }
+    
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
 </script>
 {% endblock %}
