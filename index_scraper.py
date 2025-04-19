@@ -108,7 +108,7 @@ class IndexScraper(TradeScraper):
                 to be clicked to obtain the calendar
             date (Date): date to be selected
         """
-
+        page.locator('type=text').fill(f'{date.day}.{date.month}.{date.year}')
         btn.click()
         calendar = page.locator('[id="ui-datepicker-div"]')
         calendar.locator('[class="ui-datepicker-year"]').select_option(date.year)
@@ -129,7 +129,7 @@ class IndexScraper(TradeScraper):
 
         # Setup client
         webkit = playwright.webkit
-        browser = webkit.launch()
+        browser = webkit.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
         page.set_extra_http_headers({'User-Agent': 'Mozilla/5.0'})
