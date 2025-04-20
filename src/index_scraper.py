@@ -155,6 +155,7 @@ class IndexScraper(TradeScraper):
         htmls = []
 
         while True:
+            time.sleep(1)
             htmls.append(page.content())
             page.wait_for_selector('button[title="Первая страница"]')
             next_btn = page.locator('button[title="Следующая страница"]')
