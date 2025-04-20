@@ -97,18 +97,56 @@ python src/backend.py
 Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
 
 <h3> With Docker </h3>
-Run the following command to create a container:
+
+The application can be run using Docker, which provides an isolated environment with all dependencies pre-installed.
+
+#### Prerequisites
+- [Docker](https://docs.docker.com/get-docker/) installed on your system
+- [Docker Compose](https://docs.docker.com/compose/install/) (comes with Docker Desktop on Windows and Mac)
+
+#### Building and Running
+Run the following command to build and start the container:
 
 ```bash
 docker compose up -d
 ```
 
-Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
+This will:
+- Build the Docker image using the provided Dockerfile
+- Start a container named `stock-market-visualization`
+- Map port 8080 from the container to your local machine
+- Mount the database file and data directory as volumes for persistence
 
-Run the following command to stop and remove the container:
+Access the application at <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> in your web browser.
+
+#### Managing the Container
+
+To view logs from the running container:
+```bash
+docker compose logs -f
+```
+
+To stop the container without removing it:
+```bash
+docker compose stop
+```
+
+To stop and remove the container:
 ```bash
 docker compose down
 ```
+
+To rebuild the image after making changes to the code:
+```bash
+docker compose up -d --build
+```
+
+#### Data Persistence
+The Docker setup mounts the following volumes for data persistence:
+- `./moex.db`: The SQLite database file
+- `./data`: The data directory
+
+This ensures that your data remains intact between container restarts.
 
 <a name="eda"> <h2> EDA </h2> </a>
 The <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/EDA/Russia_Stock_Market_Index.ipynb">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.

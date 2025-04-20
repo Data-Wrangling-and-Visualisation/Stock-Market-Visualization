@@ -1,9 +1,13 @@
 services:
-  server:
-    build: ./src
-    image: server:latest
-    container_name: server
+  app:
+    build: .
+    image: stock-market-vis:latest
+    container_name: stock-market-visualization
+    volumes:
+      - ./moex.db:/app/moex.db
+      - ./data:/app/data
     expose:
       - 8080
     ports:
       - "127.0.0.1:8080:8080"
+    restart: unless-stopped
