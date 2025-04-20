@@ -140,7 +140,7 @@ class TradeScraper:
 
         # Setup client
         webkit = playwright.webkit
-        browser = webkit.launch(headless=False)
+        browser = webkit.launch()
         context = browser.new_context()
         page = context.new_page()
         page.set_extra_http_headers({'User-Agent': 'Mozilla/5.0'})

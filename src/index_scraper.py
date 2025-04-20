@@ -108,9 +108,12 @@ class IndexScraper(TradeScraper):
                 to be clicked to obtain the calendar
             date (Date): date to be selected
         """
-        page.locator('type=text').fill(f'{date.day}.{date.month}.{date.year}')
         btn.click()
         calendar = page.locator('[id="ui-datepicker-div"]')
+        if int(date.year) < 2015:
+            calendar.locator('[class="ui-datepicker-year"]').select_option('2015')
+        if int(date.year) < 2005:
+            calendar.locator('[class="ui-datepicker-year"]').select_option('2005')
         calendar.locator('[class="ui-datepicker-year"]').select_option(date.year)
         calendar.locator('[class="ui-datepicker-month"]').select_option(str(int(date.month) - 1))
         calendar.locator('//table/tbody').get_by_text(date.day).click()
@@ -211,7 +214,7 @@ class IndexScraper(TradeScraper):
         date_column, *float_columns = df.columns
         df[date_column] = df[date_column].apply(pd.to_datetime, format='mixed')
         df[float_columns] = df[float_columns].apply(
-            lambda cols: list(map(lambda x: float(x.replace(' ', '').replace(',', '.')), cols))
+            lambda cols: list(map(lambda x: str(x.replace(' ', '').replace(',', '.')), cols))
         )
 
         return df
