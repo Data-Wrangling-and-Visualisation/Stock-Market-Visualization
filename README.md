@@ -125,11 +125,11 @@ The project checkpoint information can be found <a href="https://github.com/Data
 - [x] Setup the exploration tools and determine data worth visualizing based on the analysis.
 - [x] Establish interface for transferring data from the processing pipeline to visualization application and integrate it into a Flask RESTful API.
 - [x] Develop web application with basic display functionality of the visualizations (statically displayed plots) and data supply through API.
-- [ ] Add styles and variety for visualizations (e.g. various indexes for heatmap instead of a single one).
-- [ ] Test application, fix bugs, and prepare presentation.
+- [x] Add styles and variety for visualizations (e.g. various indexes for heatmap instead of a single one).
+- [x] Test application, fix bugs, and prepare presentation.
 
 <a name="contributors"> <h2> Contributors </h2> </a>
 The team consists of three members:
-- Ilya Grigorev, DS-01 student, responsible for scraping and parsing data;
-- Ruslan Gatiatullin, DS-02 student, responsible for EDA;
-- Salavat Faizullin, DS-01 student, responsible developing visualizations.
+- Ilya Grigorev, DS-01 student, responsible for scraping and parsing data, backend;
+- Ruslan Gatiatullin, DS-02 student, responsible for EDA, project vision, backend;
+- Salavat Faizullin, DS-01 student, responsible developing visualizations, deployment.
