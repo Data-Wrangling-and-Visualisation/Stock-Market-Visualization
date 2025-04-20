@@ -67,7 +67,7 @@ def home():
         conn = sqlite3.connect(DATABASE + '.db')
         cursor = conn.cursor()
         records = []
-        for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX']:
+        for index in ['IMOEX', 'TMOS', 'EQMX', 'SBMX', 'MIPO', 'MCFTR', 'MCFTRR']:
             records.extend(retrieve_data(cursor, index))
 
         return jsonify({'records': records}), 200

@@ -1,12 +1,15 @@
 from trade_scraper import TradeScraper, TradeURL
-from index_scraper import IndexURL
-from scraper import Scraper
+from index_scraper import IndexScraper, IndexURL
+from storage import StorageSQLite
 
 
 def main():
-    index_scraper = Scraper()
+    index_scraper = IndexScraper(storage=StorageSQLite())
     index_scraper.load_content([
-        IndexURL('IMOEX', '2005-01-01', '2025-01-01')
+        IndexURL('IMOEX', '2005-01-01', '2025-03-28'),
+        IndexURL('MIPO', '2021-11-11', '2025-03-28'),
+        IndexURL('MCFTR', '2003-03-03', '2025-03-28'),
+        IndexURL('MCFTRR', '2003-03-03', '2025-03-28')
     ])
     index_scraper.scrape_pages()
 

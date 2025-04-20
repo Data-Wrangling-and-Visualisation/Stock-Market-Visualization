@@ -140,7 +140,7 @@ class TradeScraper:
 
         # Setup client
         webkit = playwright.webkit
-        browser = webkit.launch(headless=False)
+        browser = webkit.launch()
         context = browser.new_context()
         page = context.new_page()
         page.set_extra_http_headers({'User-Agent': 'Mozilla/5.0'})
@@ -301,6 +301,8 @@ class TradeScraper:
                 filename = (f'{self.prefix_name}={url.index_name}&from={url.date_from.__str__()}'
                             f'&till={url.date_till.__str__()}.html')
                 for html in htmls:
+                    if not os.path.exists(self.pages_path):
+                        os.mkdir(self.pages_path)
                     with open(self.pages_path + filename, 'a', encoding='UTF-8') as f:
                         f.write(html)
 
