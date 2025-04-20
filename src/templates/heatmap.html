@@ -46,7 +46,7 @@
     This heatmap displays returns on MOEX market indices across different time periods, using colors to show the performance intensity - from deep red (significant losses) through white (neutral) to teal (significant gains).</p>
     
     <p><strong>2. Data used in this visualization</strong><br>
-    The visualization uses historical price data from major Moscow Exchange indices (IMOEX, TMOS, EQMX, SBMX), calculating returns between any two selected periods at your chosen time granularity (day, month, or year).</p>
+    The visualization uses historical price data from major Moscow Exchange indices (IMOEX, TMOS, EQMX, SBMX), calculating returns between any two selected periods at your chosen time period (month, or year).</p>
     
     <p><strong>3. What do different indexes mean?</strong><br>
     <ul>
@@ -62,26 +62,6 @@
     </ul>
     <p>These ETFs include reinvesting dividends and management fees. In an ideal world, they should have the same return as MCFTR minus their management fee.</p>
     </p>
-    
-    <p><strong>4. Insights you can gain</strong><br>
-    With this matrix, you can:
-    <ul>
-        <li>Identify the best and worst performance periods at a glance</li>
-        <li>Discover seasonal patterns that might repeat year after year</li>
-        <li>Compare performance across different market cycles</li>
-        <li>Find optimal entry and exit points by analyzing historical patterns</li>
-        <li>Recognize how long downtrends or uptrends typically last in the Russian market</li>
-    </ul>
-    </p>
-    
-    <p><strong>5. How to use the controls</strong><br>
-    <ul>
-        <li><strong>Index selector:</strong> Choose which market index to analyze</li>
-        <li><strong>Granularity dropdown:</strong> Select whether to view data by day, month, or year</li>
-        <li><strong>Range selectors:</strong> Customize the start and end periods for your analysis</li>
-        <li><strong>Hover functionality:</strong> Mouse over any cell to see the exact return percentage for that period</li>
-    </ul>
-    </p>
 </div>
 
 <div class="controls">
@@ -90,10 +70,10 @@
         <select id="indexSelector"></select>
     </div>
     <div class="control-group">
-        <label>Granularity:</label>
+        <label>Period:</label>
         <select id="granularity" onchange="updateControls()">
             <option value="month">Month</option>
-            <option value="day">Day</option>
+            <option value="3month">3-Month</option>
             <option value="year">Year</option>
         </select>
     </div>
@@ -227,10 +207,12 @@ function processPeriods() {
         let key;
         if (granularity === 'month') {
             key = `${d.date.getFullYear()}-${String(d.date.getMonth() + 1).padStart(2, '0')}`;
-        } else if (granularity === 'year') {
-            key = `${d.date.getFullYear()}`;
+        } else if (granularity === '3month') {
+            // Calculate quarter (1-4) based on month (0-11)
+            const quarter = Math.floor(d.date.getMonth() / 3) + 1;
+            key = `${d.date.getFullYear()}-Q${quarter}`;
         } else {
-            key = d.date.toISOString().split('T')[0]; // day format
+            key = `${d.date.getFullYear()}`;
         }
         
         if (!periodMap.has(key)) {

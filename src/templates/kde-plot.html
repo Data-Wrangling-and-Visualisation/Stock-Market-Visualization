@@ -79,25 +79,6 @@
         
         <p><strong>2. Data used in this visualization</strong><br>
         The chart uses performance data from companies listed on the Moscow Exchange (MOEX), showing either daily returns (recent market movement) or yearly returns (long-term performance trends).</p>
-        
-        <p><strong>3. Insights you can gain</strong><br>
-        With this chart, you can:
-        <ul>
-            <li>Identify the most common return ranges in the Russian market</li>
-            <li>Spot extreme performers (outliers) on both positive and negative sides</li>
-            <li>Understand if returns are evenly distributed or skewed toward gains/losses</li>
-            <li>Compare how short-term and long-term returns differ in their distribution patterns</li>
-            <li>Assess the overall market sentiment by seeing where most companies cluster</li>
-        </ul>
-        </p>
-        
-        <p><strong>4. How to use the controls</strong><br>
-        <ul>
-            <li><strong>Data Characteristic selector:</strong> Switch between daily and yearly returns to compare short and long-term patterns</li>
-            <li><strong>Number of Bins slider:</strong> Adjust the granularity of the histogram - more bins show finer detail, fewer bins show broader trends</li>
-            <li><strong>Hover functionality:</strong> Mouse over any part of the chart to see exact percentage values</li>
-        </ul>
-        </p>
 
         <div class="source">
             Data source: 
@@ -194,7 +175,8 @@
                 dataMin + i * binWidth
             );
 
-            x.domain([dataMin, dataMax])
+            // Ensure the domain extends fully beyond the max value to include the rightmost bin
+            x.domain([dataMin, dataMax + binWidth * 2])
                .range([0, width - margin.left - margin.right]);
 
             const histogram = d3.histogram()
@@ -203,7 +185,10 @@
                 .value(d => d);
 
             const bins = histogram(returns);
-            y.domain([0, d3.max(bins, d => d.length)])
+            
+            // Make sure we include all bins in our visualization
+            const yMax = d3.max(bins, d => d.length);
+            y.domain([0, yMax > 0 ? yMax : 1])
                .range([height - margin.top - margin.bottom, 0]);
 
             chartGroup.selectAll(".axis, .bar, .kde-line, .x-label, .y-label").remove();
@@ -225,14 +210,19 @@
                 .transition().duration(500)
                 .call(yAxis);
 
-            // Create bars with uniform width
+            // Calculate the ideal uniform bar width based on available space
+            const availableWidth = width - margin.left - margin.right;
+            const uniformBarWidth = (availableWidth / currentBins) * 0.9; // Reduce width to 90% to create spacing
+            const barPadding = (availableWidth / currentBins) * 0.1; // 10% padding
+
+            // Create bars with uniform width and proper spacing
             const bars = chartGroup.selectAll(".bar")
                 .data(bins)
                 .enter().append("rect")
                 .attr("class", "bar")
-                .attr("x", d => x(d.x0) + 0.5)
+                .attr("x", d => x(d.x0) + barPadding/2) // Add half of padding to left side
                 .attr("y", height - margin.top - margin.bottom)
-                .attr("width", d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+                .attr("width", uniformBarWidth)
                 .attr("height", 0)
                 .attr("fill", "skyblue")
                 .attr("rx", 2)
@@ -242,11 +232,14 @@
             bars.transition()
                 .duration(800)
                 .attr("y", d => y(d.length))
-                .attr("height", d => y(0) - y(d.length));
+                .attr("height", d => {
+                    // Ensure bars with length of 1 or more are always visible with a minimum height
+                    return d.length > 0 ? Math.max(5, y(0) - y(d.length)) : 0;
+                });
 
             const line = d3.line()
                 .curve(d3.curveBasis)
-                .x(d => x(d.x0))
+                .x(d => x((d.x0 + d.x1) / 2))  // Use midpoint of bin for smoother line
                 .y(d => y(d.length));
 
             chartGroup.append("path")
