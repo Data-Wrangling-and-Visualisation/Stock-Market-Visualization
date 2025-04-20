@@ -72,8 +72,8 @@
         </select>
     </div>
     <div class="control-group">
-        <button id="sortAsc">↑ Ascending</button>
-        <button id="sortDesc">↓ Descending</button>
+        <button id="sortAsc">↑ Smallest first</button>
+        <button id="sortDesc">↓ Biggest first</button>
     </div>
 </div>
 
@@ -118,8 +118,8 @@
         const values = sortedData.map(d => d[metric]);
         let domain;
         if(isPercentage) {
-            document.getElementById("sortAsc").innerHTML = '↑ Highest gain';
-            document.getElementById("sortDesc").innerHTML = '↓ Highest loss';
+            document.getElementById("sortAsc").innerHTML = '↑ Highest loss';
+            document.getElementById("sortDesc").innerHTML = '↓ Highest gain';
             const min = d3.min(values);
             const max = d3.max(values);
             domain = [Math.min(min, 0), Math.max(max, 0)];
