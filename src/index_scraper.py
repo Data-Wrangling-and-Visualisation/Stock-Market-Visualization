@@ -132,7 +132,7 @@ class IndexScraper(TradeScraper):
 
         # Setup client
         webkit = playwright.webkit
-        browser = webkit.launch(headless=False)
+        browser = webkit.launch()
         context = browser.new_context()
         page = context.new_page()
         page.set_extra_http_headers({'User-Agent': 'Mozilla/5.0'})
@@ -212,7 +212,7 @@ class IndexScraper(TradeScraper):
         """
 
         date_column, *float_columns = df.columns
-        df[date_column] = df[date_column].apply(pd.to_datetime, format='mixed')
+        df[date_column] = df[date_column].apply(pd.to_datetime, format='%d.%m.%Y')
         df[float_columns] = df[float_columns].apply(
             lambda cols: list(map(lambda x: str(x.replace(' ', '').replace(',', '.')), cols))
         )

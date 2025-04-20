@@ -109,7 +109,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-12-03",
+        "date": "2025-03-12",
         "volume_of_trade": "1926524817",
         "price_at_opening": "708.48",
         "min_price": "700.06",
@@ -118,7 +118,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-11-03",
+        "date": "2025-03-11",
         "volume_of_trade": "1497035143",
         "price_at_opening": "712.66",
         "min_price": "708.92",
@@ -127,7 +127,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-03",
+        "date": "2025-03-10",
         "volume_of_trade": "1658492380",
         "price_at_opening": "712.22",
         "min_price": "712.22",
@@ -136,7 +136,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-07-03",
+        "date": "2025-03-07",
         "volume_of_trade": "3497381155",
         "price_at_opening": "717.98",
         "min_price": "703.96",
@@ -145,7 +145,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-03",
+        "date": "2025-03-06",
         "volume_of_trade": "2858843959",
         "price_at_opening": "724.8",
         "min_price": "712.32",
@@ -154,7 +154,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-05-03",
+        "date": "2025-03-05",
         "volume_of_trade": "4922906047",
         "price_at_opening": "717.27",
         "min_price": "717.21",
@@ -163,7 +163,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-04-03",
+        "date": "2025-03-04",
         "volume_of_trade": "3845667544",
         "price_at_opening": "698.21",
         "min_price": "698.16",
@@ -289,7 +289,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-12-02",
+        "date": "2025-02-12",
         "volume_of_trade": "5430980717",
         "price_at_opening": "689.62",
         "min_price": "681.05",
@@ -298,7 +298,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-11-02",
+        "date": "2025-02-11",
         "volume_of_trade": "3541543285",
         "price_at_opening": "680.57",
         "min_price": "678.01",
@@ -307,7 +307,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-02",
+        "date": "2025-02-10",
         "volume_of_trade": "7203919219",
         "price_at_opening": "687.85",
         "min_price": "681.69",
@@ -316,7 +316,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-07-02",
+        "date": "2025-02-07",
         "volume_of_trade": "8698259173",
         "price_at_opening": "690.66",
         "min_price": "685",
@@ -325,7 +325,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-02",
+        "date": "2025-02-06",
         "volume_of_trade": "5224826795",
         "price_at_opening": "690.38",
         "min_price": "687.49",
@@ -334,7 +334,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-05-02",
+        "date": "2025-02-05",
         "volume_of_trade": "4098496254",
         "price_at_opening": "687.8",
         "min_price": "678.71",
@@ -343,7 +343,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-04-02",
+        "date": "2025-02-04",
         "volume_of_trade": "2127071090",
         "price_at_opening": "692.18",
         "min_price": "687.94",
@@ -352,7 +352,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-03-02",
+        "date": "2025-02-03",
         "volume_of_trade": "3271634218",
         "price_at_opening": "692.65",
         "min_price": "687.67",
@@ -496,7 +496,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-01",
+        "date": "2025-01-10",
         "volume_of_trade": "4076897973",
         "price_at_opening": "646.41",
         "min_price": "645.75",
@@ -505,7 +505,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-09-01",
+        "date": "2025-01-09",
         "volume_of_trade": "3446927744",
         "price_at_opening": "674.66",
         "min_price": "647.02",
@@ -514,7 +514,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-08-01",
+        "date": "2025-01-08",
         "volume_of_trade": "3888894613",
         "price_at_opening": "663.75",
         "min_price": "660.91",
@@ -523,7 +523,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-01",
+        "date": "2025-01-06",
         "volume_of_trade": "3484747784",
         "price_at_opening": "656.1",
         "min_price": "653.06",
@@ -532,7 +532,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-03-01",
+        "date": "2025-01-03",
         "volume_of_trade": "4214599152",
         "price_at_opening": "647.68",
         "min_price": "647.68",
@@ -667,7 +667,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-12",
+        "date": "2024-12-11",
         "volume_of_trade": "1230409026",
         "price_at_opening": "564.98",
         "min_price": "563.17",
@@ -676,7 +676,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-12",
+        "date": "2024-12-10",
         "volume_of_trade": "1225200254",
         "price_at_opening": "576.52",
         "min_price": "564.05",
@@ -685,7 +685,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-12",
+        "date": "2024-12-09",
         "volume_of_trade": "1398984053",
         "price_at_opening": "571.92",
         "min_price": "571.92",
@@ -694,7 +694,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-12",
+        "date": "2024-12-06",
         "volume_of_trade": "1559336941",
         "price_at_opening": "570.46",
         "min_price": "568.58",
@@ -703,7 +703,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-12",
+        "date": "2024-12-05",
         "volume_of_trade": "1758273002",
         "price_at_opening": "563.38",
         "min_price": "559.14",
@@ -712,7 +712,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-12",
+        "date": "2024-12-04",
         "volume_of_trade": "1631666071",
         "price_at_opening": "571.81",
         "min_price": "564.42",
@@ -721,7 +721,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-12",
+        "date": "2024-12-03",
         "volume_of_trade": "2109224919",
         "price_at_opening": "587.2",
         "min_price": "570.09",
@@ -730,7 +730,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-12",
+        "date": "2024-12-02",
         "volume_of_trade": "1968374542",
         "price_at_opening": "578.75",
         "min_price": "578.75",
@@ -856,7 +856,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-11",
+        "date": "2024-11-12",
         "volume_of_trade": "7612017660",
         "price_at_opening": "636.33",
         "min_price": "632.95",
@@ -874,7 +874,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-11",
+        "date": "2024-11-08",
         "volume_of_trade": "1978683038",
         "price_at_opening": "617.15",
         "min_price": "616.11",
@@ -883,7 +883,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-11",
+        "date": "2024-11-07",
         "volume_of_trade": "2083288195",
         "price_at_opening": "616.8",
         "min_price": "604.31",
@@ -892,7 +892,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-11",
+        "date": "2024-11-06",
         "volume_of_trade": "2756871115",
         "price_at_opening": "613.61",
         "min_price": "613.61",
@@ -1009,7 +1009,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-12-03",
+        "date": "2025-03-12",
         "volume_of_trade": "1926524817",
         "price_at_opening": "708.48",
         "min_price": "700.06",
@@ -1018,7 +1018,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-11-03",
+        "date": "2025-03-11",
         "volume_of_trade": "1497035143",
         "price_at_opening": "712.66",
         "min_price": "708.92",
@@ -1027,7 +1027,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-03",
+        "date": "2025-03-10",
         "volume_of_trade": "1658492380",
         "price_at_opening": "712.22",
         "min_price": "712.22",
@@ -1036,7 +1036,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-07-03",
+        "date": "2025-03-07",
         "volume_of_trade": "3497381155",
         "price_at_opening": "717.98",
         "min_price": "703.96",
@@ -1045,7 +1045,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-03",
+        "date": "2025-03-06",
         "volume_of_trade": "2858843959",
         "price_at_opening": "724.8",
         "min_price": "712.32",
@@ -1054,7 +1054,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-05-03",
+        "date": "2025-03-05",
         "volume_of_trade": "4922906047",
         "price_at_opening": "717.27",
         "min_price": "717.21",
@@ -1063,7 +1063,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-04-03",
+        "date": "2025-03-04",
         "volume_of_trade": "3845667544",
         "price_at_opening": "698.21",
         "min_price": "698.16",
@@ -1189,7 +1189,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-12-02",
+        "date": "2025-02-12",
         "volume_of_trade": "5430980717",
         "price_at_opening": "689.62",
         "min_price": "681.05",
@@ -1198,7 +1198,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-11-02",
+        "date": "2025-02-11",
         "volume_of_trade": "3541543285",
         "price_at_opening": "680.57",
         "min_price": "678.01",
@@ -1207,7 +1207,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-02",
+        "date": "2025-02-10",
         "volume_of_trade": "7203919219",
         "price_at_opening": "687.85",
         "min_price": "681.69",
@@ -1216,7 +1216,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-07-02",
+        "date": "2025-02-07",
         "volume_of_trade": "8698259173",
         "price_at_opening": "690.66",
         "min_price": "685",
@@ -1225,7 +1225,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-02",
+        "date": "2025-02-06",
         "volume_of_trade": "5224826795",
         "price_at_opening": "690.38",
         "min_price": "687.49",
@@ -1234,7 +1234,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-05-02",
+        "date": "2025-02-05",
         "volume_of_trade": "4098496254",
         "price_at_opening": "687.8",
         "min_price": "678.71",
@@ -1243,7 +1243,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-04-02",
+        "date": "2025-02-04",
         "volume_of_trade": "2127071090",
         "price_at_opening": "692.18",
         "min_price": "687.94",
@@ -1252,7 +1252,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-03-02",
+        "date": "2025-02-03",
         "volume_of_trade": "3271634218",
         "price_at_opening": "692.65",
         "min_price": "687.67",
@@ -1396,7 +1396,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-10-01",
+        "date": "2025-01-10",
         "volume_of_trade": "4076897973",
         "price_at_opening": "646.41",
         "min_price": "645.75",
@@ -1405,7 +1405,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-09-01",
+        "date": "2025-01-09",
         "volume_of_trade": "3446927744",
         "price_at_opening": "674.66",
         "min_price": "647.02",
@@ -1414,7 +1414,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-08-01",
+        "date": "2025-01-08",
         "volume_of_trade": "3888894613",
         "price_at_opening": "663.75",
         "min_price": "660.91",
@@ -1423,7 +1423,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-06-01",
+        "date": "2025-01-06",
         "volume_of_trade": "3484747784",
         "price_at_opening": "656.1",
         "min_price": "653.06",
@@ -1432,7 +1432,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2025-03-01",
+        "date": "2025-01-03",
         "volume_of_trade": "4214599152",
         "price_at_opening": "647.68",
         "min_price": "647.68",
@@ -1567,7 +1567,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-12",
+        "date": "2024-12-11",
         "volume_of_trade": "1230409026",
         "price_at_opening": "564.98",
         "min_price": "563.17",
@@ -1576,7 +1576,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-12",
+        "date": "2024-12-10",
         "volume_of_trade": "1225200254",
         "price_at_opening": "576.52",
         "min_price": "564.05",
@@ -1585,7 +1585,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-12",
+        "date": "2024-12-09",
         "volume_of_trade": "1398984053",
         "price_at_opening": "571.92",
         "min_price": "571.92",
@@ -1594,7 +1594,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-12",
+        "date": "2024-12-06",
         "volume_of_trade": "1559336941",
         "price_at_opening": "570.46",
         "min_price": "568.58",
@@ -1603,7 +1603,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-12",
+        "date": "2024-12-05",
         "volume_of_trade": "1758273002",
         "price_at_opening": "563.38",
         "min_price": "559.14",
@@ -1612,7 +1612,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-12",
+        "date": "2024-12-04",
         "volume_of_trade": "1631666071",
         "price_at_opening": "571.81",
         "min_price": "564.42",
@@ -1621,7 +1621,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-12",
+        "date": "2024-12-03",
         "volume_of_trade": "2109224919",
         "price_at_opening": "587.2",
         "min_price": "570.09",
@@ -1630,7 +1630,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-12",
+        "date": "2024-12-02",
         "volume_of_trade": "1968374542",
         "price_at_opening": "578.75",
         "min_price": "578.75",
@@ -1756,7 +1756,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-11",
+        "date": "2024-11-12",
         "volume_of_trade": "7612017660",
         "price_at_opening": "636.33",
         "min_price": "632.95",
@@ -1774,7 +1774,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-11",
+        "date": "2024-11-08",
         "volume_of_trade": "1978683038",
         "price_at_opening": "617.15",
         "min_price": "616.11",
@@ -1783,7 +1783,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-11",
+        "date": "2024-11-07",
         "volume_of_trade": "2083288195",
         "price_at_opening": "616.8",
         "min_price": "604.31",
@@ -1792,7 +1792,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-11",
+        "date": "2024-11-06",
         "volume_of_trade": "2756871115",
         "price_at_opening": "613.61",
         "min_price": "613.61",
@@ -1801,7 +1801,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-11",
+        "date": "2024-11-05",
         "volume_of_trade": "1835724910",
         "price_at_opening": "613.47",
         "min_price": "611.52",
@@ -1810,7 +1810,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-11",
+        "date": "2024-11-02",
         "volume_of_trade": "741731920",
         "price_at_opening": "615.84",
         "min_price": "611.77",
@@ -1819,7 +1819,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-11",
+        "date": "2024-11-01",
         "volume_of_trade": "1634331270",
         "price_at_opening": "616.39",
         "min_price": "612.1",
@@ -1954,7 +1954,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-10",
+        "date": "2024-10-11",
         "volume_of_trade": "1762518586",
         "price_at_opening": "681.34",
         "min_price": "675.93",
@@ -1972,7 +1972,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-10",
+        "date": "2024-10-09",
         "volume_of_trade": "1486514133",
         "price_at_opening": "685.59",
         "min_price": "678.63",
@@ -1981,7 +1981,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-10",
+        "date": "2024-10-08",
         "volume_of_trade": "1522608302",
         "price_at_opening": "689.23",
         "min_price": "683.71",
@@ -1990,7 +1990,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-10",
+        "date": "2024-10-07",
         "volume_of_trade": "2042581322",
         "price_at_opening": "696.89",
         "min_price": "688.25",
@@ -1999,7 +1999,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-10",
+        "date": "2024-10-04",
         "volume_of_trade": "4106602979",
         "price_at_opening": "700.21",
         "min_price": "693.94",
@@ -2008,7 +2008,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-10",
+        "date": "2024-10-03",
         "volume_of_trade": "5167450623",
         "price_at_opening": "698.7",
         "min_price": "688.52",
@@ -2017,7 +2017,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-10",
+        "date": "2024-10-02",
         "volume_of_trade": "3490841058",
         "price_at_opening": "712.85",
         "min_price": "698.19",
@@ -2026,7 +2026,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-10",
+        "date": "2024-10-01",
         "volume_of_trade": "4242466876",
         "price_at_opening": "721.05",
         "min_price": "710.89",
@@ -2143,7 +2143,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-09",
+        "date": "2024-09-12",
         "volume_of_trade": "1902215644",
         "price_at_opening": "686.43",
         "min_price": "673.41",
@@ -2152,7 +2152,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-09",
+        "date": "2024-09-11",
         "volume_of_trade": "1786316504",
         "price_at_opening": "700.82",
         "min_price": "693.85",
@@ -2161,7 +2161,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-09",
+        "date": "2024-09-10",
         "volume_of_trade": "2025165720",
         "price_at_opening": "711.48",
         "min_price": "696.76",
@@ -2179,7 +2179,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-09",
+        "date": "2024-09-06",
         "volume_of_trade": "1779955753",
         "price_at_opening": "683.29",
         "min_price": "679.28",
@@ -2188,7 +2188,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-09",
+        "date": "2024-09-05",
         "volume_of_trade": "4206499663",
         "price_at_opening": "679.49",
         "min_price": "679.49",
@@ -2197,7 +2197,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-09",
+        "date": "2024-09-04",
         "volume_of_trade": "2814617435",
         "price_at_opening": "657.33",
         "min_price": "656.05",
@@ -2206,7 +2206,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-09",
+        "date": "2024-09-03",
         "volume_of_trade": "3795414068",
         "price_at_opening": "652.69",
         "min_price": "644.62",
@@ -2215,7 +2215,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-09",
+        "date": "2024-09-02",
         "volume_of_trade": "3860458599",
         "price_at_opening": "669.83",
         "min_price": "646.76",
@@ -2350,7 +2350,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-08",
+        "date": "2024-08-12",
         "volume_of_trade": "2714245962",
         "price_at_opening": "771.81",
         "min_price": "765.04",
@@ -2359,7 +2359,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-08",
+        "date": "2024-08-09",
         "volume_of_trade": "1584840870",
         "price_at_opening": "774",
         "min_price": "768.71",
@@ -2377,7 +2377,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-08",
+        "date": "2024-08-07",
         "volume_of_trade": "3627668023",
         "price_at_opening": "762.68",
         "min_price": "753.47",
@@ -2386,7 +2386,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-08",
+        "date": "2024-08-06",
         "volume_of_trade": "1922214434",
         "price_at_opening": "764.7",
         "min_price": "759.94",
@@ -2395,7 +2395,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-08",
+        "date": "2024-08-05",
         "volume_of_trade": "3616295922",
         "price_at_opening": "781.19",
         "min_price": "752.83",
@@ -2404,7 +2404,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-08",
+        "date": "2024-08-02",
         "volume_of_trade": "2661843157",
         "price_at_opening": "786.35",
         "min_price": "778.82",
@@ -2413,7 +2413,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-08",
+        "date": "2024-08-01",
         "volume_of_trade": "3171479416",
         "price_at_opening": "786.65",
         "min_price": "786.41",
@@ -2539,7 +2539,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-07",
+        "date": "2024-07-12",
         "volume_of_trade": "3562918110",
         "price_at_opening": "800.71",
         "min_price": "785.36",
@@ -2548,7 +2548,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-07",
+        "date": "2024-07-11",
         "volume_of_trade": "5486317599",
         "price_at_opening": "760.11",
         "min_price": "760.11",
@@ -2557,7 +2557,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-07",
+        "date": "2024-07-10",
         "volume_of_trade": "5924113516",
         "price_at_opening": "789.93",
         "min_price": "760.73",
@@ -2566,7 +2566,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-07",
+        "date": "2024-07-09",
         "volume_of_trade": "4975704236",
         "price_at_opening": "825.71",
         "min_price": "787.26",
@@ -2575,7 +2575,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-07",
+        "date": "2024-07-08",
         "volume_of_trade": "2964146439",
         "price_at_opening": "850.14",
         "min_price": "832.69",
@@ -2584,7 +2584,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-07",
+        "date": "2024-07-05",
         "volume_of_trade": "2441388890",
         "price_at_opening": "848.13",
         "min_price": "848.13",
@@ -2593,7 +2593,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-07",
+        "date": "2024-07-04",
         "volume_of_trade": "3044899078",
         "price_at_opening": "854.68",
         "min_price": "854.68",
@@ -2602,7 +2602,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-07",
+        "date": "2024-07-03",
         "volume_of_trade": "3031238153",
         "price_at_opening": "870.89",
         "min_price": "870.89",
@@ -2611,7 +2611,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-07",
+        "date": "2024-07-02",
         "volume_of_trade": "3074105129",
         "price_at_opening": "883.73",
         "min_price": "883.73",
@@ -2620,7 +2620,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-07",
+        "date": "2024-07-01",
         "volume_of_trade": "3120899959",
         "price_at_opening": "880.62",
         "min_price": "880.62",
@@ -2737,7 +2737,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-06",
+        "date": "2024-06-11",
         "volume_of_trade": "3411632343",
         "price_at_opening": "917.82",
         "min_price": "917.82",
@@ -2746,7 +2746,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-06",
+        "date": "2024-06-10",
         "volume_of_trade": "3753406127",
         "price_at_opening": "924.65",
         "min_price": "924.65",
@@ -2755,7 +2755,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-06",
+        "date": "2024-06-07",
         "volume_of_trade": "3689138684",
         "price_at_opening": "935.64",
         "min_price": "935.64",
@@ -2773,7 +2773,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-06",
+        "date": "2024-06-05",
         "volume_of_trade": "4427773527",
         "price_at_opening": "933.41",
         "min_price": "933.41",
@@ -2782,7 +2782,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-06",
+        "date": "2024-06-04",
         "volume_of_trade": "4589632502",
         "price_at_opening": "921.03",
         "min_price": "921.03",
@@ -2791,7 +2791,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-06",
+        "date": "2024-06-03",
         "volume_of_trade": "6240675454",
         "price_at_opening": "886.48",
         "min_price": "886.48",
@@ -2935,7 +2935,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-05",
+        "date": "2024-05-10",
         "volume_of_trade": "3529101208",
         "price_at_opening": "1010.92",
         "min_price": "1010.92",
@@ -2944,7 +2944,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-05",
+        "date": "2024-05-08",
         "volume_of_trade": "3293286190",
         "price_at_opening": "1002.08",
         "min_price": "1002.08",
@@ -2953,7 +2953,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-05",
+        "date": "2024-05-07",
         "volume_of_trade": "3187084849",
         "price_at_opening": "995.38",
         "min_price": "995.38",
@@ -2962,7 +2962,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-05",
+        "date": "2024-05-06",
         "volume_of_trade": "4344472601",
         "price_at_opening": "993.18",
         "min_price": "993.18",
@@ -2971,7 +2971,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-05",
+        "date": "2024-05-03",
         "volume_of_trade": "4159430511",
         "price_at_opening": "996.64",
         "min_price": "996.64",
@@ -2980,7 +2980,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-05",
+        "date": "2024-05-02",
         "volume_of_trade": "3697613434",
         "price_at_opening": "1002.07",
         "min_price": "1002.07",
@@ -3106,7 +3106,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-04",
+        "date": "2024-04-12",
         "volume_of_trade": "",
         "price_at_opening": "1019.9",
         "min_price": "1019.9",
@@ -3115,7 +3115,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-04",
+        "date": "2024-04-11",
         "volume_of_trade": "",
         "price_at_opening": "1019.47",
         "min_price": "1019.47",
@@ -3124,7 +3124,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-04",
+        "date": "2024-04-10",
         "volume_of_trade": "",
         "price_at_opening": "1024.1",
         "min_price": "1024.1",
@@ -3133,7 +3133,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-04",
+        "date": "2024-04-09",
         "volume_of_trade": "",
         "price_at_opening": "1018.98",
         "min_price": "1018.98",
@@ -3142,7 +3142,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-04",
+        "date": "2024-04-08",
         "volume_of_trade": "",
         "price_at_opening": "1029.17",
         "min_price": "1029.17",
@@ -3151,7 +3151,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-04",
+        "date": "2024-04-05",
         "volume_of_trade": "",
         "price_at_opening": "1013.03",
         "min_price": "1013.03",
@@ -3169,7 +3169,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-04",
+        "date": "2024-04-03",
         "volume_of_trade": "",
         "price_at_opening": "1009.64",
         "min_price": "1009.64",
@@ -3178,7 +3178,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-02-04",
+        "date": "2024-04-02",
         "volume_of_trade": "",
         "price_at_opening": "999.4",
         "min_price": "999.4",
@@ -3187,7 +3187,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-04",
+        "date": "2024-04-01",
         "volume_of_trade": "",
         "price_at_opening": "996.1",
         "min_price": "996.1",
@@ -3313,7 +3313,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-03",
+        "date": "2024-03-12",
         "volume_of_trade": "",
         "price_at_opening": "930.35",
         "min_price": "930.35",
@@ -3322,7 +3322,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-03",
+        "date": "2024-03-11",
         "volume_of_trade": "",
         "price_at_opening": "936.86",
         "min_price": "936.86",
@@ -3331,7 +3331,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-03",
+        "date": "2024-03-07",
         "volume_of_trade": "",
         "price_at_opening": "940.1",
         "min_price": "940.1",
@@ -3340,7 +3340,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-03",
+        "date": "2024-03-06",
         "volume_of_trade": "",
         "price_at_opening": "937.17",
         "min_price": "937.17",
@@ -3349,7 +3349,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-03",
+        "date": "2024-03-05",
         "volume_of_trade": "",
         "price_at_opening": "930.57",
         "min_price": "930.57",
@@ -3358,7 +3358,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-03",
+        "date": "2024-03-04",
         "volume_of_trade": "",
         "price_at_opening": "930.37",
         "min_price": "930.37",
@@ -3367,7 +3367,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-03",
+        "date": "2024-03-01",
         "volume_of_trade": "",
         "price_at_opening": "914.18",
         "min_price": "914.18",
@@ -3484,7 +3484,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-02",
+        "date": "2024-02-12",
         "volume_of_trade": "",
         "price_at_opening": "904.07",
         "min_price": "904.07",
@@ -3493,7 +3493,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-02",
+        "date": "2024-02-09",
         "volume_of_trade": "",
         "price_at_opening": "895.08",
         "min_price": "895.08",
@@ -3502,7 +3502,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-02",
+        "date": "2024-02-08",
         "volume_of_trade": "",
         "price_at_opening": "906.55",
         "min_price": "906.55",
@@ -3511,7 +3511,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-07-02",
+        "date": "2024-02-07",
         "volume_of_trade": "",
         "price_at_opening": "910.85",
         "min_price": "910.85",
@@ -3520,7 +3520,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-06-02",
+        "date": "2024-02-06",
         "volume_of_trade": "",
         "price_at_opening": "893.69",
         "min_price": "893.69",
@@ -3529,7 +3529,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-02",
+        "date": "2024-02-05",
         "volume_of_trade": "",
         "price_at_opening": "889.35",
         "min_price": "889.35",
@@ -3547,7 +3547,907 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-01-02",
+        "date": "2024-02-01",
+        "volume_of_trade": "",
+        "price_at_opening": "887.95",
+        "min_price": "887.95",
+        "max_price": "887.95",
+        "price_at_closure": "887.95"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-01-31",
+        "volume_of_trade": "",
+        "price_at_opening": "892.03",
+        "min_price": "892.03",
+        "max_price": "892.03",
+        "price_at_closure": "892.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-01-30",
+        "volume_of_trade": "",
+        "price_at_opening": "889.49",
+        "min_price": "889.49",
+        "max_price": "889.49",
+        "price_at_closure": "889.49"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-01-29",
+        "volume_of_trade": "",
+        "price_at_opening": "890.64",
+        "min_price": "890.64",
+        "max_price": "890.64",
+        "price_at_closure": "890.64"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-01-26",
+        "volume_of_trade": "",
+        "price_at_opening": "883.83",
+        "min_price": "883.83",
+        "max_price": "883.83",
+        "price_at_closure": "883.83"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-01-25",
+        "volume_of_trade": "",
+        "price_at_opening": "883.27",
+        "min_price": "883.27",
+        "max_price": "883.27",
+        "price_at_closure": "883.27"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-18",
+        "volume_of_trade": "2677183822",
+        "price_at_opening": "894.51",
+        "min_price": "894.51",
+        "max_price": "894.51",
+        "price_at_closure": "894.51"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-17",
+        "volume_of_trade": "2349247998",
+        "price_at_opening": "921.01",
+        "min_price": "921.01",
+        "max_price": "921.01",
+        "price_at_closure": "921.01"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-14",
+        "volume_of_trade": "2417509148",
+        "price_at_opening": "930.03",
+        "min_price": "930.03",
+        "max_price": "930.03",
+        "price_at_closure": "930.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-13",
+        "volume_of_trade": "3654362778",
+        "price_at_opening": "919.94",
+        "min_price": "919.94",
+        "max_price": "919.94",
+        "price_at_closure": "919.94"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-11",
+        "volume_of_trade": "3411632343",
+        "price_at_opening": "917.82",
+        "min_price": "917.82",
+        "max_price": "917.82",
+        "price_at_closure": "917.82"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-10",
+        "volume_of_trade": "3753406127",
+        "price_at_opening": "924.65",
+        "min_price": "924.65",
+        "max_price": "924.65",
+        "price_at_closure": "924.65"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-07",
+        "volume_of_trade": "3689138684",
+        "price_at_opening": "935.64",
+        "min_price": "935.64",
+        "max_price": "935.64",
+        "price_at_closure": "935.64"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-06",
+        "volume_of_trade": "1966459149",
+        "price_at_opening": "921.88",
+        "min_price": "921.88",
+        "max_price": "921.88",
+        "price_at_closure": "921.88"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-05",
+        "volume_of_trade": "4427773527",
+        "price_at_opening": "933.41",
+        "min_price": "933.41",
+        "max_price": "933.41",
+        "price_at_closure": "933.41"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-04",
+        "volume_of_trade": "4589632502",
+        "price_at_opening": "921.03",
+        "min_price": "921.03",
+        "max_price": "921.03",
+        "price_at_closure": "921.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-06-03",
+        "volume_of_trade": "6240675454",
+        "price_at_opening": "886.48",
+        "min_price": "886.48",
+        "max_price": "886.48",
+        "price_at_closure": "886.48"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-31",
+        "volume_of_trade": "5023853601",
+        "price_at_opening": "902.79",
+        "min_price": "902.79",
+        "max_price": "902.79",
+        "price_at_closure": "902.79"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-30",
+        "volume_of_trade": "3053488403",
+        "price_at_opening": "933.99",
+        "min_price": "933.99",
+        "max_price": "933.99",
+        "price_at_closure": "933.99"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-29",
+        "volume_of_trade": "3592395374",
+        "price_at_opening": "942.09",
+        "min_price": "942.09",
+        "max_price": "942.09",
+        "price_at_closure": "942.09"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-28",
+        "volume_of_trade": "4361360352",
+        "price_at_opening": "954.32",
+        "min_price": "954.32",
+        "max_price": "954.32",
+        "price_at_closure": "954.32"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-27",
+        "volume_of_trade": "6114672510",
+        "price_at_opening": "945.73",
+        "min_price": "945.73",
+        "max_price": "945.73",
+        "price_at_closure": "945.73"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-24",
+        "volume_of_trade": "6593954958",
+        "price_at_opening": "970.82",
+        "min_price": "970.82",
+        "max_price": "970.82",
+        "price_at_closure": "970.82"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-23",
+        "volume_of_trade": "3893856785",
+        "price_at_opening": "984.72",
+        "min_price": "984.72",
+        "max_price": "984.72",
+        "price_at_closure": "984.72"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-22",
+        "volume_of_trade": "4005957278",
+        "price_at_opening": "991.74",
+        "min_price": "991.74",
+        "max_price": "991.74",
+        "price_at_closure": "991.74"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-21",
+        "volume_of_trade": "4365429145",
+        "price_at_opening": "995.93",
+        "min_price": "995.93",
+        "max_price": "995.93",
+        "price_at_closure": "995.93"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-20",
+        "volume_of_trade": "7198930572",
+        "price_at_opening": "999.22",
+        "min_price": "999.22",
+        "max_price": "999.22",
+        "price_at_closure": "999.22"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-17",
+        "volume_of_trade": "4627565834",
+        "price_at_opening": "1001.75",
+        "min_price": "1001.75",
+        "max_price": "1001.75",
+        "price_at_closure": "1001.75"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-16",
+        "volume_of_trade": "6703403613",
+        "price_at_opening": "1002.16",
+        "min_price": "1002.16",
+        "max_price": "1002.16",
+        "price_at_closure": "1002.16"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-15",
+        "volume_of_trade": "5222157417",
+        "price_at_opening": "1008.4",
+        "min_price": "1008.4",
+        "max_price": "1008.4",
+        "price_at_closure": "1008.4"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-14",
+        "volume_of_trade": "4795286479",
+        "price_at_opening": "1014.03",
+        "min_price": "1014.03",
+        "max_price": "1014.03",
+        "price_at_closure": "1014.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-13",
+        "volume_of_trade": "5372710897",
+        "price_at_opening": "1015.52",
+        "min_price": "1015.52",
+        "max_price": "1015.52",
+        "price_at_closure": "1015.52"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-10",
+        "volume_of_trade": "3529101208",
+        "price_at_opening": "1010.92",
+        "min_price": "1010.92",
+        "max_price": "1010.92",
+        "price_at_closure": "1010.92"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-08",
+        "volume_of_trade": "3293286190",
+        "price_at_opening": "1002.08",
+        "min_price": "1002.08",
+        "max_price": "1002.08",
+        "price_at_closure": "1002.08"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-07",
+        "volume_of_trade": "3187084849",
+        "price_at_opening": "995.38",
+        "min_price": "995.38",
+        "max_price": "995.38",
+        "price_at_closure": "995.38"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-06",
+        "volume_of_trade": "4344472601",
+        "price_at_opening": "993.18",
+        "min_price": "993.18",
+        "max_price": "993.18",
+        "price_at_closure": "993.18"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-03",
+        "volume_of_trade": "4159430511",
+        "price_at_opening": "996.64",
+        "min_price": "996.64",
+        "max_price": "996.64",
+        "price_at_closure": "996.64"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-05-02",
+        "volume_of_trade": "3697613434",
+        "price_at_opening": "1002.07",
+        "min_price": "1002.07",
+        "max_price": "1002.07",
+        "price_at_closure": "1002.07"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-30",
+        "volume_of_trade": "3194695418",
+        "price_at_opening": "1001.54",
+        "min_price": "1001.54",
+        "max_price": "1001.54",
+        "price_at_closure": "1001.54"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-29",
+        "volume_of_trade": "4899848555",
+        "price_at_opening": "1006.83",
+        "min_price": "1006.83",
+        "max_price": "1006.83",
+        "price_at_closure": "1006.83"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-27",
+        "volume_of_trade": "2947474764",
+        "price_at_opening": "1004.16",
+        "min_price": "1004.16",
+        "max_price": "1004.16",
+        "price_at_closure": "1004.16"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-26",
+        "volume_of_trade": "5119978978",
+        "price_at_opening": "1002.28",
+        "min_price": "1002.28",
+        "max_price": "1002.28",
+        "price_at_closure": "1002.28"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-25",
+        "volume_of_trade": "6579189658",
+        "price_at_opening": "994.09",
+        "min_price": "994.09",
+        "max_price": "994.09",
+        "price_at_closure": "994.09"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-24",
+        "volume_of_trade": "4833340211",
+        "price_at_opening": "997.11",
+        "min_price": "997.11",
+        "max_price": "997.11",
+        "price_at_closure": "997.11"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-23",
+        "volume_of_trade": "4118114596",
+        "price_at_opening": "1007.09",
+        "min_price": "1007.09",
+        "max_price": "1007.09",
+        "price_at_closure": "1007.09"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-22",
+        "volume_of_trade": "6031828723",
+        "price_at_opening": "1019.9",
+        "min_price": "1019.9",
+        "max_price": "1019.9",
+        "price_at_closure": "1019.9"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-19",
+        "volume_of_trade": "10486536462",
+        "price_at_opening": "1021.72",
+        "min_price": "1021.72",
+        "max_price": "1021.72",
+        "price_at_closure": "1021.72"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-18",
+        "volume_of_trade": "",
+        "price_at_opening": "1007.32",
+        "min_price": "1007.32",
+        "max_price": "1007.32",
+        "price_at_closure": "1007.32"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-17",
+        "volume_of_trade": "",
+        "price_at_opening": "1011.04",
+        "min_price": "1011.04",
+        "max_price": "1011.04",
+        "price_at_closure": "1011.04"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-16",
+        "volume_of_trade": "",
+        "price_at_opening": "1018.86",
+        "min_price": "1018.86",
+        "max_price": "1018.86",
+        "price_at_closure": "1018.86"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-15",
+        "volume_of_trade": "",
+        "price_at_opening": "1019.96",
+        "min_price": "1019.96",
+        "max_price": "1019.96",
+        "price_at_closure": "1019.96"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-12",
+        "volume_of_trade": "",
+        "price_at_opening": "1019.9",
+        "min_price": "1019.9",
+        "max_price": "1019.9",
+        "price_at_closure": "1019.9"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-11",
+        "volume_of_trade": "",
+        "price_at_opening": "1019.47",
+        "min_price": "1019.47",
+        "max_price": "1019.47",
+        "price_at_closure": "1019.47"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-10",
+        "volume_of_trade": "",
+        "price_at_opening": "1024.1",
+        "min_price": "1024.1",
+        "max_price": "1024.1",
+        "price_at_closure": "1024.1"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-09",
+        "volume_of_trade": "",
+        "price_at_opening": "1018.98",
+        "min_price": "1018.98",
+        "max_price": "1018.98",
+        "price_at_closure": "1018.98"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-08",
+        "volume_of_trade": "",
+        "price_at_opening": "1029.17",
+        "min_price": "1029.17",
+        "max_price": "1029.17",
+        "price_at_closure": "1029.17"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-05",
+        "volume_of_trade": "",
+        "price_at_opening": "1013.03",
+        "min_price": "1013.03",
+        "max_price": "1013.03",
+        "price_at_closure": "1013.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-04",
+        "volume_of_trade": "",
+        "price_at_opening": "1016.6",
+        "min_price": "1016.6",
+        "max_price": "1016.6",
+        "price_at_closure": "1016.6"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-03",
+        "volume_of_trade": "",
+        "price_at_opening": "1009.64",
+        "min_price": "1009.64",
+        "max_price": "1009.64",
+        "price_at_closure": "1009.64"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-02",
+        "volume_of_trade": "",
+        "price_at_opening": "999.4",
+        "min_price": "999.4",
+        "max_price": "999.4",
+        "price_at_closure": "999.4"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-04-01",
+        "volume_of_trade": "",
+        "price_at_opening": "996.1",
+        "min_price": "996.1",
+        "max_price": "996.1",
+        "price_at_closure": "996.1"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-29",
+        "volume_of_trade": "",
+        "price_at_opening": "986.02",
+        "min_price": "986.02",
+        "max_price": "986.02",
+        "price_at_closure": "986.02"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-28",
+        "volume_of_trade": "",
+        "price_at_opening": "972.95",
+        "min_price": "972.95",
+        "max_price": "972.95",
+        "price_at_closure": "972.95"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-27",
+        "volume_of_trade": "",
+        "price_at_opening": "980.25",
+        "min_price": "980.25",
+        "max_price": "980.25",
+        "price_at_closure": "980.25"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-26",
+        "volume_of_trade": "",
+        "price_at_opening": "970.53",
+        "min_price": "970.53",
+        "max_price": "970.53",
+        "price_at_closure": "970.53"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-25",
+        "volume_of_trade": "",
+        "price_at_opening": "955",
+        "min_price": "955",
+        "max_price": "955",
+        "price_at_closure": "955"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-22",
+        "volume_of_trade": "",
+        "price_at_opening": "941.03",
+        "min_price": "941.03",
+        "max_price": "941.03",
+        "price_at_closure": "941.03"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-21",
+        "volume_of_trade": "",
+        "price_at_opening": "950.56",
+        "min_price": "950.56",
+        "max_price": "950.56",
+        "price_at_closure": "950.56"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-20",
+        "volume_of_trade": "",
+        "price_at_opening": "935.24",
+        "min_price": "935.24",
+        "max_price": "935.24",
+        "price_at_closure": "935.24"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-19",
+        "volume_of_trade": "",
+        "price_at_opening": "924.29",
+        "min_price": "924.29",
+        "max_price": "924.29",
+        "price_at_closure": "924.29"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-18",
+        "volume_of_trade": "",
+        "price_at_opening": "923.96",
+        "min_price": "923.96",
+        "max_price": "923.96",
+        "price_at_closure": "923.96"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-15",
+        "volume_of_trade": "",
+        "price_at_opening": "916.22",
+        "min_price": "916.22",
+        "max_price": "916.22",
+        "price_at_closure": "916.22"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-14",
+        "volume_of_trade": "",
+        "price_at_opening": "914.39",
+        "min_price": "914.39",
+        "max_price": "914.39",
+        "price_at_closure": "914.39"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-13",
+        "volume_of_trade": "",
+        "price_at_opening": "929.11",
+        "min_price": "929.11",
+        "max_price": "929.11",
+        "price_at_closure": "929.11"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-12",
+        "volume_of_trade": "",
+        "price_at_opening": "930.35",
+        "min_price": "930.35",
+        "max_price": "930.35",
+        "price_at_closure": "930.35"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-11",
+        "volume_of_trade": "",
+        "price_at_opening": "936.86",
+        "min_price": "936.86",
+        "max_price": "936.86",
+        "price_at_closure": "936.86"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-07",
+        "volume_of_trade": "",
+        "price_at_opening": "940.1",
+        "min_price": "940.1",
+        "max_price": "940.1",
+        "price_at_closure": "940.1"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-06",
+        "volume_of_trade": "",
+        "price_at_opening": "937.17",
+        "min_price": "937.17",
+        "max_price": "937.17",
+        "price_at_closure": "937.17"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-05",
+        "volume_of_trade": "",
+        "price_at_opening": "930.57",
+        "min_price": "930.57",
+        "max_price": "930.57",
+        "price_at_closure": "930.57"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-04",
+        "volume_of_trade": "",
+        "price_at_opening": "930.37",
+        "min_price": "930.37",
+        "max_price": "930.37",
+        "price_at_closure": "930.37"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-03-01",
+        "volume_of_trade": "",
+        "price_at_opening": "914.18",
+        "min_price": "914.18",
+        "max_price": "914.18",
+        "price_at_closure": "914.18"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-29",
+        "volume_of_trade": "",
+        "price_at_opening": "909.81",
+        "min_price": "909.81",
+        "max_price": "909.81",
+        "price_at_closure": "909.81"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-28",
+        "volume_of_trade": "",
+        "price_at_opening": "900.67",
+        "min_price": "900.67",
+        "max_price": "900.67",
+        "price_at_closure": "900.67"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-27",
+        "volume_of_trade": "",
+        "price_at_opening": "902.89",
+        "min_price": "902.89",
+        "max_price": "902.89",
+        "price_at_closure": "902.89"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-26",
+        "volume_of_trade": "",
+        "price_at_opening": "903.45",
+        "min_price": "903.45",
+        "max_price": "903.45",
+        "price_at_closure": "903.45"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-22",
+        "volume_of_trade": "",
+        "price_at_opening": "879.33",
+        "min_price": "879.33",
+        "max_price": "879.33",
+        "price_at_closure": "879.33"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-21",
+        "volume_of_trade": "",
+        "price_at_opening": "876.91",
+        "min_price": "876.91",
+        "max_price": "876.91",
+        "price_at_closure": "876.91"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-20",
+        "volume_of_trade": "",
+        "price_at_opening": "908.33",
+        "min_price": "908.33",
+        "max_price": "908.33",
+        "price_at_closure": "908.33"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-19",
+        "volume_of_trade": "",
+        "price_at_opening": "917.12",
+        "min_price": "917.12",
+        "max_price": "917.12",
+        "price_at_closure": "917.12"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-16",
+        "volume_of_trade": "",
+        "price_at_opening": "907.76",
+        "min_price": "907.76",
+        "max_price": "907.76",
+        "price_at_closure": "907.76"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-15",
+        "volume_of_trade": "",
+        "price_at_opening": "914.31",
+        "min_price": "914.31",
+        "max_price": "914.31",
+        "price_at_closure": "914.31"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-14",
+        "volume_of_trade": "",
+        "price_at_opening": "914.33",
+        "min_price": "914.33",
+        "max_price": "914.33",
+        "price_at_closure": "914.33"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-13",
+        "volume_of_trade": "",
+        "price_at_opening": "920.34",
+        "min_price": "920.34",
+        "max_price": "920.34",
+        "price_at_closure": "920.34"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-12",
+        "volume_of_trade": "",
+        "price_at_opening": "904.07",
+        "min_price": "904.07",
+        "max_price": "904.07",
+        "price_at_closure": "904.07"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-09",
+        "volume_of_trade": "",
+        "price_at_opening": "895.08",
+        "min_price": "895.08",
+        "max_price": "895.08",
+        "price_at_closure": "895.08"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-08",
+        "volume_of_trade": "",
+        "price_at_opening": "906.55",
+        "min_price": "906.55",
+        "max_price": "906.55",
+        "price_at_closure": "906.55"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-07",
+        "volume_of_trade": "",
+        "price_at_opening": "910.85",
+        "min_price": "910.85",
+        "max_price": "910.85",
+        "price_at_closure": "910.85"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-06",
+        "volume_of_trade": "",
+        "price_at_opening": "893.69",
+        "min_price": "893.69",
+        "max_price": "893.69",
+        "price_at_closure": "893.69"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-05",
+        "volume_of_trade": "",
+        "price_at_opening": "889.35",
+        "min_price": "889.35",
+        "max_price": "889.35",
+        "price_at_closure": "889.35"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-02",
+        "volume_of_trade": "",
+        "price_at_opening": "889.68",
+        "min_price": "889.68",
+        "max_price": "889.68",
+        "price_at_closure": "889.68"
+    },
+    {
+        "index": "MIPO",
+        "date": "2024-02-01",
         "volume_of_trade": "",
         "price_at_opening": "887.95",
         "min_price": "887.95",
@@ -3673,7 +4573,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-12-01",
+        "date": "2024-01-12",
         "volume_of_trade": "",
         "price_at_opening": "870.34",
         "min_price": "870.34",
@@ -3682,7 +4582,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-11-01",
+        "date": "2024-01-11",
         "volume_of_trade": "",
         "price_at_opening": "866.46",
         "min_price": "866.46",
@@ -3691,7 +4591,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-10-01",
+        "date": "2024-01-10",
         "volume_of_trade": "",
         "price_at_opening": "888.17",
         "min_price": "888.17",
@@ -3700,7 +4600,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-09-01",
+        "date": "2024-01-09",
         "volume_of_trade": "",
         "price_at_opening": "868.84",
         "min_price": "868.84",
@@ -3709,7 +4609,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-08-01",
+        "date": "2024-01-08",
         "volume_of_trade": "",
         "price_at_opening": "835.38",
         "min_price": "835.38",
@@ -3718,7 +4618,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-05-01",
+        "date": "2024-01-05",
         "volume_of_trade": "",
         "price_at_opening": "826.19",
         "min_price": "826.19",
@@ -3727,7 +4627,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-04-01",
+        "date": "2024-01-04",
         "volume_of_trade": "",
         "price_at_opening": "820.53",
         "min_price": "820.53",
@@ -3736,7 +4636,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2024-03-01",
+        "date": "2024-01-03",
         "volume_of_trade": "",
         "price_at_opening": "813.68",
         "min_price": "813.68",
@@ -3871,7 +4771,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-11-12",
+        "date": "2023-12-11",
         "volume_of_trade": "",
         "price_at_opening": "722.77",
         "min_price": "722.77",
@@ -3880,7 +4780,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-08-12",
+        "date": "2023-12-08",
         "volume_of_trade": "",
         "price_at_opening": "743.17",
         "min_price": "743.17",
@@ -3889,7 +4789,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-12",
+        "date": "2023-12-07",
         "volume_of_trade": "",
         "price_at_opening": "739.74",
         "min_price": "739.74",
@@ -3898,7 +4798,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-12",
+        "date": "2023-12-06",
         "volume_of_trade": "",
         "price_at_opening": "741.46",
         "min_price": "741.46",
@@ -3907,7 +4807,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-05-12",
+        "date": "2023-12-05",
         "volume_of_trade": "",
         "price_at_opening": "749.89",
         "min_price": "749.89",
@@ -3916,7 +4816,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-04-12",
+        "date": "2023-12-04",
         "volume_of_trade": "",
         "price_at_opening": "748.83",
         "min_price": "748.83",
@@ -3925,7 +4825,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-01-12",
+        "date": "2023-12-01",
         "volume_of_trade": "",
         "price_at_opening": "766.85",
         "min_price": "766.85",
@@ -4060,7 +4960,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-10-11",
+        "date": "2023-11-10",
         "volume_of_trade": "",
         "price_at_opening": "834.8",
         "min_price": "834.8",
@@ -4069,7 +4969,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-09-11",
+        "date": "2023-11-09",
         "volume_of_trade": "",
         "price_at_opening": "846.07",
         "min_price": "846.07",
@@ -4078,7 +4978,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-08-11",
+        "date": "2023-11-08",
         "volume_of_trade": "",
         "price_at_opening": "852.51",
         "min_price": "852.51",
@@ -4087,7 +4987,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-11",
+        "date": "2023-11-07",
         "volume_of_trade": "",
         "price_at_opening": "857.14",
         "min_price": "857.14",
@@ -4096,7 +4996,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-11",
+        "date": "2023-11-06",
         "volume_of_trade": "",
         "price_at_opening": "859.46",
         "min_price": "859.46",
@@ -4105,7 +5005,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-03-11",
+        "date": "2023-11-03",
         "volume_of_trade": "",
         "price_at_opening": "840.65",
         "min_price": "840.65",
@@ -4114,7 +5014,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-02-11",
+        "date": "2023-11-02",
         "volume_of_trade": "",
         "price_at_opening": "842.04",
         "min_price": "842.04",
@@ -4123,7 +5023,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-01-11",
+        "date": "2023-11-01",
         "volume_of_trade": "",
         "price_at_opening": "847.59",
         "min_price": "847.59",
@@ -4249,7 +5149,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-12-10",
+        "date": "2023-10-12",
         "volume_of_trade": "",
         "price_at_opening": "896.81",
         "min_price": "896.81",
@@ -4258,7 +5158,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-11-10",
+        "date": "2023-10-11",
         "volume_of_trade": "",
         "price_at_opening": "899.04",
         "min_price": "899.04",
@@ -4276,7 +5176,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-09-10",
+        "date": "2023-10-09",
         "volume_of_trade": "",
         "price_at_opening": "902.1",
         "min_price": "902.1",
@@ -4285,7 +5185,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-10",
+        "date": "2023-10-06",
         "volume_of_trade": "",
         "price_at_opening": "887.97",
         "min_price": "887.97",
@@ -4294,7 +5194,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-05-10",
+        "date": "2023-10-05",
         "volume_of_trade": "",
         "price_at_opening": "886.74",
         "min_price": "886.74",
@@ -4303,7 +5203,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-04-10",
+        "date": "2023-10-04",
         "volume_of_trade": "",
         "price_at_opening": "892.24",
         "min_price": "892.24",
@@ -4312,7 +5212,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-03-10",
+        "date": "2023-10-03",
         "volume_of_trade": "",
         "price_at_opening": "893.27",
         "min_price": "893.27",
@@ -4321,7 +5221,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-02-10",
+        "date": "2023-10-02",
         "volume_of_trade": "",
         "price_at_opening": "899.72",
         "min_price": "899.72",
@@ -4447,7 +5347,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-12-09",
+        "date": "2023-09-12",
         "volume_of_trade": "",
         "price_at_opening": "869.76",
         "min_price": "869.76",
@@ -4456,7 +5356,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-11-09",
+        "date": "2023-09-11",
         "volume_of_trade": "",
         "price_at_opening": "852.65",
         "min_price": "852.65",
@@ -4465,7 +5365,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-08-09",
+        "date": "2023-09-08",
         "volume_of_trade": "",
         "price_at_opening": "865.9",
         "min_price": "865.9",
@@ -4474,7 +5374,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-09",
+        "date": "2023-09-07",
         "volume_of_trade": "",
         "price_at_opening": "876.76",
         "min_price": "876.76",
@@ -4483,7 +5383,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-09",
+        "date": "2023-09-06",
         "volume_of_trade": "",
         "price_at_opening": "910.3",
         "min_price": "910.3",
@@ -4492,7 +5392,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-05-09",
+        "date": "2023-09-05",
         "volume_of_trade": "",
         "price_at_opening": "926.52",
         "min_price": "926.52",
@@ -4501,907 +5401,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-04-09",
-        "volume_of_trade": "",
-        "price_at_opening": "931.57",
-        "min_price": "931.57",
-        "max_price": "931.57",
-        "price_at_closure": "931.57"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-01-09",
-        "volume_of_trade": "",
-        "price_at_opening": "926.31",
-        "min_price": "926.31",
-        "max_price": "926.31",
-        "price_at_closure": "926.31"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-31",
-        "volume_of_trade": "",
-        "price_at_opening": "925.52",
-        "min_price": "925.52",
-        "max_price": "925.52",
-        "price_at_closure": "925.52"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-30",
-        "volume_of_trade": "",
-        "price_at_opening": "915.5",
-        "min_price": "915.5",
-        "max_price": "915.5",
-        "price_at_closure": "915.5"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-29",
-        "volume_of_trade": "",
-        "price_at_opening": "916.06",
-        "min_price": "916.06",
-        "max_price": "916.06",
-        "price_at_closure": "916.06"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-28",
-        "volume_of_trade": "",
-        "price_at_opening": "910.54",
-        "min_price": "910.54",
-        "max_price": "910.54",
-        "price_at_closure": "910.54"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-25",
-        "volume_of_trade": "",
-        "price_at_opening": "895.99",
-        "min_price": "895.99",
-        "max_price": "895.99",
-        "price_at_closure": "895.99"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-24",
-        "volume_of_trade": "",
-        "price_at_opening": "890.51",
-        "min_price": "890.51",
-        "max_price": "890.51",
-        "price_at_closure": "890.51"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-23",
-        "volume_of_trade": "",
-        "price_at_opening": "894.95",
-        "min_price": "894.95",
-        "max_price": "894.95",
-        "price_at_closure": "894.95"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-22",
-        "volume_of_trade": "",
-        "price_at_opening": "900.53",
-        "min_price": "900.53",
-        "max_price": "900.53",
-        "price_at_closure": "900.53"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-21",
-        "volume_of_trade": "",
-        "price_at_opening": "899.9",
-        "min_price": "899.9",
-        "max_price": "899.9",
-        "price_at_closure": "899.9"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-18",
-        "volume_of_trade": "",
-        "price_at_opening": "877.79",
-        "min_price": "877.79",
-        "max_price": "877.79",
-        "price_at_closure": "877.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-17",
-        "volume_of_trade": "",
-        "price_at_opening": "857.81",
-        "min_price": "857.81",
-        "max_price": "857.81",
-        "price_at_closure": "857.81"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-16",
-        "volume_of_trade": "",
-        "price_at_opening": "845.73",
-        "min_price": "845.73",
-        "max_price": "845.73",
-        "price_at_closure": "845.73"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-15",
-        "volume_of_trade": "",
-        "price_at_opening": "868.13",
-        "min_price": "868.13",
-        "max_price": "868.13",
-        "price_at_closure": "868.13"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-14",
-        "volume_of_trade": "",
-        "price_at_opening": "859.59",
-        "min_price": "859.59",
-        "max_price": "859.59",
-        "price_at_closure": "859.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-11-08",
-        "volume_of_trade": "",
-        "price_at_opening": "878.88",
-        "min_price": "878.88",
-        "max_price": "878.88",
-        "price_at_closure": "878.88"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-10-08",
-        "volume_of_trade": "",
-        "price_at_opening": "865.89",
-        "min_price": "865.89",
-        "max_price": "865.89",
-        "price_at_closure": "865.89"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-09-08",
-        "volume_of_trade": "",
-        "price_at_opening": "855.49",
-        "min_price": "855.49",
-        "max_price": "855.49",
-        "price_at_closure": "855.49"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-08",
-        "volume_of_trade": "",
-        "price_at_opening": "847.54",
-        "min_price": "847.54",
-        "max_price": "847.54",
-        "price_at_closure": "847.54"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-08",
-        "volume_of_trade": "",
-        "price_at_opening": "851.97",
-        "min_price": "851.97",
-        "max_price": "851.97",
-        "price_at_closure": "851.97"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-08",
-        "volume_of_trade": "",
-        "price_at_opening": "843.22",
-        "min_price": "843.22",
-        "max_price": "843.22",
-        "price_at_closure": "843.22"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-03-08",
-        "volume_of_trade": "",
-        "price_at_opening": "869.56",
-        "min_price": "869.56",
-        "max_price": "869.56",
-        "price_at_closure": "869.56"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-02-08",
-        "volume_of_trade": "",
-        "price_at_opening": "865.74",
-        "min_price": "865.74",
-        "max_price": "865.74",
-        "price_at_closure": "865.74"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-01-08",
-        "volume_of_trade": "",
-        "price_at_opening": "867.38",
-        "min_price": "867.38",
-        "max_price": "867.38",
-        "price_at_closure": "867.38"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-31",
-        "volume_of_trade": "",
-        "price_at_opening": "867.97",
-        "min_price": "867.97",
-        "max_price": "867.97",
-        "price_at_closure": "867.97"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-28",
-        "volume_of_trade": "",
-        "price_at_opening": "845.84",
-        "min_price": "845.84",
-        "max_price": "845.84",
-        "price_at_closure": "845.84"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-27",
-        "volume_of_trade": "",
-        "price_at_opening": "852.19",
-        "min_price": "852.19",
-        "max_price": "852.19",
-        "price_at_closure": "852.19"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-26",
-        "volume_of_trade": "",
-        "price_at_opening": "840.79",
-        "min_price": "840.79",
-        "max_price": "840.79",
-        "price_at_closure": "840.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-25",
-        "volume_of_trade": "",
-        "price_at_opening": "819.56",
-        "min_price": "819.56",
-        "max_price": "819.56",
-        "price_at_closure": "819.56"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-24",
-        "volume_of_trade": "",
-        "price_at_opening": "796.4",
-        "min_price": "796.4",
-        "max_price": "796.4",
-        "price_at_closure": "796.4"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-21",
-        "volume_of_trade": "",
-        "price_at_opening": "780.43",
-        "min_price": "780.43",
-        "max_price": "780.43",
-        "price_at_closure": "780.43"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-20",
-        "volume_of_trade": "",
-        "price_at_opening": "777.68",
-        "min_price": "777.68",
-        "max_price": "777.68",
-        "price_at_closure": "777.68"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-19",
-        "volume_of_trade": "",
-        "price_at_opening": "790.1",
-        "min_price": "790.1",
-        "max_price": "790.1",
-        "price_at_closure": "790.1"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-18",
-        "volume_of_trade": "",
-        "price_at_opening": "792.67",
-        "min_price": "792.67",
-        "max_price": "792.67",
-        "price_at_closure": "792.67"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-17",
-        "volume_of_trade": "",
-        "price_at_opening": "784.55",
-        "min_price": "784.55",
-        "max_price": "784.55",
-        "price_at_closure": "784.55"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-14",
-        "volume_of_trade": "",
-        "price_at_opening": "775.89",
-        "min_price": "775.89",
-        "max_price": "775.89",
-        "price_at_closure": "775.89"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-13",
-        "volume_of_trade": "",
-        "price_at_opening": "771.11",
-        "min_price": "771.11",
-        "max_price": "771.11",
-        "price_at_closure": "771.11"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-12-07",
-        "volume_of_trade": "",
-        "price_at_opening": "772.24",
-        "min_price": "772.24",
-        "max_price": "772.24",
-        "price_at_closure": "772.24"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-11-07",
-        "volume_of_trade": "",
-        "price_at_opening": "761.15",
-        "min_price": "761.15",
-        "max_price": "761.15",
-        "price_at_closure": "761.15"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-10-07",
-        "volume_of_trade": "",
-        "price_at_opening": "753.79",
-        "min_price": "753.79",
-        "max_price": "753.79",
-        "price_at_closure": "753.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-07",
-        "volume_of_trade": "",
-        "price_at_opening": "746.55",
-        "min_price": "746.55",
-        "max_price": "746.55",
-        "price_at_closure": "746.55"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-07",
-        "volume_of_trade": "",
-        "price_at_opening": "749.37",
-        "min_price": "749.37",
-        "max_price": "749.37",
-        "price_at_closure": "749.37"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-07",
-        "volume_of_trade": "",
-        "price_at_opening": "753.3",
-        "min_price": "753.3",
-        "max_price": "753.3",
-        "price_at_closure": "753.3"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-07",
-        "volume_of_trade": "",
-        "price_at_opening": "751.23",
-        "min_price": "751.23",
-        "max_price": "751.23",
-        "price_at_closure": "751.23"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-03-07",
-        "volume_of_trade": "",
-        "price_at_opening": "754.83",
-        "min_price": "754.83",
-        "max_price": "754.83",
-        "price_at_closure": "754.83"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-30",
-        "volume_of_trade": "",
-        "price_at_opening": "749.87",
-        "min_price": "749.87",
-        "max_price": "749.87",
-        "price_at_closure": "749.87"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-29",
-        "volume_of_trade": "",
-        "price_at_opening": "750.17",
-        "min_price": "750.17",
-        "max_price": "750.17",
-        "price_at_closure": "750.17"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-28",
-        "volume_of_trade": "",
-        "price_at_opening": "745.17",
-        "min_price": "745.17",
-        "max_price": "745.17",
-        "price_at_closure": "745.17"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-27",
-        "volume_of_trade": "",
-        "price_at_opening": "734.95",
-        "min_price": "734.95",
-        "max_price": "734.95",
-        "price_at_closure": "734.95"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-26",
-        "volume_of_trade": "",
-        "price_at_opening": "728.01",
-        "min_price": "728.01",
-        "max_price": "728.01",
-        "price_at_closure": "728.01"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-23",
-        "volume_of_trade": "",
-        "price_at_opening": "739",
-        "min_price": "739",
-        "max_price": "739",
-        "price_at_closure": "739"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-22",
-        "volume_of_trade": "",
-        "price_at_opening": "751.58",
-        "min_price": "751.58",
-        "max_price": "751.58",
-        "price_at_closure": "751.58"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-21",
-        "volume_of_trade": "",
-        "price_at_opening": "750.2",
-        "min_price": "750.2",
-        "max_price": "750.2",
-        "price_at_closure": "750.2"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-20",
-        "volume_of_trade": "",
-        "price_at_opening": "740.28",
-        "min_price": "740.28",
-        "max_price": "740.28",
-        "price_at_closure": "740.28"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-19",
-        "volume_of_trade": "",
-        "price_at_opening": "733.95",
-        "min_price": "733.95",
-        "max_price": "733.95",
-        "price_at_closure": "733.95"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-16",
-        "volume_of_trade": "",
-        "price_at_opening": "735.03",
-        "min_price": "735.03",
-        "max_price": "735.03",
-        "price_at_closure": "735.03"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-15",
-        "volume_of_trade": "",
-        "price_at_opening": "736.79",
-        "min_price": "736.79",
-        "max_price": "736.79",
-        "price_at_closure": "736.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-14",
-        "volume_of_trade": "",
-        "price_at_opening": "732.95",
-        "min_price": "732.95",
-        "max_price": "732.95",
-        "price_at_closure": "732.95"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-13",
-        "volume_of_trade": "",
-        "price_at_opening": "727.38",
-        "min_price": "727.38",
-        "max_price": "727.38",
-        "price_at_closure": "727.38"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-09-06",
-        "volume_of_trade": "",
-        "price_at_opening": "715.58",
-        "min_price": "715.58",
-        "max_price": "715.58",
-        "price_at_closure": "715.58"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-06",
-        "volume_of_trade": "",
-        "price_at_opening": "713.88",
-        "min_price": "713.88",
-        "max_price": "713.88",
-        "price_at_closure": "713.88"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-07-06",
-        "volume_of_trade": "",
-        "price_at_opening": "706.16",
-        "min_price": "706.16",
-        "max_price": "706.16",
-        "price_at_closure": "706.16"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-06-06",
-        "volume_of_trade": "",
-        "price_at_opening": "690.64",
-        "min_price": "690.64",
-        "max_price": "690.64",
-        "price_at_closure": "690.64"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-06",
-        "volume_of_trade": "",
-        "price_at_opening": "696.2",
-        "min_price": "696.2",
-        "max_price": "696.2",
-        "price_at_closure": "696.2"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-02-06",
-        "volume_of_trade": "",
-        "price_at_opening": "685.21",
-        "min_price": "685.21",
-        "max_price": "685.21",
-        "price_at_closure": "685.21"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-01-06",
-        "volume_of_trade": "",
-        "price_at_opening": "671.49",
-        "min_price": "671.49",
-        "max_price": "671.49",
-        "price_at_closure": "671.49"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-31",
-        "volume_of_trade": "",
-        "price_at_opening": "664.35",
-        "min_price": "664.35",
-        "max_price": "664.35",
-        "price_at_closure": "664.35"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-30",
-        "volume_of_trade": "",
-        "price_at_opening": "655.32",
-        "min_price": "655.32",
-        "max_price": "655.32",
-        "price_at_closure": "655.32"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-29",
-        "volume_of_trade": "",
-        "price_at_opening": "651.59",
-        "min_price": "651.59",
-        "max_price": "651.59",
-        "price_at_closure": "651.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-26",
-        "volume_of_trade": "",
-        "price_at_opening": "631.16",
-        "min_price": "631.16",
-        "max_price": "631.16",
-        "price_at_closure": "631.16"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-25",
-        "volume_of_trade": "",
-        "price_at_opening": "617.19",
-        "min_price": "617.19",
-        "max_price": "617.19",
-        "price_at_closure": "617.19"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-24",
-        "volume_of_trade": "",
-        "price_at_opening": "624.96",
-        "min_price": "624.96",
-        "max_price": "624.96",
-        "price_at_closure": "624.96"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-23",
-        "volume_of_trade": "",
-        "price_at_opening": "623.52",
-        "min_price": "623.52",
-        "max_price": "623.52",
-        "price_at_closure": "623.52"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-22",
-        "volume_of_trade": "",
-        "price_at_opening": "626.62",
-        "min_price": "626.62",
-        "max_price": "626.62",
-        "price_at_closure": "626.62"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-19",
-        "volume_of_trade": "",
-        "price_at_opening": "622.05",
-        "min_price": "622.05",
-        "max_price": "622.05",
-        "price_at_closure": "622.05"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-18",
-        "volume_of_trade": "",
-        "price_at_opening": "622.54",
-        "min_price": "622.54",
-        "max_price": "622.54",
-        "price_at_closure": "622.54"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-17",
-        "volume_of_trade": "",
-        "price_at_opening": "623.41",
-        "min_price": "623.41",
-        "max_price": "623.41",
-        "price_at_closure": "623.41"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-16",
-        "volume_of_trade": "",
-        "price_at_opening": "620.38",
-        "min_price": "620.38",
-        "max_price": "620.38",
-        "price_at_closure": "620.38"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-15",
-        "volume_of_trade": "",
-        "price_at_opening": "619.79",
-        "min_price": "619.79",
-        "max_price": "619.79",
-        "price_at_closure": "619.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-12-05",
-        "volume_of_trade": "",
-        "price_at_opening": "611.13",
-        "min_price": "611.13",
-        "max_price": "611.13",
-        "price_at_closure": "611.13"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-11-05",
-        "volume_of_trade": "",
-        "price_at_opening": "620.34",
-        "min_price": "620.34",
-        "max_price": "620.34",
-        "price_at_closure": "620.34"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-10-05",
-        "volume_of_trade": "",
-        "price_at_opening": "609.8",
-        "min_price": "609.8",
-        "max_price": "609.8",
-        "price_at_closure": "609.8"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-08-05",
-        "volume_of_trade": "",
-        "price_at_opening": "593.34",
-        "min_price": "593.34",
-        "max_price": "593.34",
-        "price_at_closure": "593.34"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-05-05",
-        "volume_of_trade": "",
-        "price_at_opening": "601.33",
-        "min_price": "601.33",
-        "max_price": "601.33",
-        "price_at_closure": "601.33"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-05",
-        "volume_of_trade": "",
-        "price_at_opening": "595.78",
-        "min_price": "595.78",
-        "max_price": "595.78",
-        "price_at_closure": "595.78"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-03-05",
-        "volume_of_trade": "",
-        "price_at_opening": "596.61",
-        "min_price": "596.61",
-        "max_price": "596.61",
-        "price_at_closure": "596.61"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-02-05",
-        "volume_of_trade": "",
-        "price_at_opening": "610.41",
-        "min_price": "610.41",
-        "max_price": "610.41",
-        "price_at_closure": "610.41"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-28",
-        "volume_of_trade": "",
-        "price_at_opening": "634.33",
-        "min_price": "634.33",
-        "max_price": "634.33",
-        "price_at_closure": "634.33"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-27",
-        "volume_of_trade": "",
-        "price_at_opening": "642.29",
-        "min_price": "642.29",
-        "max_price": "642.29",
-        "price_at_closure": "642.29"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-26",
-        "volume_of_trade": "",
-        "price_at_opening": "646.53",
-        "min_price": "646.53",
-        "max_price": "646.53",
-        "price_at_closure": "646.53"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-25",
-        "volume_of_trade": "",
-        "price_at_opening": "644.78",
-        "min_price": "644.78",
-        "max_price": "644.78",
-        "price_at_closure": "644.78"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-24",
-        "volume_of_trade": "",
-        "price_at_opening": "641.18",
-        "min_price": "641.18",
-        "max_price": "641.18",
-        "price_at_closure": "641.18"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-21",
-        "volume_of_trade": "",
-        "price_at_opening": "635.23",
-        "min_price": "635.23",
-        "max_price": "635.23",
-        "price_at_closure": "635.23"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-20",
-        "volume_of_trade": "",
-        "price_at_opening": "636.07",
-        "min_price": "636.07",
-        "max_price": "636.07",
-        "price_at_closure": "636.07"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-19",
-        "volume_of_trade": "",
-        "price_at_opening": "638.45",
-        "min_price": "638.45",
-        "max_price": "638.45",
-        "price_at_closure": "638.45"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-18",
-        "volume_of_trade": "",
-        "price_at_opening": "644.24",
-        "min_price": "644.24",
-        "max_price": "644.24",
-        "price_at_closure": "644.24"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-17",
-        "volume_of_trade": "",
-        "price_at_opening": "644.16",
-        "min_price": "644.16",
-        "max_price": "644.16",
-        "price_at_closure": "644.16"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-14",
-        "volume_of_trade": "",
-        "price_at_opening": "637.79",
-        "min_price": "637.79",
-        "max_price": "637.79",
-        "price_at_closure": "637.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-04-13",
-        "volume_of_trade": "",
-        "price_at_opening": "629.91",
-        "min_price": "629.91",
-        "max_price": "629.91",
-        "price_at_closure": "629.91"
-    },
-    {
-        "index": "MIPO",
-        "date": "2023-12-04",
+        "date": "2023-04-12",
         "volume_of_trade": "",
         "price_at_opening": "642.84",
         "min_price": "642.84",
@@ -5410,7 +5410,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-11-04",
+        "date": "2023-04-11",
         "volume_of_trade": "",
         "price_at_opening": "644.25",
         "min_price": "644.25",
@@ -5419,7 +5419,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-10-04",
+        "date": "2023-04-10",
         "volume_of_trade": "",
         "price_at_opening": "639.43",
         "min_price": "639.43",
@@ -5428,7 +5428,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-04",
+        "date": "2023-04-07",
         "volume_of_trade": "",
         "price_at_opening": "621.52",
         "min_price": "621.52",
@@ -5437,7 +5437,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-04",
+        "date": "2023-04-06",
         "volume_of_trade": "",
         "price_at_opening": "617.8",
         "min_price": "617.8",
@@ -5446,7 +5446,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-05-04",
+        "date": "2023-04-05",
         "volume_of_trade": "",
         "price_at_opening": "600.88",
         "min_price": "600.88",
@@ -5464,7 +5464,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-03-04",
+        "date": "2023-04-03",
         "volume_of_trade": "",
         "price_at_opening": "596.27",
         "min_price": "596.27",
@@ -5608,7 +5608,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-10-03",
+        "date": "2023-03-10",
         "volume_of_trade": "",
         "price_at_opening": "566.35",
         "min_price": "566.35",
@@ -5617,7 +5617,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-09-03",
+        "date": "2023-03-09",
         "volume_of_trade": "",
         "price_at_opening": "567.45",
         "min_price": "567.45",
@@ -5626,7 +5626,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-03",
+        "date": "2023-03-07",
         "volume_of_trade": "",
         "price_at_opening": "559.41",
         "min_price": "559.41",
@@ -5635,7 +5635,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-03",
+        "date": "2023-03-06",
         "volume_of_trade": "",
         "price_at_opening": "552.33",
         "min_price": "552.33",
@@ -5653,7 +5653,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-02-03",
+        "date": "2023-03-02",
         "volume_of_trade": "",
         "price_at_opening": "535.8",
         "min_price": "535.8",
@@ -5662,7 +5662,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-01-03",
+        "date": "2023-03-01",
         "volume_of_trade": "",
         "price_at_opening": "542.46",
         "min_price": "542.46",
@@ -5770,7 +5770,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-10-02",
+        "date": "2023-02-10",
         "volume_of_trade": "",
         "price_at_opening": "537.74",
         "min_price": "537.74",
@@ -5779,7 +5779,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-09-02",
+        "date": "2023-02-09",
         "volume_of_trade": "",
         "price_at_opening": "537.08",
         "min_price": "537.08",
@@ -5788,7 +5788,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-08-02",
+        "date": "2023-02-08",
         "volume_of_trade": "",
         "price_at_opening": "534.06",
         "min_price": "534.06",
@@ -5797,7 +5797,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-07-02",
+        "date": "2023-02-07",
         "volume_of_trade": "",
         "price_at_opening": "536.21",
         "min_price": "536.21",
@@ -5806,7 +5806,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-02",
+        "date": "2023-02-06",
         "volume_of_trade": "",
         "price_at_opening": "533.29",
         "min_price": "533.29",
@@ -5815,7 +5815,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-03-02",
+        "date": "2023-02-03",
         "volume_of_trade": "",
         "price_at_opening": "522.44",
         "min_price": "522.44",
@@ -5833,7 +5833,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-01-02",
+        "date": "2023-02-01",
         "volume_of_trade": "",
         "price_at_opening": "519.97",
         "min_price": "519.97",
@@ -5959,7 +5959,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-12-01",
+        "date": "2023-01-12",
         "volume_of_trade": "",
         "price_at_opening": "490.31",
         "min_price": "490.31",
@@ -5968,7 +5968,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-11-01",
+        "date": "2023-01-11",
         "volume_of_trade": "",
         "price_at_opening": "483.97",
         "min_price": "483.97",
@@ -5977,7 +5977,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-10-01",
+        "date": "2023-01-10",
         "volume_of_trade": "",
         "price_at_opening": "477.44",
         "min_price": "477.44",
@@ -5986,7 +5986,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-09-01",
+        "date": "2023-01-09",
         "volume_of_trade": "",
         "price_at_opening": "474.34",
         "min_price": "474.34",
@@ -5995,7 +5995,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-06-01",
+        "date": "2023-01-06",
         "volume_of_trade": "",
         "price_at_opening": "468.26",
         "min_price": "468.26",
@@ -6004,7 +6004,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-05-01",
+        "date": "2023-01-05",
         "volume_of_trade": "",
         "price_at_opening": "470.21",
         "min_price": "470.21",
@@ -6013,7 +6013,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-04-01",
+        "date": "2023-01-04",
         "volume_of_trade": "",
         "price_at_opening": "470.02",
         "min_price": "470.02",
@@ -6022,7 +6022,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2023-03-01",
+        "date": "2023-01-03",
         "volume_of_trade": "",
         "price_at_opening": "470.8",
         "min_price": "470.8",
@@ -6166,7 +6166,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-09-12",
+        "date": "2022-12-09",
         "volume_of_trade": "",
         "price_at_opening": "480.75",
         "min_price": "480.75",
@@ -6175,7 +6175,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-08-12",
+        "date": "2022-12-08",
         "volume_of_trade": "",
         "price_at_opening": "478.97",
         "min_price": "478.97",
@@ -6184,7 +6184,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-07-12",
+        "date": "2022-12-07",
         "volume_of_trade": "",
         "price_at_opening": "482.38",
         "min_price": "482.38",
@@ -6193,7 +6193,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-06-12",
+        "date": "2022-12-06",
         "volume_of_trade": "",
         "price_at_opening": "486.36",
         "min_price": "486.36",
@@ -6202,7 +6202,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-05-12",
+        "date": "2022-12-05",
         "volume_of_trade": "",
         "price_at_opening": "485.48",
         "min_price": "485.48",
@@ -6211,7 +6211,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-02-12",
+        "date": "2022-12-02",
         "volume_of_trade": "",
         "price_at_opening": "484.3",
         "min_price": "484.3",
@@ -6220,7 +6220,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-01-12",
+        "date": "2022-12-01",
         "volume_of_trade": "",
         "price_at_opening": "487.06",
         "min_price": "487.06",
@@ -6355,7 +6355,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-10-11",
+        "date": "2022-11-10",
         "volume_of_trade": "",
         "price_at_opening": "490.48",
         "min_price": "490.48",
@@ -6364,7 +6364,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-09-11",
+        "date": "2022-11-09",
         "volume_of_trade": "",
         "price_at_opening": "486.79",
         "min_price": "486.79",
@@ -6373,7 +6373,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-08-11",
+        "date": "2022-11-08",
         "volume_of_trade": "",
         "price_at_opening": "496.25",
         "min_price": "496.25",
@@ -6382,7 +6382,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-07-11",
+        "date": "2022-11-07",
         "volume_of_trade": "",
         "price_at_opening": "502.72",
         "min_price": "502.72",
@@ -6391,7 +6391,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-03-11",
+        "date": "2022-11-03",
         "volume_of_trade": "",
         "price_at_opening": "493.48",
         "min_price": "493.48",
@@ -6400,7 +6400,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-02-11",
+        "date": "2022-11-02",
         "volume_of_trade": "",
         "price_at_opening": "505.03",
         "min_price": "505.03",
@@ -6409,7 +6409,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-01-11",
+        "date": "2022-11-01",
         "volume_of_trade": "",
         "price_at_opening": "509.11",
         "min_price": "509.11",
@@ -6535,7 +6535,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-12-10",
+        "date": "2022-10-12",
         "volume_of_trade": "",
         "price_at_opening": "450.26",
         "min_price": "450.26",
@@ -6544,7 +6544,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-11-10",
+        "date": "2022-10-11",
         "volume_of_trade": "",
         "price_at_opening": "443.65",
         "min_price": "443.65",
@@ -6562,7 +6562,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-07-10",
+        "date": "2022-10-07",
         "volume_of_trade": "",
         "price_at_opening": "427",
         "min_price": "427",
@@ -6571,7 +6571,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-06-10",
+        "date": "2022-10-06",
         "volume_of_trade": "",
         "price_at_opening": "444.17",
         "min_price": "444.17",
@@ -6580,7 +6580,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-05-10",
+        "date": "2022-10-05",
         "volume_of_trade": "",
         "price_at_opening": "442.04",
         "min_price": "442.04",
@@ -6589,7 +6589,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-04-10",
+        "date": "2022-10-04",
         "volume_of_trade": "",
         "price_at_opening": "449.72",
         "min_price": "449.72",
@@ -6598,7 +6598,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-03-10",
+        "date": "2022-10-03",
         "volume_of_trade": "",
         "price_at_opening": "443.19",
         "min_price": "443.19",
@@ -6733,7 +6733,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-12-09",
+        "date": "2022-09-12",
         "volume_of_trade": "",
         "price_at_opening": "584.14",
         "min_price": "584.14",
@@ -6751,7 +6751,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-08-09",
+        "date": "2022-09-08",
         "volume_of_trade": "",
         "price_at_opening": "576.42",
         "min_price": "576.42",
@@ -6760,7 +6760,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-07-09",
+        "date": "2022-09-07",
         "volume_of_trade": "",
         "price_at_opening": "577.76",
         "min_price": "577.76",
@@ -6769,7 +6769,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-06-09",
+        "date": "2022-09-06",
         "volume_of_trade": "",
         "price_at_opening": "581.82",
         "min_price": "581.82",
@@ -6778,7 +6778,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-05-09",
+        "date": "2022-09-05",
         "volume_of_trade": "",
         "price_at_opening": "591.28",
         "min_price": "591.28",
@@ -6787,7 +6787,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-02-09",
+        "date": "2022-09-02",
         "volume_of_trade": "",
         "price_at_opening": "586.86",
         "min_price": "586.86",
@@ -6796,7 +6796,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-01-09",
+        "date": "2022-09-01",
         "volume_of_trade": "",
         "price_at_opening": "583.24",
         "min_price": "583.24",
@@ -6922,7 +6922,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-12-08",
+        "date": "2022-08-12",
         "volume_of_trade": "",
         "price_at_opening": "531.73",
         "min_price": "531.73",
@@ -6931,7 +6931,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-11-08",
+        "date": "2022-08-11",
         "volume_of_trade": "",
         "price_at_opening": "529.05",
         "min_price": "529.05",
@@ -6940,7 +6940,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-10-08",
+        "date": "2022-08-10",
         "volume_of_trade": "",
         "price_at_opening": "523.38",
         "min_price": "523.38",
@@ -6949,7 +6949,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-09-08",
+        "date": "2022-08-09",
         "volume_of_trade": "",
         "price_at_opening": "511.32",
         "min_price": "511.32",
@@ -6967,7 +6967,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-05-08",
+        "date": "2022-08-05",
         "volume_of_trade": "",
         "price_at_opening": "489.56",
         "min_price": "489.56",
@@ -6976,7 +6976,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-04-08",
+        "date": "2022-08-04",
         "volume_of_trade": "",
         "price_at_opening": "502.76",
         "min_price": "502.76",
@@ -6985,7 +6985,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-03-08",
+        "date": "2022-08-03",
         "volume_of_trade": "",
         "price_at_opening": "505.04",
         "min_price": "505.04",
@@ -6994,7 +6994,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-02-08",
+        "date": "2022-08-02",
         "volume_of_trade": "",
         "price_at_opening": "508.28",
         "min_price": "508.28",
@@ -7003,7 +7003,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-01-08",
+        "date": "2022-08-01",
         "volume_of_trade": "",
         "price_at_opening": "510.17",
         "min_price": "510.17",
@@ -7129,7 +7129,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-12-07",
+        "date": "2022-07-12",
         "volume_of_trade": "",
         "price_at_opening": "471.38",
         "min_price": "471.38",
@@ -7138,7 +7138,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-11-07",
+        "date": "2022-07-11",
         "volume_of_trade": "",
         "price_at_opening": "482.45",
         "min_price": "482.45",
@@ -7147,7 +7147,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-08-07",
+        "date": "2022-07-08",
         "volume_of_trade": "",
         "price_at_opening": "494.44",
         "min_price": "494.44",
@@ -7165,7 +7165,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-06-07",
+        "date": "2022-07-06",
         "volume_of_trade": "",
         "price_at_opening": "471.58",
         "min_price": "471.58",
@@ -7174,7 +7174,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-05-07",
+        "date": "2022-07-05",
         "volume_of_trade": "",
         "price_at_opening": "468.39",
         "min_price": "468.39",
@@ -7183,7 +7183,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-04-07",
+        "date": "2022-07-04",
         "volume_of_trade": "",
         "price_at_opening": "469.56",
         "min_price": "469.56",
@@ -7192,7 +7192,7 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-01-07",
+        "date": "2022-07-01",
         "volume_of_trade": "",
         "price_at_opening": "475.85",
         "min_price": "475.85",
@@ -7201,902 +7201,902 @@
     },
     {
         "index": "MIPO",
-        "date": "2022-06-30",
+        "date": "2022-11-18",
         "volume_of_trade": "",
-        "price_at_opening": "465.97",
-        "min_price": "465.97",
-        "max_price": "465.97",
-        "price_at_closure": "465.97"
+        "price_at_opening": "492.46",
+        "min_price": "492.46",
+        "max_price": "492.46",
+        "price_at_closure": "492.46"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-29",
+        "date": "2022-11-17",
         "volume_of_trade": "",
-        "price_at_opening": "476.11",
-        "min_price": "476.11",
-        "max_price": "476.11",
-        "price_at_closure": "476.11"
+        "price_at_opening": "493.27",
+        "min_price": "493.27",
+        "max_price": "493.27",
+        "price_at_closure": "493.27"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-28",
+        "date": "2022-11-16",
         "volume_of_trade": "",
-        "price_at_opening": "486.95",
-        "min_price": "486.95",
-        "max_price": "486.95",
-        "price_at_closure": "486.95"
+        "price_at_opening": "486.72",
+        "min_price": "486.72",
+        "max_price": "486.72",
+        "price_at_closure": "486.72"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-27",
+        "date": "2022-11-15",
         "volume_of_trade": "",
-        "price_at_opening": "484.54",
-        "min_price": "484.54",
-        "max_price": "484.54",
-        "price_at_closure": "484.54"
+        "price_at_opening": "491.44",
+        "min_price": "491.44",
+        "max_price": "491.44",
+        "price_at_closure": "491.44"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-24",
+        "date": "2022-11-14",
         "volume_of_trade": "",
-        "price_at_opening": "467.96",
-        "min_price": "467.96",
-        "max_price": "467.96",
-        "price_at_closure": "467.96"
+        "price_at_opening": "492.12",
+        "min_price": "492.12",
+        "max_price": "492.12",
+        "price_at_closure": "492.12"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-23",
+        "date": "2022-11-11",
         "volume_of_trade": "",
-        "price_at_opening": "464.92",
-        "min_price": "464.92",
-        "max_price": "464.92",
-        "price_at_closure": "464.92"
+        "price_at_opening": "487.24",
+        "min_price": "487.24",
+        "max_price": "487.24",
+        "price_at_closure": "487.24"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-22",
+        "date": "2022-11-10",
         "volume_of_trade": "",
-        "price_at_opening": "462.3",
-        "min_price": "462.3",
-        "max_price": "462.3",
-        "price_at_closure": "462.3"
+        "price_at_opening": "490.48",
+        "min_price": "490.48",
+        "max_price": "490.48",
+        "price_at_closure": "490.48"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-21",
+        "date": "2022-11-09",
         "volume_of_trade": "",
-        "price_at_opening": "470.48",
-        "min_price": "470.48",
-        "max_price": "470.48",
-        "price_at_closure": "470.48"
+        "price_at_opening": "486.79",
+        "min_price": "486.79",
+        "max_price": "486.79",
+        "price_at_closure": "486.79"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-20",
+        "date": "2022-11-08",
         "volume_of_trade": "",
-        "price_at_opening": "473.48",
-        "min_price": "473.48",
-        "max_price": "473.48",
-        "price_at_closure": "473.48"
+        "price_at_opening": "496.25",
+        "min_price": "496.25",
+        "max_price": "496.25",
+        "price_at_closure": "496.25"
     },
     {
         "index": "MIPO",
-        "date": "2022-06-17",
+        "date": "2022-11-07",
         "volume_of_trade": "",
-        "price_at_opening": "467.87",
-        "min_price": "467.87",
-        "max_price": "467.87",
-        "price_at_closure": "467.87"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-16",
-        "volume_of_trade": "",
-        "price_at_opening": "468.87",
-        "min_price": "468.87",
-        "max_price": "468.87",
-        "price_at_closure": "468.87"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-15",
-        "volume_of_trade": "",
-        "price_at_opening": "454.43",
-        "min_price": "454.43",
-        "max_price": "454.43",
-        "price_at_closure": "454.43"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-14",
-        "volume_of_trade": "",
-        "price_at_opening": "448.75",
-        "min_price": "448.75",
-        "max_price": "448.75",
-        "price_at_closure": "448.75"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-10-06",
-        "volume_of_trade": "",
-        "price_at_opening": "453.74",
-        "min_price": "453.74",
-        "max_price": "453.74",
-        "price_at_closure": "453.74"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-09-06",
-        "volume_of_trade": "",
-        "price_at_opening": "462.05",
-        "min_price": "462.05",
-        "max_price": "462.05",
-        "price_at_closure": "462.05"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-08-06",
-        "volume_of_trade": "",
-        "price_at_opening": "469.7",
-        "min_price": "469.7",
-        "max_price": "469.7",
-        "price_at_closure": "469.7"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-07-06",
-        "volume_of_trade": "",
-        "price_at_opening": "467.51",
-        "min_price": "467.51",
-        "max_price": "467.51",
-        "price_at_closure": "467.51"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-06",
-        "volume_of_trade": "",
-        "price_at_opening": "465.4",
-        "min_price": "465.4",
-        "max_price": "465.4",
-        "price_at_closure": "465.4"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-06",
-        "volume_of_trade": "",
-        "price_at_opening": "473.24",
-        "min_price": "473.24",
-        "max_price": "473.24",
-        "price_at_closure": "473.24"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-06",
-        "volume_of_trade": "",
-        "price_at_opening": "481.56",
-        "min_price": "481.56",
-        "max_price": "481.56",
-        "price_at_closure": "481.56"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-01-06",
-        "volume_of_trade": "",
-        "price_at_opening": "487.03",
-        "min_price": "487.03",
-        "max_price": "487.03",
-        "price_at_closure": "487.03"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-31",
-        "volume_of_trade": "",
-        "price_at_opening": "489.07",
-        "min_price": "489.07",
-        "max_price": "489.07",
-        "price_at_closure": "489.07"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-30",
-        "volume_of_trade": "",
-        "price_at_opening": "498.15",
-        "min_price": "498.15",
-        "max_price": "498.15",
-        "price_at_closure": "498.15"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-27",
-        "volume_of_trade": "",
-        "price_at_opening": "502.99",
-        "min_price": "502.99",
-        "max_price": "502.99",
-        "price_at_closure": "502.99"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-26",
-        "volume_of_trade": "",
-        "price_at_opening": "503.87",
-        "min_price": "503.87",
-        "max_price": "503.87",
-        "price_at_closure": "503.87"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-25",
-        "volume_of_trade": "",
-        "price_at_opening": "504.33",
-        "min_price": "504.33",
-        "max_price": "504.33",
-        "price_at_closure": "504.33"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-24",
-        "volume_of_trade": "",
-        "price_at_opening": "498.57",
-        "min_price": "498.57",
-        "max_price": "498.57",
-        "price_at_closure": "498.57"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-23",
-        "volume_of_trade": "",
-        "price_at_opening": "505.09",
-        "min_price": "505.09",
-        "max_price": "505.09",
-        "price_at_closure": "505.09"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-20",
-        "volume_of_trade": "",
-        "price_at_opening": "517.85",
-        "min_price": "517.85",
-        "max_price": "517.85",
-        "price_at_closure": "517.85"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-19",
-        "volume_of_trade": "",
-        "price_at_opening": "528.95",
-        "min_price": "528.95",
-        "max_price": "528.95",
-        "price_at_closure": "528.95"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-18",
-        "volume_of_trade": "",
-        "price_at_opening": "532.96",
-        "min_price": "532.96",
-        "max_price": "532.96",
-        "price_at_closure": "532.96"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-17",
-        "volume_of_trade": "",
-        "price_at_opening": "532.68",
-        "min_price": "532.68",
-        "max_price": "532.68",
-        "price_at_closure": "532.68"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-16",
-        "volume_of_trade": "",
-        "price_at_opening": "527.97",
-        "min_price": "527.97",
-        "max_price": "527.97",
-        "price_at_closure": "527.97"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-13",
-        "volume_of_trade": "",
-        "price_at_opening": "520.21",
-        "min_price": "520.21",
-        "max_price": "520.21",
-        "price_at_closure": "520.21"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-12-05",
-        "volume_of_trade": "",
-        "price_at_opening": "515.5",
-        "min_price": "515.5",
-        "max_price": "515.5",
-        "price_at_closure": "515.5"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-11-05",
-        "volume_of_trade": "",
-        "price_at_opening": "534.23",
-        "min_price": "534.23",
-        "max_price": "534.23",
-        "price_at_closure": "534.23"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-05",
-        "volume_of_trade": "",
-        "price_at_opening": "537.71",
-        "min_price": "537.71",
-        "max_price": "537.71",
-        "price_at_closure": "537.71"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-05",
-        "volume_of_trade": "",
-        "price_at_opening": "547.59",
-        "min_price": "547.59",
-        "max_price": "547.59",
-        "price_at_closure": "547.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-05",
-        "volume_of_trade": "",
-        "price_at_opening": "549.79",
-        "min_price": "549.79",
-        "max_price": "549.79",
-        "price_at_closure": "549.79"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-29",
-        "volume_of_trade": "",
-        "price_at_opening": "561.75",
-        "min_price": "561.75",
-        "max_price": "561.75",
-        "price_at_closure": "561.75"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-28",
-        "volume_of_trade": "",
-        "price_at_opening": "556.65",
-        "min_price": "556.65",
-        "max_price": "556.65",
-        "price_at_closure": "556.65"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-27",
-        "volume_of_trade": "",
-        "price_at_opening": "561.05",
-        "min_price": "561.05",
-        "max_price": "561.05",
-        "price_at_closure": "561.05"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-26",
-        "volume_of_trade": "",
-        "price_at_opening": "546.39",
-        "min_price": "546.39",
-        "max_price": "546.39",
-        "price_at_closure": "546.39"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-25",
-        "volume_of_trade": "",
-        "price_at_opening": "539.59",
-        "min_price": "539.59",
-        "max_price": "539.59",
-        "price_at_closure": "539.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-22",
-        "volume_of_trade": "",
-        "price_at_opening": "560.12",
-        "min_price": "560.12",
-        "max_price": "560.12",
-        "price_at_closure": "560.12"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-21",
-        "volume_of_trade": "",
-        "price_at_opening": "572.04",
-        "min_price": "572.04",
-        "max_price": "572.04",
-        "price_at_closure": "572.04"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-20",
-        "volume_of_trade": "",
-        "price_at_opening": "572.17",
-        "min_price": "572.17",
-        "max_price": "572.17",
-        "price_at_closure": "572.17"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-19",
-        "volume_of_trade": "",
-        "price_at_opening": "558.01",
-        "min_price": "558.01",
-        "max_price": "558.01",
-        "price_at_closure": "558.01"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-18",
-        "volume_of_trade": "",
-        "price_at_opening": "578.69",
-        "min_price": "578.69",
-        "max_price": "578.69",
-        "price_at_closure": "578.69"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-15",
-        "volume_of_trade": "",
-        "price_at_opening": "594.23",
-        "min_price": "594.23",
-        "max_price": "594.23",
-        "price_at_closure": "594.23"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-14",
-        "volume_of_trade": "",
-        "price_at_opening": "604.21",
-        "min_price": "604.21",
-        "max_price": "604.21",
-        "price_at_closure": "604.21"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-13",
-        "volume_of_trade": "",
-        "price_at_opening": "615.18",
-        "min_price": "615.18",
-        "max_price": "615.18",
-        "price_at_closure": "615.18"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-12-04",
-        "volume_of_trade": "",
-        "price_at_opening": "611.19",
-        "min_price": "611.19",
-        "max_price": "611.19",
-        "price_at_closure": "611.19"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-11-04",
-        "volume_of_trade": "",
-        "price_at_opening": "633.18",
-        "min_price": "633.18",
-        "max_price": "633.18",
-        "price_at_closure": "633.18"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-08-04",
-        "volume_of_trade": "",
-        "price_at_opening": "637.26",
-        "min_price": "637.26",
-        "max_price": "637.26",
-        "price_at_closure": "637.26"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-07-04",
-        "volume_of_trade": "",
-        "price_at_opening": "641.41",
-        "min_price": "641.41",
-        "max_price": "641.41",
-        "price_at_closure": "641.41"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-06-04",
-        "volume_of_trade": "",
-        "price_at_opening": "652.21",
-        "min_price": "652.21",
-        "max_price": "652.21",
-        "price_at_closure": "652.21"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-05-04",
-        "volume_of_trade": "",
-        "price_at_opening": "670.09",
-        "min_price": "670.09",
-        "max_price": "670.09",
-        "price_at_closure": "670.09"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-04",
-        "volume_of_trade": "",
-        "price_at_opening": "704.24",
-        "min_price": "704.24",
-        "max_price": "704.24",
-        "price_at_closure": "704.24"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-01-04",
-        "volume_of_trade": "",
-        "price_at_opening": "700.31",
-        "min_price": "700.31",
-        "max_price": "700.31",
-        "price_at_closure": "700.31"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-31",
-        "volume_of_trade": "",
-        "price_at_opening": "679.3",
-        "min_price": "679.3",
-        "max_price": "679.3",
-        "price_at_closure": "679.3"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-30",
-        "volume_of_trade": "",
-        "price_at_opening": "607.41",
-        "min_price": "607.41",
-        "max_price": "607.41",
-        "price_at_closure": "607.41"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-29",
-        "volume_of_trade": "",
-        "price_at_opening": "574.19",
-        "min_price": "574.19",
-        "max_price": "574.19",
-        "price_at_closure": "574.19"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-28",
-        "volume_of_trade": "",
-        "price_at_opening": "522.61",
-        "min_price": "522.61",
-        "max_price": "522.61",
-        "price_at_closure": "522.61"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-25",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-24",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-23",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-22",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-21",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-18",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-17",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-16",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-15",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-14",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
+        "price_at_opening": "502.72",
+        "min_price": "502.72",
+        "max_price": "502.72",
+        "price_at_closure": "502.72"
     },
     {
         "index": "MIPO",
         "date": "2022-11-03",
         "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-10-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-09-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-04-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-03-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-01-03",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-28",
-        "volume_of_trade": "",
-        "price_at_opening": "524.59",
-        "min_price": "524.59",
-        "max_price": "524.59",
-        "price_at_closure": "524.59"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-25",
-        "volume_of_trade": "",
-        "price_at_opening": "526",
-        "min_price": "526",
-        "max_price": "526",
-        "price_at_closure": "526"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-24",
-        "volume_of_trade": "",
-        "price_at_opening": "484.81",
-        "min_price": "484.81",
-        "max_price": "484.81",
-        "price_at_closure": "484.81"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-23",
-        "volume_of_trade": "",
-        "price_at_opening": "677.08",
-        "min_price": "677.08",
-        "max_price": "677.08",
-        "price_at_closure": "677.08"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-22",
-        "volume_of_trade": "",
-        "price_at_opening": "677.02",
-        "min_price": "677.02",
-        "max_price": "677.02",
-        "price_at_closure": "677.02"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-21",
-        "volume_of_trade": "",
-        "price_at_opening": "695.04",
-        "min_price": "695.04",
-        "max_price": "695.04",
-        "price_at_closure": "695.04"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-18",
-        "volume_of_trade": "",
-        "price_at_opening": "756.6",
-        "min_price": "756.6",
-        "max_price": "756.6",
-        "price_at_closure": "756.6"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-17",
-        "volume_of_trade": "",
-        "price_at_opening": "767.7",
-        "min_price": "767.7",
-        "max_price": "767.7",
-        "price_at_closure": "767.7"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-16",
-        "volume_of_trade": "",
-        "price_at_opening": "788.36",
-        "min_price": "788.36",
-        "max_price": "788.36",
-        "price_at_closure": "788.36"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-15",
-        "volume_of_trade": "",
-        "price_at_opening": "788.1",
-        "min_price": "788.1",
-        "max_price": "788.1",
-        "price_at_closure": "788.1"
-    },
-    {
-        "index": "MIPO",
-        "date": "2022-02-14",
-        "volume_of_trade": "",
-        "price_at_opening": "779.7",
-        "min_price": "779.7",
-        "max_price": "779.7",
-        "price_at_closure": "779.7"
+        "price_at_opening": "493.48",
+        "min_price": "493.48",
+        "max_price": "493.48",
+        "price_at_closure": "493.48"
     },
     {
         "index": "MIPO",
         "date": "2022-11-02",
         "volume_of_trade": "",
-        "price_at_opening": "797.39",
-        "min_price": "797.39",
-        "max_price": "797.39",
-        "price_at_closure": "797.39"
+        "price_at_opening": "505.03",
+        "min_price": "505.03",
+        "max_price": "505.03",
+        "price_at_closure": "505.03"
     },
     {
         "index": "MIPO",
-        "date": "2022-10-02",
+        "date": "2022-11-01",
         "volume_of_trade": "",
-        "price_at_opening": "811.3",
-        "min_price": "811.3",
-        "max_price": "811.3",
-        "price_at_closure": "811.3"
+        "price_at_opening": "509.11",
+        "min_price": "509.11",
+        "max_price": "509.11",
+        "price_at_closure": "509.11"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-31",
+        "volume_of_trade": "",
+        "price_at_opening": "507",
+        "min_price": "507",
+        "max_price": "507",
+        "price_at_closure": "507"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-28",
+        "volume_of_trade": "",
+        "price_at_opening": "503.53",
+        "min_price": "503.53",
+        "max_price": "503.53",
+        "price_at_closure": "503.53"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-27",
+        "volume_of_trade": "",
+        "price_at_opening": "498.53",
+        "min_price": "498.53",
+        "max_price": "498.53",
+        "price_at_closure": "498.53"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-26",
+        "volume_of_trade": "",
+        "price_at_opening": "484.42",
+        "min_price": "484.42",
+        "max_price": "484.42",
+        "price_at_closure": "484.42"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-25",
+        "volume_of_trade": "",
+        "price_at_opening": "484.67",
+        "min_price": "484.67",
+        "max_price": "484.67",
+        "price_at_closure": "484.67"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-24",
+        "volume_of_trade": "",
+        "price_at_opening": "476.71",
+        "min_price": "476.71",
+        "max_price": "476.71",
+        "price_at_closure": "476.71"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-21",
+        "volume_of_trade": "",
+        "price_at_opening": "469.92",
+        "min_price": "469.92",
+        "max_price": "469.92",
+        "price_at_closure": "469.92"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-20",
+        "volume_of_trade": "",
+        "price_at_opening": "468.2",
+        "min_price": "468.2",
+        "max_price": "468.2",
+        "price_at_closure": "468.2"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-19",
+        "volume_of_trade": "",
+        "price_at_opening": "460.19",
+        "min_price": "460.19",
+        "max_price": "460.19",
+        "price_at_closure": "460.19"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-18",
+        "volume_of_trade": "",
+        "price_at_opening": "475.96",
+        "min_price": "475.96",
+        "max_price": "475.96",
+        "price_at_closure": "475.96"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-17",
+        "volume_of_trade": "",
+        "price_at_opening": "471.92",
+        "min_price": "471.92",
+        "max_price": "471.92",
+        "price_at_closure": "471.92"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-14",
+        "volume_of_trade": "",
+        "price_at_opening": "451.65",
+        "min_price": "451.65",
+        "max_price": "451.65",
+        "price_at_closure": "451.65"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-13",
+        "volume_of_trade": "",
+        "price_at_opening": "451.1",
+        "min_price": "451.1",
+        "max_price": "451.1",
+        "price_at_closure": "451.1"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-12",
+        "volume_of_trade": "",
+        "price_at_opening": "450.26",
+        "min_price": "450.26",
+        "max_price": "450.26",
+        "price_at_closure": "450.26"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-11",
+        "volume_of_trade": "",
+        "price_at_opening": "443.65",
+        "min_price": "443.65",
+        "max_price": "443.65",
+        "price_at_closure": "443.65"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-10",
+        "volume_of_trade": "",
+        "price_at_opening": "432.82",
+        "min_price": "432.82",
+        "max_price": "432.82",
+        "price_at_closure": "432.82"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-07",
+        "volume_of_trade": "",
+        "price_at_opening": "427",
+        "min_price": "427",
+        "max_price": "427",
+        "price_at_closure": "427"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-06",
+        "volume_of_trade": "",
+        "price_at_opening": "444.17",
+        "min_price": "444.17",
+        "max_price": "444.17",
+        "price_at_closure": "444.17"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-05",
+        "volume_of_trade": "",
+        "price_at_opening": "442.04",
+        "min_price": "442.04",
+        "max_price": "442.04",
+        "price_at_closure": "442.04"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-04",
+        "volume_of_trade": "",
+        "price_at_opening": "449.72",
+        "min_price": "449.72",
+        "max_price": "449.72",
+        "price_at_closure": "449.72"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-10-03",
+        "volume_of_trade": "",
+        "price_at_opening": "443.19",
+        "min_price": "443.19",
+        "max_price": "443.19",
+        "price_at_closure": "443.19"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-30",
+        "volume_of_trade": "",
+        "price_at_opening": "412.79",
+        "min_price": "412.79",
+        "max_price": "412.79",
+        "price_at_closure": "412.79"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-29",
+        "volume_of_trade": "",
+        "price_at_opening": "418.36",
+        "min_price": "418.36",
+        "max_price": "418.36",
+        "price_at_closure": "418.36"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-28",
+        "volume_of_trade": "",
+        "price_at_opening": "435.02",
+        "min_price": "435.02",
+        "max_price": "435.02",
+        "price_at_closure": "435.02"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-27",
+        "volume_of_trade": "",
+        "price_at_opening": "433.07",
+        "min_price": "433.07",
+        "max_price": "433.07",
+        "price_at_closure": "433.07"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-26",
+        "volume_of_trade": "",
+        "price_at_opening": "431.92",
+        "min_price": "431.92",
+        "max_price": "431.92",
+        "price_at_closure": "431.92"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-23",
+        "volume_of_trade": "",
+        "price_at_opening": "469.8",
+        "min_price": "469.8",
+        "max_price": "469.8",
+        "price_at_closure": "469.8"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-22",
+        "volume_of_trade": "",
+        "price_at_opening": "504.48",
+        "min_price": "504.48",
+        "max_price": "504.48",
+        "price_at_closure": "504.48"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-21",
+        "volume_of_trade": "",
+        "price_at_opening": "501.11",
+        "min_price": "501.11",
+        "max_price": "501.11",
+        "price_at_closure": "501.11"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-20",
+        "volume_of_trade": "",
+        "price_at_opening": "517.95",
+        "min_price": "517.95",
+        "max_price": "517.95",
+        "price_at_closure": "517.95"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-19",
+        "volume_of_trade": "",
+        "price_at_opening": "571.45",
+        "min_price": "571.45",
+        "max_price": "571.45",
+        "price_at_closure": "571.45"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-16",
+        "volume_of_trade": "",
+        "price_at_opening": "574.95",
+        "min_price": "574.95",
+        "max_price": "574.95",
+        "price_at_closure": "574.95"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-15",
+        "volume_of_trade": "",
+        "price_at_opening": "581.01",
+        "min_price": "581.01",
+        "max_price": "581.01",
+        "price_at_closure": "581.01"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-14",
+        "volume_of_trade": "",
+        "price_at_opening": "572.28",
+        "min_price": "572.28",
+        "max_price": "572.28",
+        "price_at_closure": "572.28"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-13",
+        "volume_of_trade": "",
+        "price_at_opening": "576.94",
+        "min_price": "576.94",
+        "max_price": "576.94",
+        "price_at_closure": "576.94"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-12",
+        "volume_of_trade": "",
+        "price_at_opening": "584.14",
+        "min_price": "584.14",
+        "max_price": "584.14",
+        "price_at_closure": "584.14"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-09",
+        "volume_of_trade": "",
+        "price_at_opening": "579.12",
+        "min_price": "579.12",
+        "max_price": "579.12",
+        "price_at_closure": "579.12"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-08",
+        "volume_of_trade": "",
+        "price_at_opening": "576.42",
+        "min_price": "576.42",
+        "max_price": "576.42",
+        "price_at_closure": "576.42"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-07",
+        "volume_of_trade": "",
+        "price_at_opening": "577.76",
+        "min_price": "577.76",
+        "max_price": "577.76",
+        "price_at_closure": "577.76"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-06",
+        "volume_of_trade": "",
+        "price_at_opening": "581.82",
+        "min_price": "581.82",
+        "max_price": "581.82",
+        "price_at_closure": "581.82"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-05",
+        "volume_of_trade": "",
+        "price_at_opening": "591.28",
+        "min_price": "591.28",
+        "max_price": "591.28",
+        "price_at_closure": "591.28"
     },
     {
         "index": "MIPO",
         "date": "2022-09-02",
         "volume_of_trade": "",
-        "price_at_opening": "812",
-        "min_price": "812",
-        "max_price": "812",
-        "price_at_closure": "812"
+        "price_at_opening": "586.86",
+        "min_price": "586.86",
+        "max_price": "586.86",
+        "price_at_closure": "586.86"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-09-01",
+        "volume_of_trade": "",
+        "price_at_opening": "583.24",
+        "min_price": "583.24",
+        "max_price": "583.24",
+        "price_at_closure": "583.24"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-31",
+        "volume_of_trade": "",
+        "price_at_opening": "573.94",
+        "min_price": "573.94",
+        "max_price": "573.94",
+        "price_at_closure": "573.94"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-30",
+        "volume_of_trade": "",
+        "price_at_opening": "576.47",
+        "min_price": "576.47",
+        "max_price": "576.47",
+        "price_at_closure": "576.47"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-29",
+        "volume_of_trade": "",
+        "price_at_opening": "583.36",
+        "min_price": "583.36",
+        "max_price": "583.36",
+        "price_at_closure": "583.36"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-26",
+        "volume_of_trade": "",
+        "price_at_opening": "573.07",
+        "min_price": "573.07",
+        "max_price": "573.07",
+        "price_at_closure": "573.07"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-25",
+        "volume_of_trade": "",
+        "price_at_opening": "563.42",
+        "min_price": "563.42",
+        "max_price": "563.42",
+        "price_at_closure": "563.42"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-24",
+        "volume_of_trade": "",
+        "price_at_opening": "558.08",
+        "min_price": "558.08",
+        "max_price": "558.08",
+        "price_at_closure": "558.08"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-23",
+        "volume_of_trade": "",
+        "price_at_opening": "561.24",
+        "min_price": "561.24",
+        "max_price": "561.24",
+        "price_at_closure": "561.24"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-22",
+        "volume_of_trade": "",
+        "price_at_opening": "559.9",
+        "min_price": "559.9",
+        "max_price": "559.9",
+        "price_at_closure": "559.9"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-19",
+        "volume_of_trade": "",
+        "price_at_opening": "551.61",
+        "min_price": "551.61",
+        "max_price": "551.61",
+        "price_at_closure": "551.61"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-18",
+        "volume_of_trade": "",
+        "price_at_opening": "566.29",
+        "min_price": "566.29",
+        "max_price": "566.29",
+        "price_at_closure": "566.29"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-17",
+        "volume_of_trade": "",
+        "price_at_opening": "556.59",
+        "min_price": "556.59",
+        "max_price": "556.59",
+        "price_at_closure": "556.59"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-16",
+        "volume_of_trade": "",
+        "price_at_opening": "552.21",
+        "min_price": "552.21",
+        "max_price": "552.21",
+        "price_at_closure": "552.21"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-15",
+        "volume_of_trade": "",
+        "price_at_opening": "535.14",
+        "min_price": "535.14",
+        "max_price": "535.14",
+        "price_at_closure": "535.14"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-12",
+        "volume_of_trade": "",
+        "price_at_opening": "531.73",
+        "min_price": "531.73",
+        "max_price": "531.73",
+        "price_at_closure": "531.73"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-11",
+        "volume_of_trade": "",
+        "price_at_opening": "529.05",
+        "min_price": "529.05",
+        "max_price": "529.05",
+        "price_at_closure": "529.05"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-10",
+        "volume_of_trade": "",
+        "price_at_opening": "523.38",
+        "min_price": "523.38",
+        "max_price": "523.38",
+        "price_at_closure": "523.38"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-09",
+        "volume_of_trade": "",
+        "price_at_opening": "511.32",
+        "min_price": "511.32",
+        "max_price": "511.32",
+        "price_at_closure": "511.32"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-08",
+        "volume_of_trade": "",
+        "price_at_opening": "507.25",
+        "min_price": "507.25",
+        "max_price": "507.25",
+        "price_at_closure": "507.25"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-05",
+        "volume_of_trade": "",
+        "price_at_opening": "489.56",
+        "min_price": "489.56",
+        "max_price": "489.56",
+        "price_at_closure": "489.56"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-04",
+        "volume_of_trade": "",
+        "price_at_opening": "502.76",
+        "min_price": "502.76",
+        "max_price": "502.76",
+        "price_at_closure": "502.76"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-08-03",
+        "volume_of_trade": "",
+        "price_at_opening": "505.04",
+        "min_price": "505.04",
+        "max_price": "505.04",
+        "price_at_closure": "505.04"
     },
     {
         "index": "MIPO",
         "date": "2022-08-02",
         "volume_of_trade": "",
-        "price_at_opening": "796.83",
-        "min_price": "796.83",
-        "max_price": "796.83",
-        "price_at_closure": "796.83"
+        "price_at_opening": "508.28",
+        "min_price": "508.28",
+        "max_price": "508.28",
+        "price_at_closure": "508.28"
     },
     {
         "index": "MIPO",
-        "date": "2022-07-02",
+        "date": "2022-08-01",
         "volume_of_trade": "",
-        "price_at_opening": "788.44",
-        "min_price": "788.44",
-        "max_price": "788.44",
-        "price_at_closure": "788.44"
+        "price_at_opening": "510.17",
+        "min_price": "510.17",
+        "max_price": "510.17",
+        "price_at_closure": "510.17"
     },
     {
         "index": "MIPO",
-        "date": "2022-04-02",
+        "date": "2022-07-29",
         "volume_of_trade": "",
-        "price_at_opening": "785.46",
-        "min_price": "785.46",
-        "max_price": "785.46",
-        "price_at_closure": "785.46"
+        "price_at_opening": "511.23",
+        "min_price": "511.23",
+        "max_price": "511.23",
+        "price_at_closure": "511.23"
     },
     {
         "index": "MIPO",
-        "date": "2022-03-02",
+        "date": "2022-07-28",
         "volume_of_trade": "",
-        "price_at_opening": "779.02",
-        "min_price": "779.02",
-        "max_price": "779.02",
-        "price_at_closure": "779.02"
+        "price_at_opening": "501.63",
+        "min_price": "501.63",
+        "max_price": "501.63",
+        "price_at_closure": "501.63"
     },
     {
         "index": "MIPO",
-        "date": "2022-02-02",
+        "date": "2022-07-27",
         "volume_of_trade": "",
-        "price_at_opening": "787.74",
-        "min_price": "787.74",
-        "max_price": "787.74",
-        "price_at_closure": "787.74"
+        "price_at_opening": "498.67",
+        "min_price": "498.67",
+        "max_price": "498.67",
+        "price_at_closure": "498.67"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-26",
+        "volume_of_trade": "",
+        "price_at_opening": "495.23",
+        "min_price": "495.23",
+        "max_price": "495.23",
+        "price_at_closure": "495.23"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-25",
+        "volume_of_trade": "",
+        "price_at_opening": "489.54",
+        "min_price": "489.54",
+        "max_price": "489.54",
+        "price_at_closure": "489.54"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-22",
+        "volume_of_trade": "",
+        "price_at_opening": "480.36",
+        "min_price": "480.36",
+        "max_price": "480.36",
+        "price_at_closure": "480.36"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-21",
+        "volume_of_trade": "",
+        "price_at_opening": "479.02",
+        "min_price": "479.02",
+        "max_price": "479.02",
+        "price_at_closure": "479.02"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-20",
+        "volume_of_trade": "",
+        "price_at_opening": "469.39",
+        "min_price": "469.39",
+        "max_price": "469.39",
+        "price_at_closure": "469.39"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-19",
+        "volume_of_trade": "",
+        "price_at_opening": "475.85",
+        "min_price": "475.85",
+        "max_price": "475.85",
+        "price_at_closure": "475.85"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-18",
+        "volume_of_trade": "",
+        "price_at_opening": "478.66",
+        "min_price": "478.66",
+        "max_price": "478.66",
+        "price_at_closure": "478.66"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-15",
+        "volume_of_trade": "",
+        "price_at_opening": "469.88",
+        "min_price": "469.88",
+        "max_price": "469.88",
+        "price_at_closure": "469.88"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-14",
+        "volume_of_trade": "",
+        "price_at_opening": "467.15",
+        "min_price": "467.15",
+        "max_price": "467.15",
+        "price_at_closure": "467.15"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-13",
+        "volume_of_trade": "",
+        "price_at_opening": "468.65",
+        "min_price": "468.65",
+        "max_price": "468.65",
+        "price_at_closure": "468.65"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-12",
+        "volume_of_trade": "",
+        "price_at_opening": "471.38",
+        "min_price": "471.38",
+        "max_price": "471.38",
+        "price_at_closure": "471.38"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-11",
+        "volume_of_trade": "",
+        "price_at_opening": "482.45",
+        "min_price": "482.45",
+        "max_price": "482.45",
+        "price_at_closure": "482.45"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-08",
+        "volume_of_trade": "",
+        "price_at_opening": "494.44",
+        "min_price": "494.44",
+        "max_price": "494.44",
+        "price_at_closure": "494.44"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-07",
+        "volume_of_trade": "",
+        "price_at_opening": "487.94",
+        "min_price": "487.94",
+        "max_price": "487.94",
+        "price_at_closure": "487.94"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-06",
+        "volume_of_trade": "",
+        "price_at_opening": "471.58",
+        "min_price": "471.58",
+        "max_price": "471.58",
+        "price_at_closure": "471.58"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-05",
+        "volume_of_trade": "",
+        "price_at_opening": "468.39",
+        "min_price": "468.39",
+        "max_price": "468.39",
+        "price_at_closure": "468.39"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-04",
+        "volume_of_trade": "",
+        "price_at_opening": "469.56",
+        "min_price": "469.56",
+        "max_price": "469.56",
+        "price_at_closure": "469.56"
+    },
+    {
+        "index": "MIPO",
+        "date": "2022-07-01",
+        "volume_of_trade": "",
+        "price_at_opening": "475.85",
+        "min_price": "475.85",
+        "max_price": "475.85",
+        "price_at_closure": "475.85"
     }
 ]
