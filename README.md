@@ -27,7 +27,7 @@ This project is inspired by the illustrative visualization of the historical Ame
 Web data will be scraped from the archive of the Moscow Exchange (MOEX) web site. The pages of the site consists of tables, so document structure knowledge is used by scraper to extract relevant information.
 </p>
 <p>
-The MOEX web site provides exhaustive information about the price of MOEX indexes by days and months recorded from 1997. Particularly, the tables consist of the following columns: the date of a record (dd.mm.yyyy), the values of an index at the beginning of the period and at the end of the period (floating-point numbers), the maximum and minimum recorded values of an index during the period (floating-point numbers), the money volume of an index during the period (floating-point number), and the money capitalization of index during the period (floating-point number).
+The MOEX web site provides exhaustive information about the price of MOEX indexes by days and months recorded from 2004. Particularly, the tables consist of the following columns: the date of a record (dd.mm.yyyy), the values of an index at the beginning of the period and at the end of the period (floating-point numbers), the maximum and minimum recorded values of an index during the period (floating-point numbers), the money volume of an index during the period (floating-point number), and the money capitalization of index during the period (floating-point number).
 
 Individual stocks and ETF's on the other hand contain slightly different columns. Those are: date of a record (dd.mm.yyyy), instrument name (string), number of trades on a given day (int), weighted average price (floating-point number), the values of stock at the beginning of the period and at the end of the period (floating-point numbers), the maximum and minimum recorded values of an index during the period (floating-point numbers), the money volume of an index during the period (floating-point number).
 </p>
@@ -125,11 +125,11 @@ The project checkpoint information can be found <a href="https://github.com/Data
 - [x] Setup the exploration tools and determine data worth visualizing based on the analysis.
 - [x] Establish interface for transferring data from the processing pipeline to visualization application and integrate it into a Flask RESTful API.
 - [x] Develop web application with basic display functionality of the visualizations (statically displayed plots) and data supply through API.
-- [ ] Add styles and variety for visualizations (e.g. various indexes for heatmap instead of a single one).
-- [ ] Test application, fix bugs, and prepare presentation.
+- [x] Add styles and variety for visualizations (e.g. various indexes for heatmap instead of a single one).
+- [x] Test application, fix bugs, and prepare presentation.
 
 <a name="contributors"> <h2> Contributors </h2> </a>
 The team consists of three members:
-- Ilya Grigorev, DS-01 student, responsible for scraping and parsing data;
-- Ruslan Gatiatullin, DS-02 student, responsible for EDA;
-- Salavat Faizullin, DS-01 student, responsible developing visualizations.
+- Ilya Grigorev, DS-01 student, responsible for scraping and parsing data, backend;
+- Ruslan Gatiatullin, DS-02 student, responsible for EDA, project vision, backend;
+- Salavat Faizullin, DS-01 student, responsible developing visualizations, deployment.
