@@ -8,7 +8,7 @@ tradeScrap = TradeScraper(storage=store)
 
 tickersIndexes = [
     # Индекс Мосбиржи
-    'https://www.moex.com/ru/index/IMOEX/archive?from=2020-01-01&till=2025-03-27&sort=TRADEDATE&order=desc'
+    'https://www.moex.com/ru/index/MCFTR/archive?from=2003-02-26&till=2025-03-27&sort=TRADEDATE&order=desc'
 ]
 tickersETFs = [
     # БПИФ ТБанк starts 2020
@@ -29,6 +29,6 @@ indexScrap.load_content(indexUrls)
 indexScrap.scrape_pages()
 
 
-tradeUrls = [TradeURL.construct_from_url(x) for x in tickersETFs]
-tradeScrap.load_content(tradeUrls)
-tradeScrap.scrape_pages()
+# tradeUrls = [TradeURL.construct_from_url(x) for x in tickersETFs]
+# tradeScrap.load_content(tradeUrls)
+# tradeScrap.scrape_pages()
