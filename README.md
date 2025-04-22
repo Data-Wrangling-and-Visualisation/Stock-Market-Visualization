@@ -4,6 +4,8 @@
 
 http://5.129.199.157:8080/
 
+(If it doesn't work, then we stopped hosting it. More on how to run the project locally below.)
+
 ## Table of Contents
 <ol>
 <li> <a href="#description">Project Description</a> </li>
@@ -61,41 +63,6 @@ pip install -r src/req.txt
 playwright install
 ```
 
-<a name="scraper"> <h2> Scraper client example </h2> </a>
-Below you can see the code for the client to start scraping process:
-```Python
-from storage import StorageSQLite
-from trade_scraper import TradeScraper, TradeURL
-from index_scraper import IndexScraper, IndexURL
-
-store = StorageSQLite()
-indexScrap = IndexScraper(storage=store)
-tradeScrap = TradeScraper(storage=store)
-
-tickersIndexes = [
-    'https://www.moex.com/ru/index/IMOEX/archive?from=2023-12-01&till=2025-03-27&sort=TRADEDATE&order=desc'
-]
-tickersETFs = [
-    'https://www.moex.com/ru/marketdata/#/mode=instrument&secid=TMOS&boardgroupid=57&mode_type=history&date_from=2024-08-26&date_till=2025-03-28'
-    ]
-indexUrls = [IndexURL.construct_from_url(x) for x in tickersIndexes]
-indexScrap.load_content(indexUrls)
-indexScrap.scrape_pages()
-
-
-tradeUrls = [TradeURL.construct_from_url(x) for x in tickersETFs]
-tradeScrap.load_content(tradeUrls)
-tradeScrap.scrape_pages()
-```
-Scraped data will be added to local moex.db data base via SQLite and will be accessible by backend.
-
-Start backend server:
-```bash
-python src/backend.py
-```
-
-Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
-
 <h3> With Docker </h3>
 
 The application can be run using Docker, which provides an isolated environment with all dependencies pre-installed.
@@ -148,11 +115,42 @@ The Docker setup mounts the following volumes for data persistence:
 
 This ensures that your data remains intact between container restarts.
 
+<a name="scraper"> <h2> Scraper client example </h2> </a>
+Below you can see the code for the client to start scraping process:
+```Python
+from storage import StorageSQLite
+from trade_scraper import TradeScraper, TradeURL
+from index_scraper import IndexScraper, IndexURL
+
+store = StorageSQLite()
+indexScrap = IndexScraper(storage=store)
+tradeScrap = TradeScraper(storage=store)
+
+tickersIndexes = [
+    'https://www.moex.com/ru/index/IMOEX/archive?from=2023-12-01&till=2025-03-27&sort=TRADEDATE&order=desc'
+]
+tickersETFs = [
+    'https://www.moex.com/ru/marketdata/#/mode=instrument&secid=TMOS&boardgroupid=57&mode_type=history&date_from=2024-08-26&date_till=2025-03-28'
+    ]
+indexUrls = [IndexURL.construct_from_url(x) for x in tickersIndexes]
+indexScrap.load_content(indexUrls)
+indexScrap.scrape_pages()
+
+
+tradeUrls = [TradeURL.construct_from_url(x) for x in tickersETFs]
+tradeScrap.load_content(tradeUrls)
+tradeScrap.scrape_pages()
+```
+Scraped data will be added to local moex.db data base via SQLite and will be accessible by backend.
+
+Start backend server:
+```bash
+python src/backend.py
+```
+
+Access the <a href="http://127.0.0.1:8080/">127.0.0.1:8080/</a> for the index webpage.
 <a name="eda"> <h2> EDA </h2> </a>
 The <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/EDA/Russia_Stock_Market_Index.ipynb">notebook </a> provides a brief review of the related dataset information that can be further used to select data and visualizations.
-
-<a name="visualization"> <h2> Visualization </h2> </a>
-Proceed to the <a href="https://data-wrangling-and-visualisation.github.io/Stock-Market-Visualization/"> website </a> to see the visualizations that are implemented so far. If you want to get the source code, you can go to the <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/tree/frontend"> frontend </a> branch.
 
 <a name="roadmap"> <h2> Checkpoint Information and Roadmap </h2> </a>
 The project checkpoint information can be found <a href="https://github.com/Data-Wrangling-and-Visualisation/Stock-Market-Visualization/blob/Checkpoints/DWV_Checkpoint.pdf">here </a>
