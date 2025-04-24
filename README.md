@@ -22,6 +22,8 @@ http://5.129.199.157:8080/
 <a name="description"> <h2> Project Description </h2> </a>
 <p>
 This project is inspired by the illustrative visualization of the historical American stock market returns by <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2011/01/02/business/20110102-metrics-graphic.html">E. Easterling</a>. We seek to expand that knowledge to the Russian stock market by providing similar visualization as well as by adding other supporting graphs. The aim of this work is to provide investors (with any capital) an estimate for their potential profit and risk in the Russian stock market. Our target audience are primarily Russian citizens who are interested in investing and want to choose a desired share of stocks in their portfolio.
+
+Check out DWV presentation.pptx for more info.
 </p>
 
 <a name="dataset"> <h2> Dataset Description </h2> </a>
