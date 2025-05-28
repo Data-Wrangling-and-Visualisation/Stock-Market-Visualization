@@ -58,7 +58,7 @@ class StorageJSON(Storage):
         data['date'] = data['date'].dt.strftime('%Y-%m-%d')
         name = location[location.find('=')+1:location.find('&')]
         with open(conn + name + '.json', 'w', encoding='UTF-8') as f:
-            f.write(data.to_json(orient='records'))
+            f.write(data.to_json(orient='records', indent=4))
 
     def read(self, conn: Any, name: str) -> pd.DataFrame:
         with open(conn + name + '.json', 'r', encoding='UTF-8') as f:

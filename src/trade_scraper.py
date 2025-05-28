@@ -229,7 +229,7 @@ class TradeScraper:
             pd.Dataframe: dataframe with retrieved information
         """
         columns = ['date',
-                   'ticker',
+                   'index',
                    'quantity',
                    'volume_of_trade',
                    'WA_price',
@@ -249,8 +249,7 @@ class TradeScraper:
                 data.append([element.text.strip().replace(',', '.') for element in elements])
 
         df = pd.DataFrame(data, columns=columns)
-        df.drop(columns=['ticker', 'quantity', 'WA_price'], inplace=True)
-        print(df.columns)
+        df.drop(columns=['quantity', 'WA_price'], inplace=True)
         return df
 
     def _parse_df(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -266,6 +265,7 @@ class TradeScraper:
         df = df.apply(
             lambda cols: list(map(lambda x: x.replace('\xa0', ''), cols))
         )
+        df['date'] = pd.to_datetime(df['date'])
 
         return df
 
@@ -294,7 +294,7 @@ class TradeScraper:
         Arguments:
             urls (List[URL]): list of URL objects representing dataset website
         """
-
+        print('Updated')
         with sync_playwright() as playwright:
             for url in urls:
                 htmls = self._lookup(playwright, url)
@@ -314,20 +314,18 @@ class TradeScraper:
         Arguments:
             selected_raw_datasets (List[str]): list of names of saved contents to parse
         """
-
+        conn = self.storage.connect(self.credentials)
         for filename in os.listdir(self.pages_path):
             content_name = filename.split('.')[0]
             if not content_name.startswith(self.prefix_name):
                 continue
             if selected_raw_datasets is None or content_name in selected_raw_datasets:
+                print(filename)
                 content_tables = self._scrape_page(self.pages_path + filename)
                 page_df = self._convert_to_df(content_tables)
                 formatted_df = self._parse_df(page_df)
-
-                conn = self.storage.connect(self.credentials)
                 self.storage.write(conn, formatted_df, content_name)
                 self.storage.close(conn)
-
     def load_dataset(self, dataset_name: str) -> pd.DataFrame:
         """
         Loads scraped dataset formatted content from the storage.
