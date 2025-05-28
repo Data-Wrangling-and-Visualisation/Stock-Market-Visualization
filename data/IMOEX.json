@@ -24645,7 +24645,7 @@
         "index": "IMOEX",
         "date": "2008-09-18",
         "price_at_closure": "853.93",
-        "price_at_opening": "0.0",
+        "price_at_opening": "853.93",
         "max_price": "853.93",
         "min_price": "853.93",
         "volume_of_trade": "0"
@@ -24789,7 +24789,7 @@
         "index": "IMOEX",
         "date": "2008-10-10",
         "price_at_closure": "700.37",
-        "price_at_opening": "0.0",
+        "price_at_opening": "700.37",
         "max_price": "700.37",
         "min_price": "700.37",
         "volume_of_trade": "0"
@@ -24888,7 +24888,7 @@
         "index": "IMOEX",
         "date": "2008-10-27",
         "price_at_closure": "513.62",
-        "price_at_opening": "0.0",
+        "price_at_opening": "513.62",
         "max_price": "513.62",
         "min_price": "513.62",
         "volume_of_trade": "0"
@@ -24987,7 +24987,7 @@
         "index": "IMOEX",
         "date": "2008-11-12",
         "price_at_closure": "647.8",
-        "price_at_opening": "0.0",
+        "price_at_opening": "647.8",
         "max_price": "647.8",
         "min_price": "647.8",
         "volume_of_trade": "0"
@@ -25888,8 +25888,8 @@
         "date": "2009-04-13",
         "price_at_closure": "904.86",
         "price_at_opening": "927.38",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "max_price": "904.86",
+        "min_price": "904.86",
         "volume_of_trade": "0"
     },
     {

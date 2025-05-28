@@ -40701,81 +40701,81 @@
         "index": "MCFTR",
         "date": "2021-03-24",
         "price_at_closure": "6316.13",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6316.13",
+        "max_price": "6316.13",
+        "min_price": "6316.13",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-03-25",
         "price_at_closure": "6233.44",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6233.44",
+        "max_price": "6233.44",
+        "min_price": "6233.44",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-03-26",
         "price_at_closure": "6325.02",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6325.02",
+        "max_price": "6325.02",
+        "min_price": "6325.02",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-03-29",
         "price_at_closure": "6396.61",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6396.61",
+        "max_price": "6396.61",
+        "min_price": "6396.61",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-03-30",
         "price_at_closure": "6389.18",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6389.18",
+        "max_price": "6389.18",
+        "min_price": "6389.18",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-03-31",
         "price_at_closure": "6419.07",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6419.07",
+        "max_price": "6419.07",
+        "min_price": "6419.07",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-04-01",
         "price_at_closure": "6393.37",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6393.37",
+        "max_price": "6393.37",
+        "min_price": "6393.37",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-04-02",
         "price_at_closure": "6448.97",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6448.97",
+        "max_price": "6448.97",
+        "min_price": "6448.97",
         "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
         "date": "2021-04-05",
         "price_at_closure": "6388.63",
-        "price_at_opening": "0.0",
-        "max_price": "0.0",
-        "min_price": "0.0",
+        "price_at_opening": "6388.63",
+        "max_price": "6388.63",
+        "min_price": "6388.63",
         "volume_of_trade": "0"
     },
     {
@@ -44637,7 +44637,7 @@
         "price_at_opening": "4571.14",
         "max_price": "4571.14",
         "min_price": "4571.14",
-        "volume_of_trade": "0.0"
+        "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
@@ -44646,7 +44646,7 @@
         "price_at_opening": "4562.71",
         "max_price": "4562.71",
         "min_price": "4562.71",
-        "volume_of_trade": "0.0"
+        "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
@@ -44655,7 +44655,7 @@
         "price_at_opening": "4631.06",
         "max_price": "4631.06",
         "min_price": "4631.06",
-        "volume_of_trade": "0.0"
+        "volume_of_trade": "0"
     },
     {
         "index": "MCFTR",
