@@ -253,23 +253,19 @@ function calculateReturns() {
             
             // Calculate annual returns for year_annual granularity
             if (granularity === 'year_annual') {
-                if (startPeriod.key === endPeriod.key) {
-                    // If same year, use standard calculation
-                    returnVal = (endPeriod.close - startPeriod.open)/startPeriod.open;
+                // Extract years from period keys, which should be year strings in this granularity
+                const startYear = parseInt(startPeriod.key);
+                const endYear = parseInt(endPeriod.key);
+                const yearsBetween = endYear - startYear;
+                
+                if (yearsBetween > 0) {
+                    // Use the formula: ((price at end / price at beginning) ^ (1 / (number of years+1))) - 1
+                    returnVal = (Math.pow(endPeriod.close / startPeriod.open, 1 / (yearsBetween+1))) - 1;
                 } else {
-                    // Extract years from period keys, which should be year strings in this granularity
-                    const startYear = parseInt(startPeriod.key);
-                    const endYear = parseInt(endPeriod.key);
-                    const yearsBetween = endYear - startYear;
-                    
-                    if (yearsBetween > 0) {
-                        // Use the formula: ((price at end / price at beginning) ^ (1 / number of years)) - 1
-                        returnVal = (Math.pow(endPeriod.close / startPeriod.open, 1 / yearsBetween)) - 1;
-                    } else {
-                        // Fallback to standard calculation if years calculation fails
-                        returnVal = (endPeriod.close - startPeriod.open)/startPeriod.open;
-                    }
+                    // Fallback to standard calculation if years calculation fails
+                    returnVal = (endPeriod.close - startPeriod.open)/startPeriod.open;
                 }
+                
             } else {
                 // Standard return calculation for other granularities
                 returnVal = (endPeriod.close - startPeriod.open)/startPeriod.open;
